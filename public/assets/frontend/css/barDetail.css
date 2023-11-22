@@ -1,0 +1,191 @@
+
+.barHero{
+    margin: 90px 9.938vw 100px 9.938vw;
+}
+.barDetailHeroText::before{
+    content: '';
+    position: relative;
+    width: 136px;
+    height: 40px;
+    left: 0;
+top: 0;
+    background-image: url(../images/barCafes/bars-icon-replacement.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.barHero h1{
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 51px;
+    color: #233038;
+    text-align: center;
+    margin: 100px auto 60px auto;
+    text-transform: uppercase;
+}
+
+.barHero .PubVerticalSlider img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 477px;
+}
+.barHero .hours span,.barHero .hours{
+    display: none;
+}
+.barHero .BarHorizontalSlider img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 986px;
+}
+.barHero article{
+    width: 70%;
+}
+.barHero p{
+    font-family: 'Montserrat', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+}
+
+
+.barHero .barDetailHeroText{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.barHero .hours span{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    color: rgba(35, 48, 56, 0.8);
+}
+.barSvg{
+    display: none;
+}
+.video-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-bottom:100px;
+}
+ .video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        max-width:1130px;
+width:58.854vw;
+}
+.restPlayButtonDesktop {
+    width: 100%;
+    height: 100%;
+}
+.restPlayButtonDesktop {
+    position: relative;
+    z-index: 10;
+}
+.video-wrapper .playButton {
+    height: 70px;
+    width: 70px;
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.videoCover {
+    width: 100%!important;
+    height: 100%!important;
+    object-fit: cover!important;
+    position: unset!important;
+}
+.video-section-title{
+    color: var(--gray, #233038);
+text-align: center;
+font-family: Lora;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom:40px;
+}
+
+@media screen and (max-width: 980px){
+  .restaurantModal iframe{
+    width:90vw;
+    height: 80vh;
+}
+.video-section{
+    margin-bottom:40px;
+}
+.video-wrapper{
+    max-width:none;
+    width:100vw;
+}
+
+
+    .barHero{
+    margin: 90px 0px 40px 0px;
+    }
+    .barHero .row{
+        flex-direction: column-reverse;
+    }
+
+    .barHero .barDetailHeroText{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    .barDetailHeroText p {
+        text-align: center;
+    }
+
+    .PubVerticalSlider figure{
+        display: flex;
+        justify-content: center;
+    }
+    .barHero h1{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .barHero h1,.video-section-title{
+        font-size: 25px!important;
+        line-height: 32px!important;
+    }
+    .barHero span{
+        font-size: 25px!important;
+        line-height: 38px!important;
+    }
+    .barHero p{
+        font-size: 13px!important;
+        line-height: 22px!important;
+    }
+
+   
+}
+.restaurantModal .modal-dialog{
+    max-width: none;
+    justify-content:center;
+}
+.restaurantModal .modal-content{
+    width:fit-content;
+}

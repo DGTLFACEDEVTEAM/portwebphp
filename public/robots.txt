@@ -1,0 +1,3 @@
+Sitemap: https://portnature.com.tr/sitemap.xml
+User-agent: *
+Disallow:

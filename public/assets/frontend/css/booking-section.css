@@ -1,0 +1,280 @@
+.child-age-text,
+.guest-title {
+    font-family: Montserrat;
+    font-style: normal
+}
+
+#adultCount,
+#childCount,
+.child-age-count,
+.people-item {
+    color: var(--gray, #233038);
+    line-height: normal;
+    font-family: Montserrat;
+    font-style: normal
+}
+
+.booking a,
+.booking input,
+.booking span {
+    font-weight: 300;
+    z-index: 10;
+    font-size: clamp(15px, 1vw, 20px);
+    line-height: clamp(20px, 1.25vw, 24px);
+    width: clamp(90px, 15.781vw, 303px);
+    height: clamp(40px, 3.125vw, 60px);
+    text-align: center;
+    text-decoration: none !important
+}
+
+.booking {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.guestMenu {
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    justify-content: center;
+    width: 233px;
+    border-radius: 0;
+    transform: none !important;
+    min-width: 100% !important;
+    position: absolute;
+    top: 100%;
+    gap: min(24px, 1.25vw);
+    left: 0;
+    padding: min(22px, 1.146vw) min(30px, 1.563vw);
+    align-items: center;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .1)
+}
+
+.guestDiv,
+.booking a {
+    position: relative
+}
+
+.booking a {
+    background-color: #233038;
+    color: #fff;
+    font-family: Montserrat, serif;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.booking input,
+.booking span,
+.guestMenu p {
+    color: #233038;
+    font-family: Montserrat, serif;
+    font-style: normal
+}
+
+.booking input,
+.booking span {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: #f8f8f8
+}
+
+.booking input {
+    border-right: 0
+}
+
+.adultCounter button,
+.childCounter button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    background-color: transparent;
+    border: 0
+}
+
+#adultCount,
+#childCount,
+.child-age-count {
+    border: 1px solid #d9d9d9;
+    width: 46px;
+    height: 24px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#adultCount,
+#childCount {
+    margin-right: 11px
+}
+
+.adult-selection-dropdown-menu,
+.child-age-dropdown-menu,
+.child-selection-dropdown-menu {
+    background: #fff !important;
+    border-radius: 0;
+    transform: none !important;
+    min-width: 1px!important;
+    width: 31%!important;
+    margin-right: -1px !important
+}
+
+.child-age-dropdown-menu {
+    min-width:1px!important;
+    width:31%!important;
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+.childAgeItem {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px var(--bs-dropdown-item-padding-x);
+}
+.dropdown-menu .people-item:first-of-type{
+    cursor:default!important;
+    user-select:none!important;
+}
+
+.people-item {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    text-align: center!important;
+    white-space:normal!important;
+    font-size: 16px;
+    font-weight: 600;
+    height: 35px;
+    width:100%!important;
+    cursor:pointer!important;
+}
+
+.child-age-text {
+    color: #aaa !important;
+    font-size: 11px !important;
+    margin: 0;
+    font-weight: 400 !important;
+    line-height: normal !important
+}
+
+.childAgeItem button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    border: none !important;
+    gap: 11px;
+    width: 100%;
+    background-color: transparent
+}
+
+.adultCounter,
+.childCounter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding: 8px var(--bs-dropdown-item-padding-x)!important;
+}
+.adultCounter:hover, .adultCounter:focus, .childCounter:hover, .childCounter:focus,.childAgeItem:hover,.childAgeItem:focus{
+    background-color:#2330380f!important;
+}
+
+.dropdown-menu .people-item:first-of-type:hover,.dropdown-menu .people-item:first-of-type:focus{
+    background-color: transparent!important;
+}
+.childCollapseWrapper,
+.guestDiv {
+    display: flex;
+    flex-direction: column
+}
+
+.childCollapseWrapper {
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0;
+}
+
+.guest-title {
+    color: var(--gray, #233038);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 0
+}
+
+@media screen and (max-width:576px) {
+    .guestMenu {
+        min-width: 150px !important;
+        width: fit-content;
+        padding: 5vw;
+        top: auto;
+        inset: auto !important
+    }
+
+    .adultCounter {
+        gap: 5vw
+    }
+
+    .booking {
+        flex-wrap: wrap;
+        height: 158px;
+        align-items: center;
+        padding: 30px 0
+    }
+
+    .booking input {
+        border-right: 1px solid rgba(0, 0, 0, .2) !important;
+        border-radius: 0 !important;
+        min-width: calc(45vw - 1px) !important
+    }
+
+    #checkin {
+        border-right: none !important
+    }
+
+    #checkout {
+        border-right: 1px solid rgba(0, 0, 0, .2)
+    }
+
+    .bookNow,
+    .guestDiv {
+        margin-top: -20px
+    }
+
+    .booking {
+        flex-wrap: wrap;
+        height: 158px;
+        align-items: center;
+        padding: 30px 0
+    }
+
+    #checkin,
+    #checkout,
+    .bookNow,
+    .guests {
+        width: calc(45vw - 1px) !important
+    }
+}

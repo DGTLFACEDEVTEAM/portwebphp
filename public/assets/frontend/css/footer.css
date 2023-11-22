@@ -1,0 +1,519 @@
+.footerRight,
+footer {
+    position: relative
+}
+
+footer {
+    background-repeat: no-repeat;
+    background-image: url("../images/footerBg.webp");
+    width: 100vw;
+    background-size: 100% 100%;
+    height: fit-content;
+    padding: 30px
+}
+
+.footerLocation p {
+    font-family: Lora, serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    margin-bottom: 0
+}
+
+.footerButtons a,
+.footerLocation span {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: nowrap;
+    color: #fff
+}
+
+.footerLocation span {
+    font-weight: 500
+}
+
+footer .specialSvg {
+    width: unset;
+    margin: 0
+}
+
+.footerLocation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start
+}
+
+.footerButtons,
+.footerCenter {
+    flex-direction: column;
+    display: flex
+}
+
+.footerRight:after {
+    content: '';
+    height: 1px;
+    width: 120vw;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, #cfcfcf 50%, #fff 100%);
+    opacity: .5;
+    display: block;
+    position: absolute;
+    top: 139px;
+    margin-left: -45%
+}
+
+.footerButtons {
+    width: 214px;
+    height: 49px;
+    gap: 20px;
+    margin-top: 37px
+}
+
+.footerRight .row {
+    margin-left: 2%
+}
+
+.footerButtons a {
+    text-decoration: none !important;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+    padding: 15px 40px;
+    border: 1px solid rgba(255, 255, 255, .8)
+}
+
+.footerButtons a:not(:hover) {
+    color: #fff;
+    background: 0 0;
+    transition: .3s linear
+}
+
+.footerButtons a:hover {
+    color: #232323;
+    background: #fff;
+    transition: .3s linear
+}
+
+.footerButtons svg clipPath:hover {
+    fill: #232323;
+    border: 5px solid red;
+    transition: .3s linear
+}
+
+.aboveFooterTextLine {
+    padding: 0 min(70px, 3.646vw)
+}
+
+.footerButtons .reverseButton:not(:hover) {
+    background: #fff !important;
+    color: #232323 !important;
+    transition: .3s linear
+}
+
+.footerButtons .reverseButton:hover {
+    color: #fff !important;
+    background: 0 0 !important;
+    transition: .3s linear
+}
+
+.footerButtons a:hover .specialSvg {
+    filter: invert(1)
+}
+
+.footerButtons .specialSvg {
+    transition: .4s ease-in-out
+}
+
+footer .footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: .2vw;
+    width: 300px;
+    margin-left: 0
+}
+
+footer img {
+    width: min(350px, 18.229vw);
+    height: auto;
+    object-fit: cover
+}
+
+.footerHeader {
+    font-family: Lora, serif;
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: clamp(12px, 1.042vw, 20px);
+    line-height: clamp(25px, 2vw, 42px);
+    color: #fff;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    padding-right: 10px
+}
+
+.footerCompany,
+.footerSub {
+    font-family: Montserrat, serif;
+    font-style: normal;
+    text-decoration: none !important
+}
+
+.footerCenter {
+    padding-left: 70px;
+    height: 286px;
+    align-items: flex-start;
+    justify-content: space-between
+}
+
+.footerHeader:hover,
+.footerSub:hover {
+    color: #cfcfcf;
+    transition: color .1s linear
+}
+
+.footerSub {
+    font-weight: 300;
+    font-size: clamp(11px, .781vw, 15px);
+    line-height: 15px;
+    color: #fff;
+    margin-top: 10px
+}
+
+footer .footerText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px
+}
+
+footer .col-lg-3 {
+    display: flex;
+    justify-content: space-between
+}
+
+.footerCompany {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 17px;
+    color: #cfcfcf;
+    display: block;
+    margin-top: 15px
+}
+
+.footerCompany span {
+    color: #45c5c5 !important
+}
+
+@media screen and (max-width:1300px) {
+    .aboveFooterTextLine {
+        padding: 0
+    }
+
+    .footerWrapper {
+        flex-direction: column;
+        gap: 10.072vw
+    }
+
+    .footerButtons a {
+        width: 31.894vw;
+        height: 5.775vw
+    }
+
+    footer .footerIcons {
+        width: 33.933vw;
+        gap: 4.077vw;
+        justify-content: flex-start
+    }
+
+    .footerChange {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start
+    }
+
+    .footerButtons {
+        margin-top: 0;
+        gap: 43px;
+        height: 207px;
+        justify-content: flex-start;
+        align-items: center
+    }
+
+    .footerCenter {
+        width: 34.412vw !important;
+        padding-left: 0;
+        align-items: flex-start !important;
+        justify-content: flex-start
+    }
+
+    footer .col-lg-4 {
+        width: 31.894vw !important
+    }
+
+    footer img {
+        margin: 3.118vw 0;
+        width: min(25.3vw, 211px)
+    }
+
+    .footerHeader,
+    .footerSub {
+        text-align: center
+    }
+
+    .footerHeader {
+        font-size: 14px;
+        margin-top: 0;
+        line-height: 20px
+    }
+
+    .footerSub {
+        font-size: 13px;
+        margin-top: 1.199vw;
+        line-height: 15px
+    }
+
+    footer .col-lg-3 {
+        width: 25% !important;
+        justify-content: flex-start
+    }
+
+    footer .specialSvg {
+        transform: scale(.9)
+    }
+
+    .footerHeader:after {
+        content: '';
+        width: 40%;
+        position: relative;
+        margin-top: 1.199vw;
+        height: 1px;
+        margin-left: 30%;
+        display: block;
+        align-self: center;
+        opacity: .5;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, #fff 50%, rgba(0, 0, 0, 0) 100%)
+    }
+
+    .footerText {
+        width: 100%
+    }
+
+    .footerDetails,
+    .footerRight {
+        width: 100% !important
+    }
+
+    footer {
+        padding: 5.995vw 10.791vw 75px;
+        height: fit-content;
+        background-image: url(../images/footer-tablet.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 70% 0
+    }
+
+    .footerRight .row {
+        justify-content: space-between;
+        margin-left: 0
+    }
+
+    .footerRight::after {
+        top: -7vw;
+        background: linear-gradient(to right, #cfcfcf 0, #cfcfcf 50%, #fff 100%);
+        width: 110vw;
+        left: 24vw
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .footerHeader,
+    .footerSub {
+        font-size: 13px !important;
+        white-space: nowrap
+    }
+
+    .footerButtons a {
+        width: 54.615vw;
+        height: 11.026vw;
+        min-width: 200px;
+        min-height: 50px
+    }
+
+    footer .footerIcons {
+        display: flex;
+        width: 100vw;
+        gap: min(40px, 10.26vw) !important;
+        position: relative;
+        padding: min(8.205vw, 70px) 0;
+        justify-content: center
+    }
+
+    .footerIcons::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100vw;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, .3)
+    }
+
+    .footerCenter,
+    footer .col-lg-4,
+    footer .col-lg-6,
+    footer .row .col-12 {
+        width: 100% !important
+    }
+
+    footer img {
+        width: clamp(100px, 54.103vw, 211px);
+        margin-top: min(8.205vw, 70px)
+    }
+
+    .footerCenter,
+    .footerCol {
+        height: fit-content
+    }
+
+    footer {
+        background-image: url(../images/home/footer-mobile-bg.webp);
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        background-size: cover
+    }
+
+    .footerRight .row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start
+    }
+
+    .footerHeader {
+        line-height: 20px !important;
+        text-align: center;
+        position: relative
+    }
+
+    .footerCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center !important;
+        flex-direction: column
+    }
+
+    footer .col-lg-3 {
+        padding: 0 5vw !important;
+        justify-content: center !important;
+        width: 37% !important;
+        min-width: 130px
+    }
+
+    .pageUp {
+        margin-top: 60px !important;
+        margin-bottom: 10px !important
+    }
+
+    .footerChange {
+        gap: 40px
+    }
+
+    .footerHeader:after {
+        content: '';
+        height: 1px;
+        display: block;
+        margin-top: 10px;
+        margin-left: -25%;
+        width: 150%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 0, #fff 50%, rgba(0, 0, 0, 0) 100%)
+    }
+
+    .footerButtons {
+        margin-bottom: 37px;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        gap: min(30px, 7.692vw);
+        justify-content: center;
+        margin-right: 0;
+        align-items: center
+    }
+
+    .footerCompany {
+        text-align: center !important;
+        margin-top: 20px !important
+    }
+
+    .footerSub {
+        line-height: 15px !important;
+        margin-top: 10px;
+        text-align: center
+    }
+
+    .footerCol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column
+    }
+
+    .footerChange {
+        flex-direction: column-reverse
+    }
+
+    .footerLocation {
+        justify-content: center;
+        gap: 20px;
+        margin-top: 16px;
+        margin-bottom: 40px
+    }
+
+    .footerRight {
+        padding: 0 !important
+    }
+
+    .footerRight .row {
+        margin-left: 0 !important
+    }
+
+    .footerRight:after {
+        display: none
+    }
+
+    .footerHeader {
+        padding-right: 0
+    }
+
+    .specialSvg {
+        transform: scale(1)
+    }
+}
+
+.fixedBookNow {
+    display: none
+}
+
+.contact .pageUpButton {
+    margin-top: 50px
+}
+
+.pageUpButton {
+    width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    margin: 3vw 0
+}
+
+.pageUpButton img {
+    width: unset !important;
+    height: unset !important;
+    object-fit: unset !important
+}
