@@ -107,7 +107,7 @@
             'h1' => 'Hoş Geldiniz',
         ],
     ];
-    // '' => '',
+
 @endphp
 
 <div class="cookieConstentContainer">
