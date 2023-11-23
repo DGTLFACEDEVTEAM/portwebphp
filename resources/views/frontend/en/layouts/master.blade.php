@@ -105,6 +105,10 @@
     @yield('content')
 
     @include('frontend.en.layouts.footer')
+    <!-- cookieConsent -->
+
+    <!-- cookieConsent end -->
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/flatpickr.min.css') }}" media="print"
@@ -330,6 +334,10 @@
         }
     </script>
 
+
+    @include('components.cookie', ['lang' => 'en'])
+
+    <!-- End-->
 </body>
 
 </html>
