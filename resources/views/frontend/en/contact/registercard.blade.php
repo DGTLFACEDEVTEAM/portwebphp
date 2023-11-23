@@ -30,7 +30,7 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p style="width: 100vw;"> cenk ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
+                        <p style="width: 100vw;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
                          <img loading="lazy" src="https://portnature.com.tr/assets/frontend/images/contact/misafir-aydinlatma.svg" style="width: 200px; height:200px;" alt="Kvkk QR CODE">
    
                        </div>

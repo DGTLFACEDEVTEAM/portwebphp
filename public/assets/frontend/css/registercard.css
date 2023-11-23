@@ -15,22 +15,24 @@ width: 87vw!important;
 }
 
 .accordion-item {
-    background-color: transparent!important; /* or your desired color */
-    outline: none!important; /* This removes the blue outline */
+    background-color: transparent!important; 
+    outline: none!important; 
     width: 90vw!important;
+    text-decoration-color: black!important;
 }  
 
 
 .accordion-button:not(.collapsed) {
-    background-color: transparent!important; /* or your desired color */
-    outline: none!important; /* This removes the blue outline */
+    background-color: transparent!important; 
+    outline: none!important; 
+    text-decoration-color: black!important;
 }
 
 .accordion-button:focus {
-    background-color: transparent!important; /* or your desired color */
-    outline: none!important; /* This removes the blue outline */
+    background-color: transparent!important; 
+    outline: none!important; 
   }
 
   button:focus {
-    outline: none!important; /* This removes the blue outline */
+    outline: none!important; 
   } 
