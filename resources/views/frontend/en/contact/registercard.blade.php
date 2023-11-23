@@ -14,7 +14,6 @@
         <li><a class="dropdown-item first-item" href="{{ route('de-contacts') }}">DE</a></li>
     </ul>
 </li>
-
 @endsection
 
 @section('content')
@@ -30,9 +29,8 @@
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p style="width: 100vw;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
+                        <p style="width: 100vw; text-align: left!important;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
                          <img loading="lazy" src="https://portnature.com.tr/assets/frontend/images/contact/misafir-aydinlatma.svg" style="width: 200px; height:200px;" alt="Kvkk QR CODE">
-   
                        </div>
                   </div>
                 </div>
@@ -44,9 +42,8 @@
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                     <p style="width: 100vw;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
+                     <p style="width: 100vw; text-align: left!important;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
                       <img loading="lazy" src="https://portnature.com.tr/assets/frontend/images/contact/misafir-aydinlatma.svg" style="width: 200px; height:200px;" alt="Kvkk QR CODE">
-
                     </div>
                   </div>
                 </div>
@@ -58,9 +55,8 @@
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p style="width: 100vw;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
+                        <p style="width: 100vw; text-align: left!important;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
                          <img loading="lazy" src="https://portnature.com.tr/assets/frontend/images/contact/misafir-aydinlatma.svg" style="width: 200px; height:200px;" alt="Kvkk QR CODE">
-   
                        </div>
                   </div>
                 </div>
@@ -72,16 +68,13 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <p style="width: 100vw;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
+                            <p style="width: 100vw; text-align: left!important;">ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ “PORT NATURE” olarak siz değerli misafirlerimizin birtakım kişisel verilerini müşteri ilişkileri yönetimi süreçlerinin yürütülmesi amacıyla işlemekteyiz. İşlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması Kanunu gereği aydınlatma yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="https://portnature.com.tr/misafir-aydinlatma">https://portnature.com.tr/misafir-aydinlatma</a> adresinden ya da aşağıdaki QR kod üzerinden ulaşabilirsiniz.</p> 
                              <img loading="lazy" src="https://portnature.com.tr/assets/frontend/images/contact/misafir-aydinlatma.svg" style="width: 200px; height:200px;" alt="Kvkk QR CODE">
-       
                            </div>
                     </div>
                   </div>
               </div>
-
             </div>
-
         </div>
     </main>
 
