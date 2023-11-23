@@ -1,26 +1,36 @@
-.content{
+.menu{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
+    flex-direction: row;
+    margin-top: 250px;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin-top: 250px;
-    text-align: center;
-    gap: 50px;
-    padding-left: 200px;
-    }
+p{
+width: 87vw!important;
+}
+.collapsed{
+    width: 90vw!important;
+}
 
-    
-    .div1 { grid-area: 1 / 1 / 2 / 2; }
-    .div2 { grid-area: 2 / 1 / 3 / 2; }
-    .div3 { grid-area: 2 / 2 / 3 / 3; }
-    .div4 { grid-area: 1 / 2 / 2 / 3; }
+.accordion-item {
+    background-color: transparent!important; /* or your desired color */
+    outline: none!important; /* This removes the blue outline */
+    width: 90vw!important;
+}  
 
-    
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent!important; /* or your desired color */
+    outline: none!important; /* This removes the blue outline */
+}
+
+.accordion-button:focus {
+    background-color: transparent!important; /* or your desired color */
+    outline: none!important; /* This removes the blue outline */
+  }
+
+  button:focus {
+    outline: none!important; /* This removes the blue outline */
+  } 
