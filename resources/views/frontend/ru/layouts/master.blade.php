@@ -262,7 +262,9 @@
         <div><img src="https://mc.yandex.ru/watch/92210931" style="position:absolute; left:-9999px;" alt="" />
         </div>
     </noscript>
+    @include('components.cookie', ['lang' => 'ru'])
     <!-- /Yandex.Metrika counter -->
+
 </body>
 
 </html>
