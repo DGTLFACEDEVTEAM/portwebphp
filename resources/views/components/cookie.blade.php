@@ -97,8 +97,8 @@
                 ],
             ],
         ],
-                    'ru' => [
-                        'cookieConstentTitle' => 'Мы используем куки',
+        'ru' => [
+            'cookieConstentTitle' => 'Мы используем куки',
             'cookieConstentDesc' => 'Мы используем собственные и сторонние куки для персонализации содержания и анализа веб-трафика. Подробнее о куки',
             'cookieConstentAccept' => 'Принять все куки',
             'cookieConstentManage' => 'Управление настройками куки',
@@ -174,12 +174,12 @@
                         'switch' => 'Active',
                         'css' => 'functional',
                     ],
-                [
-                    'title' => 'Целевые куки',
-                    'desc' => 'Эти куки могут быть установлены на нашем сайте нашими рекламными партнерами. Они могут использоваться этими компаниями для создания профиля ваших интересов и показа вам соответствующей рекламы на других сайтах. Они не хранят непосредственно личную информацию, но основаны на уникальной идентификации вашего браузера и интернет-устройства. Если вы не разрешите использование этих куки, вы столкнетесь с менее целенаправленной рекламой.',
-                    'switch' => 'Active',
-                    'css' => 'targeting',
-                ],
+                    [
+                        'title' => 'Целевые куки',
+                        'desc' => 'Эти куки могут быть установлены на нашем сайте нашими рекламными партнерами. Они могут использоваться этими компаниями для создания профиля ваших интересов и показа вам соответствующей рекламы на других сайтах. Они не хранят непосредственно личную информацию, но основаны на уникальной идентификации вашего браузера и интернет-устройства. Если вы не разрешите использование этих куки, вы столкнетесь с менее целенаправленной рекламой.',
+                        'switch' => 'Active',
+                        'css' => 'targeting',
+                    ],
                 ],
                 'cookieActionBtns' => [
                     [
@@ -194,7 +194,7 @@
             ],
         ],
         'de' => [
-                    'cookieConstentTitle' => 'Wir verwenden Cookies',
+            'cookieConstentTitle' => 'Wir verwenden Cookies',
             'cookieConstentDesc' => 'Wir verwenden eigene Cookies und Cookies von Drittanbietern, um Inhalte zu personalisieren und den Webverkehr zu analysieren. Mehr über Cookies erfahren',
             'cookieConstentAccept' => 'Alle Cookies akzeptieren',
             'cookieConstentManage' => 'Cookie-Einstellungen verwalten',
