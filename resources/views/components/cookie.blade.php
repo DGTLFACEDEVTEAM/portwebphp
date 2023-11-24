@@ -139,7 +139,7 @@
                 ],
                 'cookieRightB' => [
                     [
-                        'btnText' => 'Подтвердить мой выбор',
+                        'btnText' => 'Подтверждаю',
                         'btnCss' => 'ccam',
                     ],
                     [
