@@ -277,7 +277,7 @@
         </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-
+    @include('components.cookie', ['lang' => 'de'])
 </body>
 
 </html>
