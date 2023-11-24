@@ -11,14 +11,14 @@
                 'cookieBtn' => ['Cookies', 'Strictly Necessary', 'Performance', 'Functional', 'Targeting'],
                 'cookieRightT' => [
                     [
-                        'title' => 'Cookie Settings',
-                        'desc' => 'When you visit any of our websites, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and manage your preferences. Please note, blocking some types of cookies may impact your experience of the site and the services we are able to offer.',
+                        'title' => 'What are cookies?',
+                        'desc' => 'Cookies are small text files placed on your device by websites you visit. They are used to remember your preferences, such as login information, and to track website performance. This ensures a more personalized and efficient online experience.',
                         'switch' => 'None',
                         'css' => 'default',
                     ],
                     [
                         'title' => 'Strictly Necessary',
-                        'desc' => 'These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. These cookies do not store any personally identifiable information.',
+                        'desc' => 'Mandatory cookies are essential for the website to function properly. Without these cookies, the website cannot operate effectively. These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. These cookies do not store any personally identifiable information.',
                         'switch' => 'Disable',
                         'css' => 'necessary',
                     ],
@@ -56,7 +56,7 @@
                 'cookieAccs' => [
                     [
                         'title' => 'Cookie Settings',
-                        'desc' => 'When you visit any of our websites, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and manage your preferences. Please note, blocking some types of cookies may impact your experience of the site and the services we are able to offer.',
+                        'desc' => 'Cookies are small text files placed on your device by websites you visit. They are used to remember your preferences, such as login information, and to track website performance. This ensures a more personalized and efficient online experience.',
                         'switch' => 'None',
                         'css' => 'default',
                     ],
@@ -97,14 +97,293 @@
                 ],
             ],
         ],
-        'ru' => [
-            'h1' => 'ДОБРО ПОЖАЛОВАТЬ В',
+                    'ru' => [
+                        'cookieConstentTitle' => 'Мы используем куки',
+            'cookieConstentDesc' => 'Мы используем собственные и сторонние куки для персонализации содержания и анализа веб-трафика. Подробнее о куки',
+            'cookieConstentAccept' => 'Принять все куки',
+            'cookieConstentManage' => 'Управление настройками куки',
+            'cookieHeader' => 'Управление настройками куки',
+            'cookieDesktop' => [
+                'cookieBtn' => ['Куки', 'Строго необходимые', 'Производительность', 'Функциональные', 'Целевые'],
+                'cookieRightT' => [
+                    [
+                        'title' => 'Что такое куки?',
+                        'desc' => 'Куки — это небольшие текстовые файлы, которые веб-сайты, которые вы посещаете, размещают на вашем устройстве. Они используются для запоминания ваших предпочтений, таких как информация для входа, и отслеживания производительности сайта. Это обеспечивает более персонализированный и эффективный онлайн-опыт.',
+                        'switch' => 'None',
+                        'css' => 'default',
+                    ],
+                    [
+                        'title' => 'Строго необходимые',
+                        'desc' => 'Обязательные куки необходимы для правильной работы веб-сайта. Без этих куки веб-сайт не сможет эффективно функционировать. Эти куки необходимы для работы сайта и не могут быть отключены в наших системах. Обычно они устанавливаются только в ответ на действия, которые вы совершаете и которые являются запросом на услуги, такие как установка ваших настроек конфиденциальности, вход в систему или заполнение форм. Эти куки не хранят никакой личной информации.',
+                        'switch' => 'Disable',
+                        'css' => 'necessary',
+                    ],
+                    [
+                        'title' => 'Куки производительности',
+                        'desc' => 'Эти куки позволяют нам подсчитывать посещения и источники трафика, чтобы мы могли измерять и улучшать производительность нашего сайта. Они помогают нам знать, какие страницы наиболее и наименее популярны, и видеть, как посетители перемещаются по сайту, что помогает нам оптимизировать ваш опыт. Вся информация, собранная этими куками, агрегирована и поэтому анонимна. Если вы не разрешите эти куки, мы не сможем использовать ваши данные таким образом.',
+                        'switch' => 'Active',
+                        'css' => 'performance',
+                    ],
+                    [
+                        'title' => 'Функциональные куки',
+                        'desc' => 'Эти куки позволяют веб-сайту предоставлять расширенные функциональные возможности и персонализацию. Они могут быть установлены нами или сторонними провайдерами, чьи услуги мы добавили на наши страницы. Если вы не разрешите эти куки, то некоторые или все эти услуги могут работать неправильно.',
+                        'switch' => 'Active',
+                        'css' => 'functional',
+                    ],
+                    [
+                        'title' => 'Целевые куки',
+                        'desc' => 'Эти куки могут быть установлены через наш сайт нашими рекламными партнерами. Они могут использоваться этими компаниями для создания профиля ваших интересов и показа вам соответствующей рекламы на других сайтах. Они не хранят непосредственно личную информацию, но основаны на уникальной идентификации вашего браузера и интернет-устройства. Если вы не разрешите эти куки, вы столкнетесь с менее целенаправленной рекламой.',
+                        'switch' => 'Active',
+                        'css' => 'targeting',
+                    ],
+                ],
+                'cookieRightB' => [
+                    [
+                        'btnText' => 'Подтвердить мой выбор',
+                        'btnCss' => 'ccam',
+                    ],
+                    [
+                        'btnText' => 'Принять все куки',
+                        'btnCss' => 'ccaa',
+                    ],
+                ],
+            ],
+            'cookieMobile' => [
+                'cookieAccs' => [
+                    [
+                        'title' => 'Настройки куки',
+                        'desc' => 'Куки — это небольшие текстовые файлы, которые веб-сайты, которые вы посещаете, размещают на вашем устройстве. Они используются для запоминания ваших предпочтений, таких как информация для входа, и отслеживания производительности сайта. Это обеспечивает более персонализированный и эффективный онлайн-опыт.',
+                        'switch' => 'None',
+                        'css' => 'default',
+                    ],
+                    [
+                        'title' => 'Строго необходимые',
+                        'desc' => 'Эти куки необходимы для функционирования веб-сайта и не могут быть отключены в наших системах. Обычно они устанавливаются только в ответ на действия, которые вы совершаете и которые являются запросом на услуги, такие как установка ваших настроек конфиденциальности, вход в систему или заполнение форм. Эти куки не хранят никакой личной информации.',
+                        'switch' => 'Disable',
+                        'css' => 'necessary',
+                    ],
+                    [
+                        'title' => 'Куки производительности',
+                        'desc' => 'Эти куки позволяют нам подсчитывать посещения и источники трафика, чтобы мы могли измерять и улучшать производительность нашего сайта. Они помогают нам знать, какие страницы наиболее и наименее популярны, и видеть, как посетители перемещаются по сайту, что помогает нам оптимизировать ваш опыт. Вся информация, собранная этими куками, агрегирована и поэтому анонимна. Если вы не разрешите эти куки, мы не сможем использовать ваши данные таким образом.',
+                        'switch' => 'Active',
+                        'css' => 'performance',
+                    ],
+                    [
+                        'title' => 'Функциональные куки',
+                        'desc' => 'Эти куки позволяют веб-сайту предоставлять расширенные функциональные возможности и персонализацию. Они могут быть установлены нами или сторонними провайдерами, чьи услуги мы добавили на наши страницы. Если вы не разрешите эти куки, то некоторые или все эти услуги могут работать неправильно.',
+                        'switch' => 'Active',
+                        'css' => 'functional',
+                    ],
+                [
+                    'title' => 'Целевые куки',
+                    'desc' => 'Эти куки могут быть установлены на нашем сайте нашими рекламными партнерами. Они могут использоваться этими компаниями для создания профиля ваших интересов и показа вам соответствующей рекламы на других сайтах. Они не хранят непосредственно личную информацию, но основаны на уникальной идентификации вашего браузера и интернет-устройства. Если вы не разрешите использование этих куки, вы столкнетесь с менее целенаправленной рекламой.',
+                    'switch' => 'Active',
+                    'css' => 'targeting',
+                ],
+                ],
+                'cookieActionBtns' => [
+                    [
+                        'btnText' => 'Подтвердить мой выбор',
+                        'btnCss' => 'ccam',
+                    ],
+                    [
+                        'btnText' => 'Принять все куки',
+                        'btnCss' => 'ccaa',
+                    ],
+                ],
+            ],
         ],
         'de' => [
-            'h1' => 'Willkommen Im',
+                    'cookieConstentTitle' => 'Wir verwenden Cookies',
+            'cookieConstentDesc' => 'Wir verwenden eigene Cookies und Cookies von Drittanbietern, um Inhalte zu personalisieren und den Webverkehr zu analysieren. Mehr über Cookies erfahren',
+            'cookieConstentAccept' => 'Alle Cookies akzeptieren',
+            'cookieConstentManage' => 'Cookie-Einstellungen verwalten',
+            'cookieHeader' => 'Cookie-Einstellungen verwalten',
+            'cookieDesktop' => [
+                'cookieBtn' => ['Cookies', 'Unbedingt erforderlich', 'Leistung', 'Funktional', 'Zielgerichtet'],
+                'cookieRightT' => [
+                    [
+                        'title' => 'Cookie-Einstellungen',
+                        'desc' => 'Wenn Sie unsere Website besuchen, können Informationen in Ihrem Browser gespeichert oder abgerufen werden, meist in Form von Cookies. Diese Informationen können sich auf Sie, Ihre Präferenzen oder Ihr Gerät beziehen und werden meist genutzt, um die Website so zu gestalten, wie Sie es erwarten. Die Informationen identifizieren Sie normalerweise nicht direkt, können Ihnen jedoch eine personalisiertere Web-Erfahrung bieten. Da wir Ihr Recht auf Privatsphäre respektieren, können Sie sich entscheiden, bestimmte Cookie-Typen nicht zuzulassen. Klicken Sie auf die verschiedenen Kategorienüberschriften, um mehr zu erfahren und Ihre Einstellungen zu verwalten. Bitte beachten Sie, dass das Blockieren einiger Arten von Cookies Ihre Erfahrung auf der Website und die von uns angebotenen Dienste beeinträchtigen kann.',
+                        'switch' => 'None',
+                        'css' => 'default',
+                    ],
+                    [
+                        'title' => 'Unbedingt erforderliche Cookies',
+                        'desc' => 'Diese Cookies sind für das Funktionieren der Website notwendig und können in unseren Systemen nicht ausgeschaltet werden. Sie werden normalerweise nur als Reaktion auf Aktionen Ihrerseits gesetzt, die einer Dienstanforderung entsprechen, wie das Setzen Ihrer Datenschutzeinstellungen, das Einloggen oder das Ausfüllen von Formularen. Diese Cookies speichern keine persönlich identifizierbaren Informationen.',
+                        'switch' => 'Disable',
+                        'css' => 'necessary',
+                    ],
+                    [
+                        'title' => 'Leistungs-Cookies',
+                        'desc' => 'Diese Cookies ermöglichen es uns, Besuche und Verkehrsquellen zu zählen, sodass wir die Leistung unserer Seite messen und verbessern können. Sie helfen uns zu wissen, welche Seiten am meisten und am wenigsten beliebt sind und zu sehen, wie sich Besucher auf der Website bewegen, was uns hilft, Ihre Erfahrung zu optimieren. Alle Informationen, die diese Cookies sammeln, werden zusammengefasst und sind daher anonym. Wenn Sie diese Cookies nicht zulassen, können wir Ihre Daten nicht auf diese Weise nutzen.',
+                        'switch' => 'Active',
+                        'css' => 'performance',
+                    ],
+                    [
+                        'title' => 'Funktionale Cookies',
+                        'desc' => 'Diese Cookies ermöglichen eine verbesserte Funktionalität und Personalisierung der Website. Sie können von uns oder von Drittanbietern gesetzt werden, deren Dienste wir zu unseren Seiten hinzugefügt haben. Wenn Sie diese Cookies nicht zulassen, funktionieren möglicherweise einige oder alle dieser Dienste nicht ordnungsgemäß.',
+                        'switch' => 'Active',
+                        'css' => 'functional',
+                    ],
+                    [
+                        'title' => 'Zielgerichtete Cookies',
+                        'desc' => 'Diese Cookies können über unsere Website von unseren Werbepartnern gesetzt werden. Sie können von diesen Unternehmen verwendet werden, um ein Profil Ihrer Interessen zu erstellen und Ihnen relevante Anzeigen auf anderen Websites zu zeigen. Sie speichern keine persönlichen Informationen direkt, sondern basieren auf der eindeutigen Identifizierung Ihres Browsers und Internetgeräts. Wenn Sie diese Cookies nicht zulassen, werden Sie weniger zielgerichtete Werbung erleben.',
+                        'switch' => 'Active',
+                        'css' => 'targeting',
+                    ],
+                ],
+                'cookieRightB' => [
+                    [
+                        'btnText' => 'Meine Auswahl bestätigen',
+                        'btnCss' => 'ccam',
+                    ],
+                    [
+                        'btnText' => 'Alle Cookies akzeptieren',
+                        'btnCss' => 'ccaa',
+                    ],
+                ],
+            ],
+            'cookieMobile' => [
+                'cookieAccs' => [
+                    [
+                        'title' => 'Cookie-Einstellungen',
+                        'desc' => 'Wenn Sie eine unserer Webseiten besuchen, kann es sein, dass Informationen in Ihrem Browser gespeichert oder abgerufen werden, meist in Form von Cookies. Diese Informationen können sich auf Sie, Ihre Präferenzen oder Ihr Gerät beziehen und werden hauptsächlich verwendet, um die Seite so funktionieren zu lassen, wie Sie es erwarten. Die Informationen identifizieren Sie normalerweise nicht direkt, können Ihnen aber ein personalisierteres Web-Erlebnis bieten. Da wir Ihr Recht auf Privatsphäre respektieren, können Sie sich entscheiden, bestimmte Arten von Cookies nicht zuzulassen. Klicken Sie auf die verschiedenen Kategorieüberschriften, um mehr zu erfahren und Ihre Einstellungen zu verwalten. Bitte beachten Sie, dass das Blockieren einiger Arten von Cookies Ihre Erfahrung auf der Website und die von uns angebotenen Dienste beeinträchtigen kann.',
+                        'switch' => 'None',
+                        'css' => 'default',
+                    ],
+                    [
+                        'title' => 'Unbedingt erforderliche Cookies',
+                        'desc' => 'Diese Cookies sind für das Funktionieren der Webseite notwendig und können in unseren Systemen nicht deaktiviert werden. Sie werden normalerweise nur als Reaktion auf von Ihnen durchgeführte Aktionen gesetzt, die einer Dienstanforderung entsprechen, wie das Setzen Ihrer Datenschutzeinstellungen, das Einloggen oder das Ausfüllen von Formularen. Diese Cookies speichern keine persönlich identifizierbaren Informationen.',
+                        'switch' => 'Disable',
+                        'css' => 'necessary',
+                    ],
+                    [
+                        'title' => 'Leistungs-Cookies',
+                        'desc' => 'Diese Cookies ermöglichen es uns, Besuche und Verkehrsquellen zu zählen, damit wir die Leistung unserer Seite messen und verbessern können. Sie helfen uns zu verstehen, welche Seiten am meisten und am wenigsten beliebt sind und wie sich Besucher auf der Seite bewegen, was uns hilft, Ihr Erlebnis zu optimieren. Alle Informationen, die diese Cookies sammeln, werden zusammengefasst und sind daher anonym. Wenn Sie diese Cookies nicht zulassen, können wir Ihre Daten nicht auf diese Weise verwenden.',
+                        'switch' => 'Active',
+                        'css' => 'performance',
+                    ],
+                    [
+                        'title' => 'Funktionale Cookies',
+                        'desc' => 'Diese Cookies ermöglichen es der Webseite, verbesserte Funktionalität und Personalisierung bereitzustellen. Sie können von uns oder von Drittanbietern gesetzt werden, deren Dienste wir zu unseren Seiten hinzugefügt haben. Wenn Sie diese Cookies nicht zulassen, funktionieren möglicherweise einige oder alle dieser Dienste nicht richtig.',
+                        'switch' => 'Active',
+                        'css' => 'functional',
+                    ],
+                    [
+                        'title' => 'Zielgerichtete Cookies',
+                        'desc' => 'Diese Cookies können über unsere Seite von unseren Werbepartnern gesetzt werden. Sie können von diesen Unternehmen verwendet werden, um ein Profil Ihrer Interessen zu erstellen und Ihnen relevante Anzeigen auf anderen Seiten zu zeigen. Sie speichern keine persönlichen Informationen direkt, sondern basieren auf der einzigartigen Identifikation Ihres Browsers und Internetgeräts. Wenn Sie diese Cookies nicht zulassen, werden Sie eine weniger zielgerichtete Werbung erfahren.',
+                        'switch' => 'Active',
+                        'css' => 'targeting',
+                    ],
+                ],
+                'cookieActionBtns' => [
+                    [
+                        'btnText' => 'Meine Auswahl bestätigen',
+                        'btnCss' => 'ccam',
+                    ],
+                    [
+                        'btnText' => 'Alle Cookies akzeptieren',
+                        'btnCss' => 'ccaa',
+                    ],
+                ],
+            ],
         ],
         'tr' => [
-            'h1' => 'Hoş Geldiniz',
+            'cookieConstentTitle' => 'Çerez Kullanıyoruz',
+            'cookieConstentDesc' => 'İçeriği kişiselleştirmek ve web trafiğini analiz etmek için kendi çerezlerimizi ve üçüncü taraf çerezleri kullanıyoruz. Çerezler hakkında daha fazla bilgi edinin',
+            'cookieConstentAccept' => 'Tüm Çerezleri Kabul Et',
+            'cookieConstentManage' => 'Çerez Tercihlerini Yönet',
+            'cookieHeader' => 'Çerez Tercihlerini Yönet',
+            'cookieDesktop' => [
+                'cookieBtn' => ['Çerezler', 'Zorunlu Çerezler', 'Performans', 'İşlevsel', 'Hedefleme'],
+                'cookieRightT' => [
+                    [
+                        'title' => 'Çerez Ayarları',
+                        'desc' => 'Web sitemizi ziyaret ettiğinizde, çoğunlukla çerezler şeklinde tarayıcınızda bilgi depolanabilir veya alınabilir. Bu bilgiler sizin, tercihleriniz veya cihazınız hakkında olabilir ve genellikle siteyi beklediğiniz gibi çalıştırmak için kullanılır. Bilgiler genellikle sizi doğrudan tanımlamaz, ancak size daha kişiselleştirilmiş bir web deneyimi sunabilir. Gizlilik hakkınıza saygı duyduğumuz için, bazı çerez türlerini kabul etmemeyi tercih edebilirsiniz. Tercihlerinizi yönetmek ve daha fazla bilgi edinmek için farklı kategori başlıklarına tıklayın. Lütfen unutmayın, bazı çerez türlerini engellemek sitenin ve sunabileceğimiz hizmetlerin deneyiminizi etkileyebilir.',
+                        'switch' => 'None',
+                        'css' => 'default',
+                    ],
+                    [
+                        'title' => 'Zorunlu Çerezler',
+                        'desc' => 'Bu çerezler, web sitesinin işlev görebilmesi için gereklidir ve sistemlerimizde kapatılamazlar. Genellikle yalnızca gizlilik tercihlerinizi belirleme, oturum açma veya formları doldurma gibi sizin tarafınızdan yapılan hizmet talebi niteliğindeki eylemlere yanıt olarak ayarlanırlar. Bu çerezler kişisel olarak tanımlanabilir bilgileri saklamaz.',
+                        'switch' => 'Disable',
+                        'css' => 'necessary',
+                    ],
+                    [
+                        'title' => 'Performans Çerezleri',
+                        'desc' => 'Bu çerezler, ziyaretleri ve trafik kaynaklarını saymamıza izin vererek sitemizin performansını ölçmemize ve iyileştirmemize olanak tanır. Hangi sayfaların en popüler ve en az popüler olduğunu bilmemize ve ziyaretçilerin site etrafında nasıl hareket ettiğini görmemize yardımcı olur, bu da deneyiminizi optimize etmemize yardımcı olur. Bu çerezlerin topladığı tüm bilgiler toplandığı için anonimdir. Bu çerezlere izin vermezseniz, verilerinizi bu şekilde kullanamayız.',
+                        'switch' => 'Active',
+                        'css' => 'performance',
+                    ],
+                    [
+                        'title' => 'İşlevsel Çerezler',
+                        'desc' => 'Bu çerezler, web sitesinin gelişmiş işlevsellik ve kişiselleştirme sunmasını sağlar. Kendi çerezlerimiz ya da sayfalarımıza eklediğimiz üçüncü taraf hizmet sağlayıcıları tarafından ayarlanabilirler. Bu çerezlere izin vermezseniz, bu hizmetlerin bazıları veya tamamı düzgün çalışmayabilir.',
+                        'switch' => 'Active',
+                        'css' => 'functional',
+                    ],
+                    [
+                        'title' => 'Hedefleme Çerezleri',
+                        'desc' => 'Bu çerezler, reklam ortaklarımız tarafından sitemiz üzerinden ayarlanabilir. Bu şirketler, ilgi alanlarınızın bir profilini oluşturmak ve diğer sitelerde size ilgili reklamları göstermek için bu çerezleri kullanabilirler. Doğrudan kişisel bilgileri saklamazlar, ancak tarayıcınızı ve internet cihazınızı benzersiz bir şekilde tanımlamaya dayanırlar. Bu çerezlere izin vermezseniz, daha az hedeflenmiş reklamcılık deneyimi yaşarsınız.',
+                        'switch' => 'Active',
+                        'css' => 'targeting',
+                    ],
+                ],
+                'cookieRightB' => [
+                    [
+                        'btnText' => 'Seçimlerimi Onayla',
+                        'btnCss' => 'ccam',
+                    ],
+                    [
+                        'btnText' => 'Tüm Çerezleri Kabul Et',
+                        'btnCss' => 'ccaa',
+                    ],
+                ],
+            ],
+            'cookieMobile' => [
+                'cookieAccs' => [
+                    [
+                        'title' => 'Çerez Ayarları',
+                        'desc' => 'Web sitelerimizden herhangi birini ziyaret ettiğinizde, tarayıcınızda genellikle çerezler şeklinde bilgiler depolanabilir veya alınabilir. Bu bilgiler sizin, tercihleriniz veya cihazınız hakkında olabilir ve genellikle siteyi beklediğiniz gibi çalıştırmak için kullanılır. Bu bilgiler genellikle sizi doğrudan tanımlamaz, ancak size daha kişiselleştirilmiş bir web deneyimi sunabilir. Gizlilik hakkınıza saygı gösterdiğimiz için, bazı çerez türlerine izin vermemeyi seçebilirsiniz. Tercihlerinizi yönetmek ve daha fazla bilgi edinmek için farklı kategori başlıklarına tıklayın. Lütfen unutmayın, bazı çerez türlerini engellemek, sitenin ve sunabileceğimiz hizmetlerin deneyiminizi etkileyebilir.',
+                        'switch' => 'None',
+                        'css' => 'default',
+                    ],
+                    [
+                        'title' => 'Zorunlu Çerezler',
+                        'desc' => 'Bu çerezler, web sitesinin işlev görmesi için gereklidir ve sistemlerimizde kapatılamazlar. Genellikle, gizlilik tercihlerinizi ayarlama, oturum açma veya formları doldurma gibi sizin tarafınızdan yapılan hizmet taleplerine yanıt olarak ayarlanırlar. Bu çerezler kişisel tanımlanabilir bilgileri saklamaz.',
+                        'switch' => 'Disable',
+                        'css' => 'necessary',
+                    ],
+                    [
+                        'title' => 'Performans Çerezleri',
+                        'desc' => 'Bu çerezler, ziyaretleri ve trafik kaynaklarını sayarak sitemizin performansını ölçmemize ve iyileştirmemize olanak tanır. Hangi sayfaların en çok ve en az popüler olduğunu bilmemize ve ziyaretçilerin site içinde nasıl hareket ettiğini görmemize yardımcı olur, bu da deneyiminizi optimize etmemize yardımcı olur. Bu çerezlerin topladığı tüm bilgiler toplu olduğundan anonimdir. Bu çerezlere izin vermezseniz, verilerinizi bu şekilde kullanamayız.',
+                        'switch' => 'Active',
+                        'css' => 'performance',
+                    ],
+                    [
+                        'title' => 'İşlevsel Çerezler',
+                        'desc' => 'Bu çerezler, web sitesine geliştirilmiş işlevsellik ve kişiselleştirme sağlamasını sağlar. Bu çerezler, kendimiz veya sayfalarımıza eklediğimiz üçüncü taraf hizmet sağlayıcıları tarafından ayarlanabilir. Bu çerezlere izin vermezseniz, bu hizmetlerin bazıları veya tamamı düzgün çalışmayabilir.',
+                        'switch' => 'Active',
+                        'css' => 'functional',
+                    ],
+                    [
+                        'title' => 'Hedefleme Çerezleri',
+                        'desc' => 'Bu çerezler, reklam ortaklarımız tarafından sitemiz aracılığıyla ayarlanabilir. Bu şirketler tarafından, ilgi alanlarınızın bir profilini oluşturmak ve diğer sitelerde size uygun reklamları göstermek için kullanılabilirler. Doğrudan kişisel bilgileri saklamazlar, ancak tarayıcınızı ve internet cihazınızı benzersiz olarak tanımlayarak çalışırlar. Bu çerezlere izin vermezseniz, daha az hedeflenmiş reklamla karşılaşacaksınız.',
+                        'switch' => 'Active',
+                        'css' => 'targeting',
+                    ],
+                ],
+                'cookieActionBtns' => [
+                    [
+                        'btnText' => 'Seçimlerimi Onayla',
+                        'btnCss' => 'ccam',
+                    ],
+                    [
+                        'btnText' => 'Tüm Çerezleri Kabul Et',
+                        'btnCss' => 'ccaa',
+                    ],
+                ],
+            ],
         ],
     ];
 
