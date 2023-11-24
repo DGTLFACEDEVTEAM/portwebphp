@@ -56,7 +56,7 @@
                         srcset="{{ asset('assets/frontend/images/home/banner/carousel-1-2560.webp') }}" />
                     <img loading="lazy" src="{{ asset('assets/frontend/images/home/banner/carousel-1-2560.webp') }}"
                         class="d-block homeHeroSwiperImg " fetchpriority="high" alt="Hotel image during the day" />
-                    <div class="swiper-lazy-preloader"></div>
+                    
                 </picture>
             </div>
             <div class="swiper-slide">
@@ -72,7 +72,7 @@
                     <img loading="lazy"
                         data-src="{{ asset('assets/frontend/images/home/banner/carousel-2-2560.webp') }}"
                         class="d-block homeHeroSwiperImg lazyload" alt="Pool Image" />
-                    <div class="swiper-lazy-preloader"></div>
+                    
                 </picture>
             </div>
             <div class="swiper-slide">
@@ -88,7 +88,7 @@
                     <img loading="lazy"
                         data-src="{{ asset('assets/frontend/images/home/banner/carousel-3-2560.webp') }}"
                         class="d-block homeHeroSwiperImg lazyload" alt="Beach Image" />
-                    <div class="swiper-lazy-preloader"></div>
+                    
                 </picture>
             </div>
             <div class="swiper-slide">
@@ -104,7 +104,7 @@
                     <img loading="lazy"
                         data-src="{{ asset('assets/frontend/images/home/banner/carousel-4-2560.webp') }}"
                         class="d-block homeHeroSwiperImg lazyload" alt="Hotel image at night" />
-                    <div class="swiper-lazy-preloader"></div>
+                    
                 </picture>
             </div>
         </div>
