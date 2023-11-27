@@ -20,3 +20,4 @@ app/.DS_Store
 app/Http/.DS_Store
 .DS_Store
 **/._*
+storage
