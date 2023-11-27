@@ -21,7 +21,9 @@
 
 
 <!-- Hero Swiper Section -->
-<div class="hero-swiper-wrapper">
+
+@include('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'de'])
+{{-- <div class="hero-swiper-wrapper">
 
     <div class="swiper offers-hero-swiper">
         <div class="swiper-wrapper">
@@ -70,16 +72,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/turkish-offer-1.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-1">
-                        <p class="offers-1-top">Für Gäste</p>
-                        <p class="offers-1-big">
-                            Kostenlose <br> Marke
-                        </p>
-                        <p class="offers-1-bottom">Für Wassersport</p>
-                    </div>
-                           <div class="water-sports-addendum-wrapper">             <p class="offers-addendum">Buchen Sie Ihren Urlaub über das Callcenter und erhalten Sie 4 Marke als
-                        Geschenk</p>
-                        <p class="offers-addendum-right">Fußnote: Unsere Gäste können nur von einer der Kampagnen profitieren. </p></div> --}}
+
 
 
 
@@ -91,16 +84,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-2.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-2">
-                        <p class="offers-2-big">
-                            Wellness <br>Geschenk!
-                        </p>
-                        <p class="offers-2-small">
-                            Bei Buchung über das Callcenter
-                        </p>
-                        <p class="offers-2-medium">Kostenlose Massage<br> oder Schaummbad</p>
-                    </div>
-                    <p class="spa-offers-addendum">Fußnote: Unsere Gäste können nur von einer der Kampagnen profitieren. </p> --}}
+
 
                 </div>
             </div>
@@ -109,22 +93,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-3.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-3.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-3">
-                        <div class="offers-3-medium">
-                            <img class="offers-text-wrap"
-                                src="{{ asset('assets/frontend/images/offers/svg/beautiful.svg') }}" />
-                            Kostenlos
-                        </div>
-                        <p class="offers-3-big">
-                            Premium Pavillon
-                        </p>
-                        <div class="offers-3-small">
-                            <img class="offers-icon" src="{{ asset('assets/frontend/images/offers/svg/call.svg') }}" />
-                            Bei Buchung einer King Suite über das Call Center
-                        </div>
 
-                    </div>
-                    <p class="offers-addendum-center">Fußnote: Unsere Gäste können nur von einer der Kampagnen profitieren. </p> --}}
 
                 </div>
             </div>
@@ -133,28 +102,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-4.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-4.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-4">
-                        <p class="offers-4-small">
-                            Für Gäste
-                        </p>
-                        <p class="offers-4-big">
-                            VIP Transfer
-                        </p>
-                        <div class="offers-4-medium">
-                            <img class="offers-text-wrap-1"
-                                src="{{ asset('assets/frontend/images/offers/svg/line.svg') }}" />
 
-                            Kostenlos
-                            <img class="offers-text-wrap-2"
-                                src="{{ asset('assets/frontend/images/offers/svg/line-two-01.svg') }}" />
-
-                        </div>
-
-                    </div>
-                    <div class="transfer-addendum-wrapper"><p class="offers-4-addendum">
-                        Gäste, die eine Unterkunft über das Callcenter buchen, können den kostenlosen
-                        VIP-Transfer-Service nutzen</p>
-                        <p class="offers-addendum-left">Fußnote: Unsere Gäste können nur von einer der Kampagnen profitieren. </p></div> --}}
 
                 </div>
             </div>
@@ -163,13 +111,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-5.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-5">
-                        <p class="offers-5-big">Geschenke</p>
-                        <img src="{{ asset('assets/frontend/images/offers/svg/line-two.svg') }}" />
-                        <p class="offers-5-small">Für die Kleinen</p>
-                       
 
-                    </div> <p class="children-offers-addendum">Fußnote: Unsere Gäste können nur von einer der Kampagnen profitieren. </p> --}}
                 </div>
             </div>
             <div class="swiper-slide">
@@ -209,7 +151,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 <!-- Hero Mobile Section Start -->

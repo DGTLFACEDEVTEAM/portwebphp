@@ -21,8 +21,8 @@
 
 <!-- Hero Swiper Section -->
 
-
-<div class="hero-swiper-wrapper">
+@include('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'tr'])
+{{-- <div class="hero-swiper-wrapper">
 
     <div class="swiper offers-hero-swiper">
         <div class="swiper-wrapper">
@@ -99,15 +99,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-1">
-                        <p class="offers-1-top">Misafirlerimiz İçin</p>
-                        <p class="offers-1-big">
-                            Ücretsiz <br>Su Sporları<br>Jetonları
-                        </p>
-                    </div>
-        <div class="water-sports-addendum-wrapper">            <p class="offers-addendum">Çağrı merkezi aracılığıyla rezervasyon yapın ve hediye olarak 4 jeton
-                        kazanın</p>
-                        <p class="offers-addendum-right"> Dipnot: Misafirlerimiz kampanyaların sadece bir tanesinden faydalanabilir. </p></div> --}}
+
 
                 </div>
             </div>
@@ -116,18 +108,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-3.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-2.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-2">
-                        <p class="offers-2-big">
-                            SPA <br>Hizmetleri <br>hediye!
-                        </p>
-                        <p class="offers-2-small">
-                            Sadece çağrı merkezi aracılığıyla yapılan rezervasyonlarda.
-                        </p>
-                        <p class="offers-2-medium">Masaj ya da köpük<br> banyosu ücretsizdir</p>
-                        
 
-                    </div>
-                    <p class="spa-offers-addendum"> Dipnot: Misafirlerimiz kampanyaların sadece bir tanesinden faydalanabilir. </p> --}}
                 </div>
             </div>
             <div class="swiper-slide">
@@ -135,22 +116,6 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-4.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-3.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-3">
-                        <div class="offers-3-medium">
-                            <img class="offers-text-wrap"
-                                src="{{ asset('assets/frontend/images/offers/svg/beautiful.svg') }}" />
-                            Ücretsiz
-                        </div>
-                        <p class="offers-3-big offers-3-big-turkish">
-                            Premium Pavillon
-                        </p>
-                        <div class="offers-3-small">
-                            <img class="offers-icon" src="{{ asset('assets/frontend/images/offers/svg/call.svg') }}" />
-                            Sadece çağrı merkezi aracılığıyla yapılan rezervasyonlarda
-                        </div>
-
-                    </div>
-                    <p class="offers-addendum-center"> Dipnot: Misafirlerimiz kampanyaların sadece bir tanesinden faydalanabilir. </p> --}}
 
                 </div>
             </div>
@@ -159,29 +124,7 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-5.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-4.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-4">
-                        <p class="offers-4-small">
-                            Misafirlerimiz İçin
-                        </p>
-                        <p class="offers-4-big">
-                            VIP Transfer
-                        </p>
-                        <div class="offers-4-medium">
-                            <img class="offers-text-wrap-1"
-                                src="{{ asset('assets/frontend/images/offers/svg/line.svg') }}" />
 
-                            Ücretsiz
-                            <img class="offers-text-wrap-2"
-                                src="{{ asset('assets/frontend/images/offers/svg/line-two-01.svg') }}" />
-
-                        </div>
-
-                    </div>
-                    <div class="transfer-addendum-wrapper"><p class="offers-4-addendum">
-                        Çağrı merkezi aracılığıyla rezervasyon yapan misafirlerimiz, ücretsiz VIP transfer hizmetinden
-                        yararlanabilirler</p>
-                        <p class="offers-addendum-left"> Dipnot: Misafirlerimiz kampanyaların sadece bir tanesinden faydalanabilir. </p>
-</div> --}}
                 </div>
             </div>
             <div class="swiper-slide">
@@ -222,7 +165,7 @@
 
         </div>
     </div>
-</div>
+</div> --}}
 
 <!-- Hero Mobile Section Start -->
  <div class="gallery-wrapper">

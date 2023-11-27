@@ -23,7 +23,9 @@
 
 <!-- Hero Swiper Section -->
 
-<div class="hero-swiper-wrapper">
+@include('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'ru'])
+
+{{-- <div class="hero-swiper-wrapper">
 
     <div class="swiper offers-hero-swiper">
         <div class="swiper-wrapper">
@@ -77,16 +79,6 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/turkish-offer-1.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-1">
-                        <p class="offers-1-top">для гостей</p>
-                        <p class="offers-1-big">
-                            Бесплатные <br> жетоны
-                        </p></div>
-                              <div class="water-sports-addendum-wrapper">               <p class="offers-addendum">на водные виды спорта</p>
-              
-                    <p class="offers-addendum-right">Забронируй отдых через колл-центр и получи 4 жетона в подарок</p></div> --}}
-
-
                 </div>
             </div>
             <div class="swiper-slide">
@@ -94,18 +86,6 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-2.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-2">
-                        <p class="offers-2-big">
-                            SPA— <br> процедуры <br> в подарок!
-                        </p>
-                        <p class="offers-2-small">
-                            При бронировании через колл-центр
-                        </p>
-                        <p class="offers-2-medium">Массаж или пенное <br> обертывание бесплатно</p>
-
-                    </div>
-                    <p class="spa-offers-addendum"> Забронируй отдых через колл-центр и получи 4 жетона в подарок</p> --}}
-
                 </div>
             </div>
             <div class="swiper-slide">
@@ -113,23 +93,6 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-3.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-3.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-3">
-                        <div class="offers-3-medium">
-                            <img class="offers-text-wrap"
-                                src="{{ asset('assets/frontend/images/offers/svg/beautiful.svg') }}" />
-                            Премиум
-                        </div>
-                        <p class="offers-3-big">
-                            Бунгала для отдыха
-                        </p>
-                        <div class="offers-3-small">
-                            <img class="offers-icon" src="{{ asset('assets/frontend/images/offers/svg/call.svg') }}" />
-                            при бронировании King Suit <br> через колл-центр бесплатно
-                        </div>
-
-                    </div>
-                    <p class="offers-addendum-center"> Забронируй отдых через колл-центр и получи 4 жетона в подарок</p> --}}
-
                 </div>
             </div>
             <div class="swiper-slide">
@@ -137,28 +100,6 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-4.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-4.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-4">
-                        <p class="offers-4-small">
-                            для гостей
-                        </p>
-                        <p class="offers-4-big">
-                            VIP-трансфер
-                        </p>
-                        <div class="offers-4-medium">
-                            <img class="offers-text-wrap-1"
-                                src="{{ asset('assets/frontend/images/offers/svg/line.svg') }}" />
-
-                            Бесплатно
-                            <img class="offers-text-wrap-2"
-                                src="{{ asset('assets/frontend/images/offers/svg/line-two-01.svg') }}" />
-
-                        </div>
-
-                    </div>
-                    <div class="transfer-addendum-wrapper"><p class="offers-4-addendum">
-                        Гости, бронирующие проживание через колл-центр, могут воспользоваться бесплатной услугой
-                        VIP-трансфера</p>
-                        <p class="offers-addendum-left"> Забронируй отдых через колл-центр и получи 4 жетона в подарок</p></div> --}}
 
                 </div>
             </div>
@@ -167,14 +108,6 @@
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-5.webp') }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-                    {{-- <div class="offers-hero-text offers-hero-5">
-                        <p class="offers-5-big">Дарим <br> подарки</p>
-                        <img src="{{ asset('assets/frontend/images/offers/svg/line-two.svg') }}" />
-                        <p class="offers-5-small">для самых маленьких</p>
-                      
-
-                    </div>
-  <p class="children-offers-addendum"> Забронируй отдых через колл-центр и получи 4 жетона в подарок</p>             --}}
     </div>
             </div>
             <div class="swiper-slide">
@@ -214,7 +147,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 <!-- Hero Mobile Section Start -->
  <div class="gallery-wrapper">

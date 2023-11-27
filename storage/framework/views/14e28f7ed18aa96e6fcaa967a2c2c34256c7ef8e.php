@@ -1,41 +1,27 @@
 <!DOCTYPE html>
-<html lang="DE">
+<html lang="TR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="DGTLFACE IT TEAM">
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <!-- Favicon  -->
-    <title>@yield('title', 'PORT Nature Luxury Resort Hotel & Spa')</title>
-    <meta name="description" content="@yield('description')">
+    <title><?php echo $__env->yieldContent('title', 'PORT Nature Luxury Resort Hotel & Spa'); ?></title>
+    <meta name="description" content="<?php echo $__env->yieldContent('description'); ?>">
     <!-- Analystic  -->
-    {!! \App\Http\Helpers\CanonicalHelper::canonicalUrl(url()->current()) !!}
+    <?php echo \App\Http\Helpers\CanonicalHelper::canonicalUrl(url()->current()); ?>
+
     <!-- Analystic End -->
-    <style>
-        .menubar .nav-item .nav-link {
-            text-transform: uppercase;
 
-        }
-
-        @media only screen and (max-width: 1450px) and (min-width: 1200px) {
-            .menubar {
-                gap: 1vw !important;
-            }
-
-            .navbar a {
-                font-size: 11px !important;
-            }
-        }
-    </style>
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon-16x16.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo e(asset('assets/favicon-16x16.png')); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo e(asset('assets/favicon-32x32.png')); ?>">
     <!-- Page Title -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/aside.css') }}" />
-    <link rel="preload" href="{{ asset('assets/frontend/images/logo-port-small.svg') }}" as="image"
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/css/aside.css')); ?>" />
+    <link rel="preload" href="<?php echo e(asset('assets/frontend/images/logo-port-small.svg')); ?>" as="image"
         type="image/svg+xml" />
-    <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/swiper-bundle-11.min.css') }}" />
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/libs/css/swiper-bundle.min.css')); ?>" />
     <!-- Montserrat, Lora Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,18 +31,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Lora:ital,wght@1,400;1,500&family=Space+Grotesk:wght@300;700&display=swap"
         rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Lora:ital,wght@1,400;1,500&family=Poppins:wght@100;400;500;600;700&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
-
-    @if (Request::is('blog-seite/*'))
-        {{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/post-test.css') }}"/> --}}
-        <link rel="stylesheet" href="{{ asset('assets/frontend/css/blogDetail.css') }}" />
-    @endif
-
-    @yield('css-imports')
 
 
+
+    <?php if(Request::is('blog-sayfasi/*')): ?>
+        
+        <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/css/blogDetail.css')); ?>" />
+    <?php endif; ?>
+
+    <?php echo $__env->yieldContent('css-imports'); ?>
 
     <!-- Google Tag Manager -->
     <script>
@@ -100,101 +83,70 @@
         fbq('track', 'PageView');
     </script>
     <!-- End Meta Pixel Code -->
+    <style>
+        @media screen and (max-width: 1200px) {
+            .fixedBookNow {
+                font-size: 14px !important
+            }
+        }
+    </style>
 </head>
 
 <body>
-
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ53DS5" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    @include('frontend.de.layouts.header')
 
-    @yield('content')
+    <?php echo $__env->make('frontend.tr.layouts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-    @include('frontend.de.layouts.footer')
+    <?php echo $__env->yieldContent('content'); ?>
+
+    <?php echo $__env->make('frontend.tr.layouts.footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/bootstrap.min.css') }}" />
-
-    <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/flatpickr.min.css') }}" media="print"
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/libs/css/bootstrap.min.css')); ?>" />
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/libs/css/flatpickr.min.css')); ?>" media="print"
         onload="this.media='all'">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/lc_lightbox.min.css') }}" media="print"
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/libs/css/lc_lightbox.min.css')); ?>" media="print"
         onload="this.media='all'" />
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/floating-menu.css') }}" />
-    {{-- Common CSS File --}}
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/footer.css') }}" media="print"
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/css/floating-menu.css')); ?>" />
+    
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/css/footer.css')); ?>" media="print"
         onload="this.media='all'" />
 
     <!-- Additional imports -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/contact.css') }}" media="print"
+    <link rel="stylesheet" href="<?php echo e(asset('assets/frontend/css/contact.css')); ?>" media="print"
         onload="this.media='all'" />
 
+
+
     <!-- KVKK Cookies -->
-    <script src="{{ asset('assets/frontend/js/glowCookies.min.js') }}"></script>
+    <script src="<?php echo e(asset('assets/frontend/js/glowCookies.min.js')); ?>"></script>
     <script>
-        glowCookies.start('de', {
+        glowCookies.start('tr', {
             style: 1,
             analytics: 'G-FH87DE17XF',
             facebookPixel: '990955817632355',
             hideAfterClick: true,
             position: 'right',
-            policyLink: 'https://portnature.com.tr/datenschutzrichtlinien'
+            policyLink: 'https://portnature.com.tr/kvkk'
         });
     </script>
+
     <!--  JAVASCRIPTS  -->
-    <script src="{{ asset('assets/frontend/libs/js/popper.min.js') }}" defer></script>
-    <script src="{{ asset('assets/frontend/libs/js/bootstrap.min.js') }}" defer></script>
-    <script src="{{ asset('assets/frontend/libs/js/jquery-3.6.4.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/libs/js/swiper-bundle-11.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/libs/js/flatpickr.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/common.js') }}" defer></script>
-    <script src="{{ asset('assets/frontend/libs/js/lazysizes.min.js') }}" defer></script>
+    <script src="<?php echo e(asset('assets/frontend/libs/js/popper.min.js')); ?>" defer></script>
+    <script src="<?php echo e(asset('assets/frontend/libs/js/bootstrap.min.js')); ?>" defer></script>
+    <script src="<?php echo e(asset('assets/frontend/libs/js/jquery-3.6.4.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/frontend/libs/js/swiper-bundle.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/frontend/libs/js/flatpickr.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/frontend/js/common.js')); ?>" defer></script>
+    <script src="<?php echo e(asset('assets/frontend/libs/js/lazysizes.min.js')); ?>" defer></script>
 
-    @yield('javascript-imports')
-
-
-    <script>
-        if (pageHasContactForm) {
-            let acceptTermsCheckbox = document.querySelectorAll('.acceptTermsCheckbox');
-            let contactForms = document.querySelectorAll('form[name="contactForm"]')
-
-            acceptTermsCheckbox.forEach(function(item) {
-                // remove event listener if already added
-                item.removeEventListener('change', function() {});
-                item.addEventListener('change', function() {
-                    if (this.checked) {
-                        // find the submit button on same form and enable it
-                        this.closest('form').querySelector('input[type="submit"]').disabled = false;
-                    } else {
-                        // find the submit button on same form and disable it
-                        this.closest('form').querySelector('input[type="submit"]').disabled = true;
-                    }
-                });
-            });
+    <?php echo $__env->yieldContent('javascript-imports'); ?>
 
 
+    <script src="<?php echo e(asset('assets/frontend/js/floating-menu.js')); ?>" defer></script>
 
-            contactForms.forEach(function(item) {
-                // remove event listener if already added
-                item.removeEventListener('submit', function() {});
-                item.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    let name = document.getElementById('name');
-                    let email = document.getElementById('email');
-                    let message = document.getElementById('message');
-                    let alert = document.getElementById('alert');
-
-                    if (name.value == '' || email.value == '' || message.value == '') {
-                        alert.classList.remove('d-none');
-                    } else {
-                        this.submit();
-                    }
-                });
-            });
-        }
-    </script>
-
-    {{-- <script src="{{ asset('assets/frontend/js/floating-menu.js') }}" defer></script> --}}
 
     <script type='text/javascript'>
         // Form submission handler
@@ -249,6 +201,7 @@
         })();
     </script>
     <!-- ChatBox Script END -->
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(m, e, t, r, i, k, a) {
@@ -273,13 +226,53 @@
             webvisor: true
         });
     </script>
+    <script>
+        if (pageHasContactForm) {
+            let acceptTermsCheckbox = document.querySelectorAll('.acceptTermsCheckbox');
+            let contactForms = document.querySelectorAll('form[name="contactForm"]')
 
+            acceptTermsCheckbox.forEach(function(item) {
+                // remove event listener if already added
+                item.removeEventListener('change', function() {});
+                item.addEventListener('change', function() {
+                    if (this.checked) {
+                        // find the submit button on same form and enable it
+                        this.closest('form').querySelector('input[type="submit"]').disabled = false;
+                    } else {
+                        // find the submit button on same form and disable it
+                        this.closest('form').querySelector('input[type="submit"]').disabled = true;
+                    }
+                });
+            });
+
+
+
+            contactForms.forEach(function(item) {
+                // remove event listener if already added
+                item.removeEventListener('submit', function() {});
+                item.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    let name = document.getElementById('name');
+                    let email = document.getElementById('email');
+                    let message = document.getElementById('message');
+                    let alert = document.getElementById('alert');
+
+                    if (name.value == '' || email.value == '' || message.value == '') {
+                        alert.classList.remove('d-none');
+                    } else {
+                        this.submit();
+                    }
+                });
+            });
+        }
+    </script>
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/92210931" style="position:absolute; left:-9999px;" alt="" />
         </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    {{-- @include('components.cookie', ['lang' => 'de']) --}}
+    <?php echo $__env->make('components.cookie', ['lang' => 'tr'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 </body>
 
 </html>
+<?php /**PATH /Users/jack/Documents/GitHub/portwebphp/resources/views/frontend/tr/layouts/master.blade.php ENDPATH**/ ?>

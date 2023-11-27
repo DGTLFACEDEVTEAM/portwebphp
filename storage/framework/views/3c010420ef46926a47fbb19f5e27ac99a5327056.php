@@ -1,163 +1,29 @@
-@extends('frontend.en.layouts.master')
+<?php $__env->startSection('title', 'Special Offers - Port Nature Luxury Resort Hotel'); ?>
+<?php $__env->startSection('description', 'Special Offers Port Nature Luxury Resort. Best Deals at Antalya Belek all inclusive luxury resort hotel. Call now for special offers and best prices.'); ?>
 
-@section('title', 'Special Offers - Port Nature Luxury Resort Hotel')
-@section('description', 'Special Offers Port Nature Luxury Resort. Best Deals at Antalya Belek all inclusive luxury resort hotel. Call now for special offers and best prices.')
-
-@section('header-lang')
+<?php $__env->startSection('header-lang'); ?>
 
 <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{{ route('special-offers') }}"
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="<?php echo e(route('special-offers')); ?>"
         aria-expanded="false">EN</a>
     <ul class="dropdown-menu dropdownmobile language">
-        <li><a class="dropdown-item first-item" href="{{ route('tr-special-offers') }}">TR</a></li>
-        <li><a class="dropdown-item" href="{{ route('ru-special-offers') }}">RU</a></li>
-        <li><a class="dropdown-item" href="{{ route('de-special-offers') }}">DE</a></li>
+        <li><a class="dropdown-item first-item" href="<?php echo e(route('tr-special-offers')); ?>">TR</a></li>
+        <li><a class="dropdown-item" href="<?php echo e(route('ru-special-offers')); ?>">RU</a></li>
+        <li><a class="dropdown-item" href="<?php echo e(route('de-special-offers')); ?>">DE</a></li>
     </ul>
 </li>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 
 
 <!-- Hero Swiper Section -->
 
-@include('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'en'])
-
-{{-- <div class="hero-swiper-wrapper">
-
-    <div class="swiper offers-hero-swiper">
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-4">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-transfer.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-4.webp') }}" />
-                    <div class="offers-hero-text offers-hero-4">
-                        <p class="offers-4-small">
-                            For Guests
-                        </p>
-                        <p class="offers-4-big">
-                            VIP Transfer
-                        </p>
-                        <div class="offers-4-medium">
-                            <img class="offers-text-wrap-1"
-                                src="{{ asset('assets/frontend/images/offers/svg/line.svg') }}" />
-
-                            Free Of Charge
-                            <img class="offers-text-wrap-2"
-                                src="{{ asset('assets/frontend/images/offers/svg/line-two-01.svg') }}" />
-
-                        </div>
-
-                    </div>
-                    <div class="transfer-addendum-wrapper"><p class="offers-4-addendum"></p>
-                        <p class="offers-addendum-left">Guests who book accommodation through the call center can take advantage of the free VIP
-                            transfer service</p></div>
-
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="offers-slide-inner">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-web-kids-en.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
-                    <div class="offers-hero-text offers-hero-1">
-                    </div>
-                    <div class="water-sports-addendum-wrapper"> 
-                        <p class="children-offers-addendum-turkish"></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="offers-slide-inner">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/turkish-offer-1.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
+<?php echo $__env->make('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'en'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
 
-
-
-
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-2.webp') }}" />
-
-
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-3.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-3.webp') }}" />
-
-
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-4">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-4.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-4.webp') }}" />
-
-
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-5">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-5.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-5">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-6.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-5">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-7.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-5">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-8.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-5">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-9.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-5">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-10.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-5.webp') }}" />
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
 
 
 
@@ -167,44 +33,44 @@
       Premium A'la Carte All Inclusive
     </p>
     <a class="hero-mobile-sender">
-                          <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/hero-icon.svg') }}" />
+                          <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/hero-icon.svg')); ?>" />
 
     </a>
    <div class="general-swiper ">
 
             <div class="swiper-wrapper general-swiper-wrapper">
                  <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/0.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/0.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/1.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/1.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/2.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/2.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/3.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/3.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/4.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/4.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/5.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/5.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/6.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/6.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/7.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/7.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/8.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/8.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/9.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/9.webp')); ?>" />
                 </div>
                 <div class="swiper-slide">
-                    <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/10.webp') }}" />
+                    <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/10.webp')); ?>" />
                 </div>
                
             
@@ -222,7 +88,7 @@
     </p>
  
     <a class="hero-title-location" href="https://maps.app.goo.gl/Y1qMrLmKcPsJqdiF7">
-              <img src="{{ asset('assets/frontend/images/offers/mobile/hero/location.svg') }}">
+              <img src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/location.svg')); ?>">
 
             <span> Turkey, Belek, Bogazkent</span>
             <span>— view on the map  </span>
@@ -232,15 +98,15 @@
 <section class="rating-tablet-wrapper">
        <div class="banners-mobile">
         <a href="https://www.booking.com/hotel/tr/port-nature-luxury-resort-amp-spa.html" target="_blank" class="mobile-banner-item">
-                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/banner-1.webp') }}">
+                <img src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/banner-1.webp')); ?>">
 
         </a>
         <a href="https://www.tripadvisor.com/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html" target="_blank" class="mobile-banner-item">
-                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/banner-2.webp') }}">
+                <img src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/banner-2.webp')); ?>">
 
         </a>
         <a href="https://www.expedia.com/Belek-Hotels-Port-Nature-Luxury-Resort-Spa-All-Inclusive.h8108100.Hotel-Information" target="_blank" class="mobile-banner-item">
-                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/banner-3.webp') }}">
+                <img src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/banner-3.webp')); ?>">
 
         </a>
       </div>
@@ -252,20 +118,9 @@
 <div class="mobile-banner-wrapper">
     <div class="mobile-banner-swiper">
         <div class="swiper-wrapper">
-            {{-- <div class="swiper-slide">
-                <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/banners-en/banner-1-en.webp') }}">
-            </div>
+            
             <div class="swiper-slide">
-                <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/banners-en/banner-2-en.webp') }}">
-            </div>
-            <div class="swiper-slide">
-                <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/banners-en/banner-3-en.webp') }}">
-            </div>
-            <div class="swiper-slide">
-                <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/banners-en/banner-4-en.webp') }}">
-            </div> --}}
-            <div class="swiper-slide">
-                <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/banners-en/banner-5-en.webp') }}">
+                <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/banners-en/banner-5-en.webp')); ?>">
             </div>
         </div>
     </div>
@@ -281,14 +136,14 @@
         Antalya includes the best all inclusive 5 star hotels with flexible deals. If you are looking for luxury travel deals, don’t look any further Anlaya hotels await you. You can make a reservation easily with the call center or online booking at Antalya hotels. Also, the Antalya hotels call center service has the best price and last-minute opportunities. Antalya hotels website and call center service offer the best deals package. Don’t miss this chance and call now. There are rooms for everyone in the Antalya hotel. When you looking for accommodation with last-minute deals Antalya hotel waiting for you.
     </p>
     <div class="hero-mobile-item">
-                        <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/star-rating.webp') }}">
+                        <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/star-rating.webp')); ?>">
                         <p>
                             Premium A'la Carte All Inclusive
                         </p>
 
     </div>
     <div class="hero-mobile-item">
-                        <img  src="{{ asset('assets/frontend/images/offers/mobile/hero/drink.webp') }}">
+                        <img  src="<?php echo e(asset('assets/frontend/images/offers/mobile/hero/drink.webp')); ?>">
                         <p>
                             148 kinds of free alcohol
                         </p>
@@ -303,7 +158,7 @@
 <div class="showcase-section-wrapper">
     <div class="plane-svg colorful-image-wrapper"></div>
 
-    <img class="plane-svg-mobile" src="{{ asset('assets/frontend/images/offers/svg/mobile/plane-1.svg') }}" />
+    <img class="plane-svg-mobile" src="<?php echo e(asset('assets/frontend/images/offers/svg/mobile/plane-1.svg')); ?>" />
     <p class="plane-before">...and book a ticket right away</p>
     <div class="booking-section-wrapper">
         <p class="booking-section-title">PLAN YOUR TRIP</p>
@@ -312,13 +167,13 @@
             <div class="swiper brand-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href="https://www.tripadvisor.com.tr/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html" target="_blank"><img class="svg-tripadvisor" src="{{ asset('assets/frontend/images/offers/tripadvisor.webp') }}" /></a>
+                        <a href="https://www.tripadvisor.com.tr/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html" target="_blank"><img class="svg-tripadvisor" src="<?php echo e(asset('assets/frontend/images/offers/tripadvisor.webp')); ?>" /></a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.booking.com/searchresults.tr.html?ss=Port+Nature&ssne=Side&ssne_untouched=Side&label=bookings-name-lO9ne8CLb_o7ijml9UoG0QS540961834209%3Apl%3Ata%3Ap1%3Ap22.563.000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1012764%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcX_GyndjDE1ljcv9tcUssY&aid=376386&lang=tr&sb=1&src_elem=sb&src=searchresults&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure" target="_blank"><img class="svg-booking" src="{{ asset('assets/frontend/images/offers/booking.webp') }}" /></a>
+                        <a href="https://www.booking.com/searchresults.tr.html?ss=Port+Nature&ssne=Side&ssne_untouched=Side&label=bookings-name-lO9ne8CLb_o7ijml9UoG0QS540961834209%3Apl%3Ata%3Ap1%3Ap22.563.000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1012764%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcX_GyndjDE1ljcv9tcUssY&aid=376386&lang=tr&sb=1&src_elem=sb&src=searchresults&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure" target="_blank"><img class="svg-booking" src="<?php echo e(asset('assets/frontend/images/offers/booking.webp')); ?>" /></a>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://www.expedia.com/Belek-Hotels-Port-Nature-Luxury-Resort-Spa-All-Inclusive.h8108100.Hotel-Information?chkin=2023-04-11&chkout=2023-04-12&x_pwa=1&rfrr=HSR&pwa_ts=1679996745179&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=6034717&destination=Belek%2C+Serik%2C+Antalya+Region%2C+T%C3%BCrkiye&destType=CURRENT_LOCATION&selected=8108100&latLong=36.83444%2C31.162045&sort=RECOMMENDED&userIntent=" target="_blank"><img class="svg-expedia" src="{{ asset('assets/frontend/images/offers/expedia.webp') }}" /></a>
+                        <a href="https://www.expedia.com/Belek-Hotels-Port-Nature-Luxury-Resort-Spa-All-Inclusive.h8108100.Hotel-Information?chkin=2023-04-11&chkout=2023-04-12&x_pwa=1&rfrr=HSR&pwa_ts=1679996745179&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=6034717&destination=Belek%2C+Serik%2C+Antalya+Region%2C+T%C3%BCrkiye&destType=CURRENT_LOCATION&selected=8108100&latLong=36.83444%2C31.162045&sort=RECOMMENDED&userIntent=" target="_blank"><img class="svg-expedia" src="<?php echo e(asset('assets/frontend/images/offers/expedia.webp')); ?>" /></a>
                     </div>
                 </div>
             </div>
@@ -351,17 +206,17 @@
             <label for="checkout"></label><input id="checkout" data-defaultDate="today" value="Check-Out">
 
             <div class="guestDiv guestdiv-adult"><span class="guests guests-adult">
-                    <img class="icon-head" src="{{ asset('assets/frontend/images/offers/svg/adult-icon.svg') }}">
+                    <img class="icon-head" src="<?php echo e(asset('assets/frontend/images/offers/svg/adult-icon.svg')); ?>">
 
                     Adult</span>
                 <div class="guestMenu guestMenuAdult">
                     <div class="adultCounter dropdown-item">
                         <p>Adult(s)</p>
                         <div class="counter-item">
-                            <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="adult-decrement"
+                            <img src="<?php echo e(asset('assets/frontend/images/decrement.svg')); ?>" class="adult-decrement"
                                 onclick="adultDecrement()" alt="decrement" />
                             <p id="adultCount" class="adultCountIncrementType"></p>
-                            <img src="{{ asset('assets/frontend/images/increment.svg') }}" class="adult-increment"
+                            <img src="<?php echo e(asset('assets/frontend/images/increment.svg')); ?>" class="adult-increment"
                                 onclick="adultIncrement()" alt="increment" />
                         </div>
                     </div>
@@ -371,57 +226,57 @@
 
             </div>
             <div class="guestDiv guestdiv-child"><span class="guests guests-child">
-                    <img class="icon-head" src="{{ asset('assets/frontend/images/offers/svg/child-icon.svg') }}">
+                    <img class="icon-head" src="<?php echo e(asset('assets/frontend/images/offers/svg/child-icon.svg')); ?>">
                     Child</span>
                 <div class="guestMenu guestMenuChild">
 
                     <div class="childCounter dropdown-item">
                         <p>Child(ren)</p>
                         <div class="counter-item">
-                            <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
+                            <img src="<?php echo e(asset('assets/frontend/images/decrement.svg')); ?>" class="child-decrement"
                                 onclick="childDecrement()" alt="decrement" />
                             <p id="childCount" class="childCountIncrementType"></p>
-                            <img src="{{ asset('assets/frontend/images/increment.svg') }}" class="child-increment"
+                            <img src="<?php echo e(asset('assets/frontend/images/increment.svg')); ?>" class="child-increment"
                                 onclick="childIncrement()" alt="increment" />
                         </div>
                     </div>
                     <div class="childAgeCounter1 childAgeCounter dropdown-item">
                         <p>Child 1 Age</p>
                         <div class="counter-item">
-                            <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
+                            <img src="<?php echo e(asset('assets/frontend/images/decrement.svg')); ?>" class="child-decrement"
                                 onclick="childAge1Decrement()" alt="decrement" />
                             <p id="childAge1Count">0</p>
-                            <img src="{{ asset('assets/frontend/images/increment.svg') }}" class="child-increment"
+                            <img src="<?php echo e(asset('assets/frontend/images/increment.svg')); ?>" class="child-increment"
                                 onclick="childAge1Increment()" alt="increment" />
                         </div>
                     </div>
                     <div class="childAgeCounter2  childAgeCounter dropdown-item">
                         <p>Child 2 Age</p>
                         <div class="counter-item">
-                            <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
+                            <img src="<?php echo e(asset('assets/frontend/images/decrement.svg')); ?>" class="child-decrement"
                                 onclick="childAge2Decrement()" alt="decrement" />
                             <p id="childAge2Count">0</p>
-                            <img src="{{ asset('assets/frontend/images/increment.svg') }}" class="child-increment"
+                            <img src="<?php echo e(asset('assets/frontend/images/increment.svg')); ?>" class="child-increment"
                                 onclick="childAge2Increment()" alt="increment" />
                         </div>
                     </div>
                     <div class="childAgeCounter3  childAgeCounter dropdown-item">
                         <p>Child 3 Age</p>
                         <div class="counter-item">
-                            <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
+                            <img src="<?php echo e(asset('assets/frontend/images/decrement.svg')); ?>" class="child-decrement"
                                 onclick="childAge3Decrement()" alt="decrement" />
                             <p id="childAge3Count">0</p>
-                            <img src="{{ asset('assets/frontend/images/increment.svg') }}" class="child-increment"
+                            <img src="<?php echo e(asset('assets/frontend/images/increment.svg')); ?>" class="child-increment"
                                 onclick="childAge3Increment()" alt="increment" />
                         </div>
                     </div>
                     <div class="childAgeCounter4  childAgeCounter dropdown-item">
                         <p>Child 4 Age</p>
                         <div class="counter-item">
-                            <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
+                            <img src="<?php echo e(asset('assets/frontend/images/decrement.svg')); ?>" class="child-decrement"
                                 onclick="childAge4Decrement()" alt="decrement" />
                             <p id="childAge4Count">0</p>
-                            <img src="{{ asset('assets/frontend/images/increment.svg') }}" class="child-increment"
+                            <img src="<?php echo e(asset('assets/frontend/images/increment.svg')); ?>" class="child-increment"
                                 onclick="childAge4Increment()" alt="increment" />
                         </div>
                     </div>
@@ -429,7 +284,7 @@
 
             </div>
             <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow"><img
-                    src="{{ asset('assets/frontend/images/offers/svg/booknow.svg') }}" />Book Now</a>
+                    src="<?php echo e(asset('assets/frontend/images/offers/svg/booknow.svg')); ?>" />Book Now</a>
         </div>
         <!-- Booking Section End -->
     </div>
@@ -437,27 +292,27 @@
     <div class="offers-rooms-swiper swiper"><p class="offers-room-swiper-title-mobile">Accommodation</p>
         <div class="swiper-wrapper">
             <div class="swiper-slide rooms-swiper-slide">
-                <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/family.webp') }}" />
-                <a href="{{ route('family-rooms') }}" class="room-swiper-button"><span>Family</span>
+                <img class="room-image-swiper" src="<?php echo e(asset('assets/frontend/images/offers/family.webp')); ?>" />
+                <a href="<?php echo e(route('family-rooms')); ?>" class="room-swiper-button"><span>Family</span>
                     <img class="btn-chevron"
-                        src="{{ asset('assets/frontend/images/offers/svg/button-chevron.svg') }}" />
+                        src="<?php echo e(asset('assets/frontend/images/offers/svg/button-chevron.svg')); ?>" />
                 </a>
                 <div class="room-swiper-details">
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-1.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-1.svg')); ?>" />
                         <p class="room-detail-text">4 adults + 1</p>
 
                     </div>
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-2.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-2.svg')); ?>" />
                         <p class="room-detail-text">45 m2</p>
 
                     </div>
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-3.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-3.svg')); ?>" />
                         <p class="room-detail-text">Side Sea View
                         </p>
 
@@ -465,27 +320,27 @@
                 </div>
             </div>
             <div class="swiper-slide rooms-swiper-slide">
-                <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/king.webp') }}" />
-                <a href="{{ route('kingsuit-rooms') }}" class="room-swiper-button"><span>King Suite</span>
+                <img class="room-image-swiper" src="<?php echo e(asset('assets/frontend/images/offers/king.webp')); ?>" />
+                <a href="<?php echo e(route('kingsuit-rooms')); ?>" class="room-swiper-button"><span>King Suite</span>
                     <img class="btn-chevron"
-                        src="{{ asset('assets/frontend/images/offers/svg/button-chevron.svg') }}" />
+                        src="<?php echo e(asset('assets/frontend/images/offers/svg/button-chevron.svg')); ?>" />
                 </a>
                 <div class="room-swiper-details">
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-1.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-1.svg')); ?>" />
                         <p class="room-detail-text">5 adults + 1</p>
 
                     </div>
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-2.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-2.svg')); ?>" />
                         <p class="room-detail-text">110 m2</p>
 
                     </div>
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-3.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-3.svg')); ?>" />
                         <p class="room-detail-text">Sea View
                         </p>
 
@@ -493,27 +348,27 @@
                 </div>
             </div>
             <div class="swiper-slide rooms-swiper-slide">
-                <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/standard.webp') }}" />
-                <a href="{{ route('standard-rooms') }}" class="room-swiper-button"><span>Standard</span>
+                <img class="room-image-swiper" src="<?php echo e(asset('assets/frontend/images/offers/standard.webp')); ?>" />
+                <a href="<?php echo e(route('standard-rooms')); ?>" class="room-swiper-button"><span>Standard</span>
                     <img class="btn-chevron"
-                        src="{{ asset('assets/frontend/images/offers/svg/button-chevron.svg') }}" />
+                        src="<?php echo e(asset('assets/frontend/images/offers/svg/button-chevron.svg')); ?>" />
                 </a>
                 <div class="room-swiper-details">
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-1.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-1.svg')); ?>" />
                         <p class="room-detail-text">2 adults + 2</p>
 
                     </div>
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-2.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-2.svg')); ?>" />
                         <p class="room-detail-text">34 m2</p>
 
                     </div>
                     <div class="room-detail-item">
                         <img class="room-svg-swiper"
-                            src="{{ asset('assets/frontend/images/offers/svg/icon-3.svg') }}" />
+                            src="<?php echo e(asset('assets/frontend/images/offers/svg/icon-3.svg')); ?>" />
                         <p class="room-detail-text">Sea / Side / Land View
                         </p>
 
@@ -542,64 +397,64 @@
     </div>
       <div class="accommodations-features-grid collapse" id="collapseExample">
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/balcony.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/balcony.svg')); ?>">
       <p class="room-features-list-text"> Balcony</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/bar.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/bar.svg')); ?>">
       <p class="room-features-list-text">Minibar</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/tv.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/tv.svg')); ?>">
       <p class="room-features-list-text">Led TV</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/tea.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/tea.svg')); ?>">
       <p class="room-features-list-text">Hot Drink Set-Up</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/wifi.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/wifi.svg')); ?>">
       <p class="room-features-list-text">Free Wi-Fi Internet</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/phone.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/phone.svg')); ?>">
       <p class="room-features-list-text">Direct Dial Phone</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/mirror.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/mirror.svg')); ?>">
       <p class="room-features-list-text">Make-up Mirror</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/satellite.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/satellite.svg')); ?>">
       <p class="room-features-list-text">Satellite Broadcasting</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/shower.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/shower.svg')); ?>">
       <p class="room-features-list-text">Seperate Shower & WC</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/slippers.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/slippers.svg')); ?>">
       <p class="room-features-list-text">Slippers</p>
     </div>
     
     
     
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/air.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/air.svg')); ?>">
       <p class="room-features-list-text">Split-System Air Conditioner</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/dryer.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/dryer.svg')); ?>">
       <p class="room-features-list-text">Hair Dryer</p>
     </div>
     <div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/safe.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/safe.svg')); ?>">
       <p class="room-features-list-text">Digital Safe</p>
     </div><div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/towel.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/towel.svg')); ?>">
       <p class="room-features-list-text">Towel</p>
     </div><div class="accom-feature-item">
-      <img class="svg"  src="{{ asset('assets/frontend/images/offers/mobile/icons/floor.svg') }}">
+      <img class="svg"  src="<?php echo e(asset('assets/frontend/images/offers/mobile/icons/floor.svg')); ?>">
       <p class="room-features-list-text">Parquet Flooring</p>
     </div>
 
@@ -621,9 +476,9 @@
                 <p class="booking-modal-title" id="exampleModalLabel">Select guests</p>
 
       <div class="dropdown adult-dropdown">
-        <img class="dropdown-icons people" src="{{ asset('assets/frontend/images/offers/mobile-booking/adult.webp') }}"> Adults <button class="btn dropdown-toggle" type="button" id="adultSelectionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        <img class="dropdown-icons people" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/adult.webp')); ?>"> Adults <button class="btn dropdown-toggle" type="button" id="adultSelectionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
           <p id="adultCount" class="reservation-titles adult-count">2 </p>
-                    <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                    <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
         </button>
         <ul class="dropdown-menu adult-selection-dropdown-menu " aria-labelledby="adultSelectionDropdown">
@@ -636,7 +491,7 @@
          Children 
                   <p id="childCount" class="reservation-titles child-count">0</p>
 
-                  <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                  <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
       </button>
         <ul class="dropdown-menu offers-child-dropdown-menu " aria-labelledby="childSelectionDropdown">
@@ -653,7 +508,7 @@
                   <button class="btn dropdown-toggle" type="button" id="childAge1Btn" data-bs-toggle="dropdown" aria-expanded="false">
                      <p>Child's age 1</p>
                     <p id="childAge1" class="reservation-titles child-age-count">0</p>
-                             <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                             <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
                   </button>
                   <ul class="dropdown-menu  child-age-dropdown-menu dropdown-menu-end" aria-labelledby="childAge1Btn">
@@ -670,7 +525,7 @@
                                     <p>Child's age 2</p>
 
                     <p id="childAge2" class="reservation-titles child-age-count">0</p>
-                             <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                             <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
                   </button>
                   <ul class="dropdown-menu child-age-dropdown-menu dropdown-menu-end" aria-labelledby="childAge2Btn">
@@ -687,7 +542,7 @@
                                     <p>Child's age 3</p>
 
                     <p id="childAge3" class="reservation-titles child-age-count">0</p>
-                             <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                             <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
                   </button>
                   <ul class="dropdown-menu  child-age-dropdown-menu dropdown-menu-end" aria-labelledby="childAge3Btn">
@@ -704,7 +559,7 @@
                                     <p>Child's age 4</p>
 
                     <p id="childAge4" class="reservation-titles child-age-count">0</p>
-                             <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                             <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
                   </button>
                   <ul class="dropdown-menu  child-age-dropdown-menu dropdown-menu-end" aria-labelledby="childAge4Btn">
@@ -721,7 +576,7 @@
                                     <p>Child's age 5</p>
 
                     <p id="childAge5" class="reservation-titles child-age-count">0</p>
-                             <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                             <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
                   </button>
                   <ul class="dropdown-menu  child-age-dropdown-menu dropdown-menu-end" aria-labelledby="childAge5Btn">
@@ -738,7 +593,7 @@
                                     <p>Child's age 6</p>
 
                     <p id="childAge6" class="reservation-titles child-age-count">0</p>
-                             <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg') }}"> 
+                             <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-mobile-arrow.svg')); ?>"> 
 
                   </button>
                   <ul class="dropdown-menu child-age-dropdown-menu dropdown-menu-end " aria-labelledby="childAge6Btn">
@@ -767,8 +622,8 @@
   
     <!-- DATE SELECTION SECTION -->
     <div class="dateInputDiv" name="daterange" id="calendarRange">
-      <img class="dropdown-icons dropdown-icon-mobile" src="{{ asset('assets/frontend/images/offers/mobile-booking/mobile-booking-calendar.svg') }}">
-              <img class="dropdown-icons dropdown-icon-desktop" src="{{ asset('assets/frontend/images/offers/mobile-booking/calendar.webp') }}">
+      <img class="dropdown-icons dropdown-icon-mobile" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/mobile-booking-calendar.svg')); ?>">
+              <img class="dropdown-icons dropdown-icon-desktop" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/calendar.webp')); ?>">
 
       <p class=" p-16 reservation-titles">
         <span id="check-in-span" class="checkInSpan">Check In</span> — <span id="check-out-span" class="checkOutSpan">
@@ -781,7 +636,7 @@
 
     <section class="people-selection-mobile" >
       <button type="button " class="travellers-btn" data-bs-toggle="modal" data-bs-target="#peopleSelectionModal">
-          <img class="traveller-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/travellers-icon.svg') }}"> 
+          <img class="traveller-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/travellers-icon.svg')); ?>"> 
         Travellers
 </button>
 
@@ -789,7 +644,7 @@
     
 
     <a href="https://portnature.rezervasyonal.com/" target="_blank"  class=" booking-btn booking-hero-btn" type="button">
-                                           <img class="drop-icon" src="{{ asset('assets/frontend/images/offers/mobile-booking/booking-btn-mobile.svg') }}"> 
+                                           <img class="drop-icon" src="<?php echo e(asset('assets/frontend/images/offers/mobile-booking/booking-btn-mobile.svg')); ?>"> 
 
       <p class=" p-16 reservation-titles">
 
@@ -814,15 +669,15 @@
         <div class="swiper flight-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="https://www.flypgs.com/en/cities/flights-to-antalya" target="_blank"><img class="pegasus-logo" src="{{ asset('assets/frontend/images/offers/logo-1.webp') }}" /></a>                </div>
+                    <a href="https://www.flypgs.com/en/cities/flights-to-antalya" target="_blank"><img class="pegasus-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-1.webp')); ?>" /></a>                </div>
                                     <div class="swiper-slide">
-                    <a href="https://www.skyscanner.com/" target="_blank"><img class="scanner-logo" src="{{ asset('assets/frontend/images/offers/logo-2.webp') }}" /></a>                </div>
+                    <a href="https://www.skyscanner.com/" target="_blank"><img class="scanner-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-2.webp')); ?>" /></a>                </div>
                                     <div class="swiper-slide">
-                    <a href="https://www.corendonairlines.com/" target="_blank"><img class="corendon-logo" src="{{ asset('assets/frontend/images/offers/logo-3.webp') }}" /></a>                </div>
+                    <a href="https://www.corendonairlines.com/" target="_blank"><img class="corendon-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-3.webp')); ?>" /></a>                </div>
                                     <div class="swiper-slide">
-                    <a href="https://www.aviasales.ru/?params=IST1&currency=usd" target="_blank"><img class="avia-logo" src="{{ asset('assets/frontend/images/offers/logo-4.webp') }}" /></a>                </div>
+                    <a href="https://www.aviasales.ru/?params=IST1&currency=usd" target="_blank"><img class="avia-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-4.webp')); ?>" /></a>                </div>
                                     <div class="swiper-slide">
-                    <a href="https://www.turkishairlines.com/en-int/flights/booking/index.html" target="_blank"><img class="turkish-logo" src="{{ asset('assets/frontend/images/offers/logo-5.webp') }}" /></a>                
+                    <a href="https://www.turkishairlines.com/en-int/flights/booking/index.html" target="_blank"><img class="turkish-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-5.webp')); ?>" /></a>                
                 </div>
             </div>
         </div>
@@ -831,9 +686,9 @@
 <!-- TRANSFER SECTION -->
 
 <div class="transfer-wrapper">
-    <img class="transfer-desktop" src="{{ asset('assets/frontend/images/offers/desktop-car.svg') }}">
-    <img class="transfer-tablet" src="{{ asset('assets/frontend/images/offers/tablet-car.svg') }}">
-    <img class="transfer-mobile" src="{{ asset('assets/frontend/images/offers/mobile-car.svg') }}">
+    <img class="transfer-desktop" src="<?php echo e(asset('assets/frontend/images/offers/desktop-car.svg')); ?>">
+    <img class="transfer-tablet" src="<?php echo e(asset('assets/frontend/images/offers/tablet-car.svg')); ?>">
+    <img class="transfer-mobile" src="<?php echo e(asset('assets/frontend/images/offers/mobile-car.svg')); ?>">
 
 
     <div class="transfer-texts">
@@ -848,33 +703,33 @@
   <div class="flight-mobile-div">
     <div class='flight-mobile-title'>
       <p>Book a plane ticket right away</p>
-      <img src="{{ asset('assets/frontend/images/offers/plane.svg') }}">
+      <img src="<?php echo e(asset('assets/frontend/images/offers/plane.svg')); ?>">
     </div>
     <div class='flight-mobile-w-addendum collapse' id="flightCollapse">
     <div class="flight-items-wrapper">
       <div class="flight-item-wrapper">
          <a href="https://www.flypgs.com/sehirler/antalya-ucak-bileti" target="_blank">
-            <img class="pegasus-logo" src="{{ asset('assets/frontend/images/offers/logo-1.webp') }}" />
+            <img class="pegasus-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-1.webp')); ?>" />
           </a>
       </div>
       <div class="flight-item-wrapper">
          <a href="https://www.skyscanner.com.tr/?currency=TRY&locale=tr-TR&market=TR&traveller_context=80b9152e-fef3-4182-b891-7b26102e22dd" target="_blank">
-            <img class="scanner-logo" src="{{ asset('assets/frontend/images/offers/logo-2.webp') }}" />
+            <img class="scanner-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-2.webp')); ?>" />
           </a>
       </div>
       <div class="flight-item-wrapper">
          <a href="https://www.corendonairlines.com/tr" target="_blank">
-            <img class="corendon-logo" src="{{ asset('assets/frontend/images/offers/logo-3.webp') }}" />
+            <img class="corendon-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-3.webp')); ?>" />
           </a>
       </div>
       <div class="flight-item-wrapper">
            <a href="https://www.aviasales.ru/?params=IST1&currency=usd" target="_blank">
-            <img class="avia-logo" src="{{ asset('assets/frontend/images/offers/logo-4.webp') }}" />
+            <img class="avia-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-4.webp')); ?>" />
           </a>
       </div>
       <div class="flight-item-wrapper">
          <a href="https://www.turkishairlines.com/tr-int/ucak-bileti/rezervasyon/" target="_blank">
-            <img class="turkish-logo" src="{{ asset('assets/frontend/images/offers/logo-5.webp') }}" />
+            <img class="turkish-logo" src="<?php echo e(asset('assets/frontend/images/offers/logo-5.webp')); ?>" />
           </a>
       </div>
     </div>
@@ -888,7 +743,7 @@
       <hr class="flight-mobile-hr">
       <div class='flight-mobile-title'>
       <p>Spend time on the road in comfort</p>
-      <img src="{{ asset('assets/frontend/images/offers/car.svg') }}">
+      <img src="<?php echo e(asset('assets/frontend/images/offers/car.svg')); ?>">
     </div>
     <a class="transfer-mobile-btn" href="https://portnature.rezervasyonal.com/" target="_blank"> Book Transfer</a>
   </div>
@@ -903,17 +758,17 @@
         <div class="offers-contact-info">
             <p class="offers-contact-title">Free contact call centre or online booking</p>
             <a href="tel:+902427310707">
-                <img src="{{ asset('assets/frontend/images/offers/svg/phone.svg') }}" />
+                <img src="<?php echo e(asset('assets/frontend/images/offers/svg/phone.svg')); ?>" />
 
                 +90 (242) 731 07 07
             </a>
             <a href="mailto:info@portnature.com.tr">
-                <img src="{{ asset('assets/frontend/images/offers/svg/mail.svg') }}" />
+                <img src="<?php echo e(asset('assets/frontend/images/offers/svg/mail.svg')); ?>" />
                 info@portnature.com.tr
             </a>
             <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank"
                 class="offers-contact-whatsapp">
-                <img src="{{ asset('assets/frontend/images/offers/svg/whatsapp.svg') }}" />
+                <img src="<?php echo e(asset('assets/frontend/images/offers/svg/whatsapp.svg')); ?>" />
                 WhatsApp
             </a>
         </div>
@@ -925,17 +780,17 @@
   <p class="contacts-mobile-title"> Contact Us Now</p>
   <div class="contacts-mobile-wrapper">  
       <a href="mailto:callcenter@portnature.com.tr" class="contacts-mobile-item">
-                  <img src="{{ asset('assets/frontend/images/offers/mail.svg') }}">
+                  <img src="<?php echo e(asset('assets/frontend/images/offers/mail.svg')); ?>">
                   <p>info@portnature.com.tr</p>
 
   </a>
     <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank" class="contacts-mobile-item">
-                  <img src="{{ asset('assets/frontend/images/offers/whatsapp.svg') }}">
+                  <img src="<?php echo e(asset('assets/frontend/images/offers/whatsapp.svg')); ?>">
                   <p>Whatsapp</p>
 
   </a>
   <a href="tel:+902427310707" class="contacts-mobile-item">
-                  <img src="{{ asset('assets/frontend/images/offers/phone.svg') }}">
+                  <img src="<?php echo e(asset('assets/frontend/images/offers/phone.svg')); ?>">
                   <p>+90 (242) 731 07 07</p>
 
   </a>
@@ -952,36 +807,36 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <a href="{{ route('antalya-hotels') }}" class="opportunity-slide">
+                <a href="<?php echo e(route('antalya-hotels')); ?>" class="opportunity-slide">
                     <div class="op-img-wrapper">
-                        <img src="{{ asset('assets/frontend/images/offers/general/antalya.webp') }}" />
+                        <img src="<?php echo e(asset('assets/frontend/images/offers/general/antalya.webp')); ?>" />
                     </div>
                     <div class="opportunity-text">
                         <p class="opportunity-title">Antalya Hotels</p>
-                        <a class="transfer-btn" target="blank" href="{{ route('antalya-hotels') }}">More About</a>
+                        <a class="transfer-btn" target="blank" href="<?php echo e(route('antalya-hotels')); ?>">More About</a>
                     </div>
                 </a>
             </div>
             <div class="swiper-slide">
-                <a target="blank" href="{{ route('turkey-hotels') }}"
+                <a target="blank" href="<?php echo e(route('turkey-hotels')); ?>"
                     class="opportunity-slide">
                     <div class="op-img-wrapper">
-                        <img src="{{ asset('assets/frontend/images/offers/general/turkey.webp') }}" />
+                        <img src="<?php echo e(asset('assets/frontend/images/offers/general/turkey.webp')); ?>" />
                     </div>
                     <div class="opportunity-text">
                         <p class="opportunity-title">Turkey Hotels</p>
-                            <a class="transfer-btn" target="blank" href="{{ route('turkey-hotels') }}">More About</a>
+                            <a class="transfer-btn" target="blank" href="<?php echo e(route('turkey-hotels')); ?>">More About</a>
                     </div>
                 </a>
             </div>
             <div class="swiper-slide">
-                <a target="blank" href="{{ route('belek-hotels') }}" class="opportunity-slide">
+                <a target="blank" href="<?php echo e(route('belek-hotels')); ?>" class="opportunity-slide">
                     <div class="op-img-wrapper">
-                        <img src="{{ asset('assets/frontend/images/offers/general/belek.webp') }}" />
+                        <img src="<?php echo e(asset('assets/frontend/images/offers/general/belek.webp')); ?>" />
                     </div>
                     <div class="opportunity-text">
                         <p class="opportunity-title">Belek Hotels</p>
-                        <a class="transfer-btn" target="blank" href="{{ route('belek-hotels') }}">More About</a>
+                        <a class="transfer-btn" target="blank" href="<?php echo e(route('belek-hotels')); ?>">More About</a>
                     </div>
                 </a>
             </div>
@@ -998,7 +853,7 @@
         <p>Introducing our special hotel offers! Enjoy luxurious <a href="https://www.portnature.com.tr/rooms">accommodations</a>, stunning views, and exceptional service. With unbeatable prices and exclusive amenities, there's no better place to stay. Make an <a href="https://portnature.rezervasyonal.com/?_gl=1*1t14gzh*_ga*NzI2Nzc2MjAuMTY4MjQ5NTU2Ng..*_ga_6EYM72GR61*MTY4MjY3MDQyNS43LjEuMTY4MjY3MDQ0MS4wLjAuMA..">online booking now</a> and turn your dream vacation into a reality. We offer a variety of packages to suit your every need. Our hotel has everything you need for a comfortable and memorable stay. Don't miss out, reserve your room today! Additionally, the <a href="https://www.portnature.com.tr/en"> Port Nature Luxury Resort Hotel's</a> <a href="tel:+902427310707">call center</a> is offering special deals exclusively for you. Contact the <a href="tel:+902427310707">call center</a> now to take advantage of these exclusive offers.</p>
     </div>
     <a class="split-img" href="https://www.portnature.com.tr/en">
-        <img src="{{ asset('assets/frontend/images/offers/seo/en/antalya/antalya-hotels-port-nature-premium-resort-hotel.webp') }}" />
+        <img src="<?php echo e(asset('assets/frontend/images/offers/seo/en/antalya/antalya-hotels-port-nature-premium-resort-hotel.webp')); ?>" />
     </a>
 </div>
 
@@ -1015,7 +870,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-1.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-1.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Irina S</p>
                                 <div class="rating-stars"></div>
@@ -1035,7 +890,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-2.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-2.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Tatiana R</p>
                                 <div class="rating-stars"></div>
@@ -1055,7 +910,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-3.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-3.webp')); ?>">
 
                             <div class="rating-info">
                                 <p class="rating-name">Gatti423</p>
@@ -1076,7 +931,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-4.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-4.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Lida K</p>
                                 <div class="rating-stars"></div>
@@ -1095,7 +950,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-5.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-5.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Paradise601</p>
                                 <div class="rating-stars"></div>
@@ -1115,7 +970,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-6.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-6.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Leonid Sh</p>
                                 <div class="rating-stars"></div>
@@ -1134,7 +989,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-7.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-7.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Elina</p>
                                 <div class="rating-stars"></div>
@@ -1153,7 +1008,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-8.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-8.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Artem B</p>
                                 <div class="rating-stars"></div>
@@ -1173,7 +1028,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-9.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-9.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Lyubov M</p>
                                 <div class="rating-stars"></div>
@@ -1193,7 +1048,7 @@
                     <div class="rating-item">
                         <div class="rating-upper">
                             <img class="rating-profile-pic"
-                                src="{{ asset('assets/frontend/images/offers/contacts-10.webp') }}">
+                                src="<?php echo e(asset('assets/frontend/images/offers/contacts-10.webp')); ?>">
                             <div class="rating-info">
                                 <p class="rating-name">Arthur K</p>
                                 <div class="rating-stars"></div>
@@ -1241,9 +1096,9 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <a href="{{ route('concert') }}" class="opportunity-slide">
+                <a href="<?php echo e(route('concert')); ?>" class="opportunity-slide">
                     <div class="op-img-wrapper">
-                        <img src="{{ asset('assets/frontend/images/offers/opportunities-one.webp') }}" />
+                        <img src="<?php echo e(asset('assets/frontend/images/offers/opportunities-one.webp')); ?>" />
                     </div>
                     <div class="opportunity-text">
                         <p class="opportunity-title">Upcoming Concerts at the Hotel 💓💥</p>
@@ -1256,7 +1111,7 @@
                 <a href="https://www.planetware.com/tourist-attractions-/antalya-tr-ant-at.html"
                     class="opportunity-slide">
                     <div class="op-img-wrapper">
-                        <img src="{{ asset('assets/frontend/images/offers/opportunities-two.webp') }}" />
+                        <img src="<?php echo e(asset('assets/frontend/images/offers/opportunities-two.webp')); ?>" />
                     </div>
                     <div class="opportunity-text">
                         <p class="opportunity-title">Visit The Best Locations In Antalya
@@ -1267,9 +1122,9 @@
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="{{ route('spa') }}" class="opportunity-slide">
+                <a href="<?php echo e(route('spa')); ?>" class="opportunity-slide">
                     <div class="op-img-wrapper">
-                        <img src="{{ asset('assets/frontend/images/offers/opportunities-three.webp') }}" />
+                        <img src="<?php echo e(asset('assets/frontend/images/offers/opportunities-three.webp')); ?>" />
                     </div>
                     <div class="opportunity-text">
                         <p class="opportunity-title">Experience Ultimate Relaxation 🥰 💎</p>
@@ -1282,19 +1137,20 @@
     </div>
 </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('javascript-imports')
-<script src="{{ asset('assets/frontend/js/offers.js') }}"></script>
-<script src="{{ asset('assets/frontend/js/offers-mobile-booking.js') }}"></script>
+<?php $__env->startSection('javascript-imports'); ?>
+<script src="<?php echo e(asset('assets/frontend/js/offers.js')); ?>"></script>
+<script src="<?php echo e(asset('assets/frontend/js/offers-mobile-booking.js')); ?>"></script>
 
 
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('css-imports')
+<?php $__env->startSection('css-imports'); ?>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ asset('assets/frontend/css/offers.css') }}" />
-<link rel="stylesheet" media="screen and (max-width:480px)" href="{{ asset('assets/frontend/css/offers-mobile.css') }}" />
+<link rel="stylesheet" href="<?php echo e(asset('assets/frontend/css/offers.css')); ?>" />
+<link rel="stylesheet" media="screen and (max-width:480px)" href="<?php echo e(asset('assets/frontend/css/offers-mobile.css')); ?>" />
 
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('frontend.en.layouts.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH /Users/jack/Documents/GitHub/portwebphp/resources/views/frontend/en/offers/special-offers.blade.php ENDPATH**/ ?>
