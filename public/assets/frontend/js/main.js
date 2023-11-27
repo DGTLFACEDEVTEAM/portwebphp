@@ -55,7 +55,7 @@ var swiperHomeTop = new Swiper(".heroTopSwiper", {
     lazy: true,
     slidesPerView: 1,
     loop: !0,
-    autoplay: { delay: 3e3 },
+   
     navigation: { nextEl: ".heroSwiperNext", prevEl: ".heroSwiperPrev" },
     breakpoints: { 576: { autoplay: { delay: 2e4 } } },
 });
@@ -70,7 +70,6 @@ function isScrolledIntoView(el) {
     var isVisible = elemTop < window.innerHeight && elemBottom >= 200;
     // Partially visible elements return true:
     // isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-    console.log(isVisible);
     return isVisible;
 }
 

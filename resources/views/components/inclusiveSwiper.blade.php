@@ -82,7 +82,7 @@
                         <div class="swiper-slide">
                             <img srcset="{{ asset('assets/frontend/images/home/inclusiveSlider-1-640.webp') }} 640w,{{ asset('assets/frontend/images/home/inclusiveSlider-1-834.webp') }} 834w "
                                 sizes="((min-width: 1px) and (max-width:576px)) 640w,((min-width: 577px) and (max-width:834px)) 834w,((min-width: 835px) and (max-width:1919px)) 640w, (min-width:1920px) 640w"
-                                src="{{ asset('assets/frontend/images/home/inclusiveSlider-1.png') }}"
+                                src="{{ asset('assets/frontend/images/home/inclusiveSlider-1.webp') }}"
                                 alt="Portnature Hotel Pics" loading="lazy" />
                             <div class="swiper-lazy-preloader"></div>
                         </div>

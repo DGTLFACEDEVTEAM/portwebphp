@@ -189,49 +189,8 @@
     <!-- Rezervation Section End -->
 
     <!-- Home Icons -->
-    <div class="homeIcons">
-        <div class="homeIconContainer">
-            <div class="homeIconWrapper">
-                <div class="iconGroup">
-                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/homelocation.svg') }}"
-                        alt="location">
-                    <span>BELEK &#8226; ANTALYA</span>
-                </div>
-            </div>
-            <div class="homeIconWrapper">
-                <div class="iconGroup">
-                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/aquapark.svg') }}"
-                        alt="aquapark" />
-                    <span>AQUAPARK</span>
-                </div>
-            </div>
-            <div class="homeIconWrapper">
-                <div class="iconGroup">
-                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/concerts.svg') }}"
-                        alt="concerts">
-                    <span>KONZERTE</span>
-                </div>
-            </div>
-            <div class="homeIconWrapper">
-                <div class="iconGroup">
-                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/beach.svg') }}"
-                        alt="beach">
-                    <span>SANDSTRAND</span>
-                </div>
-            </div>
-            <div class="homeIconWrapper">
-                <div class="iconGroup">
-                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/entertainment.svg') }}"
-                        alt="entertainment" />
-                    <span>UNTERHALTUNG</span>
-                </div>
-            </div>
+    @include('components.inclusiveSwiper', ['lang' => 'de'])
 
-        </div>
-
-        <!-- Home Icons End -->
-        <div class="thinLine"></div>
-    </div>
     <!-- Inclusive Area Text -->
 
     @include('components.inclusiveSwiper', ['lang' => 'de'])

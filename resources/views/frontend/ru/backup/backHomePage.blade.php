@@ -198,8 +198,49 @@
     <!-- Rezervation Section End -->
 
     <!-- Home Icons -->
-    @include('components.inclusiveSwiper', ['lang' => 'ru'])
+    <div class="homeIcons">
+        <div class="homeIconContainer">
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/homelocation.svg') }}"
+                        alt="location">
+                    <span>Белек - Анталья</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/aquapark.svg') }}"
+                        alt="aquapark" />
+                    <span>Аквапарк</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/concerts.svg') }}"
+                        alt="concerts">
+                    <span>Концерты</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/beach.svg') }}"
+                        alt="beach">
+                    <span>Песчаный Пляж</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/entertainment.svg') }}"
+                        alt="entertainment" />
+                    <span>Развлечения</span>
+                </div>
+            </div>
 
+        </div>
+
+        <!-- Home Icons End -->
+        <div class="thinLine"></div>
+    </div>
     <!-- Inclusive Area Text -->
 
     @include('components.inclusiveSwiper', ['lang' => 'ru'])

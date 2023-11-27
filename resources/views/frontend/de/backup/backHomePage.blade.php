@@ -1,19 +1,19 @@
-@extends('frontend.ru.layouts.master')
+@extends('frontend.de.layouts.master')
 
-@section('title', 'Официальный сайт - Port Nature Luxury Resort')
+@section('title', 'Offizielle Website- Port Nature Luxury Resort ')
 @section('description',
-    'Официальный сайт Port Nature. Лучшие 5-звездночные отели все включено в Анталии. Раннее
-    бронирование с лучшими ценами и скидками')
+    'Port Nature Luxury Resort Hotel & Spa. Besuchen Sie unsere offizielle Webseite. Bestes Luxus
+    all inclusive familien freundliche Hotel in Belek.')
 
 @section('header-lang')
 
     <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{{ route('ru-homepage') }}"
-            aria-expanded="false">RU</a>
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="{{ route('de-homepage') }}"
+            aria-expanded="false">DE</a>
         <ul class="dropdown-menu dropdownmobile language">
             <li><a class="dropdown-item" href="{{ route('homepage') }}">EN</a></li>
             <li><a class="dropdown-item" href="{{ route('tr-homepage') }}">TR</a></li>
-            <li><a class="dropdown-item first-item" href="{{ route('de-homepage') }}">DE</a></li>
+            <li><a class="dropdown-item" href="{{ route('ru-homepage') }}">RU</a></li>
         </ul>
     </li>
 
@@ -22,9 +22,9 @@
 @section('content')
 
     <!-- Swiper Start -->
-    @include('components.heroSwiper', ['lang' => 'ru'])
-    <!-- Swiper Finish -->
+    @include('components.heroSwiper', ['lang' => 'de'])
 
+    <!-- Swiper Finish -->
     <!-- Rezervation Section -->
     <!-- Booking Section -->
     <div class="booking">
@@ -35,13 +35,13 @@
         <div class="dropdown">
             <div class="guestDiv" type="button" id="guestMenuDropdown" data-bs-toggle="dropdown" aria-expanded="false"
                 data-bs-auto-close="outside">
-                <span class="guests">гости</span>
+                <span class="guests">Gäste</span>
             </div>
             <div class="guestMenu dropdown-menu" aria-labelledby="guestMenuDropdown">
                 <div class="adultCounter dropdown-item dropdown">
                     <button class="dropdown-toggle" type="button" id="adultSelectionDropdown" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <p class="guest-title">Взрослые</p>
+                        <p class="guest-title">Erwachsene</p>
                         <p id="adultCount" class="reservation-titles adult-count">3 </p>
                         <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/booking-arrow.svg') }}" />
                     </button>
@@ -57,7 +57,7 @@
                 <div class="childCounter dropdown-item dropdown">
                     <button class="dropdown-toggle" type="button" id="childSelectionDropdown" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <p class="guest-title">дети</p>
+                        <p class="guest-title">Kind(er)</p>
                         <p id="childCount">0 </p>
                         <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/booking-arrow.svg') }}" />
                     </button>
@@ -73,15 +73,13 @@
                     <div class="childAgeItem child-age-item-1 dropdown">
                         <button class="dropdown-toggle" type="button" id="childAge1Btn" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <p class="guest-title">Ребенок 1 возраст
-                            </p>
+                            <p class="guest-title">Kind 1 Alter</p>
                             <p id="childAge1" class="reservation-titles child-age-count">0</p>
                             <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/booking-arrow.svg') }}" />
                         </button>
                         <ul class="dropdown-menu  child-age-dropdown-menu dropdown-menu-end" aria-labelledby="childAge1Btn">
                             <li class="dropdown-item people-item disabled">
-                                <p class=" p-15 dropdown-text child-age-text">Выберите возраст
-                                    1</p>
+                                <p class=" p-15 dropdown-text child-age-text">Alter 1</p>
                             </li>
                             <li class="dropdown-item people-item child-age-item" value="0"> 0 </li>
                             <li class="dropdown-item people-item child-age-item" value="1"> 1 </li>
@@ -101,8 +99,7 @@
                     <div class="childAgeItem child-age-item-2 dropdown">
                         <button class="dropdown-toggle" type="button" id="childAge2Btn" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <p class="guest-title">Ребенок 2 возраст
-                            </p>
+                            <p class="guest-title">Kind 2 Alter</p>
                             <p id="childAge2" class="reservation-titles child-age-count">0</p>
                             <img class="lazyload"
                                 data-src="{{ asset('assets/frontend/images/home/booking-arrow.svg') }}" />
@@ -110,8 +107,7 @@
                         <ul class="dropdown-menu child-age-dropdown-menu dropdown-menu-end"
                             aria-labelledby="childAge2Btn">
                             <li class="dropdown-item people-item disabled">
-                                <p class=" p-15 dropdown-text child-age-text">Выберите возраст
-                                    2</p>
+                                <p class=" p-15 dropdown-text child-age-text">Alter 2</p>
                             </li>
                             <li class="dropdown-item people-item child-age-item" value="0"> 0 </li>
                             <li class="dropdown-item people-item child-age-item" value="1"> 1 </li>
@@ -131,8 +127,7 @@
                     <div class="childAgeItem child-age-item-3 dropdown">
                         <button class="dropdown-toggle" type="button" id="childAge3Btn" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <p class="guest-title">Ребенок 3 возраст
-                            </p>
+                            <p class="guest-title">Kind 3 Alter</p>
                             <p id="childAge3" class="reservation-titles child-age-count">0</p>
                             <img class="lazyload"
                                 data-src="{{ asset('assets/frontend/images/home/booking-arrow.svg') }}" />
@@ -140,8 +135,7 @@
                         <ul class="dropdown-menu  child-age-dropdown-menu dropdown-menu-end"
                             aria-labelledby="childAge3Btn">
                             <li class="dropdown-item people-item disabled">
-                                <p class=" p-15 dropdown-text child-age-text">Выберите возраст
-                                    3</p>
+                                <p class=" p-15 dropdown-text child-age-text">Alter 3</p>
                             </li>
                             <li class="dropdown-item people-item child-age-item" value="0"> 0 </li>
                             <li class="dropdown-item people-item child-age-item" value="1"> 1 </li>
@@ -161,8 +155,7 @@
                     <div class="childAgeItem child-age-item-4 dropdown">
                         <button class="dropdown-toggle" type="button" id="childAge4Btn" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <p class="guest-title">Ребенок 4 возраст
-                            </p>
+                            <p class="guest-title">Kind 4 Alter</p>
                             <p id="childAge4" class="reservation-titles child-age-count">0</p>
                             <img class="lazyload"
                                 data-src="{{ asset('assets/frontend/images/home/booking-arrow.svg') }}" />
@@ -170,8 +163,7 @@
                         <ul class="dropdown-menu  child-age-dropdown-menu dropdown-menu-end"
                             aria-labelledby="childAge4Btn">
                             <li class="dropdown-item people-item disabled">
-                                <p class=" p-15 dropdown-text child-age-text">Выберите возраст
-                                    4</p>
+                                <p class=" p-15 dropdown-text child-age-text">Alter 4</p>
                             </li>
                             <li class="dropdown-item people-item child-age-item" value="0"> 0 </li>
                             <li class="dropdown-item people-item child-age-item" value="1"> 1 </li>
@@ -191,22 +183,62 @@
                 </div>
             </div>
         </div>
-        <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow">Бронировать
-            сейчас</a>
+        <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow">Büchen Sie</a>
     </div>
     <!-- Booking Section End -->
     <!-- Rezervation Section End -->
 
     <!-- Home Icons -->
-    @include('components.inclusiveSwiper', ['lang' => 'ru'])
+    <div class="homeIcons">
+        <div class="homeIconContainer">
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/homelocation.svg') }}"
+                        alt="location">
+                    <span>BELEK &#8226; ANTALYA</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/aquapark.svg') }}"
+                        alt="aquapark" />
+                    <span>AQUAPARK</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/concerts.svg') }}"
+                        alt="concerts">
+                    <span>KONZERTE</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/beach.svg') }}"
+                        alt="beach">
+                    <span>SANDSTRAND</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/entertainment.svg') }}"
+                        alt="entertainment" />
+                    <span>UNTERHALTUNG</span>
+                </div>
+            </div>
 
+        </div>
+
+        <!-- Home Icons End -->
+        <div class="thinLine"></div>
+    </div>
     <!-- Inclusive Area Text -->
 
-    @include('components.inclusiveSwiper', ['lang' => 'ru'])
+    @include('components.inclusiveSwiper', ['lang' => 'de'])
     <!-- Inclusive Area Text End -->
     <!-- Concerts -->
     <div class="concertsWrapper">
-        <h2 class="concertsHeader">Концерты</h2>
+        <h2 class="concertsHeader">KONZERTE</h2>
         <div class="swiper homeConcertSlider">
             <div class="swiper-wrapper">
 
@@ -229,83 +261,85 @@
         </div>
     </div>
     </div>
-    <!-- Concerts End -->
+    <!-- Concerts End --><!-- VIDEO SCRIPT PARTS -->
+
     <!-- Accommdation -->
     {{-- <div class="homeAccommdation">
         <div class="homeAccommodationWrapper">
             <article>
-                <h2>Номера</h2>
-                <h6>Номера наедине с природой - это залог расслабления и комфортного отдыха.<br> Наши номера улучшат ваши
-                    впечатления от отпуска.</h6>
+                <h2>ZIMMER</h2>
+                <h6>Zimmer in Kontakt mit der Natur sind ein Schlüssel für Entspannung und einen komfortablen Urlaub.<br>
+                    Unser Zimmer bereichert Ihr Urlaubserlebnis.</h6>
             </article>
             <div class="swiper Roomswiper">
                 <div class="swiper-wrapper" style="padding-bottom: 200px">
                     <div class="swiper-slide">
-                        <a class="toRoom" href="{{ route('ru-family-rooms') }}">
+                        <a class="toRoom" href="{{ route('de-family-rooms') }}">
                             <div class="otherImage">
                                 <figure>
                                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/home-page-family-1.webp') }}"
                                         alt="familyRoom" />
                                 </figure>
-                                <h3>Семейный</h3>
-                                <span>4 Взрослых + 1 Ребенок · 45 m² · Боковой Вид На Море</span>
-                                <p>Две комнаты для личного пространства детей и родителей.</p>
+                                <h3>FAMILIENZIMMER</h3>
+                                <span>4 ERWACHSENE + 1 KIND · 45 m² · Mit seitlichem Meerblick</span>
+                                <p>Ihre Kinder finden ihren eigenen Rückzugsort, während Sie sich im Nebenzimmer entspannen.
+                                </p>
                                 <div class="homeAccommdationmoreButton">
-                                    <a href="{{ route('ru-family-rooms') }}">Подробнее</a>
+                                    <a href="{{ route('de-family-rooms') }}">Mehr Uber</a>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a class="toRoom" href="{{ route('ru-kingsuit-rooms') }}">
+                        <a class="toRoom" href="{{ route('de-kingsuit-rooms') }}">
                             <div class="otherImage">
                                 <figure>
                                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/home-page-king-1.webp') }}"
                                         alt="kingSuite" />
                                 </figure>
                                 <h3>King Suite</h3>
-                                <span>5 Взрослых + 1 Ребенок · 110 m² · Вид На Море</span>
-                                <p>Роскошные, большие номера с чудесным сидом на море.</p>
+                                <span>5 ERWACHSENE + 1 KIND · 110 m² · Meerblick</span>
+                                <p>Wunderbarer Meerblick und luxuriöse, große Zimmer werden Sie faszinieren.</p>
                                 <div class="homeAccommdationmoreButton">
-                                    <a href="{{ route('ru-kingsuit-rooms') }}">Подробнее</a>
+                                    <a href="{{ route('de-kingsuit-rooms') }}">Mehr Uber</a>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="swiper-slide">
-                        <a class="toRoom" href="{{ route('ru-standard-rooms') }}">
+                        <a class="toRoom" href="{{ route('de-standard-rooms') }}">
                             <div class="otherImage">
                                 <figure>
                                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/home-page-standart-sea-1.webp') }}"
                                         alt="standardRoom" />
                                 </figure>
-                                <h3>Стандарт</h3>
-                                <span>2 Взрослых + 2 Ребенок · 34 m² · <br> Боковой вид / Море / Окрестности</span>
-                                <p>Многие роскошные удобства для незабываемого отдыха.</p>
+                                <h3>STANDARDZIMMER</h3>
+                                <span>2 ERWACHSENE + 2 KINDER · 34 m² · Mit seitlichem Meer-/Meer-/Landblick</span>
+                                <p>Viele der luxuriösen Ausstattungsmerkmale sorgen für einen unvergesslichen Urlaub.</p>
                                 <div class="homeAccommdationmoreButton">
-                                    <a href="{{ route('ru-standard-rooms') }}">Подробнее</a>
+                                    <a href="{{ route('de-standard-rooms') }}">Mehr Uber</a>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <!-- If we need navigation buttons -->
+
                 <div class="swiper-button-next">
                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/swipergray-right.svg') }}" alt="swiper next button" />
                 </div>
             </div>
         </div>
     </div> --}}
-    @include('components.accommdationSwiper', ['lang' => 'ru'])
+    @include('components.accommdationSwiper', ['lang' => 'de'])
 
 
     <!-- Accomdation End -->
     <!-- Children Menu -->
     <div class="children">
-        <div class="childenContainer">
+        <div class="childrenContainer">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Дети</h2>
+                    <h2>KINDER</h2>
                 </div>
             </div>
 
@@ -313,17 +347,18 @@
                 <div class="childrenIcons">
                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/childrencam.svg') }}"
                         alt="children" />
-                    <span class="subChildrenText">Наблюдайте за своим ребенком из номера через телевизор</span>
+                    <span class="subChildrenText">Auf dem Fernseher in Ihrem Zimmer können Sie sehen, was Ihr Kind
+                        macht</span>
                 </div>
                 <div class="childrenIcons">
                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/childrenage.svg') }}"
                         alt="children" />
-                    <span class="subChildrenText">Развлечения для детей любого возраста</span>
+                    <span class="subChildrenText">Aktivitäten für Kinder jeden Alters</span>
                 </div>
                 <div class="childrenIcons">
                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/childrenbabysit.svg') }}"
                         alt="children" />
-                    <span class="subChildrenText">Широкий выбор еды в ресторане для детей</span>
+                    <span class="subChildrenText">Ihr Kind wählt selbst mit unserem Kinder-Exklusiv-Menü</span>
                 </div>
             </div>
         </div>
@@ -440,25 +475,24 @@
             </div>
         </div>
         <div class="moreButton">
-            <a href="{{ route('ru-kids-concepts') }}">Подробнее</a>
+            <a href="{{ route('de-kids-concepts') }}">Mehr Uber</a>
         </div>
     </div>
-
     <!-- Children Menu End -->
     <!-- Banner -->
     <div class="homeBanner">
         <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/homeBanner.webp') }}" />
-        <h3>Мы создали невероятный пляж с уникальной природной красотой <br>города Белек для взрослых и детей.</h3>
+        <h3>Wir haben ein unglaubliches Stranderlebnis mit Beleks<br> einzigartiger natürlicher Schönheit für Erwachsene und
+            Kinder geschaffen.</h3>
         <div class="moreButton">
-            <a href="{{ route('ru-activity') }}">Подробнее</a>
+            <a href="{{ route('de-activity') }}">Mehr Uber</a>
         </div>
     </div>
     <!-- Banner End -->
     <!-- Contact -->
-    {{-- @include('frontend.ru.layouts.contact') --}}
-    @include('components.contactSection', ['lang' => 'ru'])
+    {{-- @include('frontend.de.layouts.contact')  --}}
+    @include('components.contactSection', ['lang' => 'de'])
     <!-- Contact End -->
-
     <!-- Gastronomy Start -->
     <div class="homeGastronomy">
         <div class="homeGastronomyWrapper">
@@ -467,13 +501,13 @@
                     <h2>
                         <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/7.svg') }}"
                             alt="seven">
-                        Ресторанов A'la Carte Премиум-Класса
+                        unserer Premium À-la-carte-Restaurants
                     </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h6>Лучшие кухни разных стран!</h6>
+                    <h6>Die besten Küchen verschiedener Länder!</h6>
                 </div>
             </div>
             <div class="gastroIconsWrapper">
@@ -482,29 +516,28 @@
                     <img style="width: unset" class="lazyload"
                         data-src="{{ asset('assets/frontend/images/home/quality.svg') }}" alt="quality">
                     <div class="gastroText">
-                        <span>Высочайшее Качество</span>
-                        <p class="gastroP">Тщательно подобранные блюда для особых впечатлений</p>
-
+                        <span>Top Qualität</span>
+                        <p class="gastroP">Sorgfältig ausgewählte Zutaten für besondere Speisen</p>
                     </div>
                 </div>
                 <div class="gastroIcons">
                     <img style="width: unset" class="lazyload"
                         data-src="{{ asset('assets/frontend/images/home/drink.svg') }}" alt="drinks">
                     <div class="gastroText">
-                        <span>Безграничный</span>
-                        <p class="gastroP">Вы почувствуете роскошь с 148 напитками премиум-класса</p>
-
+                        <span>Unbegrenzt</span>
+                        <p class="gastroP">Sie werden den Luxus mit 148 verschiedenen Blue-Ribbon-Getränke spüren.
+                        </p>
                     </div>
                 </div>
                 <div class="gastroIcons">
                     <img style="width: unset" class="lazyload"
                         data-src="{{ asset('assets/frontend/images/home/free.svg') }}" alt="free">
                     <div class="gastroText">
-                        <span>БЕСПЛАТНО в любое время</span>
-                        <p class="gastroP">Вход без бронирования в любое рабочее время</p>
+                        <span>Innerhalb der Arbeitszeit</span>
+                        <p class="gastroP">Eintritt ohne Reservierung zu allen Geschäftszeiten</p>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
         <div class="gastroSlideBg">
@@ -523,23 +556,23 @@
                                     alt="FAR EAST A'LA CARTE" />
                             </figure>
                             <article>
-                                <span>Дальневосточный A’LA CARTE</span>
+                                <span>FAR EAST A'LA CARTE</span>
                                 <div class="gastroTextSec">
                                     <p>
                                         <img class="gastroIconSmall gastroIcon1 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/clock.svg') }}"
                                             alt="clock" />
-                                        В любое рабочее время
+                                        Zu jeder Arbeitszeit
                                     </p>
                                     <p>
                                         <img class="gastroIconSmall gastroIcon2 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant">
-                                        Без Бронирования
+                                        Ohne Buchung
                                     </p>
                                 </div>
                                 <div class="homeGastroMoreButton">
-                                    <a href="{{ route('ru-fareast') }}">Подробнее</a>
+                                    <a href="{{ route('de-fareast') }}">Mehr Uber</a>
                                 </div>
                             </article>
                         </div>
@@ -559,17 +592,17 @@
                                         <img class="gastroIconSmall gastroIcon1 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/clock.svg') }}"
                                             alt="clock" />
-                                        В любое рабочее время
+                                        Zu jeder Arbeitszeit
                                     </p>
                                     <p>
                                         <img class="gastroIconSmall gastroIcon2 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant">
-                                        Без Бронирования
+                                        Ohne Buchung
                                     </p>
                                 </div>
                                 <div class="homeGastroMoreButton">
-                                    <a href="{{ route('ru-alldaydinning') }}">Подробнее</a>
+                                    <a href="{{ route('de-alldaydinning') }}">Mehr Uber</a>
                                 </div>
                             </article>
 
@@ -584,23 +617,23 @@
                             </figure>
 
                             <article>
-                                <span>Французский A’LA CARTE</span>
+                                <span>FRENCH A'LA CARTE</span>
                                 <div class="gastroTextSec">
                                     <p>
                                         <img class="gastroIconSmall gastroIcon1 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/clock.svg') }}"
                                             alt="clock" />
-                                        В любое рабочее время
+                                        Zu jeder Arbeitszeit
                                     </p>
                                     <p>
                                         <img class="gastroIconSmall gastroIcon2 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant">
-                                        Без Бронирования
+                                        Ohne Buchung
                                     </p>
                                 </div>
                                 <div class="homeGastroMoreButton">
-                                    <a href="{{ route('ru-french') }}">Подробнее</a>
+                                    <a href="{{ route('de-french') }}">Mehr Uber</a>
                                 </div>
                             </article>
                         </div>
@@ -620,17 +653,17 @@
                                         <img class="gastroIconSmall gastroIcon1 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/clock.svg') }}"
                                             alt="clock" />
-                                        В любое рабочее время
+                                        Zu jeder Arbeitszeit
                                     </p>
                                     <p>
                                         <img class="gastroIconSmall gastroIcon2 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant">
-                                        Без Бронирования
+                                        Ohne Buchung
                                     </p>
                                 </div>
                                 <div class="homeGastroMoreButton">
-                                    <a href="{{ route('ru-seaside') }}">Подробнее</a>
+                                    <a href="{{ route('de-seaside') }}">Mehr Uber</a>
                                 </div>
                             </article>
                         </div>
@@ -643,23 +676,23 @@
                                     alt="italianrest" />
                             </figure>
                             <article>
-                                <span>Итальянский A’LA CARTE</span>
+                                <span>ITALIAN A'LA CARTE</span>
                                 <div class="gastroTextSec">
                                     <p>
                                         <img class="gastroIconSmall gastroIcon1 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/clock.svg') }}"
                                             alt="clock" />
-                                        В любое рабочее время
+                                        Zu jeder Arbeitszeit
                                     </p>
                                     <p>
                                         <img class="gastroIconSmall gastroIcon2 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant">
-                                        Без Бронирования
+                                        Ohne Buchung
                                     </p>
                                 </div>
                                 <div class="homeGastroMoreButton">
-                                    <a href="{{ route('ru-italian') }}">Подробнее</a>
+                                    <a href="{{ route('de-italian') }}">Mehr Uber</a>
                                 </div>
                             </article>
                         </div>
@@ -672,23 +705,23 @@
                                     alt="miniclubrest" />
                             </figure>
                             <article>
-                                <span>Мини клуб A’LA CARTE</span>
+                                <span>MINI CLUB A'LA CARTE</span>
                                 <div class="gastroTextSec">
                                     <p>
                                         <img class="gastroIconSmall gastroIcon1 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/clock.svg') }}"
                                             alt="clock" />
-                                        В любое рабочее время
+                                        Zu jeder Arbeitszeit
                                     </p>
                                     <p>
                                         <img class="gastroIconSmall gastroIcon2 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant">
-                                        Без Бронирования
+                                        Ohne Buchung
                                     </p>
                                 </div>
                                 <div class="homeGastroMoreButton">
-                                    <a href="{{ route('ru-mini-club-alacarte') }}">Подробнее</a>
+                                    <a href="{{ route('de-mini-club-alacarte') }}">Mehr Uber</a>
                                 </div>
                             </article>
                         </div>
@@ -707,17 +740,17 @@
                                         <img class="gastroIconSmall gastroIcon1 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/clock.svg') }}"
                                             alt="clock" />
-                                        В любое рабочее время
+                                        Zu jeder Arbeitszeit
                                     </p>
                                     <p>
                                         <img class="gastroIconSmall gastroIcon2 lazyload"
                                             data-src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant">
-                                        Без Бронирования
+                                        Ohne Buchung
                                     </p>
                                 </div>
                                 <div class="homeGastroMoreButton">
-                                    <a href="{{ route('ru-sushi-bar') }}">Подробнее</a>
+                                    <a href="{{ route('de-sushi-bar') }}">Mehr Uber</a>
                                 </div>
                             </article>
                         </div>
@@ -763,9 +796,10 @@
         </div>
     </div>
     <!-- Drink Brand End -->
+
     <!-- Special Offer -->
     <div class="homeSpecialOffer">
-        <h6>Специальные Предложения</h6>
+        <h6>Sonderangebote</h6>
         <div class="swiper specialOfferSlider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -781,8 +815,8 @@
                     <article>
                         <img class="specialSvg lazyload" data-src="{{ asset('assets/frontend/images/home/vip.svg') }}"
                             alt="vip">
-                        <p>Станьте VIP-клиентом</p>
-                        <span>VIP-привилегии в отпуске</span>
+                        <p>Werden Sie VIP-Kunde</p>
+                        <span>VIP-Privileg in Ihrem Urlaub</span>
                     </article>
                 </div>
                 <div class="swiper-slide">
@@ -798,8 +832,8 @@
                     <article>
                         <img class="specialSvg lazyload"
                             data-src="{{ asset('assets/frontend/images/home/mixology.svg') }}" alt="mixology">
-                        <p>Эксперт по миксологии</p>
-                        <span>Подготовлено для вас</span>
+                        <p>Experte für Mixologie</p>
+                        <span>Sorgfältig zubereitet für Sie</span>
                     </article>
                 </div>
                 <div class="swiper-slide">
@@ -815,8 +849,8 @@
                     <article>
                         <img class="specialSvg lazyload"
                             data-src="{{ asset('assets/frontend/images/home/wedding.svg') }}" alt="wedding" />
-                        <p>Свадебные подарки</p>
-                        <span>Проводите время вместе</span>
+                        <p>Hochzeitsgeschenk</p>
+                        <span>Zeit zusammen verbringen</span>
                     </article>
                 </div>
             </div>
@@ -853,11 +887,11 @@
                                     </div>
                                     <div class=" serviceText">
 
-                                        <span>Премиум Бар & Лаундж</span>
-                                        <p>Премиум сервис даст чуство премиум-класса. Port Nature Luxury всегда здесь для
-                                            этого ощущения.</p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
-                                            <a href="{{ route('ru-bar-cafe') }}">Подробнее</a>
+                                        <span>Premium Bar & Lounge</span>
+                                        <p>Premium-Service fühlt sich erstklassig an.<br>
+                                            Für dieses Gefühl ist das Port Nature Luxury Resort immer da.</p>
+                                        <div class="homeServicesButton">
+                                            <a href="{{ route('de-bar-cafe') }}">Mehr Uber</a>
                                         </div>
                                     </div>
                                 </div>
@@ -879,11 +913,11 @@
                                     </div>
                                     <div class=" serviceText">
 
-                                        <span>Магический Спа</span>
-                                        <p>Побалуйте себя блаженным отдыхом в спа-центре с квалифицированными специалистыми.
-                                        </p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
-                                            <a href="{{ route('ru-spa') }}">Подробнее</a>
+                                        <span>Magic Spa</span>
+                                        <p>Gönnen Sie sich in unserem luxuriösen Spa mit erfahrenen Therapeuten eine
+                                            glückselige Flucht.</p>
+                                        <div class="homeServicesButton">
+                                            <a href="{{ route('de-spa') }}">Mehr Uber</a>
                                         </div>
                                     </div>
                                 </div>
@@ -905,10 +939,11 @@
                                     </div>
                                     <div class=" serviceText">
 
-                                        <span>Встречи & Конгресс</span>
-                                        <p>Мы не только веселые, но и серьезные для деловых людей</p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
-                                            <a href="{{ route('ru-meeting-congress') }}">Подробнее</a>
+                                        <span>Tagung & Kongress</span>
+                                        <p>Bei uns geht es nicht nur um Unterhaltung, sondern sprechen auch den Unternehmer
+                                            an.</p>
+                                        <div class="homeServicesButton">
+                                            <a href="{{ route('de-meeting-congress') }}">Mehr Uber</a>
                                         </div>
                                     </div>
                                 </div>
@@ -930,10 +965,10 @@
                                     </div>
                                     <div class=" serviceText">
 
-                                        <span>Кафе Davidoff</span>
-                                        <p>Откройте для себя драгоценные сорта кофе, сделав ваш день незабываемым</p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
-                                            <a href="{{ route('ru-davidoff-cafe') }}">More About</a>
+                                        <span>Davidoff Kafe</span>
+                                        <p>Entdecken Sie kostbare Kaffeesorten,<br> die es wert sind, weiter zu gehen.</p>
+                                        <div class="homeServicesButton">
+                                            <a href="{{ route('de-davidoff-cafe') }}">Mehr Uber</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1009,15 +1044,9 @@
         </div>
     </div>
     <!-- Contact -->
-    @include('frontend.ru.layouts.contact')
+    @include('frontend.de.layouts.contact')
     <!-- Contact End -->
 
-    <!-- Bottom Fixed Book Now -->
-    <div class="fixedBookNow">
-        <a href="https://portnature.rezervasyonal.com/" target="_blank">
-            Book Now
-        </a>
-    </div>
     <!-- Above Footer -->
     <div class="homeAboveFooter">
         <div class="aboveImg">
@@ -1033,8 +1062,8 @@
                 <a href="https://www.facebook.com/portnature" target="_blank">
                     <img class="specialSvg" src="{{ asset('assets/frontend/images/instagramwhite.svg') }}"
                         alt="instagram">
-                    Добро пожаловать</a>
-                <p>Подписаться</p>
+                    Willkommen</a>
+                <p>Folgen Sie uns</p>
             </div>
             <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/instagram-5.webp') }}"
                 alt="aboveFooter5" />
@@ -1045,7 +1074,7 @@
         </div>
 
         <div class="phoneImage">
-            <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/inst-ru.webp') }}" alt="phone" />
+            <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/inst-de.webp') }}" alt="phone" />
         </div>
     </div>
     <!-- Above Footer End -->
@@ -1055,7 +1084,6 @@
 @section('javascript-imports')
     <script src="{{ asset('assets/frontend/libs/js/lc_lightbox.lite.min.js') }}" defer></script>
     <script src="{{ asset('assets/frontend/js/main.js') }}"></script>
-
 @endsection
 
 @section('css-imports')

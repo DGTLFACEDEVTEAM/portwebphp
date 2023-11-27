@@ -8,7 +8,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-icon" href="{{ route('homepage') }}">
-                    <img src="{{ asset('assets/frontend/images/logo-port-small.svg') }}" alt="logo" />
+                    <img loading="lazy" src="{{ asset('assets/frontend/images/logo-port-small.svg') }}"
+                        alt="logo" />
                 </a>
                 <div class="menubar ">
                     <li class="nav-item dropdown">
@@ -93,25 +94,25 @@
             <div class="menuLeft">
                 <span id="offcanvasOpenBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
                     aria-controls="offcanvasTop"><!-- 22.03 STYLE ADDED -->
-                    <img style="width: 20px!important;height: 20px!important;" class="headerSvg"
+                    <img loading="lazy" style="width: 20px!important;height: 20px!important;" class="headerSvg"
                         src="{{ asset('assets/frontend/images/hamburger.svg') }}" alt="Open Mobile Menu" />
                 </span>
                 <a class="roomlink" href="{{ route('homepage') }}">
-                    <img loading="lazy" class="mobile-header-logo" src="{{ asset('assets/frontend/images/logo-port-small.svg') }}"
-                        alt="mobileLogo" />
+                    <img loading="lazy" loading="lazy" class="mobile-header-logo"
+                        src="{{ asset('assets/frontend/images/logo-port-small.svg') }}" alt="mobileLogo" />
                 </a>
             </div>
             <div class="menuRight">
                 <div class="whatsappLogo">
                     <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank">
-                        <img class="headerSvg" src="{{ asset('assets/frontend/images/whatsappwhite.svg') }}"
-                            alt="whatsappLogo" />
+                        <img loading="lazy" class="headerSvg"
+                            src="{{ asset('assets/frontend/images/whatsappwhite.svg') }}" alt="whatsappLogo" />
                     </a>
                 </div>
                 <div class="mobilePhoneLogo">
                     <a href="tel:+902427310707">
-                        <img class="headerSvg" src="{{ asset('assets/frontend/images/telephonewhite.svg') }}"
-                            alt="telIcon" />
+                        <img loading="lazy" class="headerSvg"
+                            src="{{ asset('assets/frontend/images/telephonewhite.svg') }}" alt="telIcon" />
                     </a>
                 </div>
 
@@ -125,9 +126,9 @@
             <div class="offcanvas-top-section">
                 <div class="menuLeft">
                     <span data-bs-dismiss="offcanvas" aria-label="Close" id="offcanvasCloseBtn">
-                        <img class="offcanvasClose" style="height: 20px!important;width: 10px!important"
-                            class="offcanvasClose" src="{{ asset('assets/frontend/images/offcanvasclose.svg') }}"
-                            alt="closebutton" />
+                        <img loading="lazy" class="offcanvasClose"
+                            style="height: 20px!important;width: 10px!important" class="offcanvasClose"
+                            src="{{ asset('assets/frontend/images/offcanvasclose.svg') }}" alt="closebutton" />
                     </span>
                     <a class="roomlink" href="{{ route('homepage') }}">
                         <img class="offcanvasLogo " loading="lazy"
@@ -138,14 +139,14 @@
                     <div class="whatsappLogo">
                         <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data="
                             target="_blank">
-                            <img class="headerSvg" src="{{ asset('assets/frontend/images/whatsappgray.svg') }}"
-                                alt="wpgray" />
+                            <img loading="lazy" class="headerSvg"
+                                src="{{ asset('assets/frontend/images/whatsappgray.svg') }}" alt="wpgray" />
                         </a>
                     </div>
                     <div class="mobilePhoneLogo">
                         <a href="tel:+902427310707">
-                            <img class="headerSvg" src="{{ asset('assets/frontend/images/phoneGray.svg') }}"
-                                alt="phonegray" />
+                            <img loading="lazy" class="headerSvg"
+                                src="{{ asset('assets/frontend/images/phoneGray.svg') }}" alt="phonegray" />
                         </a>
                     </div>
 
@@ -163,8 +164,9 @@
                             aria-expanded="false" aria-controls="accomdation">
                             Rooms
 
-                            <img class="arrow" src="{{ asset('assets/frontend/images/arrowgray.svg') }}"
-                                alt="grayArrow" /> </button>
+                            <img loading="lazy" class="arrow"
+                                src="{{ asset('assets/frontend/images/arrowgray.svg') }}" alt="grayArrow" />
+                        </button>
                         <div data-bs-parent="#accordionMobileMenu" class="accordion-collapse collapse"
                             id="accomdation">
                             <div class="offcanvas-card">
@@ -180,8 +182,9 @@
                             aria-expanded="false" aria-controls="kidsconcept">
                             Kids Concept
 
-                            <img class="arrow" src="{{ asset('assets/frontend/images/arrowgray.svg') }}"
-                                alt="grayArrow" /> </button>
+                            <img loading="lazy" class="arrow"
+                                src="{{ asset('assets/frontend/images/arrowgray.svg') }}" alt="grayArrow" />
+                        </button>
                         <div data-bs-parent="#accordionMobileMenu" class="accordion-collapse collapse"
                             id="kidsconcept">
                             <div class="offcanvas-card">
@@ -201,8 +204,9 @@
                             aria-expanded="false" aria-controls="foodDrink">
                             Food & Drink
 
-                            <img class="arrow" src="{{ asset('assets/frontend/images/arrowgray.svg') }}"
-                                alt="grayArrow" /> </button>
+                            <img loading="lazy"class="arrow"
+                                src="{{ asset('assets/frontend/images/arrowgray.svg') }}" alt="grayArrow" />
+                        </button>
                         <div data-bs-parent="#accordionMobileMenu" class="accordion-collapse collapse"
                             id="foodDrink">
                             <div class="offcanvas-card">
@@ -219,8 +223,9 @@
                             aria-expanded="false" aria-controls="entertainment">
                             Entertainment
 
-                            <img class="arrow" src="{{ asset('assets/frontend/images/arrowgray.svg') }}"
-                                alt="grayArrow" /> </button>
+                            <img loading="lazy" class="arrow"
+                                src="{{ asset('assets/frontend/images/arrowgray.svg') }}" alt="grayArrow" />
+                        </button>
                         <div data-bs-parent="#accordionMobileMenu" class="accordion-collapse collapse"
                             id="entertainment">
                             <div class="offcanvas-card">
@@ -240,7 +245,8 @@
                             data-link="{{ route('spa') }}" data-bs-target="#spa" type="button"
                             aria-expanded="false" aria-controls="spa">
                             Spa
-                            <img class="arrow" src="{{ asset('assets/frontend/images/arrowgray.svg') }}"></button>
+                            <img loading="lazy" class="arrow"
+                                src="{{ asset('assets/frontend/images/arrowgray.svg') }}"></button>
                         <div data-bs-parent="#accordionMobileMenu" class="accordion-collapse collapse"
                             id="spa">
                             <div class="offcanvas-card">
@@ -254,7 +260,8 @@
                             data-link="{{ route('meeting-congress') }}" data-bs-target="#meetingCongress"
                             type="button" aria-expanded="false" aria-controls="meetingCongress">
                             Meeting And Congress
-                            <img class="arrow" src="{{ asset('assets/frontend/images/arrowgray.svg') }}"></button>
+                            <img loading="lazy" class="arrow"
+                                src="{{ asset('assets/frontend/images/arrowgray.svg') }}"></button>
                         <div data-bs-parent="#accordionMobileMenu" class="accordion-collapse collapse"
                             id="meetingCongress">
                             <div class="offcanvas-card">
@@ -269,34 +276,33 @@
                 <div class="mobileSocialIcon">
                     <a href="https://www.youtube.com/user/portnaturehotel" target="_blank">
                         <span>
-                            <img class="lazyload" data-src="{{ asset('assets/frontend/images/youtubegray.svg') }}"
-                                alt="youtubegray" />
+                            <img loading="lazy" class=""
+                                src="{{ asset('assets/frontend/images/youtubegray.svg') }}" alt="youtubegray" />
                         </span>
                     </a>
                     <a href="https://www.facebook.com/portnature" target="_blank">
                         <span>
-                            <img class="lazyload" data-src="{{ asset('assets/frontend/images/facebookgray.svg') }}"
-                                alt="facebook" />
+                            <img class="" loading="lazy"
+                                src="{{ asset('assets/frontend/images/facebookgray.svg') }}" alt="facebook" />
                         </span>
                     </a>
                     <a href="https://www.facebook.com/portnature" target="_blank">
                         <span>
-                            <img class="lazyload" data-src="{{ asset('assets/frontend/images/instagramgray.svg') }}"
+                            <img loading="lazy" src="{{ asset('assets/frontend/images/instagramgray.svg') }}"
                                 alt="instagram" />
                         </span>
                     </a>
                     <a href="https://vk.com/publicportnature" target="_blank">
                         <span>
-                            <img class="lazyload" data-src="{{ asset('assets/frontend/images/vkgray.svg') }}"
+                            <img loading="lazy" src="{{ asset('assets/frontend/images/vkgray.svg') }}"
                                 alt="vk" />
                         </span>
                     </a>
                     <a href="https://www.tripadvisor.com/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html"
                         target="_blank">
                         <span>
-                            <img class="lazyload"
-                                data-src="{{ asset('assets/frontend/images/tripadvisorgray.svg') }}"
-                                alt="tripadvisor" />
+                            <img class="" loading="lazy"
+                                src="{{ asset('assets/frontend/images/tripadvisorgray.svg') }}" alt="tripadvisor" />
                         </span>
                     </a>
 

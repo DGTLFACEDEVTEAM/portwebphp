@@ -1036,6 +1036,9 @@
                 document.body.style.overflow = 'auto';
                 // cookieBackdrop
                 $('.cookieBackdrop').hide();
+                swiperHomeTop.autoplay.delay = 3e3;
+                swiperHomeTop.autoplay.start();
+
             });
         });
     </script>

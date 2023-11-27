@@ -54,9 +54,9 @@
                         srcset="{{ asset('assets/frontend/images/home/banner/carousel-1-1920.webp') }}" />
                     <source media="(min-width: 1920px)"
                         srcset="{{ asset('assets/frontend/images/home/banner/carousel-1-2560.webp') }}" />
-                    <img loading="lazy" src="{{ asset('assets/frontend/images/home/banner/carousel-1-2560.webp') }}"
+                    <img src="{{ asset('assets/frontend/images/home/banner/carousel-1-2560.webp') }}"
                         class="d-block homeHeroSwiperImg " fetchpriority="high" alt="Hotel image during the day" />
-                    
+
                 </picture>
             </div>
             <div class="swiper-slide">
@@ -69,10 +69,9 @@
                         data-srcset="{{ asset('assets/frontend/images/home/banner/carousel-2-1920.webp') }}" />
                     <source media="(min-width: 1920px)"
                         data-srcset="{{ asset('assets/frontend/images/home/banner/carousel-2-2560.webp') }}" />
-                    <img loading="lazy"
-                        data-src="{{ asset('assets/frontend/images/home/banner/carousel-2-2560.webp') }}"
+                    <img data-src="{{ asset('assets/frontend/images/home/banner/carousel-2-2560.webp') }}"
                         class="d-block homeHeroSwiperImg lazyload" alt="Pool Image" />
-                    
+
                 </picture>
             </div>
             <div class="swiper-slide">
@@ -88,7 +87,7 @@
                     <img loading="lazy"
                         data-src="{{ asset('assets/frontend/images/home/banner/carousel-3-2560.webp') }}"
                         class="d-block homeHeroSwiperImg lazyload" alt="Beach Image" />
-                    
+
                 </picture>
             </div>
             <div class="swiper-slide">
@@ -104,7 +103,7 @@
                     <img loading="lazy"
                         data-src="{{ asset('assets/frontend/images/home/banner/carousel-4-2560.webp') }}"
                         class="d-block homeHeroSwiperImg lazyload" alt="Hotel image at night" />
-                    
+
                 </picture>
             </div>
         </div>

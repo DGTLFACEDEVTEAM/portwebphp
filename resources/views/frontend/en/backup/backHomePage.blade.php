@@ -24,11 +24,57 @@ Belek.')
 
     <!-- Rezervation Section -->
     <!-- Booking Section -->
+
     @include('frontend.en.layouts.booking')
+
     <!-- Booking Section End -->
     <!-- Rezervation Section End -->
 
-    <!-- Home Icons --> @include('components.homeIcons', ['lang' => 'en']) <!-- Home Icons End -->
+    <!-- Home Icons -->
+    {{-- <div class="homeIcons">
+        <div class="homeIconContainer">
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img loading="lazy" alt="icon" src="{{ asset('assets/frontend/images/home/homelocation.svg') }}"
+                        alt="location">
+                    <span>BELEK &#8226; ANTALYA</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img loading="lazy" alt="icon" src="{{ asset('assets/frontend/images/home/aquapark.svg') }}"
+                        alt="aquapark" />
+                    <span>AQUAPARK</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img loading="lazy" alt="icon" src="{{ asset('assets/frontend/images/home/concerts.svg') }}"
+                        alt="concerts">
+                    <span>CONCERTS</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img loading="lazy" alt="icon" src="{{ asset('assets/frontend/images/home/beach.svg') }}"
+                        alt="beach">
+                    <span>SANDY BEACH</span>
+                </div>
+            </div>
+            <div class="homeIconWrapper">
+                <div class="iconGroup">
+                    <img loading="lazy" alt="icon" src="{{ asset('assets/frontend/images/home/entertainment.svg') }}"
+                        alt="entertainment" />
+                    <span>ENTERTAINMENT</span>
+                </div>
+            </div>
+        </div>
+        <!-- Home Icons End -->
+        <div class="thinLine"></div>
+    </div> --}}
+
+    @include('components.homeIcons', ['lang' => 'en'])
+    <!-- Home Icons End -->
     <!-- Inclusive Area Text -->
     @include('components.inclusiveSwiper', ['lang' => 'en'])
     <!-- Inclusive Area Text End -->
