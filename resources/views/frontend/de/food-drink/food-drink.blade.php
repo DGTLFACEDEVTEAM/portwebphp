@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Speisen und Getranke - Port Nature Luxury Resort')
 @section('description', 'Speisen und Getranke Port Nature. Die besten Ultra All Inclusive Hotels in Antalya am Meer. Erleben Sie die Aromen des Port Nature Luxury Resort.')

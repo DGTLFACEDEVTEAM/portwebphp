@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Script Chivas Lounge - Port Nature Hotel')
 @section('description', 'Script Chivas Lounge Port Nature. Топ-10 лучших пляжных отелей в Белеке, Анталья. Забронировать отель все включено по лучшей цене')

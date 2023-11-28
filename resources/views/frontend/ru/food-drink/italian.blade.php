@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Итальянский Alacarte - Port Nature')
 @section('description', 'Итальянский ресторан Alacarte Port Nature. Забронируйте прямо сейчас номер с видом на море в одном из отелей Анталии все включено')

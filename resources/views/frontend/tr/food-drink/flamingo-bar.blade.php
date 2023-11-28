@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Flamingo Bar - Port Nature Resort Hotel')
 @section('description', 'Flamingo Bar Port Nature Luxury Resort Hotel. 5 yıldızlı her şey dahil Antalya otel fiyatları. Port Nature her şey dahil tatil paketlerini inceleyin.')

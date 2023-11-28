@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Konserler - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Konserler Port Nature Luxury Resort. Antalya daki en eğlenceli lüks balayı oteli. Dünyaca ünlü yıldızların konserleri ile balayınızı taçlandırın.')

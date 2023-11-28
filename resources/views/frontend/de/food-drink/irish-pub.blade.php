@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Irish Pub - Port Nature Luxury Resort Hotel')
 @section('description', 'Irish Pub Port Nature Luxury Resort Hotel Spa. Buchung von 5 Sterne Premium Hotels in Belek. Der luxuriöseste Urlaub in Belek wartet auf Sie.')

@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Unterhaltung - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Unterhaltung Port Nature Hotel. Bestes 5 Sterne Familienhotel mit Unterhaltung in Side. Buchen Sie Ihr Zimmer und verpassen Sie nicht unsere Events.')

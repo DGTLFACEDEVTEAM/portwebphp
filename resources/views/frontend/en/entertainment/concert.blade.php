@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Concert - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Concert Port Nature Luxury Resort. Luxury honeymoon hotel with best entertainment in Antalya. Crown your honeymoon with world-famous star concerts.')

@@ -2,9 +2,7 @@ import "../../public/assets/frontend/libs/js/flatpickr.min.js";
 import "../../public/assets/frontend/js/common.js";
 import "../../public/assets/frontend/js/main.js";
 import "./general/cookie";
-// import Cookies from "js-cookie";
-import { swiperAutoPlayStarter } from "./general/swiperActions.js";
-import swiperHomeTop from "../../public/assets/frontend/js/main.js";
+
 if ($("#contactForm2").length) {
     document
         .getElementById("contactForm2")
@@ -181,11 +179,3 @@ if (pageHasContactForm) {
         });
     });
 }
-
-// if there is cookie activate swiper autoplay
-
-// let cookieConsent = Cookies.get("cookieConsent");
-
-// if (cookieConsent == "true") {
-//     swiperAutoPlayStarter(swiperHomeTop);
-// }

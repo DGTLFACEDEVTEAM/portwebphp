@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'All Day Dining Alacarte - Port Nature Luxury Hotel')
 @section('description', 'All Day Dining Alacarte Port Nature Hotel. Das beste familienhotel in Antalya am Meer. Buchen Sie einen günstige all inclusive Urlaub in Kadriye.')

@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Italian Alacarte - Port Nature Luxury Resort Hotel')
 @section('description', 'Italian Alacarte Restaurant Hotel. All Inclusive Hotel Belek Port Nature Luxury Resort müssen Sie für italienische Spezialitäten nicht extra bezahlen')

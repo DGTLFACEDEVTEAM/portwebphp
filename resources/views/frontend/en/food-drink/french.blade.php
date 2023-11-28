@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'French Alacarte Restaurant - Port Nature Hotel')
 @section('description', 'French Alacarte Restaurant Port Nature Luxury Resort. Best 10 honeymoon hotels in Belek Turkey. Make your holiday unforgettable with honeymoon package')

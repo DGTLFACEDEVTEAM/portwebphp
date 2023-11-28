@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Data Policy - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Data Policy Port Nature Luxury Resort Hotel Spa. 10 Best family friendly Antalya hotels on the beach. Book an all-inclusive holiday with one click.')

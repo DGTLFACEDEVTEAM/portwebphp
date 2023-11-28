@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Мини Клуб Alacarte - Port Nature')
 @section('description', 'Ресторан Мини Клуб Alacarte Port Nature. Детское меню для детей. Лучшие люкс отели все включено в Кадрие, Белек.')

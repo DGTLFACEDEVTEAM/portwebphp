@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Italian Alacarte Restaurant - Port Nature Hotel')
 @section('description', 'Italian Alacarte Restaurant Hotel. All inclusive beach hotel in Belek Antalya. Dont pay extra for great Italian flavors at Port Nature Luxury Resort.')

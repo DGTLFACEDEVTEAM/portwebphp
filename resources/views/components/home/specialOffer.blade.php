@@ -122,7 +122,7 @@
                             alt="radialBg">
                     </div>
                     <article>
-                        <img class="specialSvg" laoding="lazy"
+                        <img class="specialSvg" loading="lazy"
                             src="{{ asset('assets/frontend/images/' . $slide['svg']) }}" alt="{{ $slide['alt'] }}">
                         <p>{!! $slide['p'] !!}</p>
                         <span>{!! $slide['span'] !!}</span>
@@ -132,11 +132,11 @@
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev">
-            <img class="specialSvg lazyload" laoding="lazy"
+            <img class="specialSvg lazyload" loading="lazy"
                 src="{{ asset('assets/frontend/images/swipergray-left.svg') }}" alt="swiper" />
         </div>
         <div class="swiper-button-next">
-            <img class="specialSvg lazyload" laoding="lazy"
+            <img class="specialSvg lazyload" loading="lazy"
                 src="{{ asset('assets/frontend/images/swipergray-right.svg') }}" alt="swiper" />
         </div>
     </div>

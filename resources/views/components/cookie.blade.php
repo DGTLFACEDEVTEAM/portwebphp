@@ -398,7 +398,7 @@
             </div>
         </div>
         <div class="cookieConstentActions">
-            <button class="cookieConstentAccept  cookieA">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
+            <button class="cookieConstentAccept cookieA cda">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
             <button class="cookieConstentManage" data-bs-toggle="modal"
                 data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
 
@@ -444,7 +444,7 @@
                             {{-- loop $translation[lang] cookieDesktop .cookieRightB --}}
                             @foreach ($translation[$lang]['cookieDesktop']['cookieRightB'] as $key => $item)
                                 <button type="button"
-                                    class="actionBtns cookieA {{ $item['btnCss'] }}">{{ $item['btnText'] }}</button>
+                                    class="actionBtns cookieA {{ $item['btnCss'] }} caD">{{ $item['btnText'] }}</button>
                             @endforeach
                         </div>
                     </div>
@@ -483,7 +483,7 @@
                         {{-- loop $translation[lang] cookieMobile .cookieActionBtns --}}
                         @foreach ($translation[$lang]['cookieMobile']['cookieActionBtns'] as $key => $item)
                             <button type="button"
-                                class="actionBtns cookieA {{ $item['btnCss'] }}">{{ $item['btnText'] }}</button>
+                                class="actionBtns cookieA {{ $item['btnCss'] }} caM">{{ $item['btnText'] }}</button>
                         @endforeach
 
 
@@ -859,6 +859,8 @@
             }
         }
 
+
+
         .cookieConstentManage {
             color: var(--Gray, #233038);
             text-align: center;
@@ -972,6 +974,21 @@
                 max-width: none !important;
             }
 
+        }
+
+        @media (min-width: 768px) {
+
+            .cookieConstentActions {
+                flex-wrap: nowrap;
+            }
+        }
+
+        @media (max-width: 350px) {
+
+            .cookieConstentAccept,
+            cookieConstentManage {
+                min-width: auto !important;
+            }
         }
     </style>
 

@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Отели Турции - Port Nature Luxury Resort')
 @section('description', 'Лучшие отели в Турции Port Nature Luxury Resort. Лучшие отели Турции для семейного отдыха все включено на первой береговой линии.')

@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Türkiye Otelleri - Port Nature Luxury Resort Hotel')
 @section('description', 'Türkiye Otelleri Port Nature Luxury Resort Hotel Spa. Balayı konsepti olan en iyi balayı oteli özel fırsatları için şimdi rezervasyon yapın.')

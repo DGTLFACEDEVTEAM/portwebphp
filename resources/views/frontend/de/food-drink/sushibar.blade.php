@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Sushi Bar Alacarte - Port Nature Luxury Resort')
 @section('description', 'Sushi Bar Alacarte Port Nature. Beste 5 Sterne luxushotel in Belek direkt am Meer. Rufen Sie für Luxus Unterkunft und verpassen Sie nicht die Angebote')

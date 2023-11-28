@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Datenschutzrichtlinien - Port Nature Luxury Resort')
 @section('description', 'Datenschutzrichtlinien Port Nature. Die besten familienfreundlichen Hotels in Antalya am Strand. Buchen Sie einen All Inclusive Urlaub mit einem Klick')

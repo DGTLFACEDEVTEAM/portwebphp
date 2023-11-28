@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Indoor Pool - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Indoor Pool Port Nature Luxury Resort Hotel Spa. 5 star water park hotels in Side Antalya. Contact for special child-friendly offers.')

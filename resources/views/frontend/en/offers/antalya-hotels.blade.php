@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Antalya Hotels - Port Nature Luxury Resort Hotel')
 @section('description', 'Antalya Hotels Port Nature Luxury Resort Hotel Spa. The best family and child friendly hotel with private beach in Antaya. 5 star hotel best price.')

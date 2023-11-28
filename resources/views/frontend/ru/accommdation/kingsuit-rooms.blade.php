@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Номер King Suite - Port Nature Luxury Resort Hotel')
 @section('description', 'Номер King Suite в Port Nature Hotel. Звоните прямо сейчас, чтобы получить лучшие предложения и цены на 5-звездочные отели все включено в Анталии')

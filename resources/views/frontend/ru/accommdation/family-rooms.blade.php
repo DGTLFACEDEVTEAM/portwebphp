@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Семейный номер - Port Nature Luxury Resort Hotel')
 @section('description', 'Забронировать семейный номер в Port Nature. Лучшие пляжные семейные отели все включено в Богазкент, Анталия. Лучшие отели для семейного отдыха Турция')

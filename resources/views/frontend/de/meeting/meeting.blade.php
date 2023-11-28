@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Tagung und Kongress - Port Nature Luxury Resort')
 @section('description', 'Tagung und Kongress Port Nature Luxury Resort. Belek Business Hotel buchen. Rufen Sie jetzt an und buchen Sie frühzeitig 5 Sterne Hotels in Belek.')

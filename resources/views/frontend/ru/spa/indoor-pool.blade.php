@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Крытый бассейн - Port Nature Luxury Resort')
 @section('description', 'Крытый бассейн Port Nature. Отели Белека со скидками при раннем бронировании. Ознакомьтесь со специальными ценами в 5-звездочном отеле в Кадрие')

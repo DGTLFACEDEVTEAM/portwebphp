@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'All Day Dining Alacarte - Port Nature Hotel')
 @section('description', 'All Day Dining Alacarte Port Nature. En iyi aile dostu denize sıfır Antalya oteli. Kadriyede her şey dahil uygun fiyatlı oteller rezervasyonu.')

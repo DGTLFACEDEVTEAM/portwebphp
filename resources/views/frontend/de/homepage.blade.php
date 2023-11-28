@@ -1,4 +1,4 @@
-{{-- @extends('frontend.de.layouts.master') --}}
+{{-- @extends('layouts.main', ['lang' => 'de']) --}}
 @extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Offizielle Website- Port Nature Luxury Resort ')
@@ -86,6 +86,7 @@
 @endsection
 
 @section('css-imports')
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/booking-section.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/booking-section.css') }}" /> --}}
+    @vite(['resources/css/style.css'])
 @endsection

@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Bars & Cafes - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Bars & Cafes Port Nature Luxury Resort Hotel Spa. 5 Sterne Hotel direkt am Strand in Bogazkent Antalya. Buchen Sie Antalya Hotels zu günstigen Preise.')

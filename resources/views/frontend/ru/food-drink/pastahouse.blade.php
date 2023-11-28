@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Pasta House - Port Nature Luxury Resort')
 @section('description', 'Pasta House Port Nature Luxury Resort. Кафе с итальянской пастой в отеле 5 звезд в Белек. Забронировать онлайн бесплатно отель')

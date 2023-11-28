@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Angebote - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Angebote Port Nature Hotel. Beste Angebote im Antalya Belek all inclusive luxus resort hotel. Rufen Sie jetzt an für Sonderangebote und beste Preise.')

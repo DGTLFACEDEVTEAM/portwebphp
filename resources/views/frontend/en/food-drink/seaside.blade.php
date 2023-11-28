@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Seaside Alacarte Restaurant - Port Nature Hotel')
 @section('description', 'Seaside Alacarte Restaurant Port Nature Hotel. Best 5 star seaside hotel in Antalya Turkey. Review the cheap all inclusive Antalya holiday packages.')

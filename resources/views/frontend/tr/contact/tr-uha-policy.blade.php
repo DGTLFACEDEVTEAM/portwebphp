@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Tedarikçi Yetkilisinin Sözleşme Süreçleri Metni - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'KVKK Port Nature Luxury Resort Hotel Spa. Denize sıfır en iyi 10 aile dostu Antalya oteli. Tek tıkla her şey dahil tatil rezervasyonu yapın.')

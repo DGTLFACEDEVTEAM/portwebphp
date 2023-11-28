@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Alacarte Restaurants -Port Nature Luxury Resort')
 @section('description', 'Alacarte Restaurants Port Nature Hotel. Ultra all inclusive Luxus Strand Hotels in Side Antalya. Schauen Sie sich günstige & luxus Urlaubsangebote an.')

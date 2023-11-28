@@ -16,7 +16,7 @@
 
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon-16x16.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon-32x32.png') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/aside.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/aside.css') }}" /> --}}
     <link rel="preload" href="{{ asset('assets/frontend/images/logo-port-small.svg') }}" as="image"
         type="image/svg+xml" />
 
@@ -39,74 +39,38 @@
             Request::is('blog-seite/*') ||
             Request::is('blog-stranica/*') ||
             Request::is('blog-sayfasi/*'))
-        <link rel="stylesheet" href="{{ asset('assets/frontend/css/blogDetail.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/blogDetail.css') }}" /> --}}
+        @vite(['resources/css/blogdetail.css'])
     @endif
-
-    <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/flatpickr.min.css') }}" media="print"
-        onload="this.media='all'">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/lc_lightbox.min.css') }}" media="print"
-        onload="this.media='all'" />
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/floating-menu.css') }}" />
-
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/footer.css') }}" media="print"
-        onload="this.media='all'" />
-
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/contact.css') }}" media="print"
-        onload="this.media='all'" />
-
-    @yield('css-imports')
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    {{-- Google Tag Manager --}}
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TZ53DS5');
-    </script>
+    @yield('css-imports')
 
-    {{-- Meta Pixel Code --}}
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '721299109355968');
-        fbq('track', 'PageView');
-    </script>
 
+
+
+    @php
+        $isClientAcceptCookie = isset($_COOKIE['cookieConsent']) ? $_COOKIE['cookieConsent'] : 'false';
+        $isClientAcceptPerformanceCookie = isset($_COOKIE['port_c_p']) ? $_COOKIE['port_c_p'] : 'false';
+        $isClientAcceptFunctionalCookie = isset($_COOKIE['port_c_f']) ? $_COOKIE['port_c_f'] : 'false';
+        $isClientAcceptTargetingCookie = isset($_COOKIE['port_c_t']) ? $_COOKIE['port_c_t'] : 'false';
+    @endphp
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe title="googletagmanager" src="https://www.googletagmanager.com/ns.html?id=GTM-TZ53DS5"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    @if ($isClientAcceptPerformanceCookie == 'true')
+        <noscript>
+            <div><img src="https://mc.yandex.ru/watch/92210931" style="position:absolute; left:-9999px;"
+                    alt="" />
+            </div>
+        </noscript>
+    @endif
+
+    @if ($isClientAcceptFunctionalCookie == 'true')
+        <noscript><iframe title="googletagmanager" src="https://www.googletagmanager.com/ns.html?id=GTM-TZ53DS5"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    @endif
 
     @include('frontend.' . $lang . '.layouts.header')
 
@@ -123,18 +87,11 @@
 
     @yield('javascript-imports')
 
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/92210931" style="position:absolute; left:-9999px;" alt="" />
-        </div>
-    </noscript>
 
-    {{-- @php
-        $isClientAcceptCookie = isset($_COOKIE['cookieConsent']) ? $_COOKIE['cookieConsent'] : 'false';
-    @endphp
     @if ($isClientAcceptCookie == 'true')
     @else
         @include('components.cookie', ['lang' => $lang])
-    @endif --}}
+    @endif
 
     <!-- End-->
 </body>

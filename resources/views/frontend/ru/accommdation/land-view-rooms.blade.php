@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Hомер Стандарт вид на окрестности - Port Nature')
 @section('description', 'Забронировать номер Стандарт вид на окрестности. Отели в Богазкент Турция 5 звезд 1 линия все включено для семей. Семейные отели в Белеке 5 звезд')

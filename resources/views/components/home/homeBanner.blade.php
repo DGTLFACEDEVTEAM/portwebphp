@@ -29,6 +29,6 @@
         {!! $translation[$lang]['h3'] !!}
     </h3>
     <div class="moreButton">
-        <a href="{{ route($translation[$lang]['route']) }}">{!! $translation[$lang]['a'] !!}</a>
+        <a aria-label="{!! $translation[$lang]['a'] !!}" href="{{ route($translation[$lang]['route']) }}">{!! $translation[$lang]['a'] !!}</a>
     </div>
 </div>

@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Lobby Bar - Port Nature Luxury Resort')
 @section('description', 'Lobby Bar Port Nature Luxury. Пятизвездочный люксовый отель для семейного отдыха все включено в Белеке, Анталия. Посетить вебсайт')

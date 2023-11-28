@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Отели Белек - Port Nature Luxury Resort')
 @section('description', 'Лучшие отели в Белек Port Nature Luxury Resort. Забронировать номер семейном отеле все включено в Белек. Узнайте подробнее о бронировании')

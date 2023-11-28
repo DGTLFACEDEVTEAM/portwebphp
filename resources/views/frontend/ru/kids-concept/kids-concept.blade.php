@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Детский Концепт - Port Nature Luxury Resort')
 @section('description', 'Детская концепция Port Nature Luxury Resort. Развлечения для детей в отеле все включено. Забронировать онлайн отель 5 звезд в Белек')

@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Flamingo Bar - Port Nature Luxury Hotel')
 @section('description', 'Flamingo Bar Port Nature Luxury Resort. 5 Sterne All Inclusive Hotel Preise Antalya. Überprüfen Sie All Inclusive Urlaubspakete bei Port Nature Hotel.')

@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Контакты - Port Nature Luxury Resort')
 @section('description', 'Контакты Port Nature. Позвоните сейчас и узнайте лучшие предложения для отдыха в Анталии в люксовом пляжном отеле ультра все включено.')

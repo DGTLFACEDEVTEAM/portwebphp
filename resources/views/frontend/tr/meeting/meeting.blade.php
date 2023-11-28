@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Toplantı  Kongre - Port Nature Luxury Resort')
 @section('description', 'Toplantı Kongre Port Nature Luxury Resort Hotel. İş seyahati için Belek oteli. Belek otel erken rezervasyon indirimleri için hemen arayın.')

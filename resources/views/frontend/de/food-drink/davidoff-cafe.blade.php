@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Davidoff Kafe - Port Nature Luxury Hotel Spa')
 @section('description', 'Davidoff Kafe Port Nature. Ultra all inclusive Pauschalreisen im Belek Port Nature Luxury Resort Hotel Spa. Buchen Sie jetzt Antalya 5 Sterne Hotel.')

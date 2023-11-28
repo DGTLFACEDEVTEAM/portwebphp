@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Familienzimmer - Port Nature Luxury Resort Hotel')
 @section('description', 'Familienzimmer Hotel. Komfortable Familienzimmer im Port Nature Luxury Resort Hotel Spa. Sehen Sie sich unsere Familienzimmer im Luxushotel Belek an.')

@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Born9 Hennessy Lounge - Port Nature Luxury Resort')
 @section('description', 'Born9 Hennessy Lounge Port Nature. Die 10 besten Strand Hotels in Antalya für Paare. Entdecken Sie die Ultra All Inclusive Urlaubsvorteile in Antalya.')

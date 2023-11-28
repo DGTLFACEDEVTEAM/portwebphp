@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Seaside Alacarte - Port Nature')
 @section('description', 'Seaside Alacarte Port Nature. Хорошие семейные отели все включено в Белеке. Забронировать отели в Белеке 5 звезд.')

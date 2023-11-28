@@ -353,7 +353,7 @@
         <div class="gastroIconsWrapper">
             @foreach ($translation[$lang]['icons'] as $icon)
                 <div class="gastroIcons">
-                    <img style="width: unset" class="lazyload" laoding="lazy"
+                    <img style="width: unset" class="lazyload" loading="lazy"
                         src="{{ asset('assets/frontend/images/home/' . $icon['img']) }}" alt="{{ $icon['alt'] }}">
                     <div class="gastroText">
                         <span>{!! $icon['span'] !!}</span>
@@ -382,12 +382,12 @@
                                 </span>
                                 <div class="gastroTextSec">
                                     <p>
-                                        <img class="gastroIconSmall gastroIcon1 lazyload" laoding="lazy"
+                                        <img class="gastroIconSmall gastroIcon1 lazyload" loading="lazy"
                                             src="{{ asset('assets/frontend/images/home/clock.svg') }}" alt="clock" />
                                         {!! $slide['p1'] !!}
                                     </p>
                                     <p>
-                                        <img class="gastroIconSmall gastroIcon2 lazyload" laoding="lazy"
+                                        <img class="gastroIconSmall gastroIcon2 lazyload" loading="lazy"
                                             src="{{ asset('assets/frontend/images/home/booking.svg') }}"
                                             alt="bookingresturant"> {!! $slide['p2'] !!}
                                     </p>

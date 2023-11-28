@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Zimmer - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Zimmer Port Nature Luxury Resort. Luxuszimmer mit toller Aussicht in einem 5 Sterne Hotel in Antalya, Türkei. Unsere Zimmer ansehen und jetzt buchen.')

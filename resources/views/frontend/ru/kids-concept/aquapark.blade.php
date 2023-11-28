@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Аквапарк - Port Nature Luxury Resort')
 @section('description', 'Аквапарк Port Nature Luxury Resort Hotel. Самые красивые отели Белек, Богазкент. Отели 5 звезд в Анталии с аквапарком для детей')

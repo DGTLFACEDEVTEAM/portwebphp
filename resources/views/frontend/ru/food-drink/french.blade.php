@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Французский Alacarte - Port Nature')
 @section('description', 'Французский ресторан Alacarte Port Nature. Дешевые отели в Кадрие Белек на первой береговой линии. Отели Белека 5 звезд все включено')

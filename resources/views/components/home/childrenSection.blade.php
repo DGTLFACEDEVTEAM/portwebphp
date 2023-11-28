@@ -177,6 +177,7 @@
         </div>
     </div>
     <div class="moreButton">
-        <a href="{!! $translation[$lang]['a']['link'] !!}" >{!! $translation[$lang]['a']['text'] !!}</a>
+        <a aria-label="{!! $translation[$lang]['a']['text'] !!}" title="{!! $translation[$lang]['a']['text'] !!}"
+            href="{!! $translation[$lang]['a']['link'] !!}">{!! $translation[$lang]['a']['text'] !!}</a>
     </div>
 </div>

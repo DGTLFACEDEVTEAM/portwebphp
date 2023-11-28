@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Konaklama -Port Nature Luxury Resort Hotel Spa ')
 @section('description', 'Konaklama - Port Nature Luxury Resort. Antalya Türkiyede 5 yıldızlı otelde harika manzaralı lüks odalar. Odalar sayfamıza bakın ve rezervasyon yapın.')

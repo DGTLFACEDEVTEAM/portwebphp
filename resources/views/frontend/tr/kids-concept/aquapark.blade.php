@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Su Parkı - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Su Parkı Port Nature Luxury Resort Hotel Spa. 10 en iyi su parklı çocuk dostu Side oteli. En iyi aquapark tatilinizin tadını çıkarmaya hazır olun.')

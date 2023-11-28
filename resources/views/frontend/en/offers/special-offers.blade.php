@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Special Offers - Port Nature Luxury Resort Hotel')
 @section('description', 'Special Offers Port Nature Luxury Resort. Best Deals at Antalya Belek all inclusive luxury resort hotel. Call now for special offers and best prices.')

@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Кафе Kit Kat - Port Nature Luxury Resort')
 @section('description', 'Кафе Kit Kat Port Nature. Лучшие недорогие отели в Белек для отдыха с детьми узнать цены и забронировтаь онлайн')

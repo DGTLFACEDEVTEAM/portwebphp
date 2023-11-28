@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Davidoff Cafe - Port Nature Luxury Resort Hotel')
 @section('description', 'Davidoff Cafe Port Nature Luxury Resort Hotel Spa. Ultra all inclusive holiday package deals at Belek Port Nature Hotel. Book now Antalya 5 star hotel')

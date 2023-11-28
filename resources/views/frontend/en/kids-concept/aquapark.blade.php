@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Aquapark - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Aquapark Port Nature Luxury Resort Hotel. Top 10 child friendly hotels with water park in Side Turkey. Get ready to enjoy your best aquapark holiday.')

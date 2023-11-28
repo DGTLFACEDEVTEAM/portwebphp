@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Entertainment - Port Nature Luxury Resort Hotel')
 @section('description', 'Entertainment Port Nature Luxury Resort Hotel. Best 5 star family hotel with entertainment in Side. Reserve your room and dont miss our 2024 Events.')

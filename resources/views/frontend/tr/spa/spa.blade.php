@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Spa Merkezi - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Spa Merkezi Port Nature Luxury Resort. Antalya nın en iyi lüks spa oteli. Antalya premium otelde ücretsiz sauna ve hamamın keyfini çıkarın.')

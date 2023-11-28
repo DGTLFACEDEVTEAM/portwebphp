@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Script Chivas Lounge - Port Nature Hotel Spa')
 @section('description', 'Script Chivas Lounge in Hotel. All-inclusive hotel in Belek with the best deals. Take a look at early booking deals at Port Nature Luxury Resort Hotel')

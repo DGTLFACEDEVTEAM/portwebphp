@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Standart Yandan Manzaralı Oda - Port Nature Hotel')
 @section('description', 'Standart Yandan Manzaralı Oda Port Nature Hotel. En iyi 10 her şey dahil lüks Antalya oteli. Erken rezervasyon fırsatları için odanızı şimdi ayırtın.')

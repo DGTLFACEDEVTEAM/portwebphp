@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Antalya Hotels - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Antalya Hotels Port Nature Luxury Resort Hotel Spa. Das beste Familienhotel mit Privatstrand in Belek. 5 Sterne Familienurlaub.')

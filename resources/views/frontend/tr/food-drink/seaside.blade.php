@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Seaside Alacarte Restoran - Port Nature Luxury')
 @section('description', 'Seaside Alacarte Restoran Port Nature. Deniz kenarındaki en iyi 5 yıldızlı Antalya oteli. Ucuz her şey dahil Antalya tatil paketlerini inceleyin.')

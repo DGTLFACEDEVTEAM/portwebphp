@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'French Alacarte - Port Nature Luxury Resort Hotel')
 @section('description', 'French Alacarte Restaurant Port Nature. Die 10 besten Flitterwochen Hotels in Türkei. Machen Sie Ihren Urlaub unvergesslich mit Flitterwochen Paketen.')

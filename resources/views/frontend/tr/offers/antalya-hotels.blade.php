@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Antalya Otelleri - Port Nature Luxury Resort Hotel')
 @section('description', 'Antalya Otelleri Port Nature Luxury Resort Hotel Spa. En iyi Belek denize sıfır aile ve balayı oteli. 5 yıldızlı aile tatili en uygun fiyat garantisi.')

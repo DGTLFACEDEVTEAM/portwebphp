@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Blog Page - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Blog Page Port Nature Luxury Resort. Best ultra all inclusive family hotel in Belek Antalya. Visit our site and dont miss advantageous opportunities.')

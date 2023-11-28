@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Family Room -Port Nature Luxury Resort Hotel Spa Hotel')
 @section('description', 'Family Room Port Nature Luxury Resort. Comfortable family rooms at Port Nature Luxury Resort. Check out our family rooms in the luxury Belek Hotel.')

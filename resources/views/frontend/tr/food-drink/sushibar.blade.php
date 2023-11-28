@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Sushi Bar A’La Carte - Port Nature Luxury Resort')
 @section('description', 'Sushi Bar Alacarte Port Nature Luxury Resort. En lüks denize sıfır 5 yıldızlı Belek otelleri. Lüks konaklama için arayın ve fırsatları kaçırmayın.')

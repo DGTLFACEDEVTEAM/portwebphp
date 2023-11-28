@@ -21,9 +21,9 @@
 @endphp
 <div class="homeAboveFooter">
     <div class="aboveImg">
-        <img class="mobileV lazyload" laoding="lazy" src="{{ asset('assets/frontend/images/home/instagram-1.webp') }}"
+        <img class="mobileV lazyload" loading="lazy" src="{{ asset('assets/frontend/images/home/instagram-1.webp') }}"
             alt="aboveFooter1" />
-        <img class="mobileV lazyload" laoding="lazy" src="{{ asset('assets/frontend/images/home/instagram-2.webp') }}"
+        <img class="mobileV lazyload" loading="lazy" src="{{ asset('assets/frontend/images/home/instagram-2.webp') }}"
             alt="aboveFooter2" />
         <img loading="lazy" src="{{ asset('assets/frontend/images/home/instagram-3.webp') }}" alt="abovefooter3" />
         <div class="aboveInsta">
@@ -36,9 +36,9 @@
             <p>{!! $translation[$lang]['follow'] !!}</p>
         </div>
         <img loading="lazy" src="{{ asset('assets/frontend/images/home/instagram-5.webp') }}" alt="aboveFooter5" />
-        <img class="mobileV lazyload" laoding="lazy" src="{{ asset('assets/frontend/images/home/instagram-6.webp') }}"
+        <img class="mobileV lazyload" loading="lazy" src="{{ asset('assets/frontend/images/home/instagram-6.webp') }}"
             alt="aboveFooter6" />
-        <img class="mobileV lazyload" laoding="lazy" src="{{ asset('assets/frontend/images/home/instagram-7.webp') }}"
+        <img class="mobileV lazyload" loading="lazy" src="{{ asset('assets/frontend/images/home/instagram-7.webp') }}"
             alt="aboveFooter7" />
     </div>
     <div class="phoneImage">

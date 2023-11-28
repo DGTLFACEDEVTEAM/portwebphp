@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 @section('title', 'Mini Club - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Mini Club Port Nature Luxury Resort. Best all inclusive family hotel for kids in Belek Antalya. Book now for child friendly holiday booking offers.')
 @section('header-lang')

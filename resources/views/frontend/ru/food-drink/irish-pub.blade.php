@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Irish Pub - Port Nature Luxury Resort')
 @section('description', 'Irish Pub Port Nature. Забронировать отель Белек 5 звезды 1 линия все включено для отдыха с детьми с собственным пляжем в Анталии.')

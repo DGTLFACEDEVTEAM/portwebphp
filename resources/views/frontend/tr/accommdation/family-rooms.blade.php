@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Aile Odası - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Aile Odası - Port Nature Luxury Resort Hotel Spa. Port Nature Luxury Resortta konforlu aile odaları. Lüks Belek oteldeki aile odalarımıza göz atın.')

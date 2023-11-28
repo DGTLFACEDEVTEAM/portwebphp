@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Мероприятия - Port Nature Luxury Resort')
 @section('description', 'Мероприятия Port Nature. Отели в Белеке, Турция 5 звезд 1 линия все включено для отдыха с детьми. Отели 5 звезд в Белеке забронировать')

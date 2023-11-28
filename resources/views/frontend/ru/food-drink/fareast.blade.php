@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Дальневосточный Alacarte - Port Nature')
 @section('description', 'Дальневосточный ресторан Alacarte с большим выбором блюд в Port Nature. Отели в Белеке Турция 5 звезд все включено 1 береговая линия.')

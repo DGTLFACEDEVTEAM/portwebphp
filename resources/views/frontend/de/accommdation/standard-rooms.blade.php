@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Standard Zimmer - Port Nature Luxury Resort Hotel')
 @section('description', 'Standard Zimmer Port Nature Luxury Resort. Bestes Fünf Sterne Hotel in Antalya Türkei. Sehen Sie unsere Auswahl an Standardzimmern in unserem Hotel.')

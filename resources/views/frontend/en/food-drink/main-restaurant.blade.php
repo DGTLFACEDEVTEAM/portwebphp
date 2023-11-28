@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Main Restaurant - Port Nature Luxury Resort Hotel')
 @section('description', 'Main Restaurant Port Nature Luxury Resort. Premium beach hotel in Kadiye Antalya with best offers. Click here for affordable holiday booking.')

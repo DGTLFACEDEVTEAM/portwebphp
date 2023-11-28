@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Mini Club Alacarte Restaurant - Port Nature Resort')
 @section('description', 'Mini Club Alacarte Restaurant Port Nature. 5 Sterne Luxushotels für Kinder in Belek. Besuchen Sie unsere Website für kinderfreundliche Privilegien.')

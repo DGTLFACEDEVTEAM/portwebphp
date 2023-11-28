@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Alacarte Restoranlar -Port Nature Luxury Resort')
 @section('description', 'Alacarte Restoranlar Port Nature Luxury Resort. Side Antalya ultra herşey dahil lüks sahil otelleri. Ucuz ve lüks tatil fırsatlarına göz atın.')
