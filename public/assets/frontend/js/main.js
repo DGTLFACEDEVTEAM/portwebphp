@@ -51,14 +51,14 @@ $(window).on("scroll load resize", function () {
             i < t &&
             $(".navbar").css("background", "rgb(35 48 56 / 100%)");
 });
+
 var swiperHomeTop = new Swiper(".heroTopSwiper", {
     lazy: true,
     slidesPerView: 1,
-    loop: !0,
-   
+    loop: true,
     navigation: { nextEl: ".heroSwiperNext", prevEl: ".heroSwiperPrev" },
-    breakpoints: { 576: { autoplay: { delay: 2e4 } } },
 });
+// export swiperHomeTop so i can use it in other files
 const inclusiveSlider = document.querySelector(".inclusiveSlider");
 
 // find client is near 100px to inclusiveSlider element
@@ -68,14 +68,15 @@ function isScrolledIntoView(el) {
     var elemBottom = rect.bottom;
     // Only completely visible elements return true:
     var isVisible = elemTop < window.innerHeight && elemBottom >= 200;
-    // Partially visible elements return true:
-    // isVisible = elemTop < window.innerHeight && elemBottom >= 0;
     return isVisible;
 }
 
 // if client is near 100px to inclusiveSlider element, then start autoplay
-$(window).scroll(function () {
+
+$(window).on("scroll", function () {
     if (isScrolledIntoView(inclusiveSlider)) {
+        inclusiveSliderName.autoplay.stop();
+        swiperHomeTop.autoplay.delay = 1000;
         inclusiveSliderName.autoplay.start();
     } else {
         inclusiveSliderName.autoplay.stop();
@@ -142,7 +143,6 @@ var homeSpecialOffer = new Swiper(specialOfferSlider, {
     lazy: true,
     slidesPerView: homeOtherSliderCount,
     initialSlide: 1,
-    loop: !0,
     pagination: {
         el: ".swiper-pagination",
         renderBullet: function (e, a) {
@@ -676,3 +676,5 @@ $(window).resize(adjust),
     $(document).ready(function () {
         lc_lightbox(".lightbox-childrenSliderLink ");
     });
+
+export default swiperHomeTop;

@@ -1586,6 +1586,7 @@
     justify-content: center;
     align-items: flex-start;
 }
+
 @media screen and (max-width: 990px) {
     .gastroText span {
         font-size: 17px !important;
@@ -1600,6 +1601,13 @@
         object-fit: cover;
         max-height: 110px;
         max-width: 70%;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .gastroText p {
+        font-size: 13px !important;
+        white-space: normal;
     }
 }
 .serviceBackground img {
