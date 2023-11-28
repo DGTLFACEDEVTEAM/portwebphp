@@ -301,7 +301,11 @@
 <!-- SHOWCASE SECTION -->
 
 <div class="showcase-section-wrapper">
-    <div class="plane-svg colorful-image-wrapper"></div>
+
+    @include('components.offers.showcaseSection.bookingSection', ['lang' => 'en'])
+    @include('components.offers.showcaseSection.showcaseRoomSwiper', ['lang' => 'en'])
+
+    {{-- <div class="plane-svg colorful-image-wrapper"></div>
 
     <img class="plane-svg-mobile" src="{{ asset('assets/frontend/images/offers/svg/mobile/plane-1.svg') }}" />
     <p class="plane-before">...and book a ticket right away</p>
@@ -432,9 +436,9 @@
                     src="{{ asset('assets/frontend/images/offers/svg/booknow.svg') }}" />Book Now</a>
         </div>
         <!-- Booking Section End -->
-    </div>
+    </div> --}}
 
-    <div class="offers-rooms-swiper swiper"><p class="offers-room-swiper-title-mobile">Accommodation</p>
+    {{-- <div class="offers-rooms-swiper swiper"><p class="offers-room-swiper-title-mobile">Accommodation</p>
         <div class="swiper-wrapper">
             <div class="swiper-slide rooms-swiper-slide">
                 <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/family.webp') }}" />
@@ -609,7 +613,7 @@
   <span class="btn-collapsed">More About Features</span>
     <span class="btn-open">Less About Features</span>
 
-      </a>
+      </a> --}}
 </div>
     <div class="modal fade" id="peopleSelectionModal"  aria-labelledby="peopleSelectionModal" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
@@ -800,8 +804,8 @@
 
 <!--- MOBILE BOOKING SECTION END -->
 <!--- FLIGHT SECTION -->
-
-<div class="flight-wrapper">
+@include('components.offers.offersDesktop.offersDesktopFlight', ['lang' => 'en'])
+{{-- <div class="flight-wrapper">
     <p class="flight-addendum">
         On our website, linking to other websites or referring to other websites does not hold the site owner
         responsible for the content of the linked or referred websites, and the site owner cannot be held liable for any
@@ -827,10 +831,10 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- TRANSFER SECTION -->
-
-<div class="transfer-wrapper">
+@include('components.offers.offersDesktop.offersDesktopTransfer', ['lang' => 'en'])
+{{-- <div class="transfer-wrapper">
     <img class="transfer-desktop" src="{{ asset('assets/frontend/images/offers/desktop-car.svg') }}">
     <img class="transfer-tablet" src="{{ asset('assets/frontend/images/offers/tablet-car.svg') }}">
     <img class="transfer-mobile" src="{{ asset('assets/frontend/images/offers/mobile-car.svg') }}">
@@ -842,7 +846,7 @@
         <a class="transfer-btn" target="blank" href="https://portnature.rezervasyonal.com/ExtraService" target="_blank">Book
             Transfer</a>
     </div>
-</div>
+</div> --}}
 <!--- Mobile Flight Section Start -->
 <div class="flight-wrapper-mobile">
   <div class="flight-mobile-div">
@@ -896,7 +900,9 @@
 <!--- Mobile Flight Section End -->
 
 <!--- CONTACT SECTION -->
-<div class="offers-contact-wrapper">
+
+@include('components.offers.offersDesktop.offersDesktopContact', ['lang' => 'en'])
+{{-- <div class="offers-contact-wrapper">
     <div class="offers-contact-div">
         <div class="luggage-image-wrapper colorful-image-wrapper"></div>
 
@@ -918,7 +924,7 @@
             </a>
         </div>
     </div>
-</div>
+</div> --}}
 
 <!--- CONTACTS SECTION MOBILE-->
 <section class="contacts-section-mobile">

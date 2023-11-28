@@ -74,8 +74,8 @@
             'booking-section-general' => [
                 'select-room' => 'Oda Seçenekleri',
                 'family-room' => 'Aile Odası',
-                'standard-room' => 'Standart',
-                'king-suite' => 'Kral Dairesi',
+                'standard-room' => 'Standart Oda',
+                'king-suite' => 'Süit Oda',
             ],
             'booking-component-inner' => [
                 'adult' => 'Yetişkin',
@@ -97,10 +97,10 @@
 <div class="plane-svg colorful-image-wrapper"></div>
 
 <img class="plane-svg-mobile" src="{{ asset('assets/frontend/images/offers/svg/mobile/plane-1.svg') }}" />
-<p class="plane-before">...and book a ticket right away</p>
+<p class="plane-before">{!! $translation[$lang]['plane-before'] !!}</p>
 <div class="booking-section-wrapper">
-    <p class="booking-section-title">PLAN YOUR TRIP</p>
-    <p class="booking-section-title-2">With our hotel</p>
+    <p class="booking-section-title">{!! $translation[$lang]['booking-section-title'] !!}</p>
+    <p class="booking-section-title-2">{!! $translation[$lang]['booking-section-title-2'] !!}</p>
     <div class="brand-swiper-wrapper">
         <div class="swiper brand-swiper">
             <div class="swiper-wrapper">
@@ -123,33 +123,29 @@
         <div class="dropdown room-selection-dropdown">
             <button class="room-selection-dropdown-btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                Select Room
+                {!! $translation[$lang]['booking-section-general']['select-room'] !!}
             </button>
             <ul class="dropdown-menu room-selection-dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li>
-                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Family Room">Family</div>
+                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Family Room">{!! $translation[$lang]['booking-section-general']['family-room'] !!}</div>
                 </li>
                 <li>
-                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Standard Room">Standard</div>
+                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Standard Room">{!! $translation[$lang]['booking-section-general']['standard-room'] !!}</div>
                 </li>
                 <li>
-                    <div class="dropdown-item room-dropdown-link" href="#" data-value="King Suite">King Suite</div>
+                    <div class="dropdown-item room-dropdown-link" href="#" data-value="King Suite">{!! $translation[$lang]['booking-section-general']['king-suite'] !!}</div>
                 </li>
             </ul>
         </div>
-
-
-
         <label for="checkin"></label><input id="checkin" data-defaultDate="today" value="Check-in">
         <label for="checkout"></label><input id="checkout" data-defaultDate="today" value="Check-Out">
-
         <div class="guestDiv guestdiv-adult"><span class="guests guests-adult">
                 <img class="icon-head" src="{{ asset('assets/frontend/images/offers/svg/adult-icon.svg') }}">
 
-                Adult</span>
+                {!! $translation[$lang]['booking-component-inner']['adult'] !!}</span>
             <div class="guestMenu guestMenuAdult">
                 <div class="adultCounter dropdown-item">
-                    <p>Adult(s)</p>
+                    <p>{!! $translation[$lang]['booking-component-inner']['adults'] !!}</p>
                     <div class="counter-item">
                         <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="adult-decrement"
                             onclick="adultDecrement()" alt="decrement" />
@@ -158,18 +154,15 @@
                             onclick="adultIncrement()" alt="increment" />
                     </div>
                 </div>
-
-
             </div>
-
         </div>
         <div class="guestDiv guestdiv-child"><span class="guests guests-child">
                 <img class="icon-head" src="{{ asset('assets/frontend/images/offers/svg/child-icon.svg') }}">
-                Child</span>
+                {!! $translation[$lang]['booking-component-inner']['child'] !!}</span>
             <div class="guestMenu guestMenuChild">
 
                 <div class="childCounter dropdown-item">
-                    <p>Child(ren)</p>
+                    <p>{!! $translation[$lang]['booking-component-inner']['children'] !!}</p>
                     <div class="counter-item">
                         <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
                             onclick="childDecrement()" alt="decrement" />
@@ -179,7 +172,7 @@
                     </div>
                 </div>
                 <div class="childAgeCounter1 childAgeCounter dropdown-item">
-                    <p>Child 1 Age</p>
+                    <p>{!! $translation[$lang]['booking-component-inner']['childage1'] !!}/p>
                     <div class="counter-item">
                         <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
                             onclick="childAge1Decrement()" alt="decrement" />
@@ -189,7 +182,7 @@
                     </div>
                 </div>
                 <div class="childAgeCounter2  childAgeCounter dropdown-item">
-                    <p>Child 2 Age</p>
+                    <p>{!! $translation[$lang]['booking-component-inner']['childage2'] !!}</p>
                     <div class="counter-item">
                         <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
                             onclick="childAge2Decrement()" alt="decrement" />
@@ -199,7 +192,7 @@
                     </div>
                 </div>
                 <div class="childAgeCounter3  childAgeCounter dropdown-item">
-                    <p>Child 3 Age</p>
+                    <p>{!! $translation[$lang]['booking-component-inner']['childage3'] !!}</p>
                     <div class="counter-item">
                         <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
                             onclick="childAge3Decrement()" alt="decrement" />
@@ -209,7 +202,7 @@
                     </div>
                 </div>
                 <div class="childAgeCounter4  childAgeCounter dropdown-item">
-                    <p>Child 4 Age</p>
+                    <p>{!! $translation[$lang]['booking-component-inner']['childage4'] !!}</p>
                     <div class="counter-item">
                         <img src="{{ asset('assets/frontend/images/decrement.svg') }}" class="child-decrement"
                             onclick="childAge4Decrement()" alt="decrement" />
@@ -222,7 +215,7 @@
 
         </div>
         <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow"><img
-                src="{{ asset('assets/frontend/images/offers/svg/booknow.svg') }}" />Book Now</a>
+                src="{{ asset('assets/frontend/images/offers/svg/booknow.svg') }}" />{!! $translation[$lang]['booking-component-inner']['book-now'] !!}</a>
     </div>
     <!-- Booking Section End -->
 </div>

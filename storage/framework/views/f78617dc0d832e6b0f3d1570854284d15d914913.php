@@ -339,7 +339,7 @@
     </script>
 
 
-    <?php echo $__env->make('components.cookie', ['lang' => 'en'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    
 
     <!-- End-->
 </body>
