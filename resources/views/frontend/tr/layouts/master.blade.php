@@ -30,6 +30,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Lora:ital,wght@1,400;1,500&family=Space+Grotesk:wght@300;700&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Lora:ital,wght@1,400;1,500&family=Poppins:wght@100;400;500;600;700&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
 
 
 
@@ -270,7 +273,7 @@
         </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    @include('components.cookie', ['lang' => 'tr'])
+    {{-- @include('components.cookie', ['lang' => 'tr']) --}}
 </body>
 
 </html>

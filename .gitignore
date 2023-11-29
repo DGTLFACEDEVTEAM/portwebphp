@@ -20,5 +20,7 @@ app/Http/.DS_Store
 .DS_Store
 **/._*
 
-# hide storage folder
+storage
+storage/
 /storage/*
+
