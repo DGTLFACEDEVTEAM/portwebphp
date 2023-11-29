@@ -8,7 +8,7 @@
 <section class="blog">
 
     <div class="container">
-        <!-- Booking Section -->
+        {{-- Booking Section --}}
         <div class="booking topBooking" id="blogBooking">
             <label for="checkin"></label><input id="checkin"
                                                 data-defaultDate="today"
@@ -69,7 +69,7 @@
             </div></div>
             <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow">Book Now</a>
         </div>
-        <!-- Booking Section End -->
+        {{-- Booking Section End --}}
 
         {!! $post_content->description !!}
     </div>
@@ -98,7 +98,7 @@
         </div>
     </div>
 </section>
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

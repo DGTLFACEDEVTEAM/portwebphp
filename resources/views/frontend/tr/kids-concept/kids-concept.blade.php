@@ -51,7 +51,7 @@
         </div>
     </div>
 </div>
-<!-- First Slider -->
+{{-- First Slider --}}
 <div class="childrenActivitySlider">
     <div class="swiper activitySlider">
         <div class="swiper-wrapper">
@@ -111,8 +111,8 @@
         </div>
     </div>
 </div>
-<!-- First Slider End -->
-<!-- Second Slider -->
+{{-- First Slider End --}}
+{{-- Second Slider --}}
 <div class="foodSliderWrapper">
             <div class="swiper childrenFoodSlider" dir="rtl">
 
@@ -178,10 +178,10 @@
         </div>
     </div>
       
-<!-- Second Slider End -->
+{{-- Second Slider End --}}
 
 
-<!-- Banner -->
+{{-- Banner --}}
 <div id="childrenCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" >
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -213,11 +213,11 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-<!-- Banner End -->
-<!-- Contact -->
+{{-- Banner End --}}
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
-<!-- Special Courses -->
+{{-- Contact End --}}
+{{-- Special Courses --}}
 <div class="kidsSpecialOffer">
     <h6>Özel Kurslar</h6>
     <div class="swiper specialOfferSlider">
@@ -275,7 +275,7 @@
         </div>
     </div>
 </div>
-<!-- Special Courses End -->
+{{-- Special Courses End --}}
 
 <div class="pageUpButton">
     <a href="#">

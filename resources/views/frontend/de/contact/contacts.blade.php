@@ -18,7 +18,7 @@
 @endsection
 
 @section('content')
-<!-- Contact -->
+{{-- Contact --}}
 <div class="homeContact">
     <div class="contact-wrapper">
             <div class="mobileContact">
@@ -161,7 +161,7 @@
         var pageHasContactForm = true;
     }
 </script>
-<!-- Contact End -->
+{{-- Contact End --}}
 <div class="googleMaps">
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.095299710265!2d31.162194723180235!3d36.83365017231129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c390042dbff2dd%3A0x9a5d907541f1db72!2sPort%20Nature%20Luxury%20Resort%20Hotel%20%26%20Spa!5e0!3m2!1str!2str!4v1678301942056!5m2!1str!2str" width="1920" height="600" style="border:0;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>

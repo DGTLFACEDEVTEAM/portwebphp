@@ -48,9 +48,9 @@
 
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 <div class="pageUpButton">
     <div class="row">
         <div class="col-md-12 text-center">

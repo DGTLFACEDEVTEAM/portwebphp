@@ -152,7 +152,7 @@
          <img class="room-img" src="{{ asset('assets/frontend/images/standardRooms/standard-room-main3d.webp') }}">
        </div>
 </div>
-<!-- Features -->
+{{-- Features --}}
 <div class="roomFeatures">
     <div class="roomFeaturesWrapper">
         <h6>Merkmale</h6>
@@ -282,18 +282,18 @@
     </div>
 </div>
 
-<!-- Features End -->
+{{-- Features End --}}
 
-<!-- 360 View -->
+{{-- 360 View --}}
 <div class="room360">
     <p>360° Rundgang</p>
     <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7Jqpd?logo=-1&info=0&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>
 </div>
-<!-- 360 View End -->
-<!-- Contact -->
+{{-- 360 View End --}}
+{{-- Contact --}}
 @include('frontend.de.layouts.contact')
-<!-- Contact End -->
-<!-- Other Rooms -->
+{{-- Contact End --}}
+{{-- Other Rooms --}}
 <div class="otherRoomsWrapper">
     <div class="otherRooms">
         <div class="row">
@@ -340,7 +340,7 @@
         </div>
     </div>
 </div>
-<!-- Other Rooms End -->
+{{-- Other Rooms End --}}
 
 <div class="pageUpButton">
     <a href="#">

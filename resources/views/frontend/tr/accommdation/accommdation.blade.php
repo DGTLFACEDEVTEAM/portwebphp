@@ -28,7 +28,7 @@
         <a href="{{ route('tr-standard-rooms') }}">Standart</a>
     </div>
 
-<!-- Rooms Start -->
+{{-- Rooms Start --}}
 <div class="accommRoom">
     <div class="flamingoBg">
         <img src="{{ asset('assets/frontend/images/accommdation/flamingo.svg') }}" alt="flamingo"/>
@@ -239,9 +239,9 @@
         </div>
     </div>
 </div>
-<!-- Rooms End -->
+{{-- Rooms End --}}
 
-<!-- Features -->
+{{-- Features --}}
 <div class="roomFeatures">
     <div class="roomFeaturesWrapper">
         <h6>Özellikler</h6>
@@ -349,11 +349,11 @@
 
     </div>
 </div>
-<!-- Features End -->
-<!-- Contact -->
+{{-- Features End --}}
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
-<!-- Page Up Button -->
+{{-- Contact End --}}
+{{-- Page Up Button --}}
 <div class="pageUpButton">
     <a href="#">
         <img style="width: unset;height: unset" class="accommdationSvg" src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

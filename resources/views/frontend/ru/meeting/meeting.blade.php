@@ -20,7 +20,7 @@
 
 @section('content')
 
-<!-- Hero Part -->
+{{-- Hero Part --}}
 <div class="meetingHero">
     <div class="heroImage">
         <figure>
@@ -31,8 +31,8 @@
         <h1>Встречи & Конгресс</h1>
     </article>
 </div>
-<!-- Hero Part End -->
-<!-- Options -->
+{{-- Hero Part End --}}
+{{-- Options --}}
 <div class="options">
     <a href="#thermessos">
         Thermessos
@@ -111,9 +111,9 @@
         </div>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 @endsection
 

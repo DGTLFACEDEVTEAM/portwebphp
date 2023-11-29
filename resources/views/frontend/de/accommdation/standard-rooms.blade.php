@@ -113,10 +113,10 @@
     </div>
 </div>
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.de.layouts.contact')
-<!-- Contact End -->
-<!-- Other Rooms -->
+{{-- Contact End --}}
+{{-- Other Rooms --}}
 <div class="otherRoomsWrapper">
     <div class="otherRooms">
         <div class="row">
@@ -163,8 +163,8 @@
         </div>
     </div>
 </div>
-<!-- Other Rooms End -->
-<!-- Page Up Button -->
+{{-- Other Rooms End --}}
+{{-- Page Up Button --}}
 <div class="pageUpButton">
     <a href="#">
         <img class="pageUp" src="{{ asset('assets/frontend/images/pageUp.svg') }}" alt="pageUp">

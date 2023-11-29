@@ -3,14 +3,14 @@
 @section('title', 'Blog Edit Test Page')
 
 @section('content')
-    <!-- ============================================================== -->
-    <!-- Start right Content here -->
-    <!-- ============================================================== -->
+    {{-- ============================================================== --}}
+    {{-- Start right Content here --}}
+    {{-- ============================================================== --}}
     <div class="main-content">
         <div class="page-content">
             <div class="container-fluid">
 
-                <!-- start page title -->
+                {{-- start page title --}}
                 <div class="row">
                     <div class="col-12">
                         <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -29,7 +29,7 @@
                 <a href="{{ url('admin/post-list') }}" type="button" class="btn btn-md btn-outline-primary waves-effect waves-light mb-3">
                     <i class="fa-solid fa-circle-arrow-left"></i> Geri
                 </a>
-                <!-- end page title -->
+                {{-- end page title --}}
                 <div class="row">
                     <div class="col-xl">
                         <div class="card">
@@ -138,7 +138,7 @@
                                 </form>
                             </div>
                         </div>
-                    </div> <!-- end col -->
+                    </div> {{-- end col --}}
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@
           <a href="{{ route('ru-standard-rooms') }}">Номера Стандарт</a>
   </div>
 
-  <!-- Rooms Start -->
+  {{-- Rooms Start --}}
   <div class="accommRoom">
     <div class="flamingoBg">
         <img src="{{ asset('assets/frontend/images/accommdation/flamingo.svg') }}" alt="flamingo"/>
@@ -236,9 +236,9 @@
           </div>
       </div>
   </div>
-  <!-- Rooms End -->
+  {{-- Rooms End --}}
   
-  <!-- Features -->
+  {{-- Features --}}
   <div class="roomFeatures">
       <div class="roomFeaturesWrapper">
           <h6>Особенности</h6>
@@ -347,11 +347,11 @@
 
       </div>
   </div>
-  <!-- Features End -->
+  {{-- Features End --}}
   
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 @endsection
 

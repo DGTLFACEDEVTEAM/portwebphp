@@ -1,4 +1,4 @@
-<!-- contact.blade.php -->
+{{-- contact.blade.php --}}
 @component('mail::message')
 # Yeni İletişim Talebi Portnature 
 

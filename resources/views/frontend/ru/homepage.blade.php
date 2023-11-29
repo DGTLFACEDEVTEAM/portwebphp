@@ -29,7 +29,7 @@
 
     @include('components.inclusiveSwiper', ['lang' => 'ru'])
 
-    <!-- Concerts -->
+    {{-- Concerts --}}
     {{-- <div class="concertsWrapper">
         <h2 class="concertsHeader">Концерты</h2>
         <div class="swiper homeConcertSlider">
@@ -53,7 +53,7 @@
             </div>
         </div>
     </div> --}}
-    <!-- Concerts End -->
+    {{-- Concerts End --}}
     @include('components.home.accommdationSwiper', ['lang' => 'ru'])
 
     @include('components.home.childrenSection', ['lang' => 'ru'])
@@ -74,7 +74,7 @@
 
     @include('components.contactSection', ['lang' => 'ru'])
 
-    <!-- Bottom Fixed Book Now -->
+    {{-- Bottom Fixed Book Now --}}
     <div class="fixedBookNow">
         <a href="https://portnature.rezervasyonal.com/" target="_blank">
             Book Now

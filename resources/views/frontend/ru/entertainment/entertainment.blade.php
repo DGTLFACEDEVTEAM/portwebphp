@@ -20,7 +20,7 @@
 
 @section('content')
 
-<!-- Hero Part -->
+{{-- Hero Part --}}
 <div class="entertainmentHero">
   <div class="heroImage">
     <figure>
@@ -32,7 +32,7 @@
     <span>Port Nature дарит вам вкус наслаждения.<br> Чистое удовольствие для детей и взрослых, не беспокоясь ни о чем.</span>
   </article>
 </div>
-<!-- Hero Part End -->
+{{-- Hero Part End --}}
 
 <div class="entertainmentSection activities">
   <div class="row">
@@ -72,9 +72,9 @@
   </div>
 </div>
   
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 @endsection
 

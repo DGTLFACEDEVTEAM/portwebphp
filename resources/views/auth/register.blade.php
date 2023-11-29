@@ -69,12 +69,12 @@
                         </div>
                     </div>
                 </form>
-                <!-- end form -->
+                {{-- end form --}}
             </div>
         </div>
-        <!-- end cardbody -->
+        {{-- end cardbody --}}
     </div>
-    <!-- end card -->
+    {{-- end card --}}
 </div>
-<!-- end container -->
+{{-- end container --}}
 @endsection

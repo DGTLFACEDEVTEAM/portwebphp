@@ -19,7 +19,7 @@
 
 @section('content')
 
-<!-- Hero Part -->
+{{-- Hero Part --}}
 <div class="meetingHero">
     <div class="heroImage">
         <figure>
@@ -30,8 +30,8 @@
         <h1>TOPLANTI & KONGRELER</h1>
     </article>
 </div>
-<!-- Hero Part End -->
-<!-- Options -->
+{{-- Hero Part End --}}
+{{-- Options --}}
 <div class="options">
     <a href="#thermessos">
         Thermessos
@@ -110,10 +110,10 @@
         </div>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
-<!-- Page Up Button -->
+{{-- Contact End --}}
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

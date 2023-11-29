@@ -64,21 +64,18 @@
                 <div class="row">
                     <div class="col-md-12">
                         <article>
-                            <h3>Premium A'la Carte All Inclusive</h3>
-                            <p>Our 5-star premium luxury hotel has restaurants on-site, each serving a variety of
-                                delicious foods made by renowned chefs. There are exclusive concepts for families with
-                                children. Swimming pools, saunas, health clubs, and even live music performances and
-                                cultural activities are provided to guests at a 5-star hotel. </p>
+                            <h3>{!! $translation[$lang]['articleh3'] !!}</h3>
+                            <p>{!! $translation[$lang]['articlep'] !!}</p>
                         </article>
                     </div>
                 </div>
             </div>
             <div class="col-lg-8">
-                <!-- Slider main container -->
+                {{-- Slider main container --}}
                 <div class="swiper inclusiveSlider">
-                    <!-- Additional required wrapper -->
+                    {{-- Additional required wrapper --}}
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
+                        {{-- Slides --}}
                         <div class="swiper-slide">
                             <img srcset="{{ asset('assets/frontend/images/home/inclusiveSlider-1-640.webp') }} 640w,{{ asset('assets/frontend/images/home/inclusiveSlider-1-834.webp') }} 834w "
                                 sizes="((min-width: 1px) and (max-width:576px)) 640w,((min-width: 577px) and (max-width:834px)) 834w,((min-width: 835px) and (max-width:1919px)) 640w, (min-width:1920px) 640w"
@@ -116,7 +113,7 @@
                             <div class="swiper-lazy-preloader"></div>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
+                    {{-- If we need pagination --}}
                     <div class="swiper-pagination-horizontal"></div>
                 </div>
             </div>

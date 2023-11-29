@@ -129,7 +129,7 @@
 
 
     </div>
-    <!-- Booking Section -->
+    {{-- Booking Section --}}
     <div class="booking">
         <div class="dropdown room-selection-dropdown">
             <button class="room-selection-dropdown-btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -231,5 +231,5 @@
         <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow"><img
                 src="{{ asset('assets/frontend/images/offers/svg/booknow.svg') }}" />{!! $translation[$lang]['booking-component-inner']['book-now'] !!}</a>
     </div>
-    <!-- Booking Section End -->
+    {{-- Booking Section End --}}
 </div>

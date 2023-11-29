@@ -115,10 +115,10 @@
 
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
-<!-- Other Rooms -->
+{{-- Contact End --}}
+{{-- Other Rooms --}}
 <div class="otherRoomsWrapper">
     <div class="otherRooms">
         <div class="row">
@@ -165,7 +165,7 @@
         </div>
     </div>
 </div>
-<!-- Other Rooms End -->
+{{-- Other Rooms End --}}
 @endsection
 
 @section('javascript-imports')

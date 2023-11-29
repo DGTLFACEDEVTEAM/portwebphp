@@ -163,7 +163,7 @@
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
+                    {{-- If we need navigation buttons --}}
                     <div class="swiper-button-prev inclusive-prev">
                         <img loading="lazy" src="{{ asset('assets/frontend/images/swipergray-left.svg') }}"
                             alt="swiperleft" />

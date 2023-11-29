@@ -26,7 +26,7 @@
                <div class="kvkk-title ">Kişisel Verilerin Korunması</div>
                <div class="kvkk-subtitle text-center"><strong>Call Center Aydınlatma Metni</strong></div>
                <div class="kvkk-content py-4">
-                <!--    Aydinlatma Metinleri -->
+                {{--    Aydinlatma Metinleri --}}
                 <table border="0">
 	<tbody>
 		<tr>

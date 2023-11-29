@@ -100,7 +100,7 @@
                     </div>
                 </div>
             </div>
-            <div class="barDetailHeroText"><!-- CLASS CHANGED ***************************** -->
+            <div class="barDetailHeroText">{{-- CLASS CHANGED ***************************** --}}
                 <div class="hours">
                     <img src="{{ asset('assets/frontend/images/clock.svg') }}" alt="clock" class="barSvg">
                     <span>12:00 - 00:00</span>
@@ -113,10 +113,10 @@
     </div>
 </div>
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
-<!-- Special Offer -->
+{{-- Contact End --}}
+{{-- Special Offer --}}
 <div class="barSpecialOffer">
     <h6>Другие бары & кафе</h6>
     <div class="swiper barSpecialOfferSlider">
@@ -171,9 +171,9 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

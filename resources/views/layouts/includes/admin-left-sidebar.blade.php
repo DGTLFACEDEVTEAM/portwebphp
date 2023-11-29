@@ -1,9 +1,9 @@
-            <!-- ========== Left Sidebar Start ========== -->
+            {{-- ========== Left Sidebar Start ========== --}}
             <div class="vertical-menu">
 
                 <div data-simplebar class="h-100">
 
-                    <!-- User details -->
+                    {{-- User details --}}
                     <div class="user-profile text-center mt-3">
                         <div class="">
                             @if (Auth::user()->role_as == '1')
@@ -22,9 +22,9 @@
                         </div>
                     </div>
 
-                    <!--- Sidemenu -->
+                    {{--- Sidemenu --}}
                     <div id="sidebar-menu">
-                        <!-- Left Menu Start -->
+                        {{-- Left Menu Start --}}
                         <ul class="metismenu list-unstyled" id="side-menu">
                             <li class="menu-title text-center">Panel Yönetimi</li>
 
@@ -94,7 +94,7 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- Sidebar -->
+                    {{-- Sidebar --}}
                 </div>
             </div>
-            <!-- Left Sidebar End -->
+            {{-- Left Sidebar End --}}

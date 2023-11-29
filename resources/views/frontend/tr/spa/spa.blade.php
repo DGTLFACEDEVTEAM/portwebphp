@@ -42,7 +42,7 @@
     <p>SPA’larımız, rahatlama, stresi azaltma ve iyileşme sağlama yetenekleri açısından etkileyicidir, bedene ve zihne fayda sağlar. Masajdan hidroterapiye, hidroterapiden aromaterapiye konuklarımıza geniş bir hizmet yelpazesi sunmak için lüks ve sükun bir atmosfer tasarladık.</p>
 </div>
 
-<!-- First Slider -->
+{{-- First Slider --}}
 <div class="spaFirstSlider">
     <div class="swiper spaFirstSwiperSlider">
         <div class="swiper-wrapper">
@@ -86,8 +86,8 @@
         </div>
     </div>
 </div>
-<!-- First Slider End -->
-<!-- Second Slider -->
+{{-- First Slider End --}}
+{{-- Second Slider --}}
 <div class="spaSecondSlider">
 
             <div class="swiper spaSecondSwiperSlider" dir="rtl">
@@ -139,7 +139,7 @@
             </div>
 
 </div>
-<!-- Second Slider End -->
+{{-- Second Slider End --}}
 <div class="indoorPool">
     <a class="roomlink" href="{{ route('tr-indoor-pool') }}">
         <figure>
@@ -153,11 +153,11 @@
         </article>
     </a>
 </div>
-<!-- IndoorPool End -->
-<!-- Contact -->
+{{-- IndoorPool End --}}
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
-<!-- Page Up Button -->
+{{-- Contact End --}}
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

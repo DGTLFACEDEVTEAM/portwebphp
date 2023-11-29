@@ -42,12 +42,12 @@
             </div>
         </div>
         <div class="col-lg-6 video">
-            <!-- Button trigger modal -->
+            {{-- Button trigger modal --}}
             <a type="button" class="restPlayButtonDesktop" data-bs-toggle="modal" data-bs-target=".restaurantModalDesktop">
                 <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
                 <img class="videoCover" src="{{ asset('assets/frontend/images/seaside/seasideVideo.webp') }}" alt="youtubeVideo"/>
             </a>
-            <!-- Modal -->
+            {{-- Modal --}}
             <div class="modal fade restaurantModal restaurantModalDesktop" tabindex="-1" aria-labelledby="restaurantModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -84,12 +84,12 @@
 </div>
 
 <div class="mobilevideo">
-    <!-- Button trigger modal -->
+    {{-- Button trigger modal --}}
     <a type="button" class="restPlayButtonMobile" data-bs-toggle="modal" data-bs-target=".restaurantModalMobile">
         <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
         <img class="videoCover" src="{{ asset('assets/frontend/images/seaside/seasideVideo.webp') }}" alt="youtubeVideo"/>
     </a>
-    <!-- Modal -->
+    {{-- Modal --}}
     <div class="modal fade restaurantModal restaurantModalMobile" tabindex="-1" aria-labelledby="restaurantModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -104,17 +104,17 @@
         </div>
     </div>
 </div>
-<!-- 360 View -->
+{{-- 360 View --}}
 <div class="room360">
     <p>360° Rundgang</p>
     <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7XG72?logo=-1&info=0&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>
 </div>
-<!-- 360 View End -->
-<!-- Contact -->
+{{-- 360 View End --}}
+{{-- Contact --}}
 @include('frontend.de.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
-<!-- Special Offer -->
+{{-- Special Offer --}}
 <div class="restSpecialOffer">
     <h6>Andere Restaurants</h6>
     <div class="swiper restOtherSlider">
@@ -186,8 +186,8 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
-<!-- Page Up Button -->
+{{-- Special Offer End --}}
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

@@ -56,7 +56,7 @@
 <div class="grid">
     <div class="item eighteen">
         <div class="item-content">
-            <div class="bars"><!--********* bars class name all CHANGES START HERE ************-->
+            <div class="bars">{{--********* bars class name all CHANGES START HERE ************--}}
                 <a class="roomlink" href="{{ route('ru-chivas-lounge') }}">
                     <img class="barCafeImg"  src="{{ asset('assets/frontend/images/barCafes/Script.webp') }}" alt="chivas"/>
                     <div class="restaurantsHeader">
@@ -210,9 +210,9 @@
         </div>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 @endsection
 

@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
     {{-- <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
-    <!-- CSRF Token -->
+    {{-- CSRF Token --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!-- Title -->
+    {{-- Title --}}
     <title>@yield('title')</title>
-    <!-- App favicon -->
+    {{-- App favicon --}}
     <link rel="shortcut icon" href="{{ asset('assets/admin/images/favicon.ico') }}">
-    <!-- Icons Css -->
+    {{-- Icons Css --}}
     <link href="{{ asset('assets/admin/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
+    {{-- App Css--}}
     <link href="{{ asset('assets/admin/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
-    <!-- Fonts -->
+    {{-- Fonts --}}
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <!-- Bootstrap Css -->
+    {{-- Bootstrap Css --}}
     <link href="{{ asset('assets/admin/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"
         type="text/css" />
-    <!-- Scripts -->
+    {{-- Scripts --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 

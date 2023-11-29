@@ -112,10 +112,10 @@
         <img class="standardBird" src="{{ asset('assets/frontend/images/standardRooms/pigeon.svg') }}" alt="pigeon"/>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
-<!-- Other Rooms -->
+{{-- Contact End --}}
+{{-- Other Rooms --}}
 <div class="otherRoomsWrapper">
     <div class="otherRooms">
         <div class="row">
@@ -162,7 +162,7 @@
         </div>
     </div>
 </div>
-<!-- Other Rooms End -->
+{{-- Other Rooms End --}}
 <div class="pageUpButton">
     <a href="#">
         <img class="pageUp" src="{{ asset('assets/frontend/images/pageUp.svg') }}" alt="pageUp">

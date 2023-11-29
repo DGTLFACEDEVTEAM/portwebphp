@@ -217,7 +217,7 @@ $translation = [
         </div>
     </div>
     <div class="room-swiper-controls">
-        <!-- Swiper controls -->
+        {{-- Swiper controls --}}
     </div>
 </div>
 <div class="accommodations-features-grid collapse" id="collapseExample">

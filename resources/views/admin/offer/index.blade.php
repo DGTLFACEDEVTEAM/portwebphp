@@ -3,14 +3,14 @@
 @section('title','Offer Page')
 
 @section('content')
-        <!-- ============================================================== -->
-        <!-- Start right Content here -->
-        <!-- ============================================================== -->
+        {{-- ============================================================== --}}
+        {{-- Start right Content here --}}
+        {{-- ============================================================== --}}
         <div class="main-content">
             <div class="page-content">
                 <div class="container-fluid">
 
-                    <!-- start page title -->
+                    {{-- start page title --}}
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- end page title -->
+                    {{-- end page title --}}
 
                     <a href="{{ url('admin/offer-create') }}" type="button" class="btn btn-outline-success waves-effect waves-light">
                         <span style="font-weight:bold">Teklif Ekle </span> <i class="fas fa-plus"></i>
@@ -78,7 +78,7 @@
                                                         <a href="{{ url('admin/offer-edit/'.$offer->id) }}" class="btn btn-md btn-warning m-2" title="Düzenle">
                                                             <i class="fas fa-edit"></i>
                                                         </a>
-                                                        <!-- Modal -->
+                                                        {{-- Modal --}}
                                                         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-bs-backdrop="static"  aria-hidden="true">
                                                             <div class="modal-dialog" role="document">
                                                                 <div class="modal-content">
@@ -98,7 +98,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <!-- End Modal -->
+                                                        {{-- End Modal --}}
                                                         <a href="" class="btn btn-md btn-danger" data-bs-toggle="modal" data-bs-target="#myModal" title="Sil">
                                                             <i class="far fa-trash-alt"></i>
                                                         </a>
@@ -110,8 +110,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> <!-- end col -->
-                    </div> <!-- end row -->
+                        </div> {{-- end col --}}
+                    </div> {{-- end row --}}
 
                 </div>
             </div>

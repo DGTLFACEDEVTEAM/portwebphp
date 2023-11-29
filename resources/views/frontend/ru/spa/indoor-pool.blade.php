@@ -62,7 +62,7 @@
 
 <div class="indoorPoolHeaderText">
     <h1>Крытый Бассейн</h1>
-    <div class="poolLine"></div><!-- ***** CLASS CHANGED ********-->
+    <div class="poolLine"></div>{{-- ***** CLASS CHANGED ********--}}
     <div class="headerTextGroup">
         <div class="hour">
             <img class="indoorSvg" src="{{ asset('assets/frontend/images/clock.svg') }}" alt="clock"/>
@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<!-- Gallery -->
+{{-- Gallery --}}
 <div class="gallery">
     <div class="swiper gallerySlider">
         <div class="swiper-wrapper">
@@ -113,10 +113,10 @@
         </div>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
-<!-- Special Offer -->
+{{-- Contact End --}}
+{{-- Special Offer --}}
 <div class="otherActivities">
     <h6>Другие спа-услуги</h6>
     <div class="swiper otherActivitiesSlider">
@@ -179,9 +179,9 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

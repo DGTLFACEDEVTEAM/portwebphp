@@ -195,16 +195,16 @@
         </div>
     </div>
 </div>
-<!-- Video Section Start -->
+{{-- Video Section Start --}}
 <section class="video-section">
     <p class="video-section-title">Video Gallery</p>
      <div class=" video-wrapper">
-            <!-- Button trigger modal -->
+            {{-- Button trigger modal --}}
             <a type="button" class="restPlayButtonDesktop" data-bs-toggle="modal" data-bs-target=".restaurantModalDesktop">
                 <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
                 <img class="videoCover" src="{{ asset('assets/frontend/images/barCafes/lobby-bar.webp') }}" alt="youtubeVideo"/>
             </a>
-            <!-- Modal -->
+            {{-- Modal --}}
             <div class="modal fade restaurantModal restaurantModalDesktop" tabindex="-1" aria-labelledby="restaurantModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -215,13 +215,13 @@
             </div>
         </div>
 </section>
-<!-- Video Section End -->
+{{-- Video Section End --}}
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
-<!-- Special Offer -->
+{{-- Special Offer --}}
 <div class="barSpecialOffer">
     <h6>Other Bars & Cafes</h6>
     <div class="swiper barSpecialOfferSlider">
@@ -276,9 +276,9 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

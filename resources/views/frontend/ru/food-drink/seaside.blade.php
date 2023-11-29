@@ -43,12 +43,12 @@
             </div>
         </div>
         <div class="col-lg-6 video">
-            <!-- Button trigger modal -->
+            {{-- Button trigger modal --}}
             <a type="button" class="restPlayButtonDesktop" data-bs-toggle="modal" data-bs-target=".restaurantModalDesktop">
                 <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
                 <img class="videoCover" src="{{ asset('assets/frontend/images/seaside/seasideVideo.webp') }}" alt="youtubeVideo"/>
             </a>
-            <!-- Modal -->
+            {{-- Modal --}}
             <div class="modal fade restaurantModal restaurantModalDesktop" tabindex="-1" aria-labelledby="restaurantModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -85,12 +85,12 @@
 </div>
 
 <div class="mobilevideo">
-    <!-- Button trigger modal -->
+    {{-- Button trigger modal --}}
     <a type="button" class="restPlayButtonMobile" data-bs-toggle="modal" data-bs-target=".restaurantModalMobile">
         <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
         <img class="videoCover" src="{{ asset('assets/frontend/images/seaside/seasideVideo.webp') }}" alt="youtubeVideo"/>
     </a>
-    <!-- Modal -->
+    {{-- Modal --}}
     <div class="modal fade restaurantModal restaurantModalMobile" tabindex="-1" aria-labelledby="restaurantModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -109,13 +109,13 @@
     <p>360° Тур</p>
     <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7XG72?logo=-1&info=0&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>
 </div>
-<!-- 360 View End -->
+{{-- 360 View End --}}
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
-<!-- Special Offer -->
+{{-- Special Offer --}}
 <div class="restSpecialOffer">
     <h6>Other Restaurants</h6>
     <div class="swiper restOtherSlider">
@@ -187,9 +187,9 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div class="pageUpButton">
     <a href="#">
         <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">

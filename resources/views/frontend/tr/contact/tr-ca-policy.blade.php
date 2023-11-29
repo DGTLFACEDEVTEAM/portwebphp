@@ -27,7 +27,7 @@
                <div class="kvkk-subtitle text-center">ÇALIŞAN İÇİN KİŞİSEL VERİLER HAKKINDA BİLGİLENDİRME</div>
                <div class="kvkk-content py-4">
                    
-				<!-- Aydinlatma -->
+				{{-- Aydinlatma --}}
 				
 				<p><strong>Kişisel Verilerin Korunması</strong></p>
 
