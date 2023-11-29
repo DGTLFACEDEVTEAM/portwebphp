@@ -64,11 +64,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <article>
-                            <h3>Premium A'la Carte All Inclusive</h3>
-                            <p>Our 5-star premium luxury hotel has restaurants on-site, each serving a variety of
-                                delicious foods made by renowned chefs. There are exclusive concepts for families with
-                                children. Swimming pools, saunas, health clubs, and even live music performances and
-                                cultural activities are provided to guests at a 5-star hotel. </p>
+                            <h3>{!! $translation[$lang]['articleh3'] !!}</h3>
+                            <p>{!! $translation[$lang]['articlep'] !!}</p>
                         </article>
                     </div>
                 </div>

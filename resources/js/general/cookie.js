@@ -22,6 +22,8 @@ $(document).ready(function () {
     let isClientAcceptFunctionalCookie = Cookies.get("port_c_f");
     let isClientAcceptTargetingCookie = Cookies.get("port_c_t");
 
+
+
     if (isClientAcceptCookie == "true") {
         htmlElement.style.overflow = "auto";
     } else {
