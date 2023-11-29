@@ -21,7 +21,7 @@
                 'childage3' => 'Child 3 Age',
                 'childage4' => 'Child 4 Age',
                 'book-now' => 'Book Now',
-            ],          
+            ],
         ],
         'de' => [
             'plane-before' => '... buchen Sie jetzt ein Ticket',
@@ -43,7 +43,7 @@
                 'childage3' => 'Kind 3',
                 'childage4' => 'Kind 4',
                 'book-now' => 'Jetzt buchen',
-            ],          
+            ],
         ],
         'ru' => [
             'plane-before' => '.. закажите билет прямо сейчас',
@@ -65,7 +65,7 @@
                 'childage3' => 'Дети 3',
                 'childage4' => 'Дети 4',
                 'book-now' => 'Забронировать сейчас',
-            ],          
+            ],
         ],
         'tr' => [
             'plane-before' => '... hemen bir bilet alın',
@@ -87,7 +87,7 @@
                 'childage3' => 'Çocuk 3 Yaş',
                 'childage4' => 'Çocuk 4 Yaş',
                 'book-now' => 'Şimdi Rezervasyon Yap',
-            ],          
+            ],
         ],
     ];
 
@@ -105,13 +105,24 @@
         <div class="swiper brand-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="https://www.tripadvisor.com.tr/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html" target="_blank"><img class="svg-tripadvisor" src="{{ asset('assets/frontend/images/offers/tripadvisor.webp') }}" /></a>
+                    <a href="https://www.tripadvisor.com.tr/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html"
+                        target="_blank"><img class="svg-tripadvisor"
+                            src="{{ asset('assets/frontend/images/offers/tripadvisor.webp') }}" /></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.booking.com/searchresults.tr.html?ss=Port+Nature&ssne=Side&ssne_untouched=Side&label=bookings-name-lO9ne8CLb_o7ijml9UoG0QS540961834209%3Apl%3Ata%3Ap1%3Ap22.563.000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1012764%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcX_GyndjDE1ljcv9tcUssY&aid=376386&lang=tr&sb=1&src_elem=sb&src=searchresults&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure" target="_blank"><img class="svg-booking" src="{{ asset('assets/frontend/images/offers/booking.webp') }}" /></a>
+                    <a href="https://www.booking.com/searchresults.tr.html?ss=Port+Nature&ssne=Side&ssne_untouched=Side&label=bookings-name-lO9ne8CLb_o7ijml9UoG0QS540961834209%3Apl%3Ata%3Ap1%3Ap22.563.000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1012764%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YcX_GyndjDE1ljcv9tcUssY&aid=376386&lang=tr&sb=1&src_elem=sb&src=searchresults&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+                        target="_blank"><img class="svg-booking"
+                            src="{{ asset('assets/frontend/images/offers/booking.webp') }}" /></a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="https://www.expedia.com/Belek-Hotels-Port-Nature-Luxury-Resort-Spa-All-Inclusive.h8108100.Hotel-Information?chkin=2023-04-11&chkout=2023-04-12&x_pwa=1&rfrr=HSR&pwa_ts=1679996745179&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=6034717&destination=Belek%2C+Serik%2C+Antalya+Region%2C+T%C3%BCrkiye&destType=CURRENT_LOCATION&selected=8108100&latLong=36.83444%2C31.162045&sort=RECOMMENDED&userIntent=" target="_blank"><img class="svg-expedia" src="{{ asset('assets/frontend/images/offers/expedia.webp') }}" /></a>
+                    <a href="https://www.tripadvisor.com.tr/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html"
+                        target="_blank"><img class="svg-tripadvisor"
+                            src="{{ asset('assets/frontend/images/offers/tripadvisor.webp') }}" /></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.expedia.com/Belek-Hotels-Port-Nature-Luxury-Resort-Spa-All-Inclusive.h8108100.Hotel-Information?chkin=2023-04-11&chkout=2023-04-12&x_pwa=1&rfrr=HSR&pwa_ts=1679996745179&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=false&rm1=a2&regionId=6034717&destination=Belek%2C+Serik%2C+Antalya+Region%2C+T%C3%BCrkiye&destType=CURRENT_LOCATION&selected=8108100&latLong=36.83444%2C31.162045&sort=RECOMMENDED&userIntent="
+                        target="_blank"><img class="svg-expedia"
+                            src="{{ asset('assets/frontend/images/offers/expedia.webp') }}" /></a>
                 </div>
             </div>
         </div>
@@ -127,13 +138,16 @@
             </button>
             <ul class="dropdown-menu room-selection-dropdown-menu" aria-labelledby="dropdownMenuButton1">
                 <li>
-                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Family Room">{!! $translation[$lang]['booking-section-general']['family-room'] !!}</div>
+                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Family Room">
+                        {!! $translation[$lang]['booking-section-general']['family-room'] !!}</div>
                 </li>
                 <li>
-                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Standard Room">{!! $translation[$lang]['booking-section-general']['standard-room'] !!}</div>
+                    <div class="dropdown-item room-dropdown-link" href="#" data-value="Standard Room">
+                        {!! $translation[$lang]['booking-section-general']['standard-room'] !!}</div>
                 </li>
                 <li>
-                    <div class="dropdown-item room-dropdown-link" href="#" data-value="King Suite">{!! $translation[$lang]['booking-section-general']['king-suite'] !!}</div>
+                    <div class="dropdown-item room-dropdown-link" href="#" data-value="King Suite">
+                        {!! $translation[$lang]['booking-section-general']['king-suite'] !!}</div>
                 </li>
             </ul>
         </div>
