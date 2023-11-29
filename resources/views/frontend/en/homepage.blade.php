@@ -78,7 +78,6 @@ Belek.')
 
 @endsection
 @section('javascript-imports')
-    <script src="{{ asset('assets/frontend/libs/js/lc_lightbox.lite.min.js') }}" defer></script>
     {{-- <script src="{{ asset('assets/frontend/js/main.js') }}"></script> @endsection @section('css-imports') --}}
     {{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}" /> --}}
     @vite(['resources/css/style.css'])

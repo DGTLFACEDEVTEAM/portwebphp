@@ -30,6 +30,9 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Lora:ital,wght@1,400;1,500&family=Space+Grotesk:wght@300;700&display=swap"
         rel="stylesheet">
 
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     <link rel="preload" as="style" href="{{ asset('assets/frontend/libs/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/bootstrap.min.css') }}" media="print"
         onload="this.media='all'" />
@@ -43,7 +46,7 @@
         @vite(['resources/css/blogdetail.css'])
     @endif
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 
     @yield('css-imports')
 
@@ -83,7 +86,11 @@
     <script src="{{ asset('assets/frontend/libs/js/bootstrap.min.js') }}" defer></script>
     <script src="{{ asset('assets/frontend/libs/js/jquery-3.6.4.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/libs/js/swiper-bundle-11.min.js') }}"></script>
+    <script src="{{ asset('assets/frontend/libs/js/flatpickr.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/libs/js/lazysizes.min.js') }}" defer></script>
+    <script src="{{ asset('assets/frontend/libs/js/lc_lightbox.lite.min.js') }}" defer></script>
+
+
 
     @yield('javascript-imports')
 
