@@ -189,9 +189,9 @@
 
 
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 <div class="childrenActivitySlider">
     <p>Special Offers</p>

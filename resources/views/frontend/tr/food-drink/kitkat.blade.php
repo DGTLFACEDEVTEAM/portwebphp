@@ -158,10 +158,10 @@
     </div>
 </div>
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
-<!-- Special Offer -->
+{{-- Contact End --}}
+{{-- Special Offer --}}
 <div class="barSpecialOffer">
     <h6>Diğer Kafeler & Barlar</h6>
     <div class="swiper barSpecialOfferSlider">
@@ -216,8 +216,8 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
-<!-- Page Up -->
+{{-- Special Offer End --}}
+{{-- Page Up --}}
 <div style="text-align: center;" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

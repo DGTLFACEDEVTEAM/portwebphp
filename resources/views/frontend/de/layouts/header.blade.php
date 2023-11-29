@@ -1,4 +1,4 @@
-<!-- Header -->
+{{-- Header --}}
 <header>
     <nav class="navbar navbar-expand-sm" id="navbar">
         <div class="">
@@ -299,4 +299,4 @@
             </div>
         </div>
 </header>
-<!-- Header End -->
+{{-- Header End --}}

@@ -18,9 +18,9 @@
         </div>
     </div>
     <div class="swiper inclusiveSlider">
-        <!-- Additional required wrapper -->
+        {{-- Additional required wrapper --}}
         <div class="swiper-wrapper">
-            <!-- Slides -->
+            {{-- Slides --}}
             <div class="swiper-slide">
                 <img class=""
                     srcset="{{ asset('assets/frontend/images/home/inclusiveSlider-1-640.webp') }} 640w,{{ asset('assets/frontend/images/home/inclusiveSlider-1-834.webp') }} 834w "
@@ -62,7 +62,7 @@
                 <div class="swiper-lazy-preloader"></div>
             </div>
         </div>
-        <!-- If we need pagination -->
+        {{-- If we need pagination --}}
         <div class="swiper-pagination-horizontal"></div>
     </div>
 </div>

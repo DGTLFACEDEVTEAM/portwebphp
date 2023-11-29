@@ -197,9 +197,9 @@
             <img class="wrapperImg" src="{{ asset('assets/frontend/images/mini-club/art.webp') }}" loading="lazy" alt="An art class photo for children">
         </div>
         <a class="topbutton" href="#"><img src="{{ asset('assets/frontend/images/mini-club/Arrow.svg') }}" alt="An icon for navigation"></a>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 <div class="childrenActivitySlider">
     <p>Special Offers</p>
     <div class="swiper activitySlider">

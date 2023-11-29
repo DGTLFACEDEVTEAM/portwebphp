@@ -44,7 +44,7 @@
 </div>
 
 
-<!-- First Slider -->
+{{-- First Slider --}}
 <div class="spaFirstSlider">
     <div class="swiper spaFirstSwiperSlider">
         <div class="swiper-wrapper">
@@ -88,8 +88,8 @@
         </div>
     </div>
 </div>
-<!-- First Slider End -->
-<!-- Second Slider -->
+{{-- First Slider End --}}
+{{-- Second Slider --}}
 <div class="spaSecondSlider">
 
             <div class="swiper spaSecondSwiperSlider" dir="rtl">
@@ -141,7 +141,7 @@
             </div>
 
 </div>
-<!-- Second Slider End -->
+{{-- Second Slider End --}}
 <div class="indoorPool">
     <a class="roomlink" href="{{ route('ru-indoor-pool') }}">
         <figure>
@@ -155,10 +155,10 @@
         </article>
     </a>
 </div>
-<!-- IndoorPool End -->
-<!-- Contact -->
+{{-- IndoorPool End --}}
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
  <div class="modal fade spaModal spaModalDesktop" tabindex="-1" aria-labelledby="spaModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">

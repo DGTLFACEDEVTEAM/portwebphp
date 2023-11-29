@@ -3,13 +3,13 @@
     "file": "assets/blogHero-3fa0f45f.webp",
     "src": "public/assets/frontend/images/blog/blogHero.webp"
   },
-  "public/assets/frontend/images/footer-tablet.webp": {
-    "file": "assets/footer-tablet-20be9d10.webp",
-    "src": "public/assets/frontend/images/footer-tablet.webp"
-  },
   "public/assets/frontend/libs/css/fonts/lc_lightbox.eot": {
     "file": "assets/lc_lightbox-8c8a6d3f.eot",
     "src": "public/assets/frontend/libs/css/fonts/lc_lightbox.eot"
+  },
+  "public/assets/frontend/images/footer-tablet.webp": {
+    "file": "assets/footer-tablet-20be9d10.webp",
+    "src": "public/assets/frontend/images/footer-tablet.webp"
   },
   "public/assets/frontend/images/home/footer-mobile-bg.webp": {
     "file": "assets/footer-mobile-bg-71dc2bf3.webp",

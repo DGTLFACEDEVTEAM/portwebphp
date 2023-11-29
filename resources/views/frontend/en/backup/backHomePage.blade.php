@@ -18,19 +18,19 @@ Belek.')
             </li>
         </ul>
     </div> @endsection @section('content')
-    <!-- Swiper Start -->
+    {{-- Swiper Start --}}
     @include('components.heroSwiper', ['lang' => 'en'])
-    <!-- Swiper Finish -->
+    {{-- Swiper Finish --}}
 
-    <!-- Rezervation Section -->
-    <!-- Booking Section -->
+    {{-- Rezervation Section --}}
+    {{-- Booking Section --}}
 
     @include('frontend.en.layouts.booking')
 
-    <!-- Booking Section End -->
-    <!-- Rezervation Section End -->
+    {{-- Booking Section End --}}
+    {{-- Rezervation Section End --}}
 
-    <!-- Home Icons -->
+    {{-- Home Icons --}}
     {{-- <div class="homeIcons">
         <div class="homeIconContainer">
             <div class="homeIconWrapper">
@@ -69,17 +69,17 @@ Belek.')
                 </div>
             </div>
         </div>
-        <!-- Home Icons End -->
+        {{-- Home Icons End --}}
         <div class="thinLine"></div>
     </div> --}}
 
     @include('components.homeIcons', ['lang' => 'en'])
-    <!-- Home Icons End -->
-    <!-- Inclusive Area Text -->
+    {{-- Home Icons End --}}
+    {{-- Inclusive Area Text --}}
     @include('components.inclusiveSwiper', ['lang' => 'en'])
-    <!-- Inclusive Area Text End -->
+    {{-- Inclusive Area Text End --}}
 
-    <!-- Concerts -->
+    {{-- Concerts --}}
     {{-- <div class="concertsWrapper">
         <h2 class="concertsHeader">Concerts</h2>
         <div class="swiper homeConcertSlider">
@@ -104,13 +104,13 @@ Belek.')
         </div>
     </div> --}}
 
-    <!-- Concerts End -->
-    <!-- Accommdation -->
+    {{-- Concerts End --}}
+    {{-- Accommdation --}}
 
     {{-- @include('components.accommdationSwiper') with paramater --}}
     @include('components.accommdationSwiper', ['lang' => 'en'])
-    <!-- Accomdation End -->
-    <!-- Children Menu -->
+    {{-- Accomdation End --}}
+    {{-- Children Menu --}}
     <div class="children">
         <div class="childrenContainer">
             <div class="row">
@@ -236,7 +236,7 @@ Belek.')
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                        <!-- If we need navigation buttons -->
+                        {{-- If we need navigation buttons --}}
                         <div class="swiper-button-prev inclusive-prev">
                             <img loading="lazy" src="{{ asset('assets/frontend/images/swipergray-left.svg') }}"
                                 alt="swiperleft" />
@@ -253,8 +253,8 @@ Belek.')
             <a href="{{ route('kids-concepts') }}">More About</a>
         </div>
     </div>
-    <!-- Children Menu End -->
-    <!-- Banner -->
+    {{-- Children Menu End --}}
+    {{-- Banner --}}
     <div class="homeBanner">
         <img alt="Home Banner" loading="lazy" src="{{ asset('assets/frontend/images/home/homeBanner.webp') }}" />
         <h3>We created an unbelievable beach experience with <br> Belek’s unique natural beauty for adults and children.
@@ -263,13 +263,13 @@ Belek.')
             <a href="{{ route('activity') }}">More About</a>
         </div>
     </div>
-    <!-- Banner End -->
-    <!-- Contact -->
+    {{-- Banner End --}}
+    {{-- Contact --}}
     {{-- @include('frontend.en.layouts.contact') --}}
     @include('components.contactSection', ['lang' => 'en'])
 
-    <!-- Contact End -->
-    <!-- Gastronomy Start -->
+    {{-- Contact End --}}
+    {{-- Gastronomy Start --}}
     <div class="homeGastronomy">
         <div class="homeGastronomyWrapper">
             <div class="row">
@@ -287,7 +287,7 @@ Belek.')
                 </div>
             </div>
             <div class="gastroIconsWrapper">
-                <!-- Slides -->
+                {{-- Slides --}}
                 <div class="gastroIcons">
                     <img style="width: unset" class="lazyload" loading="lazy"
                         src="{{ asset('assets/frontend/images/home/quality.svg') }}" alt="quality">
@@ -514,8 +514,8 @@ Belek.')
             </div>
         </div>
     </div>
-    <!-- Gastronomy End -->
-    <!-- Drink Brand -->
+    {{-- Gastronomy End --}}
+    {{-- Drink Brand --}}
     <div class="homeBrand">
         <div class="swiper homeBrandSlider">
             <div class="swiper-wrapper">
@@ -542,8 +542,8 @@ Belek.')
             </div>
         </div>
     </div>
-    <!-- Drink Brand End -->
-    <!-- Special Offer -->
+    {{-- Drink Brand End --}}
+    {{-- Special Offer --}}
     <div class="homeSpecialOffer">
         <h2>Special Offers</h2>
         <div class="swiper specialOfferSlider">
@@ -608,8 +608,8 @@ Belek.')
             </div>
         </div>
     </div>
-    <!-- Special Offer End -->
-    <!-- Services -->
+    {{-- Special Offer End --}}
+    {{-- Services --}}
     <div class="homeServices">
         <div class="row">
             <div class="col-md-12 p-0">
@@ -724,7 +724,7 @@ Belek.')
             </div>
         </div>
     </div>
-    <!-- Services End -->
+    {{-- Services End --}}
     <div class="homeTravelCompany">
         <div class="travelSliderWrapper">
             <div class="swiper travelSlider">
@@ -767,9 +767,9 @@ Belek.')
             </div>
         </div>
     </div>
-    <!-- Contact --> @include('frontend.en.layouts.contact')
-    <!-- Contact End -->
-    <!-- Above Footer -->
+    {{-- Contact --}} @include('frontend.en.layouts.contact')
+    {{-- Contact End --}}
+    {{-- Above Footer --}}
     <div class="homeAboveFooter">
         <div class="aboveImg">
             <img class="mobileV lazyload" loading="lazy"
@@ -795,7 +795,7 @@ Belek.')
             <img loading="lazy" src="{{ asset('assets/frontend/images/home/inst-en.webp') }}" alt="phone" />
         </div>
     </div>
-    <!-- Above Footer End --> @endsection @section('javascript-imports')
+    {{-- Above Footer End --}} @endsection @section('javascript-imports')
     <script src="{{ asset('assets/frontend/libs/js/lc_lightbox.lite.min.js') }}" defer></script>
     <script src="{{ asset('assets/frontend/js/main.js') }}"></script> @endsection @section('css-imports')
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}" />

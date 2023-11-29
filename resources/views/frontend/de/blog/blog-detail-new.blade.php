@@ -62,7 +62,7 @@
             </div>
         </div>
     </section>
-    <!-- Page Up Button -->
+    {{-- Page Up Button --}}
     <div style="text-align: center" class="pageUpButton">
         <a href="#">
             <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}" />

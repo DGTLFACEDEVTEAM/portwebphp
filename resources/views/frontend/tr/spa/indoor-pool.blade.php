@@ -71,7 +71,7 @@
     </div>
 </div>
 
-<!-- Gallery -->
+{{-- Gallery --}}
 <div class="gallery">
     <div class="swiper poolsGallerySlider gallerySlider">
         <div class="swiper-wrapper">
@@ -112,10 +112,10 @@
         </div>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
-<!-- Special Offer -->
+{{-- Contact End --}}
+{{-- Special Offer --}}
 <div class="otherActivities">
     <h6>DİĞER SPA SERVİSLERİMİZ</h6>
     <div class="swiper otherActivitiesSlider">
@@ -178,9 +178,9 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

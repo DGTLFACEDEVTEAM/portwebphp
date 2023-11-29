@@ -29,7 +29,7 @@
     </div>
 
 
-<!-- Rooms Start -->
+{{-- Rooms Start --}}
 <div class="accommRoom">
     <div class="flamingoBg">
         <img src="{{ asset('assets/frontend/images/accommdation/flamingo.svg') }}" alt="flamingo"/>
@@ -242,9 +242,9 @@
         </div>
     </div>
 </div>
-<!-- Rooms End -->
+{{-- Rooms End --}}
 
-<!-- Features -->
+{{-- Features --}}
 <div class="roomFeatures">
       <div class="roomFeaturesWrapper">
           <h6>Features</h6>
@@ -352,11 +352,11 @@
 
       </div>
   </div>
-  <!-- Features End -->
-<!-- Contact -->
+  {{-- Features End --}}
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
-<!-- Page Up Button -->
+{{-- Contact End --}}
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

@@ -210,9 +210,9 @@
         <a class="topbutton" href="#"><img src="{{ asset('assets/frontend/images/mini-club/Arrow.svg') }}" alt=""></a>
 
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 <div class="childrenActivitySlider">
     <div class="swiper activitySlider">

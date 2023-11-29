@@ -21,12 +21,12 @@
 
 @section('content')
 
-    <!-- Swiper Start -->
+    {{-- Swiper Start --}}
     @include('components.heroSwiper', ['lang' => 'ru'])
-    <!-- Swiper Finish -->
+    {{-- Swiper Finish --}}
 
-    <!-- Rezervation Section -->
-    <!-- Booking Section -->
+    {{-- Rezervation Section --}}
+    {{-- Booking Section --}}
     <div class="booking">
         <label for="checkin"></label>
         <input id="checkin" data-defaultDate="today" value="Check-in">
@@ -194,10 +194,10 @@
         <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow">Бронировать
             сейчас</a>
     </div>
-    <!-- Booking Section End -->
-    <!-- Rezervation Section End -->
+    {{-- Booking Section End --}}
+    {{-- Rezervation Section End --}}
 
-    <!-- Home Icons -->
+    {{-- Home Icons --}}
     <div class="homeIcons">
         <div class="homeIconContainer">
             <div class="homeIconWrapper">
@@ -238,14 +238,14 @@
 
         </div>
 
-        <!-- Home Icons End -->
+        {{-- Home Icons End --}}
         <div class="thinLine"></div>
     </div>
-    <!-- Inclusive Area Text -->
+    {{-- Inclusive Area Text --}}
 
     @include('components.inclusiveSwiper', ['lang' => 'ru'])
-    <!-- Inclusive Area Text End -->
-    <!-- Concerts -->
+    {{-- Inclusive Area Text End --}}
+    {{-- Concerts --}}
     <div class="concertsWrapper">
         <h2 class="concertsHeader">Концерты</h2>
         <div class="swiper homeConcertSlider">
@@ -270,8 +270,8 @@
         </div>
     </div>
     </div>
-    <!-- Concerts End -->
-    <!-- Accommdation -->
+    {{-- Concerts End --}}
+    {{-- Accommdation --}}
     {{-- <div class="homeAccommdation">
         <div class="homeAccommodationWrapper">
             <article>
@@ -330,7 +330,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- If we need navigation buttons -->
+                {{-- If we need navigation buttons --}}
                 <div class="swiper-button-next">
                     <img class="lazyload" data-src="{{ asset('assets/frontend/images/swipergray-right.svg') }}" alt="swiper next button" />
                 </div>
@@ -340,8 +340,8 @@
     @include('components.accommdationSwiper', ['lang' => 'ru'])
 
 
-    <!-- Accomdation End -->
-    <!-- Children Menu -->
+    {{-- Accomdation End --}}
+    {{-- Children Menu --}}
     <div class="children">
         <div class="childenContainer">
             <div class="row">
@@ -467,7 +467,7 @@
                         </div>
                         <div class="swiper-pagination"></div>
 
-                        <!-- If we need navigation buttons -->
+                        {{-- If we need navigation buttons --}}
                         <div class="swiper-button-prev inclusive-prev">
                             <img class="lazyload" data-src="{{ asset('assets/frontend/images/swipergray-left.svg') }}"
                                 alt="swiperleft" />
@@ -485,8 +485,8 @@
         </div>
     </div>
 
-    <!-- Children Menu End -->
-    <!-- Banner -->
+    {{-- Children Menu End --}}
+    {{-- Banner --}}
     <div class="homeBanner">
         <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/homeBanner.webp') }}" />
         <h3>Мы создали невероятный пляж с уникальной природной красотой <br>города Белек для взрослых и детей.</h3>
@@ -494,13 +494,13 @@
             <a href="{{ route('ru-activity') }}">Подробнее</a>
         </div>
     </div>
-    <!-- Banner End -->
-    <!-- Contact -->
+    {{-- Banner End --}}
+    {{-- Contact --}}
     {{-- @include('frontend.ru.layouts.contact') --}}
     @include('components.contactSection', ['lang' => 'ru'])
-    <!-- Contact End -->
+    {{-- Contact End --}}
 
-    <!-- Gastronomy Start -->
+    {{-- Gastronomy Start --}}
     <div class="homeGastronomy">
         <div class="homeGastronomyWrapper">
             <div class="row">
@@ -518,7 +518,7 @@
                 </div>
             </div>
             <div class="gastroIconsWrapper">
-                <!-- Slides -->
+                {{-- Slides --}}
                 <div class="gastroIcons">
                     <img style="width: unset" class="lazyload"
                         data-src="{{ asset('assets/frontend/images/home/quality.svg') }}" alt="quality">
@@ -775,8 +775,8 @@
             </div>
         </div>
     </div>
-    <!-- Gastronomy End -->
-    <!-- Drink Brand -->
+    {{-- Gastronomy End --}}
+    {{-- Drink Brand --}}
     <div class="homeBrand">
         <div class="swiper homeBrandSlider">
             <div class="swiper-wrapper">
@@ -803,8 +803,8 @@
             </div>
         </div>
     </div>
-    <!-- Drink Brand End -->
-    <!-- Special Offer -->
+    {{-- Drink Brand End --}}
+    {{-- Special Offer --}}
     <div class="homeSpecialOffer">
         <h6>Специальные Предложения</h6>
         <div class="swiper specialOfferSlider">
@@ -872,8 +872,8 @@
             </div>
         </div>
     </div>
-    <!-- Special Offer End -->
-    <!-- Services -->
+    {{-- Special Offer End --}}
+    {{-- Services --}}
     <div class="homeServices">
         <div class="row">
             <div class="col-md-12 p-0">
@@ -897,7 +897,7 @@
                                         <span>Премиум Бар & Лаундж</span>
                                         <p>Премиум сервис даст чуство премиум-класса. Port Nature Luxury всегда здесь для
                                             этого ощущения.</p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
+                                        <div class="homeServicesButton">{{--******* CLASS CHANGED ******--}}
                                             <a href="{{ route('ru-bar-cafe') }}">Подробнее</a>
                                         </div>
                                     </div>
@@ -923,7 +923,7 @@
                                         <span>Магический Спа</span>
                                         <p>Побалуйте себя блаженным отдыхом в спа-центре с квалифицированными специалистыми.
                                         </p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
+                                        <div class="homeServicesButton">{{--******* CLASS CHANGED ******--}}
                                             <a href="{{ route('ru-spa') }}">Подробнее</a>
                                         </div>
                                     </div>
@@ -948,7 +948,7 @@
 
                                         <span>Встречи & Конгресс</span>
                                         <p>Мы не только веселые, но и серьезные для деловых людей</p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
+                                        <div class="homeServicesButton">{{--******* CLASS CHANGED ******--}}
                                             <a href="{{ route('ru-meeting-congress') }}">Подробнее</a>
                                         </div>
                                     </div>
@@ -973,7 +973,7 @@
 
                                         <span>Кафе Davidoff</span>
                                         <p>Откройте для себя драгоценные сорта кофе, сделав ваш день незабываемым</p>
-                                        <div class="homeServicesButton"><!--******* CLASS CHANGED ******-->
+                                        <div class="homeServicesButton">{{--******* CLASS CHANGED ******--}}
                                             <a href="{{ route('ru-davidoff-cafe') }}">More About</a>
                                         </div>
                                     </div>
@@ -996,7 +996,7 @@
         </div>
 
     </div>
-    <!-- Services End -->
+    {{-- Services End --}}
     <div class="homeTravelCompany">
         <div class="travelSliderWrapper">
             <div class="swiper travelSlider">
@@ -1049,17 +1049,17 @@
             </div>
         </div>
     </div>
-    <!-- Contact -->
+    {{-- Contact --}}
     @include('frontend.ru.layouts.contact')
-    <!-- Contact End -->
+    {{-- Contact End --}}
 
-    <!-- Bottom Fixed Book Now -->
+    {{-- Bottom Fixed Book Now --}}
     <div class="fixedBookNow">
         <a href="https://portnature.rezervasyonal.com/" target="_blank">
             Book Now
         </a>
     </div>
-    <!-- Above Footer -->
+    {{-- Above Footer --}}
     <div class="homeAboveFooter">
         <div class="aboveImg">
             <img class="mobileV lazyload" data-src="{{ asset('assets/frontend/images/home/instagram-1.webp') }}"
@@ -1089,7 +1089,7 @@
             <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/inst-ru.webp') }}" alt="phone" />
         </div>
     </div>
-    <!-- Above Footer End -->
+    {{-- Above Footer End --}}
 
 @endsection
 

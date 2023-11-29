@@ -18,7 +18,7 @@
 @endsection
 
 @section('content')
-<!-- Contact -->
+{{-- Contact --}}
 <div class="homeContact">
     <div class="contact-wrapper">
     

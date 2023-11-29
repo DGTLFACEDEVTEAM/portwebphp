@@ -20,7 +20,7 @@
 
 @section('content')
 
-<!-- Aquapark Hero -->
+{{-- Aquapark Hero --}}
 <div class="aquaparkHero">
     <figure>
         <img src="{{ asset('assets/frontend/images/aquapark/aquapark.webp') }}" alt="aquaHero"/>
@@ -34,8 +34,8 @@
         <p>В аквапарке Port Nature полным развлечениями, есть водные виды спорта, гигантская водная горка, 4 больших бассейна и море веселья.</p>
     </article>
 </div>
-<!-- Aquapark Hero End -->
-<!-- Gallery -->
+{{-- Aquapark Hero End --}}
+{{-- Gallery --}}
 <div class="gallery">
     <h2>Галерея</h2>
     <div class="swiper aquaparkSlider">
@@ -83,16 +83,16 @@
         <p>18 горок и 4 больших бассейна для взрослых и детей.</p>
     </div>
 </div>
-<!-- Gallery End -->
-<!-- Video Start -->
+{{-- Gallery End --}}
+{{-- Video Start --}}
 <div class="container">
     <div class="aquaparkVideo">
-        <!-- Button trigger modal -->
+        {{-- Button trigger modal --}}
         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img style="height: 65px;width: 65px" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="playButton"/>
         </a>
         <img src="{{ asset('assets/frontend/images/aquapark/aquaparkVideo.png') }}" alt="youtubeVideo"/>
-        <!-- Modal -->
+        {{-- Modal --}}
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="display: flex;justify-content: center;align-items: center">
@@ -103,11 +103,11 @@
         <span>Потому что вы этого заслуживаете.</span>
     </div>
 </div>
-<!-- Video End -->
-<!-- Contact -->
+{{-- Video End --}}
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
-<!-- Special Offer -->
+{{-- Contact End --}}
+{{-- Special Offer --}}
 <div class="aquaparkSpecialOffer">
     <h6>Спец. предложения</h6>
     <div class="swiper aquaparkSpecialOfferSlider">
@@ -158,7 +158,7 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
 <div class="pageUpButton">
     <a href="#">

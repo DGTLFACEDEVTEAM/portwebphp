@@ -179,7 +179,7 @@
                     </a>
                 </div>
             </div>
-            <!-- If we need navigation buttons -->
+            {{-- If we need navigation buttons --}}
             <div class="swiper-button-next" aria-label="Next Slide">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/swipergray-right.svg') }}"
                     alt="swiper next button" />

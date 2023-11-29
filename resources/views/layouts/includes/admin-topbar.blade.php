@@ -1,7 +1,7 @@
 <header id="page-topbar">
     <div class="navbar-header">
         <div class="d-flex">
-            <!-- LOGO -->
+            {{-- LOGO --}}
             <div class="navbar-brand-box">
                 <a href="{{ asset('/admin/dashboard') }}" class="logo logo-dark">
                     <span class="logo-sm">
@@ -29,7 +29,7 @@
                 <i class="ri-menu-2-line align-middle"></i>
             </button>
 
-            <!-- App Search-->
+            {{-- App Search--}}
             <form class="app-search d-none d-lg-block">
                 <div class="position-relative">
                     <input type="text" class="form-control" placeholder="Search...">
@@ -82,7 +82,7 @@
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end">
-                    <!-- item-->
+                    {{-- item--}}
                     {{-- <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
                     <a class="dropdown-item d-block" href="#"><span class="badge bg-success float-end mt-1">11</span><i class="ri-settings-2-line align-middle me-1"></i> Settings</a> --}}
                     <div class="dropdown-divider"></div>

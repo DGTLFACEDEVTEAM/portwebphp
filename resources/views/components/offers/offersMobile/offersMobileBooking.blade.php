@@ -271,12 +271,12 @@
         </div>
     </div>
 </div>
-<!--- MOBILE BOOKING SECTION -->
+{{--- MOBILE BOOKING SECTION --}}
 <section class="mobile-booking-section">
     <div class="reservation-form  ">
         <p class="reservation-form-mobile-title">{!! $translation[$lang]['reservationform-mobile-title'] !!}</p>
 
-        <!-- DATE SELECTION SECTION -->
+        {{-- DATE SELECTION SECTION --}}
         <div class="dateInputDiv" name="daterange" id="calendarRange">
             <img class="dropdown-icons dropdown-icon-mobile"
                 src="{{ asset('assets/frontend/images/offers/mobile-booking/mobile-booking-calendar.svg') }}">
@@ -291,7 +291,7 @@
 
         </div>
         <div class="empty-booking-div"></div>
-        <!-- NUMBER OF PEOPLE SELECTION SECTION -->
+        {{-- NUMBER OF PEOPLE SELECTION SECTION --}}
 
         <section class="people-selection-mobile">
             <button type="button " class="travellers-btn" data-bs-toggle="modal"
@@ -316,4 +316,4 @@
     </div>
 </section>
 
-<!--- MOBILE BOOKING SECTION END -->
+{{--- MOBILE BOOKING SECTION END --}}

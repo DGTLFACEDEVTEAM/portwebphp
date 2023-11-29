@@ -26,7 +26,7 @@
                <div class="kvkk-title ">Kişisel Verilerin Korunması</div>
                <div class="kvkk-subtitle text-center">Misafirler için Aydınlatma Metni</div>
                <div class="kvkk-content py-4">
-                   <!-- Aydinlatma -->
+                   {{-- Aydinlatma --}}
 
                  
 

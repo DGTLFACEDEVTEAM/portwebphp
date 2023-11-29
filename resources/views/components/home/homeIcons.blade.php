@@ -69,6 +69,6 @@
             </div>
         </div>
     </div>
-    <!-- Home Icons End -->
+    {{-- Home Icons End --}}
     <div class="thinLine"></div>
 </div>

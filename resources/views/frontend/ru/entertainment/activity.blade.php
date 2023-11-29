@@ -54,8 +54,8 @@
     <p>Веселье и развлечения никогда не заканчиваются в Port Nature Luxury Resort & Spa. Световые шоу, дневные и ночные вечеринки, концерты, аквапарк, пляжный волейбол, водные виды спорта и многое другое.</p>
 </div>
 <div class="line"></div>
-<!-- First Slider -->
-<div class="activityConcertSlider"><!-- ***** CLASS NAME CHANGED ****** -->
+{{-- First Slider --}}
+<div class="activityConcertSlider">{{-- ***** CLASS NAME CHANGED ****** --}}
     <div class="swiper activityConcertSwiperSlider">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -104,8 +104,8 @@
         </div>
     </div>
 </div>
-<!-- First Slider End -->
-<!-- Second Slider -->
+{{-- First Slider End --}}
+{{-- Second Slider --}}
 <div class="activitySlider">
 
             <div class="swiper activitySwiper" dir="rtl">
@@ -188,7 +188,7 @@
             </div>
         </div>
      
-<!-- Second Slider End -->
+{{-- Second Slider End --}}
 <div class="aquapark">
     <a class="roomlink" href="{{ route('ru-aquapark') }}">
         <figure>
@@ -203,8 +203,8 @@
         </article>
     </a>
 </div>
-<!-- Aquapark End -->
-<!-- Video Gallery Section Start -->
+{{-- Aquapark End --}}
+{{-- Video Gallery Section Start --}}
 <section class="video-gallery-section">
         <p class="video-section-title">видео галерея
 </p>
@@ -212,12 +212,12 @@
         <div class="video-gallery-wrapper">
 
     <div class=" video-wrapper">
-            <!-- Button trigger modal -->
+            {{-- Button trigger modal --}}
             <a type="button" class="restPlayButtonDesktop" data-bs-toggle="modal" data-bs-target=".activitiesModalDesktop1">
                 <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
                 <img class="videoCover" src="{{ asset('assets/frontend/images/activity/carnaval.webp') }}" alt="youtubeVideo"/>
             </a>
-            <!-- Modal -->
+            {{-- Modal --}}
             <div class="modal fade activitiesModal activitiesModalDesktop1" tabindex="-1" aria-labelledby="activitiesModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -227,12 +227,12 @@
                 </div>
             </div>
         </div><div class=" video-wrapper">
-            <!-- Button trigger modal -->
+            {{-- Button trigger modal --}}
             <a type="button" class="restPlayButtonDesktop" data-bs-toggle="modal" data-bs-target=".activitiesModalDesktop2">
                 <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
                 <img class="videoCover" src="{{ asset('assets/frontend/images/activity/survivor.webp') }}" alt="youtubeVideo"/>
             </a>
-            <!-- Modal -->
+            {{-- Modal --}}
             <div class="modal fade activitiesModal activitiesModalDesktop2" tabindex="-1" aria-labelledby="activitiesModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -242,12 +242,12 @@
                 </div>
             </div>
         </div><div class=" video-wrapper">
-            <!-- Button trigger modal -->
+            {{-- Button trigger modal --}}
             <a type="button" class="restPlayButtonDesktop" data-bs-toggle="modal" data-bs-target=".activitiesModalDesktop3">
                 <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
                 <img class="videoCover" src="{{ asset('assets/frontend/images/activity/bohemo.webp') }}" alt="youtubeVideo"/>
             </a>
-            <!-- Modal -->
+            {{-- Modal --}}
             <div class="modal fade activitiesModal activitiesModalDesktop3" tabindex="-1" aria-labelledby="activitiesModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -258,12 +258,12 @@
             </div></div>
         </div>
 </section>
-<!-- Video Gallery Section End -->
+{{-- Video Gallery Section End --}}
 
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 <div class="otherEntertainment">
     <h3>Другие мероприятия</h3>
@@ -293,7 +293,7 @@
     </div>
     </div>
 </div>
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

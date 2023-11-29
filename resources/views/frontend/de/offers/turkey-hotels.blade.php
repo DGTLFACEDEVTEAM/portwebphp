@@ -19,7 +19,7 @@
 
 
 @section('content')
-<!-- Hero Swiper Section -->
+{{-- Hero Swiper Section --}}
 @include('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'de'])
 {{-- <div class="hero-swiper-wrapper">
 
@@ -155,7 +155,7 @@
 </div> --}}
 
 
-<!-- Hero Mobile Section Start -->
+{{-- Hero Mobile Section Start --}}
  <div class="gallery-wrapper">
    <p class="hero-mobile-subtitle">
       Premium A'la Carte All Inclusive
@@ -289,8 +289,8 @@
 
     </div>
 </div>
-<!-- Hero Mobile Section End -->
-<!-- SHOWCASE SECTION -->
+{{-- Hero Mobile Section End --}}
+{{-- SHOWCASE SECTION --}}
 
 <div class="showcase-section-wrapper">
     <div class="plane-svg colorful-image-wrapper"></div>
@@ -325,7 +325,7 @@
 
 
         </div>
-        <!-- Booking Section -->
+        {{-- Booking Section --}}
         <div class="booking">
             <div class="dropdown room-selection-dropdown">
                 <button class="room-selection-dropdown-btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -434,7 +434,7 @@
             <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow"><img
                     src="{{ asset('assets/frontend/images/offers/svg/booknow.svg') }}" />Jetzt buchen</a>
         </div>
-        <!-- Booking Section End -->
+        {{-- Booking Section End --}}
     </div>
 
     <div class="offers-rooms-swiper swiper"><p class="offers-room-swiper-title-mobile">Unterkunft</p>
@@ -766,12 +766,12 @@
 </div>
 
 </div>
-<!--- MOBILE BOOKING SECTION -->
+{{--- MOBILE BOOKING SECTION --}}
 <section class="mobile-booking-section">
       <div class="reservation-form  ">
     <p class="reservation-form-mobile-title">Planen Sie Ihre Reise mit unserem Hotel</p>
   
-    <!-- DATE SELECTION SECTION -->
+    {{-- DATE SELECTION SECTION --}}
     <div class="dateInputDiv" name="daterange" id="calendarRange">
       <img class="dropdown-icons dropdown-icon-mobile" src="{{ asset('assets/frontend/images/offers/mobile-booking/mobile-booking-calendar.svg') }}">
               <img class="dropdown-icons dropdown-icon-desktop" src="{{ asset('assets/frontend/images/offers/mobile-booking/calendar.webp') }}">
@@ -783,7 +783,7 @@
 
     </div>
     <div class="empty-booking-div"></div>
-    <!-- NUMBER OF PEOPLE SELECTION SECTION -->
+    {{-- NUMBER OF PEOPLE SELECTION SECTION --}}
 
     <section class="people-selection-mobile" >
       <button type="button " class="travellers-btn" data-bs-toggle="modal" data-bs-target="#peopleSelectionModal">
@@ -804,10 +804,10 @@ Reisende
   </div>
 </section>
 
-<!--- MOBILE BOOKING SECTION END -->
+{{--- MOBILE BOOKING SECTION END --}}
 
 
-<!--- FLIGHT SECTION -->
+{{--- FLIGHT SECTION --}}
 
 <div class="flight-wrapper">
     <p class="flight-addendum">
@@ -848,7 +848,7 @@ Reisende
     </div>
 
 </div>
-<!-- TRANSFER SECTION -->
+{{-- TRANSFER SECTION --}}
 
 <div class="transfer-wrapper">
     <img class="transfer-desktop" src="{{ asset('assets/frontend/images/offers/desktop-car.svg') }}">
@@ -864,7 +864,7 @@ Reisende
     </div>
 </div>
 
-<!--- Mobile Flight Section Start -->
+{{--- Mobile Flight Section Start --}}
 <div class="flight-wrapper-mobile">
   <div class="flight-mobile-div">
     <div class='flight-mobile-title'>
@@ -916,8 +916,8 @@ Reisende
     <a class="transfer-mobile-btn" href="https://portnature.rezervasyonal.com/" target="_blank"> Book Transfer</a>
   </div>
 </div>
-<!--- Mobile Flight Section End -->
-<!--- CONTACT SECTION -->
+{{--- Mobile Flight Section End --}}
+{{--- CONTACT SECTION --}}
 <div class="offers-contact-wrapper">
     <div class="offers-contact-div">
         <div class="luggage-image-wrapper colorful-image-wrapper"></div>
@@ -944,7 +944,7 @@ Reisende
 </div>
 
 
-<!--- CONTACTS SECTION MOBILE-->
+{{--- CONTACTS SECTION MOBILE--}}
 <section class="contacts-section-mobile">
   <p class="contacts-mobile-title"> Kontaktieren Sie uns jetzt</p>
   <div class="contacts-mobile-wrapper">  
@@ -965,8 +965,8 @@ Reisende
   </a>
 </div>
 </section>
-<!--- CONTACTS SECTION MOBILE END-->
-<!--- FIRST SPLIT SECTION -->
+{{--- CONTACTS SECTION MOBILE END--}}
+{{--- FIRST SPLIT SECTION --}}
 <div class="offers-first-split">
     <div class="first-split-clouds colorful-image-wrapper">
     </div>
@@ -992,7 +992,7 @@ Reisende
     </a>
 </div>
 
-<!--- BOOKING OPPORTUNITIES SECTION -->
+{{--- BOOKING OPPORTUNITIES SECTION --}}
 
 <div class="opportunity-wrapper">
     <p class="h2-title">BUCHUNGSMÖGLICHKEITEN</p>
@@ -1046,7 +1046,7 @@ Reisende
 
 
 
-<!--- RATING SECTION -->
+{{--- RATING SECTION --}}
 
 <div class="rating-wrapper">
     <p class="rating-title">Durch die Augen unserer Gäste </p>
@@ -1276,7 +1276,7 @@ Reisende
 
 </div>
 
-<!-- Split to right 1 -->
+{{-- Split to right 1 --}}
 <div class="splits-mother-wrapper">
     <div class="grey-wrapper">
         <div class="split-wrapper first-split">
@@ -1472,7 +1472,7 @@ Reisende
 
 
 
-    <!-- Stage Swiper Section -->
+    {{-- Stage Swiper Section --}}
 
     <div class="stage-wrapper">
         <div class="swiper stage-swiper">
@@ -1509,7 +1509,7 @@ Reisende
         </div>
 
     </div>
-    <!-- Three Image Section -->
+    {{-- Three Image Section --}}
     <div class="three-img-wrapper">
         <div class="three-img-div">
             <div class="split-svg three-img-1 colorful-image-wrapper"></div>

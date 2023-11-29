@@ -29,7 +29,7 @@ Belek.')
 
     @include('components.inclusiveSwiper', ['lang' => 'en'])
 
-    <!-- Concerts -->
+    {{-- Concerts --}}
     {{-- <div class="concertsWrapper">
         <h2 class="concertsHeader">Concerts</h2>
         <div class="swiper homeConcertSlider">

@@ -26,7 +26,7 @@
                <div class="kvkk-title ">Kişisel Verilerin Korunması</div>
                <div class="kvkk-subtitle text-center"><strong>Görüntü Kayıtlarının Alenileştirilmesine Onay Veren Çalışanlarımız için Aydınlatma Metni</strong></div>
                <div class="kvkk-content py-4">
-                   <!--    Aydinlatma Metinleri -->
+                   {{--    Aydinlatma Metinleri --}}
  
 <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'na (&ldquo;Kanun&rdquo;) göre <strong>ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ</strong> (&ldquo;Bundan sonra &lsquo;<strong>PORT NATURE'</strong> olarak anılacaktır.&rdquo;) sizinle ilgili kişisel verileri işlemesi sebebiyle veri sorumlusu olarak tanımlanmaktadır. Kanunun &quot;Aydınlatma Yükümlülüğü&quot; başlıklı 10'ncu maddesine göre veri sorumluları, kişisel verilerini işledikleri gerçek kişileri bazı konularda bilgilendirmekle yükümlüdür.</p>
 
@@ -218,7 +218,7 @@ Başvurunuzda;
 <p>Başvuru sırasında uyulması gereken usul kuralları ve daha detaylı bilgiye Kişisel Verileri Koruma Kurumu'nun &quot;<u><a href="http://www.resmigazete.gov.tr/eskiler/2018/03/20180310-6.htm">Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ</a></u>&quot;inden ulaşabilirsiniz.</p>
 
 
-                   <!--    Aydinlatma Metinleri End -->
+                   {{--    Aydinlatma Metinleri End --}}
                 <div class="text-center">
                    
 				   <img src="{{ asset('assets/frontend/images/contact/calisan-sosyal-medya-aydinlatma.svg') }}"  width="240" height="240">

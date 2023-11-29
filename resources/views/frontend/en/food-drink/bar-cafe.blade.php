@@ -210,9 +210,9 @@
         </div>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 @endsection
 
 @section('javascript-imports')

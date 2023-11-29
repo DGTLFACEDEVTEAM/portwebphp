@@ -19,7 +19,7 @@
 
 @section('content')
 
-<!-- Hero Part -->
+{{-- Hero Part --}}
 <div class="entertainmentHero">
   <div class="heroImage">
     <figure>
@@ -31,7 +31,7 @@
     <span>Part Nature size eğlencenin tadını veriyor.<br> Çocuklar ve yetişkinler için, endişelenmeden saf eğlence.</span>
   </article>
 </div>
-<!-- Hero Part End -->
+{{-- Hero Part End --}}
 
 <div class="entertainmentSection activities">
   <div class="row">
@@ -71,10 +71,10 @@
   </div>
 </div>
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
-  <!-- Page Up Button -->
+{{-- Contact End --}}
+  {{-- Page Up Button --}}
   <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img style="width: unset;height: unset" class="accommdationSvg" src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

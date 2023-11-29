@@ -65,7 +65,7 @@
 
 @endphp
 
-<!-- Contact -->
+{{-- Contact --}}
 <div class="homeContact blogContact">
     <div class="contact-wrapper">
         <div class="mobileContact">

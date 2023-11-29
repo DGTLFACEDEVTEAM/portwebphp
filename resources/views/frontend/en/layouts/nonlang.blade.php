@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
     <meta name="author" content="DGTLFACE IT TEAM">
-    <!-- CSRF Token -->
+    {{-- CSRF Token --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <!-- Favicon  -->
+    {{-- Favicon  --}}
     <title>@yield('title', 'PORT Nature Luxury Resort Hotel & Spa')</title>
     <meta name="description" content="@yield('description')">
-    <!-- Analystic  -->
+    {{-- Analystic  --}}
     {!! \App\Http\Helpers\CanonicalHelper::canonicalUrl(url()->current()) !!}
-    <!-- Analystic End -->
+    {{-- Analystic End --}}
     <style>
         .menubar .nav-item .nav-link {
             text-transform: uppercase;
@@ -22,12 +22,12 @@
     </style>
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon-16x16.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon-32x32.png') }}">
-    <!-- Page Title -->
+    {{-- Page Title --}}
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/aside.css') }}" />
     <link rel="preload" href="{{ asset('assets/frontend/images/logo-port-small.svg') }}" as="image"
         type="image/svg+xml" />
     <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/swiper-bundle-11.min.css') }}" />
-    <!-- Montserrat, Lora Fonts -->
+    {{-- Montserrat, Lora Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,7 +48,7 @@
 
 
 
-    <!-- Google Tag Manager -->
+    {{-- Google Tag Manager --}}
     <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
@@ -65,8 +65,8 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TZ53DS5');
     </script>
-    <!-- End Google Tag Manager -->
-    <!-- Meta Pixel Code -->
+    {{-- End Google Tag Manager --}}
+    {{-- Meta Pixel Code --}}
     <script>
         ! function(f, b, e, v, n, t, s) {
             if (f.fbq) return;
@@ -89,21 +89,21 @@
         fbq('init', '721299109355968');
         fbq('track', 'PageView');
     </script>
-    <!-- End Meta Pixel Code -->
+    {{-- End Meta Pixel Code --}}
 </head>
 
 <body>
-    <!-- Google Tag Manager (noscript) -->
+    {{-- Google Tag Manager (noscript) --}}
     <noscript><iframe title="googletagmanager" src="https://www.googletagmanager.com/ns.html?id=GTM-TZ53DS5"
             height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    {{-- End Google Tag Manager (noscript) --}}
 
 
 
     @yield('content')
 
 
-    <!-- Bootstrap -->
+    {{-- Bootstrap --}}
     <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/flatpickr.min.css') }}" media="print"
         onload="this.media='all'">
@@ -114,10 +114,10 @@
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/footer.css') }}" media="print"
         onload="this.media='all'" />
 
-    <!-- Additional imports -->
+    {{-- Additional imports --}}
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/contact.css') }}" media="print"
         onload="this.media='all'" />
-    <!-- KVKK Cookies -->
+    {{-- KVKK Cookies --}}
     <script src="{{ asset('assets/frontend/js/glowCookies.min.js') }}"></script>
     <script>
         glowCookies.start('en', {
@@ -129,7 +129,7 @@
             policyLink: 'https://portnature.com.tr/data-policy'
         });
     </script>
-    <!--  JAVASCRIPTS  -->
+    {{--  JAVASCRIPTS  --}}
     <script src="{{ asset('assets/frontend/libs/js/popper.min.js') }}" defer></script>
     <script src="{{ asset('assets/frontend/libs/js/bootstrap.min.js') }}" defer></script>
     <script src="{{ asset('assets/frontend/libs/js/jquery-3.6.4.min.js') }}"></script>
@@ -160,7 +160,7 @@
             });
         }
     </script>
-    <!-- ChatBox Script-->
+    {{-- ChatBox Script--}}
 
     <script>
         // wait to dom fully loaded any will not affect pagespeed test
@@ -252,8 +252,8 @@
         });
     </script>
 
-    <!--ChatBox Script END-->
-    <!--Yandex.Metrika counter-->
+    {{--ChatBox Script END--}}
+    {{--Yandex.Metrika counter--}}
 
     <script type="text/javascript">
         (function(m, e, t, r, i, k, a) {
@@ -285,7 +285,7 @@
         <div><img src="https://mc.yandex.ru/watch/92210931" style="position:absolute; left:-9999px;" alt="" />
         </div>
     </noscript>
-    <!-- /Yandex.Metrika counter -->
+    {{-- /Yandex.Metrika counter --}}
 
     <script>
         if (pageHasContactForm) {

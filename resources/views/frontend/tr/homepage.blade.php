@@ -30,7 +30,7 @@
 
     @include('components.inclusiveSwiper', ['lang' => 'tr'])
 
-    <!-- Concerts -->
+    {{-- Concerts --}}
     {{-- <div class="concertsWrapper">
         <h2 class="concertsHeader">KONSERLER</h2>
         <div class="swiper homeConcertSlider">

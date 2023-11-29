@@ -30,7 +30,7 @@
       <span>Port Nature offers a tantalizing glimpse into the world of pure enjoyment. <br>Providing a worry-free oasis for both children and adults.</span>
     </article>
   </div>
-  <!-- Hero Part End -->
+  {{-- Hero Part End --}}
   
   <div class="entertainmentSection activities">
     <div class="row">
@@ -70,9 +70,9 @@
     </div>
   </div>
   
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 @endsection
 

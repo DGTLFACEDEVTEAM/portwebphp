@@ -189,9 +189,9 @@
 
 
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 <div class="childrenActivitySlider">
     <div class="swiper activitySlider">

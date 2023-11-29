@@ -45,11 +45,11 @@
             </div>
             <div class="col-lg-8">
 
-                <!-- Slider main container -->
+                {{-- Slider main container --}}
                 <div class="swiper inclusiveSlider">
-                    <!-- Additional required wrapper -->
+                    {{-- Additional required wrapper --}}
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
+                        {{-- Slides --}}
                         <div class="swiper-slide"><img class="lazyload"
                                 data-srcset="{{ asset('assets/frontend/images/home/inclusiveSlider-1-640.webp') }} 640w,{{ asset('assets/frontend/images/home/inclusiveSlider-1-834.webp') }} 834w "
                                 sizes="((min-width: 1px) and (max-width:576px)) 640w,((min-width: 577px) and (max-width:834px)) 834w,((min-width: 835px) and (max-width:1919px)) 640w, (min-width:1920px) 640w"
@@ -76,7 +76,7 @@
                                 data-src="{{ asset('assets/frontend/images/home/inclusiveSlider-5.webp') }}"
                                 alt="" /></div>
                     </div>
-                    <!-- If we need pagination -->
+                    {{-- If we need pagination --}}
                     <div class="swiper-pagination-horizontal"></div>
 
 

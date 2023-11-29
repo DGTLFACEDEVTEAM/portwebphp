@@ -210,9 +210,9 @@
         </div>
     </div>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.tr.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 <div class="pageUpButton">
     <a href="#">
         <img style="width: unset;height: unset;" class="accommdationSvg" src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

@@ -91,12 +91,12 @@
             </div>
         </div>
         <div class="col-lg-6 video">
-            <!-- Button trigger modal -->
+            {{-- Button trigger modal --}}
             <a type="button" class="restPlayButtonDesktop" data-bs-toggle="modal" data-bs-target=".restaurantModalDesktop">
                 <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
                 <img class="videoCover" src="{{ asset('assets/frontend/images/italian/italianVideo.webp') }}" alt="youtubeVideo"/>
             </a>
-            <!-- Modal -->
+            {{-- Modal --}}
             <div class="modal fade restaurantModal restaurantModalDesktop" tabindex="-1" aria-labelledby="restaurantModalLabel"
                  aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
@@ -128,12 +128,12 @@
 </div>
 
 <div class="mobilevideo">
-    <!-- Button trigger modal -->
+    {{-- Button trigger modal --}}
     <a type="button" class="restPlayButtonMobile" data-bs-toggle="modal" data-bs-target=".restaurantModalMobile">
         <img class="playButton" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
         <img class="videoCover" src="{{ asset('assets/frontend/images/italian/italianVideo.webp') }}" alt="youtubeVideo"/>
     </a>
-    <!-- Modal -->
+    {{-- Modal --}}
     <div class="modal fade restaurantModal restaurantModalMobile" tabindex="-1" aria-labelledby="restaurantModalLabel"
          aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -144,11 +144,11 @@
     </div>
 </div>
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
-<!-- Special Offer -->
+{{-- Special Offer --}}
 <div class="restSpecialOffer">
     <h6>Другие рестораны</h6>
     <div class="swiper restOtherSlider">
@@ -220,9 +220,9 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
-<!-- Page Up -->
+{{-- Page Up --}}
 <div style="text-align: center;" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

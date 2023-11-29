@@ -100,7 +100,7 @@
         @include('components.cookie', ['lang' => $lang])
     @endif
 
-    <!-- End-->
+    {{-- End--}}
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-<!-- Contact -->
+{{-- Contact --}}
 <div class="homeContact blogContact">
     <div class="contact-wrapper">
     
@@ -147,4 +147,4 @@
         var pageHasContactForm = true;
     }
 </script>
-<!-- Contact End -->
+{{-- Contact End --}}

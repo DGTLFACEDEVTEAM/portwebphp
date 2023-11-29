@@ -33,8 +33,8 @@
             There are water sports, a giant water slide, the 4 pools for everyone, and pure fun.</p>
     </article>
 </div>
-<!-- Aquapark Hero End -->
-<!-- Gallery -->
+{{-- Aquapark Hero End --}}
+{{-- Gallery --}}
 <div class="gallery">
     <h2>Gallery</h2>
     <div class="swiper aquaparkSlider">
@@ -82,16 +82,16 @@
         <p>Get ready to make a splash in 18 water slides and 4 refreshing pools. </p>
     </div>
 </div>
-<!-- Gallery End -->
-<!-- Video Start -->
+{{-- Gallery End --}}
+{{-- Video Start --}}
 <div class="container">
     <div class="aquaparkVideo">
-        <!-- Button trigger modal -->
+        {{-- Button trigger modal --}}
         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img style="height: 65px;width: 65px" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="playButton"/>
         </a>
         <img src="{{ asset('assets/frontend/images/aquapark/aquaparkVideo.png') }}" alt="youtubeVideo"/>
-        <!-- Modal -->
+        {{-- Modal --}}
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="display: flex;justify-content: center;align-items: center">
@@ -102,13 +102,13 @@
         <span>Because you deserve it!</span>
     </div>
 </div>
-<!-- Video End -->
+{{-- Video End --}}
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
-<!-- Special Offer -->
+{{-- Special Offer --}}
 <div class="aquaparkSpecialOffer">
     <h6>Special Offers</h6>
     <div class="swiper aquaparkSpecialOfferSlider">
@@ -159,7 +159,7 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
 @endsection
 

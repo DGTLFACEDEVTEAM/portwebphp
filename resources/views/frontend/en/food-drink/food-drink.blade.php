@@ -48,7 +48,7 @@
         </div>
     </div>
 </div>
-<!-- Top Slider End -->
+{{-- Top Slider End --}}
 <div class="foodDrinkHero">
     <div class="firstRow">
         <div class="heroCard">
@@ -78,7 +78,7 @@
         </div>
     </div>
 </div>
-<!-- Hero Part End -->
+{{-- Hero Part End --}}
 
 <div class="gastroSection firstGastro">
     <div class="row">
@@ -124,7 +124,7 @@
     </div>
 </div>
 
-<!-- Drink Brand -->
+{{-- Drink Brand --}}
 <div class="homeBrand">
     <div class="swiper homeBrandSlider">
         <div class="swiper-wrapper">
@@ -156,7 +156,7 @@
         </div>
     </div>
 </div>
-<!-- Drink Brand End -->
+{{-- Drink Brand End --}}
 <div class="gastroSection">
     <div class="row">
         <div class="col-12 col-md-12 col-lg-7">
@@ -179,9 +179,9 @@
     </div>
 </div>
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 @endsection
 

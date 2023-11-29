@@ -1,4 +1,4 @@
-<!-- Header -->
+{{-- Header --}}
 <header>
     <nav class="navbar navbar-expand-sm" id="navbar">
         <div class="">
@@ -93,7 +93,7 @@
         <div class="mobileHeader">
             <div class="menuLeft">
                 <span id="offcanvasOpenBtn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
-                    aria-controls="offcanvasTop"><!-- 22.03 STYLE ADDED -->
+                    aria-controls="offcanvasTop">{{-- 22.03 STYLE ADDED --}}
                     <img loading="lazy" style="width: 20px!important;height: 20px!important;" class="headerSvg"
                         src="{{ asset('assets/frontend/images/hamburger.svg') }}" alt="Open Mobile Menu" />
                 </span>
@@ -310,4 +310,4 @@
             </div>
         </div>
 </header>
-<!-- Header End -->
+{{-- Header End --}}

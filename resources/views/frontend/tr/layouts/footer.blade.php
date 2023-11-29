@@ -1,8 +1,8 @@
-<!-- Bottom Fixed Book Now -->
+{{-- Bottom Fixed Book Now --}}
 <a class="fixedBookNow" href="https://portnature.rezervasyonal.com/" target="_blank">
     Rezervasyon Yapın
 </a>
-<!-- Footer -->
+{{-- Footer --}}
 <footer>
     <div class="row footerWrapper">
         <div class="col-12 col-lg-6 footerDetails">
@@ -128,9 +128,9 @@
         </div>
     </div>
 </footer>
-<!-- Footer End -->
+{{-- Footer End --}}
 
-<!-- Sticky Contact Button -->
+{{-- Sticky Contact Button --}}
 <div class="floating-menu">
     <input type="checkbox" href="#" class="floating-menu-open" name="floating-menu-open" id="floating-menu-open"/>
     <label class="floating-menu-open-button" for="floating-menu-open">

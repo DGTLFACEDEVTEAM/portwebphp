@@ -21,12 +21,12 @@
 
 @section('content')
 
-    <!-- Swiper Start -->
+    {{-- Swiper Start --}}
     @include('components.heroSwiper', ['lang' => 'de'])
 
-    <!-- Swiper Finish -->
-    <!-- Rezervation Section -->
-    <!-- Booking Section -->
+    {{-- Swiper Finish --}}
+    {{-- Rezervation Section --}}
+    {{-- Booking Section --}}
     <div class="booking">
         <label for="checkin"></label>
         <input id="checkin" data-defaultDate="today" value="Check-in">
@@ -185,10 +185,10 @@
         </div>
         <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow">Büchen Sie</a>
     </div>
-    <!-- Booking Section End -->
-    <!-- Rezervation Section End -->
+    {{-- Booking Section End --}}
+    {{-- Rezervation Section End --}}
 
-    <!-- Home Icons -->
+    {{-- Home Icons --}}
     <div class="homeIcons">
         <div class="homeIconContainer">
             <div class="homeIconWrapper">
@@ -229,14 +229,14 @@
 
         </div>
 
-        <!-- Home Icons End -->
+        {{-- Home Icons End --}}
         <div class="thinLine"></div>
     </div>
-    <!-- Inclusive Area Text -->
+    {{-- Inclusive Area Text --}}
 
     @include('components.inclusiveSwiper', ['lang' => 'de'])
-    <!-- Inclusive Area Text End -->
-    <!-- Concerts -->
+    {{-- Inclusive Area Text End --}}
+    {{-- Concerts --}}
     <div class="concertsWrapper">
         <h2 class="concertsHeader">KONZERTE</h2>
         <div class="swiper homeConcertSlider">
@@ -261,9 +261,9 @@
         </div>
     </div>
     </div>
-    <!-- Concerts End --><!-- VIDEO SCRIPT PARTS -->
+    {{-- Concerts End --}}{{-- VIDEO SCRIPT PARTS --}}
 
-    <!-- Accommdation -->
+    {{-- Accommdation --}}
     {{-- <div class="homeAccommdation">
         <div class="homeAccommodationWrapper">
             <article>
@@ -333,8 +333,8 @@
     @include('components.accommdationSwiper', ['lang' => 'de'])
 
 
-    <!-- Accomdation End -->
-    <!-- Children Menu -->
+    {{-- Accomdation End --}}
+    {{-- Children Menu --}}
     <div class="children">
         <div class="childrenContainer">
             <div class="row">
@@ -461,7 +461,7 @@
                         </div>
                         <div class="swiper-pagination"></div>
 
-                        <!-- If we need navigation buttons -->
+                        {{-- If we need navigation buttons --}}
                         <div class="swiper-button-prev inclusive-prev">
                             <img class="lazyload" data-src="{{ asset('assets/frontend/images/swipergray-left.svg') }}"
                                 alt="swiperleft" />
@@ -478,8 +478,8 @@
             <a href="{{ route('de-kids-concepts') }}">Mehr Uber</a>
         </div>
     </div>
-    <!-- Children Menu End -->
-    <!-- Banner -->
+    {{-- Children Menu End --}}
+    {{-- Banner --}}
     <div class="homeBanner">
         <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/homeBanner.webp') }}" />
         <h3>Wir haben ein unglaubliches Stranderlebnis mit Beleks<br> einzigartiger natürlicher Schönheit für Erwachsene und
@@ -488,12 +488,12 @@
             <a href="{{ route('de-activity') }}">Mehr Uber</a>
         </div>
     </div>
-    <!-- Banner End -->
-    <!-- Contact -->
+    {{-- Banner End --}}
+    {{-- Contact --}}
     {{-- @include('frontend.de.layouts.contact')  --}}
     @include('components.contactSection', ['lang' => 'de'])
-    <!-- Contact End -->
-    <!-- Gastronomy Start -->
+    {{-- Contact End --}}
+    {{-- Gastronomy Start --}}
     <div class="homeGastronomy">
         <div class="homeGastronomyWrapper">
             <div class="row">
@@ -511,7 +511,7 @@
                 </div>
             </div>
             <div class="gastroIconsWrapper">
-                <!-- Slides -->
+                {{-- Slides --}}
                 <div class="gastroIcons">
                     <img style="width: unset" class="lazyload"
                         data-src="{{ asset('assets/frontend/images/home/quality.svg') }}" alt="quality">
@@ -767,8 +767,8 @@
             </div>
         </div>
     </div>
-    <!-- Gastronomy End -->
-    <!-- Drink Brand -->
+    {{-- Gastronomy End --}}
+    {{-- Drink Brand --}}
     <div class="homeBrand">
         <div class="swiper homeBrandSlider">
             <div class="swiper-wrapper">
@@ -795,9 +795,9 @@
             </div>
         </div>
     </div>
-    <!-- Drink Brand End -->
+    {{-- Drink Brand End --}}
 
-    <!-- Special Offer -->
+    {{-- Special Offer --}}
     <div class="homeSpecialOffer">
         <h6>Sonderangebote</h6>
         <div class="swiper specialOfferSlider">
@@ -865,8 +865,8 @@
             </div>
         </div>
     </div>
-    <!-- Special Offer End -->
-    <!-- Services -->
+    {{-- Special Offer End --}}
+    {{-- Services --}}
     <div class="homeServices">
         <div class="row">
             <div class="col-md-12 p-0">
@@ -990,7 +990,7 @@
         </div>
 
     </div>
-    <!-- Services End -->
+    {{-- Services End --}}
     <div class="homeTravelCompany">
         <div class="travelSliderWrapper">
             <div class="swiper travelSlider">
@@ -1043,11 +1043,11 @@
             </div>
         </div>
     </div>
-    <!-- Contact -->
+    {{-- Contact --}}
     @include('frontend.de.layouts.contact')
-    <!-- Contact End -->
+    {{-- Contact End --}}
 
-    <!-- Above Footer -->
+    {{-- Above Footer --}}
     <div class="homeAboveFooter">
         <div class="aboveImg">
             <img class="mobileV lazyload" data-src="{{ asset('assets/frontend/images/home/instagram-1.webp') }}"
@@ -1077,7 +1077,7 @@
             <img class="lazyload" data-src="{{ asset('assets/frontend/images/home/inst-de.webp') }}" alt="phone" />
         </div>
     </div>
-    <!-- Above Footer End -->
+    {{-- Above Footer End --}}
 
 @endsection
 

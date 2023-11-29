@@ -19,20 +19,20 @@
 
 @section('content')
 
-<!-- Hero Swiper Section -->
+{{-- Hero Swiper Section --}}
 
 @include('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'de'])
 
-<!-- Hero Swiper Section End -->
+{{-- Hero Swiper Section End --}}
 
 
-<!-- Hero Mobile Section Start -->
+{{-- Hero Mobile Section Start --}}
 
 @include('components.offers.offersMobile.offersMobileGallery', ['lang' => 'de'])
 
-<!-- Hero Mobile Section End -->
+{{-- Hero Mobile Section End --}}
 
-<!-- SHOWCASE SECTION -->
+{{-- SHOWCASE SECTION --}}
 
 <div class="showcase-section-wrapper">
 
@@ -46,43 +46,43 @@
 
 @include('components.offers.offersMobile.offersMobileBooking', ['lang' => 'de'])
 
-<!--- MOBILE BOOKING SECTION END -->
+{{--- MOBILE BOOKING SECTION END --}}
 
-<!--- FLIGHT SECTION -->
+{{--- FLIGHT SECTION --}}
 
 @include('components.offers.offersDesktop.offersDesktopFlight', ['lang' => 'de'])
 
-<!--- FLIGHT SECTION END -->
+{{--- FLIGHT SECTION END --}}
 
-<!-- TRANSFER SECTION -->
+{{-- TRANSFER SECTION --}}
 
 @include('components.offers.offersDesktop.offersDesktopTransfer', ['lang' => 'de'])
 
-<!--- Mobile Flight Section Start -->
+{{--- Mobile Flight Section Start --}}
 
 @include('components.offers.offersMobile.offersMobileFlight', ['lang' => 'de'])
 
-<!--- Mobile Flight Section End -->
+{{--- Mobile Flight Section End --}}
 
-<!--- CONTACT SECTION -->
+{{--- CONTACT SECTION --}}
 
 @include('components.offers.offersDesktop.offersDesktopContact', ['lang' => 'de'])
 
-<!--- CONTACTS SECTION MOBILE-->
+{{--- CONTACTS SECTION MOBILE--}}
 @include('components.offers.offersMobile.offersMobileContact', ['lang' => 'de'])
 
-<!--- CONTACTS SECTION MOBILE END-->
+{{--- CONTACTS SECTION MOBILE END--}}
 
-<!--- BOOKING OPPORTUNITIES SECTION 1 -->
+{{--- BOOKING OPPORTUNITIES SECTION 1 --}}
 @include('components.offers.offersDesktop.offersDesktopOppotur1', ['lang' => 'de'])
 
-<!--- FIRST SPLIT SECTION -->
+{{--- FIRST SPLIT SECTION --}}
 @include('components.offers.offersDesktop.offersDesktopFirstSplit', ['lang' => 'de'])
 
-<!--- RATING SECTION -->
+{{--- RATING SECTION --}}
 @include('components.offers.offersDesktop.offersDesktopRating', ['lang' => 'de'])
 
-<!--- BOOKING OPPORTUNITIES SECTION 2 -->
+{{--- BOOKING OPPORTUNITIES SECTION 2 --}}
 @include('components.offers.offersDesktop.offersDekstopOppotur2', ['lang' => 'de'])
 
 @endsection

@@ -165,9 +165,9 @@
 <div class="fish">
     <img src="{{ asset('assets/frontend/images/alacarte/fish.png') }}" alt="fish"/>
 </div>
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
+{{-- Contact End --}}
 
 @endsection
 

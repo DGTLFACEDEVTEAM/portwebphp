@@ -19,7 +19,7 @@
 
 @section('content')
 
-<!-- Hero Swiper Section -->
+{{-- Hero Swiper Section --}}
 
 @include('components.offers.offersDesktop.offersDesktopSwiper', ['lang' => 'ru'])
 {{-- <div class="hero-swiper-wrapper">
@@ -155,7 +155,7 @@
     </div>
 </div> --}}
 
-<!-- Hero Mobile Section Start -->
+{{-- Hero Mobile Section Start --}}
  <div class="gallery-wrapper">
    <p class="hero-mobile-subtitle">
       Premium A'la Carte All Inclusive
@@ -286,10 +286,10 @@ Premium A'la Carte All Inclusive                     </p>
 
     </div>
 </div>
-<!-- Hero Mobile Section End -->
+{{-- Hero Mobile Section End --}}
 
 
-<!-- SHOWCASE SECTION -->
+{{-- SHOWCASE SECTION --}}
 
 <div class="showcase-section-wrapper showcase-section-ru">
     <div class="plane-svg colorful-image-wrapper"></div>
@@ -315,7 +315,7 @@ Premium A'la Carte All Inclusive                     </p>
 
 
         </div>
-        <!-- Booking Section -->
+        {{-- Booking Section --}}
         <div class="booking">
             <div class="dropdown room-selection-dropdown">
                 <button class="room-selection-dropdown-btn  dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -421,7 +421,7 @@ Premium A'la Carte All Inclusive                     </p>
             <a href="https://portnature.rezervasyonal.com/?currency=TRY" target="_blank" class="bookNow"><img
                     src="{{ asset('assets/frontend/images/offers/svg/booknow.svg') }}" />Забронировать сейчас</a>
         </div>
-        <!-- Booking Section End -->
+        {{-- Booking Section End --}}
     </div>
 
     <div class="offers-rooms-swiper swiper"><p class="offers-room-swiper-title-mobile">Размещение</p>
@@ -750,12 +750,12 @@ Premium A'la Carte All Inclusive                     </p>
     </div>
   </div>
 </div>
-<!--- MOBILE BOOKING SECTION -->
+{{--- MOBILE BOOKING SECTION --}}
 <section class="mobile-booking-section">
       <div class="reservation-form  ">
     <p class="reservation-form-mobile-title">Спланируйте свое путешествие вместе с нашим отелем</p>
   
-    <!-- DATE SELECTION SECTION -->
+    {{-- DATE SELECTION SECTION --}}
     <div class="dateInputDiv" name="daterange" id="calendarRange">
       <img class="dropdown-icons dropdown-icon-mobile" src="{{ asset('assets/frontend/images/offers/mobile-booking/mobile-booking-calendar.svg') }}">
               <img class="dropdown-icons dropdown-icon-desktop" src="{{ asset('assets/frontend/images/offers/mobile-booking/calendar.webp') }}">
@@ -767,7 +767,7 @@ Premium A'la Carte All Inclusive                     </p>
 
     </div>
     <div class="empty-booking-div"></div>
-    <!-- NUMBER OF PEOPLE SELECTION SECTION -->
+    {{-- NUMBER OF PEOPLE SELECTION SECTION --}}
 
     <section class="people-selection-mobile" >
       <button type="button " class="travellers-btn" data-bs-toggle="modal" data-bs-target="#peopleSelectionModal">
@@ -779,8 +779,8 @@ Premium A'la Carte All Inclusive                     </p>
     
 
 
-<!--- MOBILE BOOKING SECTION END -->
-<!--- FLIGHT SECTION -->
+{{--- MOBILE BOOKING SECTION END --}}
+{{--- FLIGHT SECTION --}}
 
 <div class="flight-wrapper">
     <p class="flight-addendum">
@@ -805,7 +805,7 @@ Premium A'la Carte All Inclusive                     </p>
     </div>
 
 </div>
-<!-- TRANSFER SECTION -->
+{{-- TRANSFER SECTION --}}
 
 <div class="transfer-wrapper">
     <img class="transfer-desktop" src="{{ asset('assets/frontend/images/offers/desktop-car.svg') }}">
@@ -819,7 +819,7 @@ Premium A'la Carte All Inclusive                     </p>
         <a class="transfer-btn" target="blank" href="https://portnature.rezervasyonal.com/ExtraService" target="_blank">Заказать трансфер</a>
     </div>
 </div>
-<!--- Mobile Flight Section Start -->
+{{--- Mobile Flight Section Start --}}
 <div class="flight-wrapper-mobile">
   <div class="flight-mobile-div">
     <div class='flight-mobile-title'>
@@ -872,9 +872,9 @@ Premium A'la Carte All Inclusive                     </p>
     <a class="transfer-mobile-btn" href="https://portnature.rezervasyonal.com/" target="_blank"> Забронировать трансфер</a>
   </div>
 </div>
-<!--- Mobile Flight Section End -->
+{{--- Mobile Flight Section End --}}
 
-<!--- CONTACT SECTION -->
+{{--- CONTACT SECTION --}}
 <div class="offers-contact-wrapper">
     <div class="offers-contact-div">
                <div class="luggage-image-wrapper colorful-image-wrapper"></div>
@@ -899,7 +899,7 @@ Premium A'la Carte All Inclusive                     </p>
         </div>
     </div>
 </div>
-<!--- CONTACTS SECTION MOBILE-->
+{{--- CONTACTS SECTION MOBILE--}}
 <section class="contacts-section-mobile">
   <p class="contacts-mobile-title"> Свяжитесь с нами сейчас</p>
   <div class="contacts-mobile-wrapper">  
@@ -920,9 +920,9 @@ Premium A'la Carte All Inclusive                     </p>
   </a>
 </div>
 </section>
-<!--- CONTACTS SECTION MOBILE END-->
+{{--- CONTACTS SECTION MOBILE END--}}
 
-<!--- FIRST SPLIT SECTION -->
+{{--- FIRST SPLIT SECTION --}}
 <div class="offers-first-split">
     <div class="first-split-clouds colorful-image-wrapper">
         </div>
@@ -942,7 +942,7 @@ Premium A'la Carte All Inclusive                     </p>
     
 
 
-<!--- BOOKING OPPORTUNITIES SECTION -->
+{{--- BOOKING OPPORTUNITIES SECTION --}}
 
 
 <div class="opportunity-wrapper">
@@ -992,7 +992,7 @@ Premium A'la Carte All Inclusive                     </p>
 
 
 
-    <!--- RATING SECTION -->
+    {{--- RATING SECTION --}}
 
 <div class="rating-wrapper">
     <p class="rating-title">Глазами наших гостей </p>
@@ -1222,7 +1222,7 @@ Premium A'la Carte All Inclusive                     </p>
 
 </div>
 
-<!-- Split to right 1 -->
+{{-- Split to right 1 --}}
 <div class="splits-mother-wrapper">
     <div class="grey-wrapper">
         <div class="split-wrapper first-split">
@@ -1390,7 +1390,7 @@ Premium A'la Carte All Inclusive                     </p>
 
 
 
-    <!-- Stage Swiper Section -->
+    {{-- Stage Swiper Section --}}
 
     <div class="stage-wrapper">
         <div class="swiper stage-swiper">
@@ -1427,7 +1427,7 @@ Premium A'la Carte All Inclusive                     </p>
         </div>
 
     </div>
-    <!-- Three Image Section -->
+    {{-- Three Image Section --}}
     <div class="three-img-wrapper">
         <div class="three-img-div">
         <div class="split-svg three-img-1 colorful-image-wrapper"></div>

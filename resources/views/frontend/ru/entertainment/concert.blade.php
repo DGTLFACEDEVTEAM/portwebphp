@@ -20,8 +20,8 @@
 
 @section('content')
 
-<!-- Intro Slider Part -->
-<!-- Swiper -->
+{{-- Intro Slider Part --}}
+{{-- Swiper --}}
 <div class="swiper-container concertsSlider">
     <div class="swiper-wrapper concerts-swiper-wrapper">
         <div class="swiper-slide"><img class="concertsSliderImg" src="{{ asset('assets/frontend/images/concerts/Concerts 1.webp') }}" alt="concerts"></div>
@@ -34,18 +34,18 @@
         <div class="swiper-slide"><img class="concertsSliderImg" src="{{ asset('assets/frontend/images/concerts/Concerts 8.webp') }}" alt="concerts"></div>
         <div class="swiper-slide"><img class="concertsSliderImg" src="{{ asset('assets/frontend/images/concerts/Concerts 9.webp') }}" alt="concerts"></div>
     </div>
-    <!-- Add Pagination -->
+    {{-- Add Pagination --}}
     <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
+    {{-- Add Arrows --}}
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
 
 
-<!-- Intro Slider Part End -->
+{{-- Intro Slider Part End --}}
 
 
-<!-- Concert Calendar Part Start -->
+{{-- Concert Calendar Part Start --}}
 
 <div class="concert-calendar">
     <div class="concert-calendar-img-wrapper">
@@ -63,9 +63,9 @@
                class="flatpickr-input active" readonly="readonly">
     </div>
 </div>
-<!-- Concert Calendar Part End -->
+{{-- Concert Calendar Part End --}}
 
-<!-- Offset Images Part Start-->
+{{-- Offset Images Part Start--}}
 <div class="offset-image-wrapper">
     <img class="offset-image-1" src="{{ asset('assets/frontend/images/concerts/An unfogettable show 2.webp') }}">
     <img class="offset-image-2" src="{{ asset('assets/frontend/images/concerts/An unfogettable show 3.webp') }}">
@@ -86,8 +86,8 @@
     <img class="offset-image-6" src="{{ asset('assets/frontend/images/concerts/anunfogettableshow6.webp') }}">
 
 </div>
-<!-- Offset Images Part End-->
-<!-- special guest -->
+{{-- Offset Images Part End--}}
+{{-- special guest --}}
 <div class="homeEntertainment">
     <div class="container">
         <div class="row">
@@ -104,7 +104,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <!-- First Slider -->
+            {{-- First Slider --}}
             <div class="concertGallerySlider">
                 <div class="swiper concertSwiperSlider">
                     <div class="swiper-wrapper">
@@ -149,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <!-- First Slider End -->
+            {{-- First Slider End --}}
         </div>
     </div>
 </div>
@@ -157,12 +157,12 @@
 
 <div class="container concertsVideoSection">
     <div class="concertsVideo">
-        <!-- Button trigger modal -->
+        {{-- Button trigger modal --}}
         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img style="height: 70px;width: 70px" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="clock"/>
         </a>
         <img src="{{ asset('assets/frontend/images/home/homeVideo.webp') }}" alt="youtubeVideo"/>
-        <!-- Modal -->
+        {{-- Modal --}}
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="display: flex;justify-content: center;align-items: center">
@@ -179,10 +179,10 @@
 </div>
 </div>
 
-<!-- Contact -->
+{{-- Contact --}}
 @include('frontend.ru.layouts.contact')
-<!-- Contact End -->
-<!-- Special Offer -->
+{{-- Contact End --}}
+{{-- Special Offer --}}
 <div class="otherActivities">
     <h6>Другие мероприятия</h6>
     <div class="swiper otherActivitiesSlider">
@@ -245,9 +245,9 @@
         </div>
     </div>
 </div>
-<!-- Special Offer End -->
+{{-- Special Offer End --}}
 
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

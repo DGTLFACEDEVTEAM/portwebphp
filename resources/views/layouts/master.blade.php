@@ -8,36 +8,36 @@
 
     <meta content="Admin Dashboard " name="description" />
     <meta content="DGTLFACE IT TEAM" name="author" />
-    <!-- CSRF Token -->
+    {{-- CSRF Token --}}
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
-    <!-- Fonts -->
-    <!-- Bootstrap Css -->
+    {{-- Fonts --}}
+    {{-- Bootstrap Css --}}
     <link href="{{ asset('assets/admin/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
+    {{-- App Css--}}
     <link href="{{ asset('assets/admin/css/app.min.css') }}" rel="stylesheet" type="text/css" />
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    <!-- App favicon -->
+    {{-- App favicon --}}
     <link rel="shortcut icon" href="{{ asset('assets/admin/images/favicon.ico') }}">
-    <!-- jquery.vectormap css -->
+    {{-- jquery.vectormap css --}}
     <link href="{{ asset('assets/admin/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css') }}"
         rel="stylesheet" type="text/css" />
-    <!-- DataTables -->
+    {{-- DataTables --}}
     <link href="{{ asset('assets/admin/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css') }}" rel="stylesheet"
         type="text/css" />
     <link href="//cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
-    <!-- Responsive datatable -->
+    {{-- Responsive datatable --}}
     <link href="{{ asset('assets/admin/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css') }}"
         rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
+    {{-- Icons Css --}}
     <link href="{{ asset('assets/admin/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
-    <!-- Summernote and Datatables css -->
-    <!-- Summernote CSS - CDN Link -->
+    {{-- Summernote and Datatables css --}}
+    {{-- Summernote CSS - CDN Link --}}
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
-    <!-- Dropzone CSS -->
+    {{-- Dropzone CSS --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.css">
 
 
@@ -51,15 +51,15 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/admin/css/postIndexLoader.css') }}">
 
 
-    <!-- Scripts -->
+    {{-- Scripts --}}
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 
 <body data-topbar="light">
 
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
-    <!-- Begin page -->
+    {{-- <body data-layout="horizontal" data-topbar="dark"> --}}
+    {{-- Begin page --}}
     <div id="layout-wrapper">
 
         @include('layouts.includes.admin-topbar')
@@ -70,35 +70,35 @@
 
     </div>
 
-    <!-- JAVASCRIPT -->
+    {{-- JAVASCRIPT --}}
     <script src="{{ asset('assets/admin/libs/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/admin/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/admin/libs/metismenu/metisMenu.min.js') }}"></script>
     <script src="{{ asset('assets/admin/libs/simplebar/simplebar.min.js') }}"></script>
     <script src="{{ asset('assets/admin/libs/node-waves/waves.min.js') }}"></script>
-    <!-- apexcharts -->
+    {{-- apexcharts --}}
     {{-- <script src="{{ asset('assets/admin/libs/apexcharts/apexcharts.min.js') }}"></script> --}}
     {{-- <script src="{{ asset('assets/admin/js/pages/dashboard.init.js') }}"></script> --}}
-    <!-- jquery.vectormap map -->
+    {{-- jquery.vectormap map --}}
     <script src="{{ asset('assets/admin/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js') }}">
     </script>
     <script src="{{ asset('assets/admin/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js') }}">
     </script>
-    <!-- Required datatable js -->
+    {{-- Required datatable js --}}
     <script src="{{ asset('assets/admin/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/admin/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
-    <!-- Responsive examples -->
+    {{-- Responsive examples --}}
     <script src="{{ asset('assets/admin/libs/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
     <script src="{{ asset('assets/admin/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
 
     <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
-    <!-- App js -->
+    {{-- App js --}}
     <script src="{{ asset('assets/admin/js/app.js') }}"></script>
-    <!--tinymce js-->
+    {{--tinymce js--}}
     <script src="{{ asset('assets/admin/libs/tinymce/tinymce.min.js') }}"></script>
-    <!-- Summernote js -->
+    {{-- Summernote js --}}
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
-    <!-- Dropzone CSS -->
+    {{-- Dropzone CSS --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js"></script>
 
     @yield('js-import')

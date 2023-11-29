@@ -44,7 +44,7 @@
 </div>
 
 
-<!-- First Slider -->
+{{-- First Slider --}}
 <div class="spaFirstSlider">
     <div class="swiper spaFirstSwiperSlider">
         <div class="swiper-wrapper">
@@ -88,8 +88,8 @@
         </div>
     </div>
 </div>
-<!-- First Slider End -->
-<!-- Second Slider -->
+{{-- First Slider End --}}
+{{-- Second Slider --}}
 <div class="spaSecondSlider">
 
             <div class="swiper spaSecondSwiperSlider" dir="rtl">
@@ -142,7 +142,7 @@
         </div>
 
  
-<!-- Second Slider End -->
+{{-- Second Slider End --}}
 <div class="indoorPool">
     <a class="roomlink" href="{{ route('de-indoor-pool') }}">
         <figure>
@@ -156,11 +156,11 @@
         </article>
     </a>
 </div>
-<!-- IndoorPool End -->
-<!-- Contact -->
+{{-- IndoorPool End --}}
+{{-- Contact --}}
 @include('frontend.de.layouts.contact')
-<!-- Contact End -->
-<!-- Page Up Button -->
+{{-- Contact End --}}
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>

@@ -147,7 +147,7 @@
          </div>
          <img class="room-img" src="{{ asset('assets/frontend/images/familyroom/family-room-main3d.webp') }}">
        </div>
-<!-- Features -->
+{{-- Features --}}
 <div class="roomFeatures">
     <div class="roomFeaturesWrapper">
         <h6>Features</h6>
@@ -255,18 +255,18 @@
 
     </div>
 </div>
-<!-- Features End -->
+{{-- Features End --}}
 
-<!-- 360 View -->
+{{-- 360 View --}}
 <div class="room360">
     <p>360° Tour</p>
     <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7JkrL?logo=-1&info=0&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>
 </div>
-<!-- 360 View End -->
-<!-- Contact -->
+{{-- 360 View End --}}
+{{-- Contact --}}
 @include('frontend.en.layouts.contact')
-<!-- Contact End -->
-<!-- Other Rooms -->
+{{-- Contact End --}}
+{{-- Other Rooms --}}
 <div class="otherRoomsWrapper">
     <div class="otherRooms">
         <div class="row">
@@ -312,7 +312,7 @@
     </div>
 </div>
 
-<!-- Page Up Button -->
+{{-- Page Up Button --}}
 <div style="text-align: center" class="pageUpButton">
     <a href="#">
         <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/pageUp.svg') }}"/>
