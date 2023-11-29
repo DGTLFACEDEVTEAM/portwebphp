@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Концерты - Port Nature Luxury Resort')
 @section('description', 'Концерты Port Nature. Лучшие семейные спа-отели все включено в Кадрие, Богазкент. Забронировать 5-звездочный семейный отель все включено в Белек')

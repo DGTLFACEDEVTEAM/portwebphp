@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Food and Drinks - Port Nature Luxury Resort Hotel')
 @section('description', 'Food and Drinks Port Nature Luxury Resort Hotel Spa. Best ultra all inclusive Antalya hotels on the beach. Experience the flavors of Port Nature Hotel')

@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Pasta House - PORT Nature Luxury Resort Hotel Spa')
 @section('description', 'Pasta House Port Nature Luxury Hotel Spa. En iyi alakart restoranlara sahip Belek aile oteli. Belek özel plaja sahip aile oteli.')

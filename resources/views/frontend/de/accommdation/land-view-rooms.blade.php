@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Standard Landblick Zimmer - Port Nature Hotel')
 @section('description', 'Standard Landblick Zimmer im Hotel. Die 10 besten 5 Sterne Flitterwochen Hotels in Antalya. Genießen Sie die Privilegien des Port Nature Luxury Resort')

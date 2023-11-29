@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Hauptrestaurant - Port Nature Luxury Resort Hotel')
 @section('description', 'Hauptrestaurant Port Nature Luxury Resort. Premium Strandhotel in Kadiye Antalya mit besten Angebote. Klicken Sie hier für eine günstig Urlaubsbuchung')

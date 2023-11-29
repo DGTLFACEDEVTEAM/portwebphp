@@ -1,11 +1,58 @@
 {
+  "public/assets/frontend/images/blog/blogHero.webp": {
+    "file": "assets/blogHero-3fa0f45f.webp",
+    "src": "public/assets/frontend/images/blog/blogHero.webp"
+  },
+  "public/assets/frontend/images/footer-tablet.webp": {
+    "file": "assets/footer-tablet-20be9d10.webp",
+    "src": "public/assets/frontend/images/footer-tablet.webp"
+  },
+  "public/assets/frontend/libs/css/fonts/lc_lightbox.eot": {
+    "file": "assets/lc_lightbox-8c8a6d3f.eot",
+    "src": "public/assets/frontend/libs/css/fonts/lc_lightbox.eot"
+  },
+  "public/assets/frontend/images/home/footer-mobile-bg.webp": {
+    "file": "assets/footer-mobile-bg-71dc2bf3.webp",
+    "src": "public/assets/frontend/images/home/footer-mobile-bg.webp"
+  },
+  "public/assets/frontend/images/footerBg.webp": {
+    "file": "assets/footerBg-3e5e2fac.webp",
+    "src": "public/assets/frontend/images/footerBg.webp"
+  },
+  "public/assets/frontend/libs/css/fonts/lc_lightbox.woff": {
+    "file": "assets/lc_lightbox-c4028b61.woff",
+    "src": "public/assets/frontend/libs/css/fonts/lc_lightbox.woff"
+  },
+  "public/assets/frontend/libs/css/fonts/lc_lightbox.ttf": {
+    "file": "assets/lc_lightbox-ab936398.ttf",
+    "src": "public/assets/frontend/libs/css/fonts/lc_lightbox.ttf"
+  },
+  "public/assets/frontend/libs/css/fonts/lc_lightbox.svg": {
+    "file": "assets/lc_lightbox-71e6bae2.svg",
+    "src": "public/assets/frontend/libs/css/fonts/lc_lightbox.svg"
+  },
+  "resources/css/blogdetail.css": {
+    "file": "assets/blogdetail-9a1e6e35.css",
+    "src": "resources/css/blogdetail.css",
+    "isEntry": true
+  },
+  "resources/css/style.css": {
+    "file": "assets/style-7ac8091e.css",
+    "src": "resources/css/style.css",
+    "isEntry": true
+  },
+  "resources/css/blogf.css": {
+    "file": "assets/blogf-0f62f877.css",
+    "src": "resources/css/blogf.css",
+    "isEntry": true
+  },
   "resources/css/app.css": {
-    "file": "assets/app-4ed993c7.js",
+    "file": "assets/app-b9ef2cae.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-ef00eeea.js",
+    "file": "assets/app-72af81ee.js",
     "src": "resources/js/app.js",
     "isEntry": true
   }

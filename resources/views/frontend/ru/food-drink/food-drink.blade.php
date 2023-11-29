@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Еда Напитки - Port Nature Luxury Resort')
 @section('description', 'Еда и напитки в Port Nature. Блюда морской кухни, суши, богатый выбор напитков. Забронировать онлайн отели 5 звезд все включено в Белек')

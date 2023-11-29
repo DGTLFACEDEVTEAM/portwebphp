@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Lobby Bar - Port Nature Luxury Resort Hotel')
 @section('description', 'Lobby Bar Port Nature Luxury Resort Hotel Spa. Das populärste Frühbucherhotel in Bogazkent Antalya. Besuchen Sie unsere Website für die besten Preise.')

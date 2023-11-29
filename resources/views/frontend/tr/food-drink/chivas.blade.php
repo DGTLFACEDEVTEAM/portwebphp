@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Script Chivas Lounge - Port Nature Luxury Resort')
 @section('description', 'Script Chivas Lounge Port Nature Hotel. En iyi fırsatlarla Belekteki her şey dahil oteller. Port Naturedaki erken rezervasyon fırsatlarına bakın.')

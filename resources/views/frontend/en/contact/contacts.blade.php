@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Contacts - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Contacts Port Nature Luxury Resort Hotel Spa. Ultra all inclusive five star hotel in Kadriye Antalya. Contact for reservations and best offers.')

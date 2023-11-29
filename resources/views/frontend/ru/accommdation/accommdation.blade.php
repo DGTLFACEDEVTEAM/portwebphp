@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Номера - Port Nature Luxury Resort Отель')
 @section('description', 'Номера в Port Nature Hotel. Лучшие пляжные семейные отели все включено в Белеке, Анталия. Номера в отелях для семейного отдыха в Турции.')

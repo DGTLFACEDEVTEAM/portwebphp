@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Sushi Bar Alacarte - Port Nature Resort Hotel')
 @section('description', 'Sushi Bar Alacarte Port Nature Luxury Resort Hotel. Best luxury 5 star Belek hotel by the sea. Call for luxury accommodation and dont miss out offers')

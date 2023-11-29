@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Kitkat Kafe - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Kitkat Kafe Port Nature Luxury Resort. Antalya Boğazkent te en iyi 10 çocuk dostu otel. En iyi Antalya aile oteli için şimdi rezervasyon yapın.')

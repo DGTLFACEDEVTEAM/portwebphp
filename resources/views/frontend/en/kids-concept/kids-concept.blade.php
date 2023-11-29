@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Kids Concept - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Kids Concept Port Nature Luxury Resort. Best all inclusive family hotel for kids in Belek Antalya. Call now for child friendly holiday booking offers.')

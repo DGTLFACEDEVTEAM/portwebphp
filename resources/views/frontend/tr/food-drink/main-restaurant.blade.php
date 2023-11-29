@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Ana Restoran - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Ana Restoran Port Nature Luxury Resort. En iyi indirimlerle Antalya Kadriye de premium sahil otelleri. Ucuz tatil rezervasyonu için tıklayınız')

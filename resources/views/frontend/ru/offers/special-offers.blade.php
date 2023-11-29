@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Специальные Предложения 2024 - Port Nature')
 @section('description', 'Специальные предложения Port Nature. Отели в Белеке Турция 5 звезд все включено 1 линия. Акции и скидки в отеле 5 звезд Анталии.')

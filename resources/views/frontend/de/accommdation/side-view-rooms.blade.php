@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Standard Seitlichemblick Zimmer - Port Nature')
 @section('description', 'Standard Seitlichemblick Zimmer Port Nature Hotel. Top 10 all inclusive Luxushotel in Antalya. Buchen Sie Ihr Zimmer jetzt für Frühbucher Angebote.')

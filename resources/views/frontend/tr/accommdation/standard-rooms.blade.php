@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Standart Odalar - Port Nature Luxury Resort Hotel')
 @section('description', 'Standart Odalar Port Nature Luxury Resort. Antalya en iyi beş yıldızlı oteller. Port Nature Luxury Resort standart oda seçeneklerimizi görüntüleyin.')

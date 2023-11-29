@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Meeting Congress - Port Nature Luxury Resort Hotel')
 @section('description', 'Meeting Congress Port Nature Luxury Resort Hotel Spa. Belek business hotel booking. Call now for early booking of 5-star hotels in Belek.')

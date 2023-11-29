@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Standard Side View Room - Port Nature Hotel')
 @section('description', 'Standard Side View Room Port Nature Luxury Resort. Top 10 all inclusive luxury hotel in Antalya. Book your room now for early booking deals.')

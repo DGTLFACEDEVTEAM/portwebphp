@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Блог - Port Nature Luxury Resort')
 @section('description', 'Блог Port Nature. Поиск лучших предложений для отдыха в Анталии в роскошных отелях все включено. Бронировать сейчас по лучшей цене')

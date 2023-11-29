@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Fransız Alacarte - Port Nature Luxury Resort')
 @section('description', 'French Alacarte Restoran Port Nature Luxury Resort. En iyi 10 Belek balayı oteli. Balayı paketleri ile tatilinizi unutulmaz kılın.')

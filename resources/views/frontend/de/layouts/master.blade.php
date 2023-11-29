@@ -48,14 +48,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Lora:ital,wght@1,400;1,500&family=Poppins:wght@100;400;500;600;700&family=Space+Grotesk:wght@300;700&display=swap" rel="stylesheet">
+        @yield('css-imports')
 
     @if (Request::is('blog-seite/*'))
         {{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/post-test.css') }}"/> --}}
         <link rel="stylesheet" href="{{ asset('assets/frontend/css/blogDetail.css') }}" />
     @endif
 
-    @yield('css-imports')
 
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
     <!-- Google Tag Manager -->
@@ -130,30 +131,30 @@
         onload="this.media='all'" />
 
     <!-- KVKK Cookies -->
-    <script src="{{ asset('assets/frontend/js/glowCookies.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/frontend/js/glowCookies.min.js') }}"></script> --}}
     <script>
-        glowCookies.start('de', {
-            style: 1,
-            analytics: 'G-FH87DE17XF',
-            facebookPixel: '990955817632355',
-            hideAfterClick: true,
-            position: 'right',
-            policyLink: 'https://portnature.com.tr/datenschutzrichtlinien'
-        });
+        // glowCookies.start('de', {
+        //     style: 1,
+        //     analytics: 'G-FH87DE17XF',
+        //     facebookPixel: '990955817632355',
+        //     hideAfterClick: true,
+        //     position: 'right',
+        //     policyLink: 'https://portnature.com.tr/datenschutzrichtlinien'
+        // });
     </script>
     <!--  JAVASCRIPTS  -->
-    <script src="{{ asset('assets/frontend/libs/js/popper.min.js') }}" defer></script>
-    <script src="{{ asset('assets/frontend/libs/js/bootstrap.min.js') }}" defer></script>
+    {{-- <script src="{{ asset('assets/frontend/libs/js/popper.min.js') }}" defer></script> --}}
+    {{-- <script src="{{ asset('assets/frontend/libs/js/bootstrap.min.js') }}" defer></script> --}}
     <script src="{{ asset('assets/frontend/libs/js/jquery-3.6.4.min.js') }}"></script>
     <script src="{{ asset('assets/frontend/libs/js/swiper-bundle-11.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/libs/js/flatpickr.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/common.js') }}" defer></script>
-    <script src="{{ asset('assets/frontend/libs/js/lazysizes.min.js') }}" defer></script>
+    {{-- <script src="{{ asset('assets/frontend/libs/js/flatpickr.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/frontend/js/common.js') }}" defer></script> --}}
+    {{-- <script src="{{ asset('assets/frontend/libs/js/lazysizes.min.js') }}" defer></script> --}}
 
     @yield('javascript-imports')
 
 
-    <script>
+    {{-- <script>
         if (pageHasContactForm) {
             let acceptTermsCheckbox = document.querySelectorAll('.acceptTermsCheckbox');
             let contactForms = document.querySelectorAll('form[name="contactForm"]')
@@ -192,10 +193,10 @@
                 });
             });
         }
-    </script>
+    </script> --}}
 
     {{-- <script src="{{ asset('assets/frontend/js/floating-menu.js') }}" defer></script> --}}
-
+    {{-- 
     <script type='text/javascript'>
         // Form submission handler
         if ($('#contactForm2').length) {
@@ -211,10 +212,10 @@
                 }
             });
         }
-    </script>
+    </script> --}}
 
     <!-- ChatBox Script  -->
-    <script>
+    {{-- <script>
         (function() {
             var APP_UUID = '6f018acb-a187-48be-a07e-a301d318af36';
             var BASE_COLOR = '#075695';
@@ -247,10 +248,10 @@
                 })
             };
         })();
-    </script>
+    </script> --}}
     <!-- ChatBox Script END -->
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         (function(m, e, t, r, i, k, a) {
             m[i] = m[i] || function() {
                 (m[i].a = m[i].a || []).push(arguments)
@@ -272,14 +273,21 @@
             accurateTrackBounce: true,
             webvisor: true
         });
-    </script>
+    </script> --}}
 
     <noscript>
         <div><img src="https://mc.yandex.ru/watch/92210931" style="position:absolute; left:-9999px;" alt="" />
         </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    {{-- @include('components.cookie', ['lang' => 'de']) --}}
+    @php
+        $isClientAcceptCookie = isset($_COOKIE['cookieConsent']) ? $_COOKIE['cookieConsent'] : 'false';
+    @endphp
+    @if ($isClientAcceptCookie == 'true')
+    @else
+        @include('components.cookie', ['lang' => 'de'])
+    @endif
+
 </body>
 
 </html>

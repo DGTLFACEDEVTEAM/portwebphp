@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Главный ресторан - Port Nature Luxury Resort')
 @section('description', 'Главный ресторан Port Nature. Отели в Белеке Турция 5 звезд все включено 1 линия. Лучший 5-звездочный курорт в Анталии с собственным пляжем.')

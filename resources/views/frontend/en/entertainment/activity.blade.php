@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Activites - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Activites Port Nature Luxury Resort. Best child-friendly hotels with water slides in Side Turkey. Check out special offers for families with children.')

@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Türkei Hotels - Port Nature Luxury Resort Hotel')
 @section('description', 'Türkei Hotels Port Nature Luxury Resort Hotel Spa. Das beste Flitterwochenhotel mit Flitterwochenkonzept wartet auf Sie mit speziellen Angeboten.')

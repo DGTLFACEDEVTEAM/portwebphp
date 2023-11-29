@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Belek Hotels - Port Nature Luxury Resort Hotel')
 @section('description', 'Belek Hotels Port Nature Luxury Resort Hotel Spa. Rufen Sie jetzt an, um das beste 5-Sterne-All-Inclusive-Hotel in Belek kostenlos zu buchen.')

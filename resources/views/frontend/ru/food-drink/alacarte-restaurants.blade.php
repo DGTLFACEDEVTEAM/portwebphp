@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Рестораны Alacarte - Port Nature Luxury Resort')
 @section('description', 'Рестораны Alacarte международной кухни в Port Nature. Лучшие 5-звездочные отели в Кадрие. Забронировать бесплатно семейный отель в Анталии')

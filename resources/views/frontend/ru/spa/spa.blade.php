@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Спа-центр - Port Nature Luxury Resort Hotel')
 @section('description', 'Спа-центр курортного отеля Port Nature. Забронируйте лучшие 5-звездочные отели ультра все включено на первой линии в Анталье.')

@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Belek Otelleri - Port Nature Luxury Resort Hotel')
 @section('description', 'Belek Otelleri Port Nature Luxury Resort Hotel Spa. Belek en iyi 5 yıldızlı her şey dahil otel için ücretsiz online rezervasyon')

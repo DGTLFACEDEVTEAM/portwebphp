@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'King Süit Oda -Port Nature Luxury Resort Hotel Spa')
 @section('description', 'King Süit Oda - Port Nature Luxury Resort. Aile ve balayı için herşey dahil Belek otelleri, en lüks deniz manzaralı süit oda fiyatları için tıklayın.')

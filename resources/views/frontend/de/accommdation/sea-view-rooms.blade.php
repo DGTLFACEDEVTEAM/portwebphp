@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Standard Meerblick Zimmer - Port Nature')
 @section('description', 'Standard Meerblick Zimmer Port Nature. Populäres 5 Sterne Hotel mit Meerblick in Belek. Jetzt buchen und Meerblick aus modernen Zimmern genießen.')

@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Far East Alacarte Restaurant - Port Nature Hotel')
 @section('description', 'Far East Alacarte Restaurant Port Nature Luxury Resort. Antalya all inclusive hotel for couples. Book hotel and experience an all inclusive holiday.')

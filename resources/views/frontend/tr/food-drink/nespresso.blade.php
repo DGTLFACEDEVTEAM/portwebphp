@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Nespresso Kafe - Port Nature Luxury Resort Hotel')
 @section('description', 'Nespresso Kafe Port Nature Luxury Resort Hotel Spa. Türkiye Side deki en iyi aile otelleri. Her şey dahil Side tatil paketi rezervasyonu yapın.')

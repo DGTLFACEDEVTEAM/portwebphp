@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Развлечения - Port Nature Luxury Resort')
 @section('description', 'Развлечения и концерты Port Nature. Самые дешевые отели 5 звезд 1 линия все включено Белек, Кадрие. Отели 5 звезд в Анталии')

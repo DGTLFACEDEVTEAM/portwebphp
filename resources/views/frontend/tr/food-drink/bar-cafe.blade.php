@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Barlar & Kafeler - Port Nature Luxury Resort Hotel')
 @section('description', 'Barlar Kafeler Port Nature Luxury Resort. Deniz kenarında beş yıldızlı Boğazkent otelleri. Ucuz fiyatlarla Antalya otelleri için rezervasyon yapın.')

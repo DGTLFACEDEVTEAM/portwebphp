@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Uzak Doğu Alacarte - Port Nature Luxury Resort')
 @section('description', 'Uzak Doğu Alacarte Port Nature Luxury Resort. Çiftlere özel Antalya her şey dahil otel. Rezervasyon yaptırın ve ultra her şey dahil bir tatil yaşayın.')

@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Turkey Hotels - Port Nature Luxury Resort Hotel')
 @section('description', 'Turkey Hotels Port Nature Luxury Resort Hotel Spa. The best honeymoon hotel concept for newlyweds is waiting for you with special offers.')

@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Кафе Nespresso - Port Nature Luxury Resort')
 @section('description', 'Кафе Nespresso Port Nature. Отель раннее бронирование отеля Белек со скидками. Позвоните нам для специальных цен в отеле 5 звезд')

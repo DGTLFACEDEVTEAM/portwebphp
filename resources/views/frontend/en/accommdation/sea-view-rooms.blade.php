@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Standard Sea View Room - Port Nature Luxury Resort')
 @section('description', 'Standard Sea View Room Port Nature. Popular sea view 5 star hotel in Belek Turkey. Make reservation and enjoy the sea view from the modern rooms.

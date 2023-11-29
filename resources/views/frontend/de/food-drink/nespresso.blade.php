@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Nespresso Cafe - Port Nature Luxury Hotel')
 @section('description', 'Nespresso Cafe Port Nature Luxury Resort Hotel Spa. Bestes Familienhotel in Side Türkei. Buchen Sie ein All inclusive Urlaubspaket für Side.')

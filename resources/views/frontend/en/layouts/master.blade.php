@@ -48,6 +48,9 @@
     @endif
 
 
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+
 
 
 
@@ -127,26 +130,26 @@
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/contact.css') }}" media="print"
         onload="this.media='all'" />
     <!-- KVKK Cookies -->
-    <script src="{{ asset('assets/frontend/js/glowCookies.min.js') }}"></script>
+    {{-- <script src="{{ asset('assets/frontend/js/glowCookies.min.js') }}"></script> --}}
     <script>
-        glowCookies.start('en', {
-            style: 1,
-            analytics: 'G-FH87DE17XF',
-            facebookPixel: '990955817632355',
-            hideAfterClick: true,
-            position: 'right',
-            policyLink: 'https://portnature.com.tr/data-policy'
-        });
+        // glowCookies.start('en', {
+        //     style: 1,
+        //     analytics: 'G-FH87DE17XF',
+        //     facebookPixel: '990955817632355',
+        //     hideAfterClick: true,
+        //     position: 'right',
+        //     policyLink: 'https://portnature.com.tr/data-policy'
+        // });
     </script>
     <!--  JAVASCRIPTS  -->
-    <script src="{{ asset('assets/frontend/libs/js/popper.min.js') }}" defer></script>
-    <script src="{{ asset('assets/frontend/libs/js/bootstrap.min.js') }}" defer></script>
+    {{-- <script src="{{ asset('assets/frontend/libs/js/popper.min.js') }}" defer></script> --}}
+    {{-- <script src="{{ asset('assets/frontend/libs/js/bootstrap.min.js') }}" defer></script> --}}
     <script src="{{ asset('assets/frontend/libs/js/jquery-3.6.4.min.js') }}"></script>
 
     <script src="{{ asset('assets/frontend/libs/js/swiper-bundle-11.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/libs/js/flatpickr.min.js') }}"></script>
-    <script src="{{ asset('assets/frontend/js/common.js') }}" defer></script>
-    <script src="{{ asset('assets/frontend/libs/js/lazysizes.min.js') }}" defer></script>
+    {{-- <script src="{{ asset('assets/frontend/libs/js/flatpickr.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('assets/frontend/js/common.js') }}" defer></script> --}}
+    {{-- <script src="{{ asset('assets/frontend/libs/js/lazysizes.min.js') }}" defer></script> --}}
     {{-- <script script src="{{ asset('assets/frontend/libs/js/floating-menu.js') }}" defer></script> --}}
     @yield('javascript-imports')
 
@@ -155,23 +158,23 @@
 
     <script type='text/javascript'>
         // Form submission handler
-        if ($('#contactForm2').length) {
-            document.getElementById("contactForm2").addEventListener("submit", function(event) {
-                // Check if all required fields are filled out
-                var name = document.forms["contactForm"]["name"].value;
-                var email = document.forms["contactForm"]["email"].value;
-                var message = document.forms["contactForm"]["message"].value;
-                if (name == "" || email == "" || message == "") {
-                    // Display alert message if any required fields are empty
-                    event.preventDefault(); // Prevent form from submitting
-                    document.getElementById("alert").classList.remove("d-none");
-                }
-            });
-        }
+        // if ($('#contactForm2').length) {
+        //     document.getElementById("contactForm2").addEventListener("submit", function(event) {
+        //         // Check if all required fields are filled out
+        //         var name = document.forms["contactForm"]["name"].value;
+        //         var email = document.forms["contactForm"]["email"].value;
+        //         var message = document.forms["contactForm"]["message"].value;
+        //         if (name == "" || email == "" || message == "") {
+        //             // Display alert message if any required fields are empty
+        //             event.preventDefault(); // Prevent form from submitting
+        //             document.getElementById("alert").classList.remove("d-none");
+        //         }
+        //     });
+        // }
     </script>
     <!-- ChatBox Script-->
 
-    <script>
+    {{-- <script>
         // wait to dom fully loaded any will not affect pagespeed test
         window.addEventListener('DOMContentLoaded', (event) => {
             // check if chatbox is enabled
@@ -259,12 +262,12 @@
                     };
             })();
         });
-    </script>
+    </script> --}}
 
     <!--ChatBox Script END-->
     <!--Yandex.Metrika counter-->
 
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         (function(m, e, t, r, i, k, a) {
             m[i] = m[i] || function() {
                 (m[i].a = m[i].a || []).push(arguments)
@@ -287,7 +290,7 @@
             accurateTrackBounce: true,
             webvisor: true
         });
-    </script>
+    </script> --}}
 
 
     <noscript>
@@ -297,48 +300,53 @@
     <!-- /Yandex.Metrika counter -->
 
     <script>
-        if (pageHasContactForm) {
-            let acceptTermsCheckbox = document.querySelectorAll('.acceptTermsCheckbox');
-            let contactForms = document.querySelectorAll('form[name="contactForm"]')
+        // if (pageHasContactForm) {
+        //     let acceptTermsCheckbox = document.querySelectorAll('.acceptTermsCheckbox');
+        //     let contactForms = document.querySelectorAll('form[name="contactForm"]')
 
-            acceptTermsCheckbox.forEach(function(item) {
-                // remove event listener if already added
-                item.removeEventListener('change', function() {});
-                item.addEventListener('change', function() {
-                    if (this.checked) {
-                        // find the submit button on same form and enable it
-                        this.closest('form').querySelector('input[type="submit"]').disabled = false;
-                    } else {
-                        // find the submit button on same form and disable it
-                        this.closest('form').querySelector('input[type="submit"]').disabled = true;
-                    }
-                });
-            });
+        //     acceptTermsCheckbox.forEach(function(item) {
+        //         // remove event listener if already added
+        //         item.removeEventListener('change', function() {});
+        //         item.addEventListener('change', function() {
+        //             if (this.checked) {
+        //                 // find the submit button on same form and enable it
+        //                 this.closest('form').querySelector('input[type="submit"]').disabled = false;
+        //             } else {
+        //                 // find the submit button on same form and disable it
+        //                 this.closest('form').querySelector('input[type="submit"]').disabled = true;
+        //             }
+        //         });
+        //     });
 
 
 
-            contactForms.forEach(function(item) {
-                // remove event listener if already added
-                item.removeEventListener('submit', function() {});
-                item.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    let name = document.getElementById('name');
-                    let email = document.getElementById('email');
-                    let message = document.getElementById('message');
-                    let alert = document.getElementById('alert');
+        //     contactForms.forEach(function(item) {
+        //         // remove event listener if already added
+        //         item.removeEventListener('submit', function() {});
+        //         item.addEventListener('submit', function(e) {
+        //             e.preventDefault();
+        //             let name = document.getElementById('name');
+        //             let email = document.getElementById('email');
+        //             let message = document.getElementById('message');
+        //             let alert = document.getElementById('alert');
 
-                    if (name.value == '' || email.value == '' || message.value == '') {
-                        alert.classList.remove('d-none');
-                    } else {
-                        this.submit();
-                    }
-                });
-            });
-        }
+        //             if (name.value == '' || email.value == '' || message.value == '') {
+        //                 alert.classList.remove('d-none');
+        //             } else {
+        //                 this.submit();
+        //             }
+        //         });
+        //     });
+        // }
     </script>
 
-
-    {{-- @include('components.cookie', ['lang' => 'en']) --}}
+    @php
+        $isClientAcceptCookie = isset($_COOKIE['cookieConsent']) ? $_COOKIE['cookieConsent'] : 'false';
+    @endphp
+    @if ($isClientAcceptCookie == 'true')
+    @else
+        @include('components.cookie', ['lang' => 'en'])
+    @endif
 
     <!-- End-->
 </body>

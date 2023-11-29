@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Born 9 Hennessy Lounge - Port Nature Luxury Hotel')
 @section('description', 'Born9 Hennessy Lounge Port Nature Luxury Resort. Best 10 Antalya beach hotels for couples. Discover ultra all-inclusive holiday privileges in Antalya.')

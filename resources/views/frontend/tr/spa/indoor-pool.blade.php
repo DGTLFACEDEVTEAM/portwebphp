@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Kapalı Havuz - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Kapalı Havuz Port Nature Luxury Resort Hotel Spa. Antalya Side de 5 yıldızlı su parklı oteller. Özel çocuk dostu fırsatlar için iletişime geçin.')

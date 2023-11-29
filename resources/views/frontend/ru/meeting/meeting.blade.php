@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Встречи Конгресс - Port Nature Luxury Resort')
 @section('description', 'Встречи Конгресс в Port Nature. Рестораны Alacarte в 5-звездочных отелях все включено в Белеке. Лучшие 5-звездочные отели в Кадрие.')

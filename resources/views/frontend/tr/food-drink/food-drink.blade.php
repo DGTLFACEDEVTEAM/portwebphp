@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Yeme İçme - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Yeme İçme Port Nature Luxury Resort. Denize sıfır en iyi her şey dahil Antalya otelleri. Port Nature Luxury Resortun lezzetlerini deneyimleyin.')

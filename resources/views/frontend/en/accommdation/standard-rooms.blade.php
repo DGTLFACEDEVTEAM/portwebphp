@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Standard Rooms - Port Nature Luxury Resort Hotel')
 @section('description', 'Standard Rooms Port Nature Luxury Resort Hotel Spa. Best five star hotel in Antalya Turkey. View our standard room options in the Port Nature Hotel

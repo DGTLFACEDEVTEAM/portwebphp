@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Lobby Bar - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Lobby Bar Port Nature Luxury Resort Hotel Spa. En popüler Antalya erken rezervasyon otelleri. En iyi fiyatlar için web sitemizi ziyaret edin.')

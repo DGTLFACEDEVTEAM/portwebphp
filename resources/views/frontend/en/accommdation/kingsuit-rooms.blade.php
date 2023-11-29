@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'King Suite Room -Port Nature Luxury Resort Hotel Spa Hotel')
 @section('description', 'King Suite Room Port Nature Hotel. Best luxury sea view suites for family and honeymoon in all inclusive Belek hotel. Click for prices of suite rooms.')

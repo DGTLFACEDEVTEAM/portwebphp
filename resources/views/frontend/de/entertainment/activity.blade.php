@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Aktivitäten - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Aktivitäten Port Nature. Die besten Kinderhotels mit Wasserrutschen in Side Türkei. Sehen Sie sich die Sonderangebote für Familien mit Kindern an.')

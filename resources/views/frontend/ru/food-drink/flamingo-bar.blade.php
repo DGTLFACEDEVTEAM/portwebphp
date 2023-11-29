@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Flamingo Bar - Port Nature Luxury Resort')
 @section('description', 'Flamingo Bar Port Nature. Забронировать прибрежный отель 5 звезд все включено в Белек Богазкент. Посетить вебсайт для других баров')

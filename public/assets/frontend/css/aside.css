@@ -6,6 +6,7 @@ html {
     margin: 0;
     z-index: 0;
     overflow-x: hidden;
+    font-family: Montserrat, serif;
 }
 p,
 ul {
@@ -1308,3 +1309,8 @@ img {
 .cursor-pointer {
     cursor: pointer;
 }
+
+.menubar .nav-item .nav-link {
+    text-transform: uppercase;
+}
+

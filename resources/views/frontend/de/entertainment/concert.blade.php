@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Konzert - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Konzert Port Nature. Luxushotel für die Flitterwochen mit beste Unterhaltung in Antalya. Krönen Sie Ihre Flitterwochen mit weltberühmten StarKonzerten')

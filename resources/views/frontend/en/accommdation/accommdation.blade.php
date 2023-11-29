@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Rooms -Port Nature Luxury Resort Hotel Spa Hotel')
 @section('description', 'Rooms Port Nature Luxury Resort Hotel Spa. Luxury rooms with great views in 5 star hotel in Antalya Turkey. Look our rooms page and make reservation.')

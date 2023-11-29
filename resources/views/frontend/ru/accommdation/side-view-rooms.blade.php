@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Номер Стандарт с боковым видом - Port Nature')
 @section('description', 'Забронировать номер Стандарт с боковым видом Port Nature. Лучшие отели 5 звезд в Анталии. Отели все включено для отдыха с детьми в Белек')

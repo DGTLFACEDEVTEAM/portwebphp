@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Born 9 Hennessy Lounge - Port Nature Luxury Resort')
 @section('description', 'Born 9 Hennessy Lounge Port Nature. Лучшие пятизвездочные отели все включено в Анталии Турция. Отели для семей с детьми на первой линии')

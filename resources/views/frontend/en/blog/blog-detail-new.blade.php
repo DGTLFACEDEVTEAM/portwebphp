@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', $post_content->meta_title)
 @section('description', $post_content->meta_description)
@@ -49,7 +49,8 @@
                     <div class="miniBlog">
                         <a href="{{ url('/blog-page' . '/' . $post_item->slug) }}">
                             <figure>
-                                <img src="{{ asset('uploads/blogs/' . $post_item->title_image) }}" alt="{{ $post_item->meta_title }}" />
+                                <img src="{{ asset('uploads/blogs/' . $post_item->title_image) }}"
+                                    alt="{{ $post_item->meta_title }}" />
                             </figure>
                             <span>{{ $post_item->name }}</span>
                             <p>{{ $post_item->title_description }}</p>
@@ -78,7 +79,8 @@
 @endsection
 
 @section('css-imports')
-    <link rel="stylesheet" href="{{ asset('assets/frontend/css/blog.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ asset('assets/frontend/css/blog.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/frontend/css/booking-section.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/frontend/css/booking-section.css') }}" /> --}}
+    @vite(['resources/css/blogf.css'])
 @endsection

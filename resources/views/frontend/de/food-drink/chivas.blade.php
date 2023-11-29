@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Script Chivas Lounge - Port Nature Resort')
 @section('description', 'Script Chivas Lounge Port Nature. All inclusive Hotels in Belek mit den besten Angeboten. Werfen Sie einen Blick auf die Frühbucherangebote im Antalya')

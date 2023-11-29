@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Standart Kara Manzaralı Oda - Port Nature Hotel')
 @section('description', 'Standart Kara Manzaralı Oda Port Nature. 10 en iyi 5 yıldızlı Antalya balayı oteli. Port Nature Luxury Resort ayrıcalıklarının tadını çıkarın')

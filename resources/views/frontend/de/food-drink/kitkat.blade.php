@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Kitkat Cafe - Port Nature Luxury Resort Hotel')
 @section('description', 'Kitkat Cafe Port Nature Luxury Resort. Top 10 kinderfreundliche Hotels in Bogazkent Antalya. Buchen Sie jetzt im besten Familienhotel in Antalya.')

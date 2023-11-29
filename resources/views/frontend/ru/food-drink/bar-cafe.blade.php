@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Бары Кафе - Port Nature Luxury Resort')
 @section('description', 'Бары Кафе с 148 напитками в Port Nature. Отели в Белеке Турция 5 звезд все включено 1 линия. Хорошие отели в Кадрие, Анталия.')

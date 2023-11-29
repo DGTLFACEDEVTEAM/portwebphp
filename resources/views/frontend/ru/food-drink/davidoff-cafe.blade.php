@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Кафе Davidoff - Port Nature Luxury Resort')
 @section('description', 'Кафе Davidoff Port Nature. Самые дешевые отели 5 звезд 1 линия все включено в Белеке. Посетить вебсайт для других кафе и баров')

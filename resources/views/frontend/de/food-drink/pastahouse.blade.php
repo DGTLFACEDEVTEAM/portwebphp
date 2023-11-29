@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Pasta House - PORT Nature Luxury Resort & Spa')
 @section('description', 'Pasta House Port Nature Luxury Resort. Bestes Hotel in Belek mit 7 verschiedenen a la carte Restaurant. Bestes Familienhotel in Belek direkt am Strand')

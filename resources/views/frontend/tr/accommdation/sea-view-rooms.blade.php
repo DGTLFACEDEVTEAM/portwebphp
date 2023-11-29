@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Standart Deniz Manzaralı Oda - Port Nature Hotel')
 @section('description', 'Standart Deniz Manzaralı Oda Port Nature Hotel. Popüler deniz manzaralı 5 yıldızlı Belek oteli. Rezervasyon yapın ve deniz manzarasının tadını çıkarın')

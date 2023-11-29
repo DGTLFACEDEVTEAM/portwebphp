@@ -1,4 +1,4 @@
-@extends('frontend.en.layouts.master')
+@extends('layouts.main', ['lang' => 'en'])
 
 @section('title', 'Standard Land View Room - Port Nature Hotel')
 @section('description', 'Standard Land View Room Port Nature Luxury Resort. 10 best 5 star honeymoon hotel in Bogazkent Antalya. Enjoy the privileges of Port Nature Resort.')

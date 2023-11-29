@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 
 @section('title', 'Mutfak Ziyaretçisi için Aydınlatma Metni - Port Nature Luxury Resort Hotel Spa')

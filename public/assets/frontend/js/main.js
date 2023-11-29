@@ -11,6 +11,8 @@ $(document).ready(function () {
     });
 }),*/
 
+import Cookies from "js-cookie";
+
 /*
 const concerts = document.querySelector(".homeConcertSlider");
 if (concerts)
@@ -32,6 +34,9 @@ if (concerts)
         },
     });
     */
+
+let isClientAcceptCookie = Cookies.get("cookieConsent");
+
 $(window).on("scroll load resize", function () {
     var e = $(window).width(),
         a = $(".hamburgerMenu").css("position"),
@@ -51,38 +56,26 @@ $(window).on("scroll load resize", function () {
             i < t &&
             $(".navbar").css("background", "rgb(35 48 56 / 100%)");
 });
-var swiperHomeTop = new Swiper(".heroTopSwiper", {
+
+let heroTopSwiperSwiperOptions = {
     lazy: true,
     slidesPerView: 1,
-    loop: !0,
-   
+    loop: true,
     navigation: { nextEl: ".heroSwiperNext", prevEl: ".heroSwiperPrev" },
-    breakpoints: { 576: { autoplay: { delay: 2e4 } } },
-});
-const inclusiveSlider = document.querySelector(".inclusiveSlider");
+};
 
-// find client is near 100px to inclusiveSlider element
-function isScrolledIntoView(el) {
-    var rect = el.getBoundingClientRect();
-    var elemTop = rect.top;
-    var elemBottom = rect.bottom;
-    // Only completely visible elements return true:
-    var isVisible = elemTop < window.innerHeight && elemBottom >= 200;
-    // Partially visible elements return true:
-    // isVisible = elemTop < window.innerHeight && elemBottom >= 0;
-    return isVisible;
+if (isClientAcceptCookie) {
+    heroTopSwiperSwiperOptions.autoplay = {
+        delay: 4e3,
+        disableOnInteraction: false,
+    };
 }
 
-// if client is near 100px to inclusiveSlider element, then start autoplay
-$(window).scroll(function () {
-    if (isScrolledIntoView(inclusiveSlider)) {
-        inclusiveSliderName.autoplay.start();
-    } else {
-        inclusiveSliderName.autoplay.stop();
-    }
-});
+var swiperHomeTop = new Swiper(".heroTopSwiper", heroTopSwiperSwiperOptions);
+// export swiperHomeTop so i can use it in other files
+const inclusiveSlider = document.querySelector(".inclusiveSlider");
 
-var inclusiveSliderName = new Swiper(inclusiveSlider, {
+var inclusiveSliderNameOptions = {
     lazy: true,
     loop: !0,
     pagination: {
@@ -102,16 +95,28 @@ var inclusiveSliderName = new Swiper(inclusiveSlider, {
     },
     navigation: { nextEl: ".inclusive-next", prevEl: ".inclusive-prev" },
     lazyPreloadPrevNext: 0,
-});
+};
+
+if (isClientAcceptCookie) {
+    inclusiveSliderNameOptions.autoplay = {
+        delay: 4e3,
+        disableOnInteraction: false,
+    };
+}
+
+var inclusiveSliderName = new Swiper(
+    inclusiveSlider,
+    inclusiveSliderNameOptions
+);
 
 // inclusiveSliderName.params.autoplay.delay = 5000; // Change autoplay delay to 5 seconds
 // inclusiveSliderName.params.autoplay.disableOnInteraction = true;
 
 const childrenSwiper = document.querySelector(".childrenSlider");
-var childrenSwiperName = new Swiper(childrenSwiper, {
+let childrenSwiperNameOptions = {
     lazy: true,
     loopedSlides: 7,
-    autoplay: { delay: 3e3 },
+
     initialSlide: 4,
     breakpoints: {
         1: { slidesPerView: 1, spaceBetween: 0, centeredSlides: !1 },
@@ -130,7 +135,15 @@ var childrenSwiperName = new Swiper(childrenSwiper, {
         },
     },
     navigation: { nextEl: "#children-next", prevEl: "#children-prev" },
-});
+};
+
+if (isClientAcceptCookie) {
+    childrenSwiperNameOptions.autoplay = {
+        delay: 4e3,
+        disableOnInteraction: false,
+    };
+}
+var childrenSwiperName = new Swiper(childrenSwiper, childrenSwiperNameOptions);
 if (576 >= $(window).width())
     var containerWidth = $(".homeSpecialOffer").width(),
         homeOtherSliderCount = containerWidth / 345;
@@ -138,11 +151,11 @@ else
     var containerWidth = $(".homeSpecialOffer").width(),
         homeOtherSliderCount = containerWidth / 439;
 const specialOfferSlider = document.querySelector(".specialOfferSlider");
-var homeSpecialOffer = new Swiper(specialOfferSlider, {
+
+let specialOfferSliderOptions = {
     lazy: true,
     slidesPerView: homeOtherSliderCount,
     initialSlide: 1,
-    loop: !0,
     pagination: {
         el: ".swiper-pagination",
         renderBullet: function (e, a) {
@@ -177,29 +190,51 @@ var homeSpecialOffer = new Swiper(specialOfferSlider, {
                 homeSpecialOffer.update();
         },
     },
-});
+};
+
+if (isClientAcceptCookie) {
+    specialOfferSliderOptions.autoplay = {
+        delay: 4e3,
+        disableOnInteraction: false,
+    };
+}
+
+var homeSpecialOffer = new Swiper(
+    specialOfferSlider,
+    specialOfferSliderOptions
+);
 const gastronomySlider = document.querySelector(".gastronomySwiper");
-gastronomySlider &&
-    new Swiper(gastronomySlider, {
-        lazy: true,
-        slidesPerView: 1,
-        loop: !0,
-        autoplay: { delay: 3e3, disableOnInteraction: !0 },
-        pagination: {
-            el: ".swiper-pagination",
-            renderBullet: function (e, a) {
-                return (
-                    '<span class="' +
-                    a +
-                    ' "><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3" r="3" fill="#CFCFCF"/></svg></span>'
-                );
-            },
+
+let gastronomySliderOptions = {
+    lazy: true,
+    slidesPerView: 1,
+    loop: !0,
+
+    pagination: {
+        el: ".swiper-pagination",
+        renderBullet: function (e, a) {
+            return (
+                '<span class="' +
+                a +
+                ' "><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3" r="3" fill="#CFCFCF"/></svg></span>'
+            );
         },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+};
+
+if (isClientAcceptCookie) {
+    gastronomySliderOptions.autoplay = {
+        delay: 4e3,
+        disableOnInteraction: false,
+    };
+}
+
+gastronomySlider && new Swiper(gastronomySlider, gastronomySliderOptions);
+
 const homeServiceSlider = document.querySelector(".homeServicesSlider");
 homeServiceSlider &&
     new Swiper(homeServiceSlider, {
@@ -215,14 +250,10 @@ var ww = $(window).width(),
     roomContainerWidth = $(".Roomswiper").width();
 if ($(window).width() > 576) var roomSlidesPerView = roomContainerWidth / 441;
 else var roomSlidesPerView = roomContainerWidth / 356;
-
-var roomSwiper = new Swiper(".Roomswiper", {
+let roomSwiperOptions = {
     lazy: true,
-    loop: !0,
     slidesPerView: roomSlidesPerView,
     initialSlide: 0,
-    autoplay: { delay: 4e3 },
-    breakpoints: { 1: { autoplay: { delay: 4e3 } }, 1600: { autoplay: !1 } },
     pagination: {
         el: ".swiper-pagination",
         renderBullet: function (e, a) {
@@ -245,54 +276,105 @@ var roomSwiper = new Swiper(".Roomswiper", {
             (roomSwiper.params.slidesPerView = a), roomSwiper.update();
         },
     },
-});
+};
+
+if (isClientAcceptCookie) {
+    roomSwiperOptions.autoplay = {
+        delay: 4e3,
+        disableOnInteraction: false,
+    };
+    roomSwiperOptions.breakpoints = {
+        1: { autoplay: { delay: 4e3 } },
+        1600: { autoplay: !1 },
+    };
+}
+
+var roomSwiper = new Swiper(".Roomswiper", roomSwiperOptions);
+
 const homeBrands = document.querySelector(".homeBrandSlider");
-homeBrands &&
-    new Swiper(homeBrands, {
-        lazy: true,
-        loop: !0,
-        pagination: {
-            el: ".swiper-pagination",
-            renderBullet: function (e, a) {
-                return (
-                    '<span class="' +
-                    a +
-                    ' "><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3" r="3" fill="#CFCFCF"/></svg></span>'
-                );
-            },
+
+let homeBrandsOptions = {
+    lazy: true,
+    loop: !0,
+    pagination: {
+        el: ".swiper-pagination",
+        renderBullet: function (e, a) {
+            return (
+                '<span class="' +
+                a +
+                ' "><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="3" cy="3" r="3" fill="#CFCFCF"/></svg></span>'
+            );
         },
-        autoplay: { delay: 8e3 },
-        breakpoints: {
-            1: {
-                spaceBetween: 30,
-                slidesPerView: 2,
-                loop: !0,
-                allowTouchMove: !0,
-                navigation: !1,
-            },
-            576: {
-                spaceBetween: 60,
-                slidesPerView: 2,
-                loop: !0,
-                allowTouchMove: !0,
-                navigation: !1,
-            },
-            990: {
-                spaceBetween: 60,
-                slidesPerView: 4,
-                loop: !0,
-                allowTouchMove: !0,
-                autoplay: { delay: 2e4 },
-            },
-            1200: {
-                spaceBetween: 60,
-                slidesPerView: 5,
-                loop: !0,
-                allowTouchMove: !1,
-                autoplay: { delay: 8e3 },
-            },
+    },
+
+    breakpoints: {
+        1: {
+            spaceBetween: 30,
+            slidesPerView: 2,
+            loop: !0,
+            allowTouchMove: !0,
+            navigation: !1,
         },
-    }),
+        576: {
+            spaceBetween: 60,
+            slidesPerView: 2,
+            loop: !0,
+            allowTouchMove: !0,
+            navigation: !1,
+        },
+        990: {
+            spaceBetween: 60,
+            slidesPerView: 4,
+            loop: !0,
+            allowTouchMove: !0,
+        },
+        1200: {
+            spaceBetween: 60,
+            slidesPerView: 5,
+            loop: !0,
+            allowTouchMove: !1,
+        },
+    },
+};
+
+if (isClientAcceptCookie) {
+    homeBrandsOptions.autoplay = {
+        delay: 4e3,
+        disableOnInteraction: false,
+    };
+    homeBrandsOptions.breakpoints = {
+        1: {
+            spaceBetween: 30,
+            slidesPerView: 2,
+            loop: !0,
+            allowTouchMove: !0,
+            navigation: !1,
+        },
+        576: {
+            spaceBetween: 60,
+            slidesPerView: 2,
+            loop: !0,
+            allowTouchMove: !0,
+            navigation: !1,
+        },
+        990: {
+            spaceBetween: 60,
+            slidesPerView: 4,
+            loop: !0,
+            allowTouchMove: !0,
+            autoplay: { delay: 2e4 },
+        },
+        1200: {
+            spaceBetween: 60,
+            slidesPerView: 5,
+            loop: !0,
+            allowTouchMove: !1,
+            autoplay: { delay: 8e3 },
+        },
+    };
+}
+
+homeBrands && new Swiper(homeBrands),
     ww > 1 && (e = (ww / 100) * 5.72),
     ww > 1920 && (e = 110);
 const travelSlider = document.querySelector(".travelSlider");
@@ -676,3 +758,5 @@ $(window).resize(adjust),
     $(document).ready(function () {
         lc_lightbox(".lightbox-childrenSliderLink ");
     });
+
+export default swiperHomeTop;

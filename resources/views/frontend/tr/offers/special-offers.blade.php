@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Özel Teklifler 2024 - Port Nature Luxury Resort')
 @section('description', 'Özel Teklifler 2024 Port Nature. Antalya Belek herşey dahil lüks resort oteldeki en iyi

@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Mini Club Alacarte Restoran - Port Nature Hotel')
 @section('description', 'Mini Club Alacarte Restoran Port Nature. Antalya Belekte 5 yıldızlı lüks çocuk dostu oteller. Çocuk dostu ayrıcalıklar için web sitemizi ziyaret edin')

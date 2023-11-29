@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Hомера Стандарт - Port Nature Luxury Resort')
 @section('description', 'Hомера Стандарт Port Nature. Откройте для себя преимущества отдыха в лучшем семейном пляжном отеле Кадрие, работающем по системе все включено..')

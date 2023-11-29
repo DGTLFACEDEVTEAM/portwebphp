@@ -1,4 +1,4 @@
-@extends('frontend.tr.layouts.master')
+@extends('layouts.main', ['lang' => 'tr'])
 
 @section('title', 'Eğlenceler - Port Nature Luxury Resort Hotel Spa')
 @section('description', 'Eğlenceler Port Nature Luxury Resort Hotel. Side de eğlenceli en iyi 5 yıldızlı aile otelleri. Odanızı ayırtın ve 2024 etkinliklerimizi kaçırmayın.')

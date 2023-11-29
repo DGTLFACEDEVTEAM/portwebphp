@@ -1,4 +1,4 @@
-@extends('frontend.de.layouts.master')
+@extends('layouts.main', ['lang' => 'de'])
 
 @section('title', 'Far East Alacarte - Port Nature Luxury Resort')
 @section('description', 'Far East Alacarte Restaurant Port Nature. Antalya all inclusive Hotel für Paare. Buchen Sie das Hotel und erleben Sie einen Ultra All Inclusive Urlaub')

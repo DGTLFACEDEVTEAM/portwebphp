@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Политика Данных - Port Nature Luxury Resort')
 @section('description', 'Политика данных Port Nature Resort Hotel. Самые красивые отели Турции Белек. Забронировать Кадрие отель 5 звезд все включено Анталия.')

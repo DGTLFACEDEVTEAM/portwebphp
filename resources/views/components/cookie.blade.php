@@ -398,7 +398,7 @@
             </div>
         </div>
         <div class="cookieConstentActions">
-            <button class="cookieConstentAccept  cookieA">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
+            <button class="cookieConstentAccept cookieA cda">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
             <button class="cookieConstentManage" data-bs-toggle="modal"
                 data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
 
@@ -444,7 +444,7 @@
                             {{-- loop $translation[lang] cookieDesktop .cookieRightB --}}
                             @foreach ($translation[$lang]['cookieDesktop']['cookieRightB'] as $key => $item)
                                 <button type="button"
-                                    class="actionBtns cookieA {{ $item['btnCss'] }}">{{ $item['btnText'] }}</button>
+                                    class="actionBtns cookieA {{ $item['btnCss'] }} caD">{{ $item['btnText'] }}</button>
                             @endforeach
                         </div>
                     </div>
@@ -483,7 +483,7 @@
                         {{-- loop $translation[lang] cookieMobile .cookieActionBtns --}}
                         @foreach ($translation[$lang]['cookieMobile']['cookieActionBtns'] as $key => $item)
                             <button type="button"
-                                class="actionBtns cookieA {{ $item['btnCss'] }}">{{ $item['btnText'] }}</button>
+                                class="actionBtns cookieA {{ $item['btnCss'] }} caM">{{ $item['btnText'] }}</button>
                         @endforeach
 
 
@@ -859,6 +859,8 @@
             }
         }
 
+
+
         .cookieConstentManage {
             color: var(--Gray, #233038);
             text-align: center;
@@ -973,74 +975,21 @@
             }
 
         }
+
+        @media (min-width: 768px) {
+
+            .cookieConstentActions {
+                flex-wrap: nowrap;
+            }
+        }
+
+        @media (max-width: 350px) {
+
+            .cookieConstentAccept,
+            cookieConstentManage {
+                min-width: auto !important;
+            }
+        }
     </style>
-
-    <script>
-        let activeCookieTab = 0;
-
-        $('.cookieBtn').click(function() {
-            $('.cookieBtn').removeClass('active');
-            $(this).addClass('active');
-            activeCookieTab = $(this).index();
-            $('.cookieRightT').addClass('hide');
-            $('.cookieRightT').eq(activeCookieTab).removeClass('hide');
-        });
-
-        // cookieDetailAccorHeader on click change next sibling height 
-        $(document).ready(function() {
-
-            // stop scrolling on html
-            document.body.style.overflow = 'hidden';
-
-
-
-
-            $('.cookieDetailAccorHeader').on('click', function() {
-
-                $(this).children('svg').toggleClass('rotate180');
-                let cookieDetail = $(this).next();
-                console.log(cookieDetail);
-                const isHidden = cookieDetail.hasClass('cdhidden');
-
-                if (isHidden) {
-                    // Calculate the actual height of the content
-                    let height = cookieDetail.prop('scrollHeight');
-                    console.log(height);
-                    // height += 50;
-
-
-                    // Set the height to the actual height
-                    cookieDetail.animate({
-                        height: height,
-                        opacity: 1,
-                    }, 300);
-
-                    // Remove the 'cdhidden' class
-                    cookieDetail.removeClass('cdhidden');
-                } else {
-                    // Set the height back to 0
-                    cookieDetail.animate({
-                        height: 0,
-                        opacity: 0
-                    }, 300);
-
-                    // Add the 'cdhidden' class
-                    cookieDetail.addClass('cdhidden');
-                }
-            });
-
-            // actionBtns on click close modal
-            $('.cookieA').on('click', function() {
-                $('#customizeCookie').modal('hide');
-                $('.cookieConstentContainer').hide();
-                document.body.style.overflow = 'auto';
-                // cookieBackdrop
-                $('.cookieBackdrop').hide();
-                swiperHomeTop.autoplay.delay = 3e3;
-                swiperHomeTop.autoplay.start();
-
-            });
-        });
-    </script>
 
 </div>

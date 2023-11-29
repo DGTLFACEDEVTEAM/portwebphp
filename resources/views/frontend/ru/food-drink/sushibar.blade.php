@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Sushi Bar Alacarte - Port Nature Hotel')
 @section('description', 'Суши-бар Alacarte Port Nature Luxury Resort. Отели Белека 5 звезд для отдыха с детьми ультра все включено. Дешевые отели в Кадрие Белек')

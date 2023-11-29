@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'All Day Dining Alacarte - Port Nature')
 @section('description', 'All Day Dining Alacarte Port Nature. Лучшие отели в Белеке для отдыха с детьми. Позвонить беслплатно для скидок в отеле 5 звезд')

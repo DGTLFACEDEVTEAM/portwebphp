@@ -1,4 +1,4 @@
-@extends('frontend.ru.layouts.master')
+@extends('layouts.main', ['lang' => 'ru'])
 
 @section('title', 'Отели в Анталии - Port Nature Luxury Resort')
 @section('description', 'Лучшие отели в Анталии Port Nature Luxury Resort. Забронировать отели 5 звезд все включено в Белек, Анталия. Специальные скидки')
