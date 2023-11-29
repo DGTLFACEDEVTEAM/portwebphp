@@ -1,5 +1,27 @@
 <!DOCTYPE html>
-<html lang="EN">
+@if (Request::is('blog-sayfasi/*'))
+    @php
+        $lang = 'tr';
+    @endphp
+@elseif (Request::is('blog-page/*'))
+    @php
+        $lang = 'en';
+    @endphp
+@elseif (Request::is('blog-seite/*'))
+    @php
+        $lang = 'de';
+    @endphp
+@elseif (Request::is('blog-stranica/*'))
+    @php
+        $lang = 'ru';
+    @endphp
+@else
+    @php
+        $lang = 'en'
+    @endphp
+@endif
+
+<html lang={{ $lang }}>
 
 <head>
     <meta charset="UTF-8">
@@ -100,7 +122,7 @@
         @include('components.cookie', ['lang' => $lang])
     @endif
 
-    {{-- End--}}
+    {{-- End --}}
 </body>
 
 </html>
