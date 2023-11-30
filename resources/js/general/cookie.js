@@ -10,13 +10,37 @@ $(".cookieBtn").click(function () {
     activeCookieTab = $(this).index();
     $(".cookieRightT").addClass("hide");
     $(".cookieRightT").eq(activeCookieTab).removeClass("hide");
+
+
+    var infoText = $("#infoText");
+    if ($(this).text().trim() === "Cookies" || 'Cookie' || 'Çerezler') {
+        infoText.show();
+    } else {
+        infoText.hide();
+    }
 });
+
+// Event handler for switch toggle
+$('.cookieSwitch').change(function() {
+    let switchLabel = $(this).closest('.switchContainer').find('label');
+    
+    if ($(this).is(':checked')) {
+        switchLabel.text('Active').removeClass('deactivated');
+    } else {
+        switchLabel.text('Disabled').addClass('deactivated');
+    }
+});
+
+
 var htmlElement = document.documentElement;
 // cookieDetailAccorHeader on click change next sibling height
 $(document).ready(function () {
     // stop scrolling on html
     // document.body.style.overflow = "hidden";
-
+    var defaultActiveTab = $(".cookieBtn.active").text().trim();
+    if (defaultActiveTab === "Cookies" || 'Cookie' || 'Çerezler') {
+        $("#infoText").show();
+    }
     let isClientAcceptCookie = Cookies.get("cookieConsent");
     let isClientAcceptPerformanceCookie = Cookies.get("port_c_p");
     let isClientAcceptFunctionalCookie = Cookies.get("port_c_f");
@@ -29,6 +53,16 @@ $(document).ready(function () {
     } else {
         htmlElement.style.overflow = "hidden";
     }
+
+    $('.cookieSwitch').each(function() {
+        let switchLabel = $(this).closest('.switchContainer').find('label');
+        
+        if ($(this).is(':checked')) {
+            switchLabel.text('Active').removeClass('deactivated');
+        } else {
+            switchLabel.text('Disabled').addClass('deactivated');
+        }
+    });
 
     $(".cookieDetailAccorHeader").on("click", function () {
         $(this).children("svg").toggleClass("rotate180");

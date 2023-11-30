@@ -52,9 +52,9 @@ Route::get('mini-club-alacarte-restaurant', [KidsConceptController::class, 'mini
 
 // Route::get('{$offer_slug}', [OfferController::class, 'offerDetail'])->name('offer-detail');
 Route::get('special-offers', [OfferController::class, 'index'])->name('special-offers');
-Route::get('en-antalya-hotels', [OfferController::class, 'antalyaOffers'])->name('antalya-hotels');
-Route::get('en-belek-hotels', [OfferController::class, 'belekOffers'])->name('belek-hotels');
-Route::get('en-turkey-hotels', [OfferController::class, 'turkeyOffers'])->name('turkey-hotels');
+Route::get('antalya-hotels', [OfferController::class, 'antalyaOffers'])->name('antalya-hotels');
+Route::get('belek-hotels', [OfferController::class, 'belekOffers'])->name('belek-hotels');
+Route::get('turkey-hotels', [OfferController::class, 'turkeyOffers'])->name('turkey-hotels');
 
 
 Route::get('food-drinks', [FoodDrinkController::class, 'index'])->name('food-drink');
@@ -115,9 +115,9 @@ Route::get('club-mini',[App\Http\Controllers\Frontend\Russian\KidsConceptControl
 Route::get('alacarte-restoran-mini-club',[App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'mini_club_alacarte'])->name('ru-mini-club-alacarte');
 
 Route::get('specialniye-predlojeniya',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'index'])->name('ru-special-offers');
-Route::get('ru-oteli-v-antalii',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'antalyaOffers'])->name('ru-antalya-hotels');
-Route::get('ru-oteli-belek',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'belekOffers'])->name('ru-belek-hotels');
-Route::get('ru-oteli-turcii',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'turkeyOffers'])->name('ru-turkey-hotels');
+Route::get('oteli-v-antalii',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'antalyaOffers'])->name('ru-antalya-hotels');
+Route::get('oteli-belek',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'belekOffers'])->name('ru-belek-hotels');
+Route::get('oteli-turcii',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'turkeyOffers'])->name('ru-turkey-hotels');
 
 Route::get('eda-napitki',[App\Http\Controllers\Frontend\Russian\FoodDrinkController::class, 'index'])->name('ru-food-drink');
 Route::get('restorani-alacarte', [App\Http\Controllers\Frontend\Russian\FoodDrinkController::class, 'alacarte_restaurants'])->name('ru-alacarte-restaurants');
@@ -178,9 +178,9 @@ Route::get('mini-klup',[App\Http\Controllers\Frontend\Turkish\KidsConceptControl
 Route::get('mini-club-alacarte-restoran',[App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'mini_club_alacarte'])->name('tr-mini-club-alacarte');
 
 Route::get('ozel-teklifler',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'index'])->name('tr-special-offers');
-Route::get('tr-antalya-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'antalyaOffers'])->name('tr-antalya-hotels');
-Route::get('tr-belek-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'belekOffers'])->name('tr-belek-hotels');
-Route::get('tr-turkiye-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'turkeyOffers'])->name('tr-turkey-hotels');
+Route::get('antalya-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'antalyaOffers'])->name('tr-antalya-hotels');
+Route::get('belek-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'belekOffers'])->name('tr-belek-hotels');
+Route::get('turkiye-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'turkeyOffers'])->name('tr-turkey-hotels');
 
 Route::get('yeme-icme',[App\Http\Controllers\Frontend\Turkish\FoodDrinkController::class, 'index'])->name('tr-food-drink');
 Route::get('alacarte-restoranlar', [App\Http\Controllers\Frontend\Turkish\FoodDrinkController::class, 'alacarte_restaurants'])->name('tr-alacarte-restaurants');
@@ -248,9 +248,9 @@ Route::get('miniclub',[App\Http\Controllers\Frontend\Deutsch\KidsConceptControll
 Route::get('alacarte-restaurant-mini-club',[App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'mini_club_alacarte'])->name('de-mini-club-alacarte');
 
 Route::get('angebote',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'index'])->name('de-special-offers');
-Route::get('de-antalya-hotel',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'antalyaOffers'])->name('de-antalya-hotels');
-Route::get('de-hotel-belek',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'belekOffers'])->name('de-belek-hotels');
-Route::get('de-hotel-turkei',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'turkeyOffers'])->name('de-turkey-hotels');
+Route::get('antalya-hotel',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'antalyaOffers'])->name('de-antalya-hotels');
+Route::get('hotel-belek',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'belekOffers'])->name('de-belek-hotels');
+Route::get('hotel-turkei',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'turkeyOffers'])->name('de-turkey-hotels');
 
 Route::get('speisen-getranke',[App\Http\Controllers\Frontend\Deutsch\FoodDrinkController::class, 'index'])->name('de-food-drink');
 Route::get('restaurants-alacarte', [App\Http\Controllers\Frontend\Deutsch\FoodDrinkController::class, 'alacarte_restaurants'])->name('de-alacarte-restaurants');
