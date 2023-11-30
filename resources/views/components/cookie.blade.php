@@ -7,6 +7,9 @@
             'cookieConstentAccept' => 'Accept All Cookies',
             'cookieConstentManage' => 'Manage Cookie Preferences',
             'cookieHeader' => 'Manage Cookie Preferences',
+            'info' => 'To learn more about cookies ',
+             'link' => 'https://portnature.com.tr/kvkk',
+             'linktext' => 'click here',
             'cookieDesktop' => [
                 'cookieBtn' => ['Cookies', 'Strictly Necessary', 'Performance', 'Functional', 'Targeting'],
                 'cookieRightT' => [
@@ -103,12 +106,16 @@
             'cookieConstentAccept' => 'Принять все cookie',
             'cookieConstentManage' => 'Управление настройками cookie',
             'cookieHeader' => 'Управление настройками cookie',
+            'info' => 'Чтобы узнать больше о cookie ',
+            'link' => 'https://portnature.com.tr/kvkk',
+            'linktext' => 'нажмите здесь',
             'cookieDesktop' => [
                 'cookieBtn' => ['Cookie', 'Строго необходимые', 'Аналитические', 'Функциональные', 'Целевые'],
                 'cookieRightT' => [
                     [
                         'title' => 'Что такое cookie?',
                         'desc' => 'Cookie - это небольшие текстовые файлы, которые размещаются на вашем устройстве, после посещения веб-сайтов. Они используются для запоминания ваших предпочтений, таких как информация для входа, и отслеживания производительности сайта. Это обеспечивает более персонализированный и эффективный онлайн-опыт.',
+
                         'switch' => 'None',
                         'css' => 'default',
                     ],
@@ -199,12 +206,16 @@
             'cookieConstentAccept' => 'Alle Cookies akzeptieren',
             'cookieConstentManage' => 'Cookie-Einstellungen verwalten',
             'cookieHeader' => 'Cookie-Einstellungen verwalten',
+            'info' => 'Um mehr über Cookies zu erfahren ',
+                        'link' => 'https://portnature.com.tr/kvkk', 
+                        'linktext' => 'klicken Sie hier',
             'cookieDesktop' => [
                 'cookieBtn' => ['Cookies', 'Unbedingt erforderlich', 'Leistung', 'Funktional', 'Zielgerichtet'],
                 'cookieRightT' => [
                     [
                         'title' => 'Cookie-Einstellungen',
                         'desc' => 'Wenn Sie unsere Website besuchen, können Informationen in Ihrem Browser gespeichert oder abgerufen werden, meist in Form von Cookies. Diese Informationen können sich auf Sie, Ihre Präferenzen oder Ihr Gerät beziehen und werden meist genutzt, um die Website so zu gestalten, wie Sie es erwarten. Die Informationen identifizieren Sie normalerweise nicht direkt, können Ihnen jedoch eine personalisiertere Web-Erfahrung bieten. Da wir Ihr Recht auf Privatsphäre respektieren, können Sie sich entscheiden, bestimmte Cookie-Typen nicht zuzulassen. Klicken Sie auf die verschiedenen Kategorienüberschriften, um mehr zu erfahren und Ihre Einstellungen zu verwalten. Bitte beachten Sie, dass das Blockieren einiger Arten von Cookies Ihre Erfahrung auf der Website und die von uns angebotenen Dienste beeinträchtigen kann.',
+
                         'switch' => 'None',
                         'css' => 'default',
                     ],
@@ -295,12 +306,16 @@
             'cookieConstentAccept' => 'Tüm Çerezleri Kabul Et',
             'cookieConstentManage' => 'Çerez Tercihlerini Yönet',
             'cookieHeader' => 'Çerez Tercihlerini Yönet',
+            'info' => 'Çerezler hakkında daha fazla bilgi için ',
+                        'link' => 'https://portnature.com.tr/kvkk',
+                        'linktext' => 'buraya Tıklayın.',
             'cookieDesktop' => [
                 'cookieBtn' => ['Çerezler', 'Zorunlu Çerezler', 'Performans', 'İşlevsel', 'Hedefleme'],
                 'cookieRightT' => [
                     [
                         'title' => 'Çerez Ayarları',
                         'desc' => 'Web sitemizi ziyaret ettiğinizde, çoğunlukla çerezler şeklinde tarayıcınızda bilgi depolanabilir veya alınabilir. Bu bilgiler sizin, tercihleriniz veya cihazınız hakkında olabilir ve genellikle siteyi beklediğiniz gibi çalıştırmak için kullanılır. Bilgiler genellikle sizi doğrudan tanımlamaz, ancak size daha kişiselleştirilmiş bir web deneyimi sunabilir. Gizlilik hakkınıza saygı duyduğumuz için, bazı çerez türlerini kabul etmemeyi tercih edebilirsiniz. Tercihlerinizi yönetmek ve daha fazla bilgi edinmek için farklı kategori başlıklarına tıklayın. Lütfen unutmayın, bazı çerez türlerini engellemek sitenin ve sunabileceğimiz hizmetlerin deneyiminizi etkileyebilir.',
+
                         'switch' => 'None',
                         'css' => 'default',
                     ],
@@ -431,8 +446,9 @@
                                     <h2>{{ $item['title'] }}</h2>
                                     <p>{{ $item['desc'] }}</p>
                                 </div>
+                                <a href=""></a>
                                 <div>
-                                    <p id="infoText" style="display: none;">Deneme</p>
+                                    <p id="infoText" style="display: none; font-weight:700;">{!! $translation[$lang]['info'] !!} <a href="{!! $translation[$lang]['link'] !!}">{!! $translation[$lang]['linktext'] !!}</a></p>
                                 </div>
                                 @if ($item['switch'] !== 'None')
                                     <div class="form-check form-switch switchContainer disabledC">
@@ -659,11 +675,16 @@
             padding: 0 !important;
             display: flex !important;
             justify-content: end !important;
-            color: #73CDB1;
+            color: #198c68;
             align-items: center;
         }
 
         .switchContainer label {
+            font-size: 24px !important;
+        }
+
+        .deactivated {
+            color: grey;
             font-size: 24px !important;
         }
 
@@ -680,14 +701,14 @@
 
 
         .form-check-input:checked {
-            background-color: #73CDB1 !important;
+            background-color: #198c68 !important;
             border: none !important;
         }
 
         .form-check-input:checked:focus {
             box-shadow: none !important;
             /* border: none !important; */
-            border-color: #73CDB1 !important;
+            border-color: #198c68 !important;
             outline: 0 !important;
             /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25); */
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
@@ -697,7 +718,7 @@
         .form-check-input:focus {
             box-shadow: none !important;
             /* border: none !important; */
-            border-color: #73CDB1 !important;
+            border-color: gray !important;
             outline: 0 !important;
             /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25); */
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e") !important;
