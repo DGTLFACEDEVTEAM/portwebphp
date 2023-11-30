@@ -56,17 +56,6 @@
                 </article>
             </div>
             <div class="swiper-slide">
-                <a class="" href="{{ asset('assets/frontend/images/beach/4.webp') }}">
-                    <figure>
-                        <img src="{{ asset('assets/frontend/images/beach/4.webp') }}" alt="coffee"/>
-                    </figure>
-                </a>
-                <article>
-                    <p>Huzurun lüks ile buluştuğu <br> özel plaj.</p>
-                    <span>Port Nature Luxury Resort Hotel</span>
-                </article>
-            </div>
-            <div class="swiper-slide">
                 <a class="" href="{{ asset('assets/frontend/images/beach/5.webp') }}">
                     <figure>
                         <img src="{{ asset('assets/frontend/images/beach/5.webp') }}" alt="coffee"/>
@@ -121,17 +110,7 @@
                     <span>Port Nature Luxury Resort Hotel</span>
                 </article>
             </div>
-            <div class="swiper-slide">
-                <a class="" href="{{ asset('assets/frontend/images/beach/10.webp') }}">
-                    <figure>
-                        <img src="{{ asset('assets/frontend/images/beach/10.webp') }}" alt="coffee"/>
-                    </figure>
-                </a>
-                <article>
-                    <p>Huzurun lüks ile buluştuğu <br> özel plaj.</p>
-                    <span>Port Nature Luxury Resort Hotel</span>
-                </article>
-            </div>
+
             <div class="swiper-slide">
                 <a class="" href="{{ asset('assets/frontend/images/beach/11.webp') }}">
                     <figure>
