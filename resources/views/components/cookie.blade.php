@@ -420,7 +420,8 @@
                     <div class="cookieLeft">
                         @foreach ($translation[$lang]['cookieDesktop']['cookieBtn'] as $key => $item)
                             <button type="button"
-                                class="cookieBtn {{ $key == 0 ? 'active' : '' }}">{{ $item }}</button>
+                                class="cookieBtn {{ $key == 0 ? 'active' : '' }}">{{ $item }}
+                            </button>
                         @endforeach
                     </div>
                     <div class="cookieRight">
@@ -429,6 +430,9 @@
                                 <div>
                                     <h2>{{ $item['title'] }}</h2>
                                     <p>{{ $item['desc'] }}</p>
+                                </div>
+                                <div>
+                                    <p id="infoText" style="display: none;">Deneme</p>
                                 </div>
                                 @if ($item['switch'] !== 'None')
                                     <div class="form-check form-switch switchContainer disabledC">

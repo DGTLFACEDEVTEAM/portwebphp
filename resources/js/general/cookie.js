@@ -10,13 +10,24 @@ $(".cookieBtn").click(function () {
     activeCookieTab = $(this).index();
     $(".cookieRightT").addClass("hide");
     $(".cookieRightT").eq(activeCookieTab).removeClass("hide");
+
+
+    var infoText = $("#infoText");
+    if ($(this).text().trim() === "Cookies") {
+        infoText.show();
+    } else {
+        infoText.hide();
+    }
 });
 var htmlElement = document.documentElement;
 // cookieDetailAccorHeader on click change next sibling height
 $(document).ready(function () {
     // stop scrolling on html
     // document.body.style.overflow = "hidden";
-
+    var defaultActiveTab = $(".cookieBtn.active").text().trim();
+    if (defaultActiveTab === "Cookies") {
+        $("#infoText").show();
+    }
     let isClientAcceptCookie = Cookies.get("cookieConsent");
     let isClientAcceptPerformanceCookie = Cookies.get("port_c_p");
     let isClientAcceptFunctionalCookie = Cookies.get("port_c_f");
