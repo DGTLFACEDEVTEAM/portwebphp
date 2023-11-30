@@ -17,7 +17,7 @@
     @endphp
 @else
     @php
-        $lang = 'en'
+        $lang = 'en';
     @endphp
 @endif
 
