@@ -56,17 +56,6 @@
                 </article>
             </div>
             <div class="swiper-slide">
-                <a class="" href="{{ asset('assets/frontend/images/beach/4.webp') }}">
-                    <figure>
-                        <img src="{{ asset('assets/frontend/images/beach/4.webp') }}" alt="coffee"/>
-                    </figure>
-                </a>
-                <article>
-                    <p>Der schöne Privatstrand <br> wo Entspannung auf Luxus trifft.</p>
-                    <span>Port Nature Luxury Resort Hotel</span>
-                </article>
-            </div>
-            <div class="swiper-slide">
                 <a class="" href="{{ asset('assets/frontend/images/beach/5.webp') }}">
                     <figure>
                         <img src="{{ asset('assets/frontend/images/beach/5.webp') }}" alt="coffee"/>
@@ -114,17 +103,6 @@
                 <a class="" href="{{ asset('assets/frontend/images/beach/9.webp') }}">
                     <figure>
                         <img src="{{ asset('assets/frontend/images/beach/9.webp') }}" alt="coffee"/>
-                    </figure>
-                </a>
-                <article>
-                    <p>Der schöne Privatstrand <br> wo Entspannung auf Luxus trifft.</p>
-                    <span>Port Nature Luxury Resort Hotel</span>
-                </article>
-            </div>
-            <div class="swiper-slide">
-                <a class="" href="{{ asset('assets/frontend/images/beach/10.webp') }}">
-                    <figure>
-                        <img src="{{ asset('assets/frontend/images/beach/10.webp') }}" alt="coffee"/>
                     </figure>
                 </a>
                 <article>

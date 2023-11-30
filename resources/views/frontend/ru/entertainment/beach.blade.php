@@ -55,17 +55,7 @@
                     <span>Port Nature Luxury Resort Hotel</span>
                 </article>
             </div>
-            <div class="swiper-slide">
-                <a class="" href="{{ asset('assets/frontend/images/beach/4.webp') }}">
-                    <figure>
-                        <img src="{{ asset('assets/frontend/images/beach/4.webp') }}" alt="coffee"/>
-                    </figure>
-                </a>
-                <article>
-                    <p>Прекрасный частный пляж <br>где отдых сочетается с роскошью.</p>
-                    <span>Port Nature Luxury Resort Hotel</span>
-                </article>
-            </div>
+
             <div class="swiper-slide">
                 <a class="" href="{{ asset('assets/frontend/images/beach/5.webp') }}">
                     <figure>
@@ -121,17 +111,7 @@
                     <span>Port Nature Luxury Resort Hotel</span>
                 </article>
             </div>
-            <div class="swiper-slide">
-                <a class="" href="{{ asset('assets/frontend/images/beach/10.webp') }}">
-                    <figure>
-                        <img src="{{ asset('assets/frontend/images/beach/10.webp') }}" alt="coffee"/>
-                    </figure>
-                </a>
-                <article>
-                    <p>Прекрасный частный пляж <br>где отдых сочетается с роскошью.</p>
-                    <span>Port Nature Luxury Resort Hotel</span>
-                </article>
-            </div>
+
             <div class="swiper-slide">
                 <a class="" href="{{ asset('assets/frontend/images/beach/11.webp') }}">
                     <figure>
