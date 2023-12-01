@@ -36,14 +36,14 @@
     "src": "resources/css/blogdetail.css",
     "isEntry": true
   },
-  "resources/css/style.css": {
-    "file": "assets/style-7ac8091e.css",
-    "src": "resources/css/style.css",
-    "isEntry": true
-  },
   "resources/css/blogf.css": {
     "file": "assets/blogf-0f62f877.css",
     "src": "resources/css/blogf.css",
+    "isEntry": true
+  },
+  "resources/css/style.css": {
+    "file": "assets/style-7ac8091e.css",
+    "src": "resources/css/style.css",
     "isEntry": true
   },
   "resources/css/app.css": {
