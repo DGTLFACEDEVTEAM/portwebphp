@@ -3,6 +3,10 @@
     "file": "assets/blogHero-3fa0f45f.webp",
     "src": "public/assets/frontend/images/blog/blogHero.webp"
   },
+  "public/assets/frontend/images/home/footer-mobile-bg.webp": {
+    "file": "assets/footer-mobile-bg-71dc2bf3.webp",
+    "src": "public/assets/frontend/images/home/footer-mobile-bg.webp"
+  },
   "public/assets/frontend/libs/css/fonts/lc_lightbox.eot": {
     "file": "assets/lc_lightbox-8c8a6d3f.eot",
     "src": "public/assets/frontend/libs/css/fonts/lc_lightbox.eot"
@@ -10,10 +14,6 @@
   "public/assets/frontend/images/footerBg.webp": {
     "file": "assets/footerBg-3e5e2fac.webp",
     "src": "public/assets/frontend/images/footerBg.webp"
-  },
-  "public/assets/frontend/images/home/footer-mobile-bg.webp": {
-    "file": "assets/footer-mobile-bg-71dc2bf3.webp",
-    "src": "public/assets/frontend/images/home/footer-mobile-bg.webp"
   },
   "public/assets/frontend/images/footer-tablet.webp": {
     "file": "assets/footer-tablet-20be9d10.webp",
@@ -36,14 +36,14 @@
     "src": "resources/css/blogdetail.css",
     "isEntry": true
   },
-  "resources/css/blogf.css": {
-    "file": "assets/blogf-0f62f877.css",
-    "src": "resources/css/blogf.css",
-    "isEntry": true
-  },
   "resources/css/style.css": {
     "file": "assets/style-7ac8091e.css",
     "src": "resources/css/style.css",
+    "isEntry": true
+  },
+  "resources/css/blogf.css": {
+    "file": "assets/blogf-0f62f877.css",
+    "src": "resources/css/blogf.css",
     "isEntry": true
   },
   "resources/css/app.css": {
@@ -52,7 +52,7 @@
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-a05caadd.js",
+    "file": "assets/app-e3dd3a5e.js",
     "src": "resources/js/app.js",
     "isEntry": true
   }

@@ -26,12 +26,15 @@ function lockScroll() {
     $body.css({ "margin-right": n, "margin-bottom": t });
 }
 function unlockScroll() {
-    ($html = $("html")),
-        ($body = $("body")),
-        $html.css("overflow", $html.data("previous-overflow"));
+    var $html = $("html"),
+        $body = $("body");
+
+    $html.css("overflow", $html.data("previous-overflow"));
+
     var o = $html.data("scroll-position");
-    window.scrollTo(o[0], o[1]),
-        $body.css({ "margin-right": 0, "margin-bottom": 0 });
+    window.scrollTo(o[0], o[1]);
+
+    $body.css({ "margin-right": 0, "margin-bottom": 0 });
 }
 $(document).ready(function () {
     $(".mainLink").on("click", function () {
