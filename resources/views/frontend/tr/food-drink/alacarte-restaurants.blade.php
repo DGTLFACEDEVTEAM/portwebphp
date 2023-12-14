@@ -68,7 +68,7 @@
                     <img src="{{ asset('assets/frontend/images/alacarte/alldaydining.webp') }}" alt="alldaydining"/></a>
                     <div class="restaurantsHeader">
                         <img class="alacarteSvg" src="{{ asset('assets/frontend/images/alacarte/alldayicon.svg') }}" alt="alacarte"/>
-                        <h3>All Day Dining A'La Carte</h3>
+                        <h3>All Day DINING A'La Carte</h3>
                     </div>
                     <div class="card-text-wrapper">
                         <p class="card-text">Yemeği kaçırmayacaksınız! Bütün günü lezzetli yemeklerle geçirebilirsiniz.</p>
@@ -82,7 +82,7 @@
                 <img src="{{ asset('assets/frontend/images/alacarte/sushibar.webp') }}" alt="sushibar"/></a>
                 <div class="restaurantsHeader">
                     <img class="alacarteSvg" src="{{ asset('assets/frontend/images/alacarte/sushiicon.svg') }}" alt="alacarte"/>
-                    <h3>Sushi Bar</h3>
+                    <h3>Sushı Bar</h3>
                 </div>
                 <div class="card-text-wrapper">
                     <p class="card-text">Yetenekli şefler tarafından hazırlanmış çok çeşitli suşi ruloları sunan eşsiz bir yemek deneyimi.</p>
@@ -96,7 +96,7 @@
                 <img src="{{ asset('assets/frontend/images/alacarte/italian.webp') }}" alt="italian"/></a>
                 <div class="restaurantsHeader">
                     <img class="alacarteSvg" src="{{ asset('assets/frontend/images/alacarte/italianicon.svg') }}" alt="alacarte"/>
-                    <h3>Italian A'la Carte</h3>
+                    <h3>ITALIAN A'la Carte</h3>
                 </div>
                 <div class="card-text-wrapper">
                     <p class="card-text">İtalyan mutfağı, sadeliği, taze malzemeleri ve cesur tatları ile karakterize olmuştur.</p>
@@ -124,7 +124,7 @@
                 <img src="{{ asset('assets/frontend/images/alacarte/seaside.webp') }}" alt="seaside"/></a>
                 <div class="restaurantsHeader">
                     <img class="alacarteSvg" src="{{ asset('assets/frontend/images/alacarte/seasideicon.svg') }}" alt="alacarte"/>
-                    <h3>Seaside A'La Carte</h3>
+                    <h3>SEASIDE A'La Carte</h3>
                 </div>
                 <div class="card-text-wrapper">
                     <p class="card-text">En taze balıklar şeflerimizin usta ellerinde ve deniz manzarası sizlerin önünde.</p>
@@ -138,7 +138,7 @@
                 <img src="{{ asset('assets/frontend/images/alacarte/miniclub.webp') }}" alt="miniclub"/></a>
                 <div class="restaurantsHeader">
                     <img class="alacarteSvg" src="{{ asset('assets/frontend/images/alacarte/miniclubicon.svg') }}" alt="alacarte"/>
-                    <h3>Mini Club A'La Carte</h3>
+                    <h3>MINI Club A'La Carte</h3>
                 </div>
                 <div class="card-text-wrapper">
                     <p class="card-text">Çocuğunuz, çocuklara özel hazırlanmış menülerden kendi yiyeceklerini seçebilir.</p>

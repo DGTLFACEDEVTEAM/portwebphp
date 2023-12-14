@@ -118,6 +118,13 @@
     </div>
 </div>
 
+{{-- 360 View --}}
+<div class="room360">
+    <p>360° Tur</p>
+    <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7XTnz?logo=1&info=1&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>
+</div>
+    {{-- 360 View End --}}
+
 {{-- Contact --}}
 @include('frontend.tr.layouts.contact')
 {{-- Contact End --}}
@@ -198,4 +205,5 @@
 <link rel="stylesheet" href="{{ asset('assets/frontend/css/barsSpecialOffer.css') }}"/>
 <link rel="stylesheet" href="{{ asset('assets/frontend/libs/css/lc_lightbox.min.css') }}"/>
 <link rel="stylesheet" href="{{ asset('assets/frontend/libs/skins/light.css') }}"/>
+<link rel="stylesheet" href="{{ asset('assets/frontend/css/restaurantsDetail.css') }}"/>
 @endsection
