@@ -27,4 +27,4 @@ jobs:
           server: 51.178.176.119
           username: bookho
           password: XU9vIqzyvihU
-          server-dir: /home/bookho/portnature/
+          server-dir: /portnature/
