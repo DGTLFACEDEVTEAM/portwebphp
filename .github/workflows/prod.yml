@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [prod]
+    branches: [dev]
 
 name: 🚀 Prod deploy to deploy-fr
 
