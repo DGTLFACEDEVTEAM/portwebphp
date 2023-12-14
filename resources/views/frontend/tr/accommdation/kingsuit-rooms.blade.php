@@ -268,7 +268,9 @@
 
     </div>
 </div>
-{{-- Features End --}}    {{-- 360 View --}}
+{{-- Features End --}}  
+
+{{-- 360 View --}}
 <div class="room360">
     <p>360° Tur</p>
     <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7JqfK?logo=-1&info=0&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>

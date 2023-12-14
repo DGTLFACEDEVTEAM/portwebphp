@@ -61,7 +61,7 @@
                     <img class="barCafeImg"  src="{{ asset('assets/frontend/images/barCafes/Script.webp') }}" alt="chivas"/>
                     <div class="restaurantsHeader">
                         <img class="barSvg" src="{{ asset('assets/frontend/images/barCafes/chivasicon.svg') }}" alt="chivas"/>
-                        <h3>Script Chivas Lounge</h3>
+                        <h3>SCRIPT Chivas Lounge</h3>
                     </div>
                     <article>
                         <p>Gerçek viski severler için sadece Chivas Regal yeter. 18 yıllık Chivas ise en seçkin viskilerdendir.</p>
@@ -96,7 +96,7 @@
                 <img class="barCafeImg"  src="{{ asset('assets/frontend/images/barCafes/Irish%20Pub.webp') }}" alt="irishpub"/>
                 <div class="restaurantsHeader">
                     <img class="barSvg" src="{{ asset('assets/frontend/images/barCafes/beer.svg') }}" alt="irishpub"/>
-                    <h3>Irish Pub</h3>
+                    <h3>IRISH Pub</h3>
                 </div>
                 <article>
                     <p>Biraların akışı, dostane ortam ve eşsiz alkoller, sizleri bizim Irish pub'ımıza bekliyor.</p>
@@ -164,7 +164,7 @@
                 <img class="barCafeImg"  src="{{ asset('assets/frontend/images/kitkat/kitkatSlider-3.webp') }}" alt="kitkat"/>
                 <div class="restaurantsHeader">
                     <img class="barSvg" src="{{ asset('assets/frontend/images/barCafes/kitkaticon.svg') }}" alt="kitkaticon"/>
-                    <h3>Kit Kat</h3>
+                    <h3>KIT Kat</h3>
                 </div>
                 <article>
                     <p>Her ısırık; tat, çocukluk, homojen çikolata ve bildiğiniz Kit Kat içerir. </p>

@@ -118,6 +118,13 @@
     </div>
 </div>
 
+{{-- 360 View --}}
+<div class="room360">
+    <p>360° Тур</p>
+    <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7XTnz?logo=1&info=1&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>
+</div>
+    {{-- 360 View End --}}
+
 {{-- Contact --}}
 @include('frontend.ru.layouts.contact')
 {{-- Contact End --}}
