@@ -24,11 +24,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.4
         with:
-          server: 23.88.66.208
-          username: ${{ secrets.DEPLOYFR_USERNAME  }}
-          password: ${{ secrets.DEPLOYFR_PASS  }}
+          server: 51.178.176.119
+          username: bookho
+          password: XU9vIqzyvihU
           server-dir: public_html/
-          exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
