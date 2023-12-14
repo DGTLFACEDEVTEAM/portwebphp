@@ -1,0 +1,30 @@
+on:
+  push:
+    branches: [prod]
+
+name: 🚀 Prod deploy to deploy-fr
+
+jobs:
+  web-deploy:
+    name: 🎉 Deploy - development
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+      - name: Use Node.js 14
+        uses: actions/setup-node@v4
+        with:
+          node-version: "16"
+
+      - name: 🔨 Build Project
+        run: |
+          npm install
+          npm run build
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.3.4
+        with:
+          server: 51.178.176.119
+          username: bookho
+          password: XU9vIqzyvihU
+          server-dir: public_html/
