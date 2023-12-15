@@ -223,7 +223,7 @@ $(document).ready(function () {
     }
 
     var gtmContainerId = "GTM-TZ53DS5";
-    var gaMeasurementId = "G-FH87DE17XF";
+    // var gaMeasurementId = "G-FH87DE17XF";
     var yandexMetricaId = 92210931;
     var facebookPixelId = "721299109355968";
 
