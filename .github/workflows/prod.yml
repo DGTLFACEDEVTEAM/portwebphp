@@ -37,6 +37,10 @@ jobs:
             **/public/assets/images/**
             **/public/assets/libs
             **/public/assets/libs/**
+            **/public/assets/admin/images/**
+            **/public/assets/admin/images
+            **/public/assets/admin/libs/**
+            **/public/assets/admin/libs
             **/vendor
             **/vendor/**
             **/storage
