@@ -223,39 +223,35 @@ $(document).ready(function () {
     }
 
     var gtmContainerId = "GTM-TZ53DS5";
-    var gaMeasurementId = "G-FH87DE17XF";
+    // var gaMeasurementId = "G-FH87DE17XF";
     var yandexMetricaId = 92210931;
     var facebookPixelId = "721299109355968";
 
+    var isGtmActive = true;
+    var isYandexMetricaActive = false;
+    var isFacebookPixelActive = false;
+
     if (isClientAcceptPerformanceCookie == "true" || isClientAcceptPerformanceCookie == true) {
-        activateGA4(gaMeasurementId);
-        activateYandexMetrica(yandexMetricaId);
+        isYandexMetricaActive ? activateYandexMetrica(yandexMetricaId) : null;
     }
 
     if (isClientAcceptFunctionalCookie == "true" || isClientAcceptFunctionalCookie == true) {
-        activateGTM(gtmContainerId);
+        isGtmActive ? activateGTM(gtmContainerId) : null;
     }
 
     if (isClientAcceptTargetingCookie == "true" || isClientAcceptTargetingCookie == true) {
-        activateFacebookPixel(facebookPixelId);
+        isFacebookPixelActive ? activateFacebookPixel(facebookPixelId) : null;
     }
 
-    //==================== cenk cookies ============================
+
     let cookieValues = {};
-
-    // Stringify the JSON object
-
-
-    // Store the stringified object in a cookie
-
 
     // Example of retrieving and parsing the cookie
     let ccpCookie = Cookies.get("ccp");
     if (ccpCookie) {
         let ccpValues = JSON.parse(ccpCookie);
-        // Now you can access the individual values like ccpValues.port_c_p, ccpValues.port_c_f, etc.
     }
-    //==================== cenk cookies ============================
+
 
     $(".cookieA").on("click", function () {
         htmlElement.style.overflow = "auto";
@@ -316,8 +312,8 @@ $(document).ready(function () {
                     // if cookieModalInputsArray[1] is true that mean user accepted performance cookies
                     // performance cookies are google analytics and yandex metrica
                     if (item == true) {
-                        activateGA4(gaMeasurementId);
-                        activateYandexMetrica(yandexMetricaId);
+
+                        isYandexMetricaActive ? activateYandexMetrica(yandexMetricaId) : null;
                         cookieValues.performance = true
                     } else {
                         cookieValues.performance = false
@@ -328,7 +324,7 @@ $(document).ready(function () {
                     // if cookieModalInputsArray[2] is true that mean user accepted functional cookies
                     // functional cookies are google tag manager
                     if (item == true) {
-                        activateGTM(gtmContainerId);
+                        isGtmActive ? activateGTM(gtmContainerId) : null;
                         cookieValues.functional = true
                     } else {
                         cookieValues.functional = false
@@ -338,7 +334,7 @@ $(document).ready(function () {
                     // if cookieModalInputsArray[3] is true that mean user accepted targeting cookies
                     // targeting cookies are facebook pixel
                     if (item == true) {
-                        activateFacebookPixel(facebookPixelId);
+                        isFacebookPixelActive ? activateFacebookPixel(facebookPixelId) : null;
                         cookieValues.targeting = true
                     } else {
                         cookieValues.targeting = false
