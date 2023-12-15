@@ -11,9 +11,8 @@ $(".cookieBtn").click(function () {
     $(".cookieRightT").addClass("hide");
     $(".cookieRightT").eq(activeCookieTab).removeClass("hide");
 
-
     var infoText = $("#infoText");
-    if ($(this).text().trim() === "Cookies" || 'Cookie' || 'Çerezler') {
+    if ($(this).text().trim() === "Cookies" || "Cookie" || "Çerezler") {
         infoText.show();
     } else {
         infoText.hide();
@@ -21,16 +20,15 @@ $(".cookieBtn").click(function () {
 });
 
 // Event handler for switch toggle
-$('.cookieSwitch').change(function() {
-    let switchLabel = $(this).closest('.switchContainer').find('label');
-    
-    if ($(this).is(':checked')) {
-        switchLabel.text('Active').removeClass('deactivated');
+$(".cookieSwitch").change(function () {
+    let switchLabel = $(this).closest(".switchContainer").find("label");
+
+    if ($(this).is(":checked")) {
+        switchLabel.text("Active").removeClass("deactivated");
     } else {
-        switchLabel.text('Disabled').addClass('deactivated');
+        switchLabel.text("Disabled").addClass("deactivated");
     }
 });
-
 
 var htmlElement = document.documentElement;
 // cookieDetailAccorHeader on click change next sibling height
@@ -38,29 +36,57 @@ $(document).ready(function () {
     // stop scrolling on html
     // document.body.style.overflow = "hidden";
     var defaultActiveTab = $(".cookieBtn.active").text().trim();
-    if (defaultActiveTab === "Cookies" || 'Cookie' || 'Çerezler') {
+    if (defaultActiveTab === "Cookies" || "Cookie" || "Çerezler") {
         $("#infoText").show();
     }
-    let isClientAcceptCookie = Cookies.get("cookieConsent");
-    let isClientAcceptPerformanceCookie = Cookies.get("port_c_p");
-    let isClientAcceptFunctionalCookie = Cookies.get("port_c_f");
-    let isClientAcceptTargetingCookie = Cookies.get("port_c_t");
+    let isClientAcceptCookie = Cookies.get("CCP");
+
+    let parseCCP = null;
+
+    if (isClientAcceptCookie !== undefined) {
+        let decodeCCP = atob(isClientAcceptCookie);
+        parseCCP = JSON.parse(decodeCCP);
+    }
+
+
+    let isClientAcceptPerformanceCookie = parseCCP !== null ? parseCCP.performance : false;
+    let isClientAcceptFunctionalCookie = parseCCP !== null ? parseCCP.functional : false;
+    let isClientAcceptTargetingCookie = parseCCP !== null ? parseCCP.targeting : false;
 
 
 
-    if (isClientAcceptCookie == "true") {
+    if (isClientAcceptCookie !== undefined && isClientAcceptCookie.length > 0) {
+        console.log("isClientAcceptCookie", isClientAcceptCookie);
         htmlElement.style.overflow = "auto";
     } else {
         htmlElement.style.overflow = "hidden";
     }
+    // cenk cookies
+    function getDecodedCookieValues(cookieName) {
+        let cookieValue = Cookies.get(cookieName);
+        if (cookieValue) {
+            // Decode from base64 and parse the JSON
+            try {
+                let decodedValue = atob(cookieValue);
+                return JSON.parse(decodedValue);
+            } catch (e) {
+                console.error("Error decoding and parsing cookie value", e);
+            }
+        }
+        return null;
+    }
 
-    $('.cookieSwitch').each(function() {
-        let switchLabel = $(this).closest('.switchContainer').find('label');
-        
-        if ($(this).is(':checked')) {
-            switchLabel.text('Active').removeClass('deactivated');
+    // Use the function to get the cookie values
+    let ccpValues = getDecodedCookieValues("CCP");
+
+
+    $(".cookieSwitch").each(function () {
+        let switchLabel = $(this).closest(".switchContainer").find("label");
+
+        if ($(this).is(":checked")) {
+            switchLabel.text("Active").removeClass("deactivated");
         } else {
-            switchLabel.text('Disabled').addClass('deactivated');
+            switchLabel.text("Disabled").addClass("deactivated");
         }
     });
 
@@ -201,18 +227,35 @@ $(document).ready(function () {
     var yandexMetricaId = 92210931;
     var facebookPixelId = "721299109355968";
 
-    if (isClientAcceptPerformanceCookie == "true") {
+    if (isClientAcceptPerformanceCookie == "true" || isClientAcceptPerformanceCookie == true) {
         activateGA4(gaMeasurementId);
         activateYandexMetrica(yandexMetricaId);
     }
 
-    if (isClientAcceptFunctionalCookie == "true") {
+    if (isClientAcceptFunctionalCookie == "true" || isClientAcceptFunctionalCookie == true) {
         activateGTM(gtmContainerId);
     }
 
-    if (isClientAcceptTargetingCookie == "true") {
+    if (isClientAcceptTargetingCookie == "true" || isClientAcceptTargetingCookie == true) {
         activateFacebookPixel(facebookPixelId);
     }
+
+    //==================== cenk cookies ============================
+    let cookieValues = {};
+
+    // Stringify the JSON object
+
+
+    // Store the stringified object in a cookie
+
+
+    // Example of retrieving and parsing the cookie
+    let ccpCookie = Cookies.get("ccp");
+    if (ccpCookie) {
+        let ccpValues = JSON.parse(ccpCookie);
+        // Now you can access the individual values like ccpValues.port_c_p, ccpValues.port_c_f, etc.
+    }
+    //==================== cenk cookies ============================
 
     $(".cookieA").on("click", function () {
         htmlElement.style.overflow = "auto";
@@ -225,7 +268,15 @@ $(document).ready(function () {
         let cookieModal = $(".cookieModal");
         let cookieModalInputsArray = [];
 
-        Cookies.set("cookieConsent", "true", { expires: 365 });
+        //Cookies.set("cookieConsent", "true", { expires: 365 });
+        ccpValues = getDecodedCookieValues("CCP");
+
+        // Use the updated ccpValues to control the overflow
+        if (ccpValues && ccpValues.cookieConsent === "true") {
+            htmlElement.style.overflow = "auto";
+        } else {
+            htmlElement.style.overflow = "auto";
+        }
 
         let classList = this.classList;
         if (classList.contains("caD")) {
@@ -263,17 +314,13 @@ $(document).ready(function () {
                     break;
                 case 1:
                     // if cookieModalInputsArray[1] is true that mean user accepted performance cookies
-                    // performence cookies are google analytics and yandex metrica
+                    // performance cookies are google analytics and yandex metrica
                     if (item == true) {
                         activateGA4(gaMeasurementId);
                         activateYandexMetrica(yandexMetricaId);
-                        Cookies.set("port_c_p", "true", {
-                            expires: 365,
-                        });
+                        cookieValues.performance = true
                     } else {
-                        Cookies.set("port_c_p", "false", {
-                            expires: 365,
-                        });
+                        cookieValues.performance = false
                     }
 
                     break;
@@ -282,13 +329,9 @@ $(document).ready(function () {
                     // functional cookies are google tag manager
                     if (item == true) {
                         activateGTM(gtmContainerId);
-                        Cookies.set("port_c_f", "true", {
-                            expires: 365,
-                        });
+                        cookieValues.functional = true
                     } else {
-                        Cookies.set("port_c_f", "false", {
-                            expires: 365,
-                        });
+                        cookieValues.functional = false
                     }
                     break;
                 case 3:
@@ -296,19 +339,21 @@ $(document).ready(function () {
                     // targeting cookies are facebook pixel
                     if (item == true) {
                         activateFacebookPixel(facebookPixelId);
-                        Cookies.set("port_c_t", "true", {
-                            expires: 365,
-                        });
+                        cookieValues.targeting = true
                     } else {
-                        Cookies.set("port_c_t", "false", {
-                            expires: 365,
-                        });
+                        cookieValues.targeting = false
                     }
 
                     break;
                 default:
                     break;
             }
+
+            let cookieString = JSON.stringify(cookieValues);
+            let base64CookieString = btoa(cookieString);
+            Cookies.set("CCP", base64CookieString, { expires: 365 });
+
+
         });
 
         swiperAutoPlayStarter(swiperHomeTop);

@@ -454,7 +454,7 @@
                                     <div class="form-check form-switch switchContainer disabledC">
                                         <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
                                         <input class="form-check-input cookieSwitch" role="switch" type="checkbox"
-                                            id="flexSwitchCheckChecked" checked
+                                            id="flexSwitchCheckChecked" {{ $key == 1 ? "checked" : ""}}
                                             {{ $item['switch'] == 'Disable' ? 'disabled' : '' }}>
                                     </div>
                                 @endif
