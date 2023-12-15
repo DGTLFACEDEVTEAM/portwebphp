@@ -36,3 +36,7 @@ jobs:
             /public/assets/libs/*
             /vendor/*
             /storage/*
+            node_modules/*
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
