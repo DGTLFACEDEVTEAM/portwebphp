@@ -29,14 +29,14 @@ jobs:
           password: XU9vIqzyvihU
           server-dir: /portnature/
           exclude: |
-            /database/*
-            /public/phpmyadmin
-            /public/phpmyadmin/*
-            /public/assets/images/*
-            /public/assets/libs/*
-            /vendor/*
-            /storage/*
-            node_modules/*
+            **/database/**
+            **/public/phpmyadmin
+            **/public/phpmyadmin/**
+            **/public/assets/images/**
+            **/public/assets/libs/**
+            **/vendor/**
+            **/storage/**
+            **node_modules/**
             **/.git*
             **/.git*/**
             **/node_modules/**
