@@ -33,10 +33,14 @@ jobs:
             **/database
             **/public/phpmyadmin
             **/public/phpmyadmin/**
-            **/public/assets/images
-            **/public/assets/images/**
-            **/public/assets/libs
-            **/public/assets/libs/**
+            **/public/assets/frontend/images
+            **/public/assets/frontend/images/**
+            **/public/assets/frontend/video
+            **/public/assets/frontend/video/**
+            **/public/assets/frontend/libs
+            **/public/assets/frontend/libs/**
+            **/public/assets/admin/**
+            **/public/assets/admin
             **/public/assets/admin/images/**
             **/public/assets/admin/images
             **/public/assets/admin/libs/**
