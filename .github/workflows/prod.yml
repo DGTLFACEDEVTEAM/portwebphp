@@ -30,13 +30,18 @@ jobs:
           server-dir: /portnature/
           exclude: |
             **/database/**
+            **/database
             **/public/phpmyadmin
             **/public/phpmyadmin/**
+            **/public/assets/images
             **/public/assets/images/**
+            **/public/assets/libs
             **/public/assets/libs/**
+            **/vendor
             **/vendor/**
+            **/storage
             **/storage/**
-            **node_modules/**
-            **/.git*
-            **/.git*/**
+            **node_modules/
             **/node_modules/**
+            **/.git
+            **/.git*/**
