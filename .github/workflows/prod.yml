@@ -27,7 +27,7 @@ jobs:
           server: 213.159.1.35
           username: portnat
           password: 1U4Sy6VpFi5*j
-          server-dir: /home/portnat/portnature/
+          server-dir: /
           exclude: |
             **/database/**
             **/database
