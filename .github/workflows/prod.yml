@@ -24,7 +24,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: 51.178.176.119
+          server: 213.159.1.35
           username: portnat
           password: 1U4Sy6VpFi5*j
           server-dir: /portnature/
