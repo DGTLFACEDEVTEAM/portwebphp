@@ -1,7 +1,7 @@
 @php
     $translation = [
         'en' => [
-            'cookieConstentTitle' => 'We use Cookiess',
+            'cookieConstentTitle' => 'We use Cookiesss',
             'cookieConstentDesc' => ' We use our own and third-party cookies to personalize content and to
                 analyze web traffic. Read more about cookies',
             'cookieConstentAccept' => 'Accept All Cookies',
