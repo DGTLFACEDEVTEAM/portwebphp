@@ -3,8 +3,9 @@
         'en' => [
             'cookieConstentTitle' => 'We use Cookies',
             'cookieConstentDesc' => ' We use our own and third-party cookies to personalize content and to
-                analyze web traffic. Read more about cookies',
+                analyze web traffic. <a class="text-decoration-none" href="https://portnature.com.tr/kvkk">Read more</a> about cookies',
             'cookieConstentAccept' => 'Accept All Cookies',
+            'cookieConstentDeny' => 'Reject All Cookies',
             'cookieConstentManage' => 'Manage Cookie Preferences',
             'cookieHeader' => 'Manage Cookie Preferences',
             'info' => 'To learn more about cookies ',
@@ -102,8 +103,9 @@
         ],
         'ru' => [
             'cookieConstentTitle' => 'Мы используем cookie',
-            'cookieConstentDesc' => 'Мы используем собственные и сторонние cookie для персонализации содержания и анализа веб-трафика. Подробнее о cookie',
+            'cookieConstentDesc' => 'Мы используем собственные и сторонние cookie для персонализации содержания и анализа веб-трафика. <a class="text-decoration-none" href="https://portnature.com.tr/kvkk">Подробнее</a>  о cookie',
             'cookieConstentAccept' => 'Принять все cookie',
+            'cookieConstentDeny' => 'Отклонить все cookie',
             'cookieConstentManage' => 'Управление настройками cookie',
             'cookieHeader' => 'Управление настройками cookie',
             'info' => 'Чтобы узнать больше о cookie ',
@@ -202,8 +204,9 @@
         ],
         'de' => [
             'cookieConstentTitle' => 'Wir verwenden Cookies',
-            'cookieConstentDesc' => 'Wir verwenden eigene Cookies und Cookies von Drittanbietern, um Inhalte zu personalisieren und den Webverkehr zu analysieren. Mehr über Cookies erfahren',
+            'cookieConstentDesc' => 'Wir verwenden eigene Cookies und Cookies von Drittanbietern, um Inhalte zu personalisieren und den Webverkehr zu analysieren. <a class="text-decoration-none" href="https://portnature.com.tr/kvkk">Mehr über</a> Cookies erfahren',
             'cookieConstentAccept' => 'Alle Cookies akzeptieren',
+            'cookieConstentDeny' => 'Alle Cookies ablehnen',
             'cookieConstentManage' => 'Cookie-Einstellungen verwalten',
             'cookieHeader' => 'Cookie-Einstellungen verwalten',
             'info' => 'Um mehr über Cookies zu erfahren ',
@@ -302,8 +305,9 @@
         ],
         'tr' => [
             'cookieConstentTitle' => 'Çerez Kullanıyoruz',
-            'cookieConstentDesc' => 'İçeriği kişiselleştirmek ve web trafiğini analiz etmek için kendi çerezlerimizi ve üçüncü taraf çerezleri kullanıyoruz. Çerezler hakkında daha fazla bilgi edinin',
+            'cookieConstentDesc' => 'İçeriği kişiselleştirmek ve web trafiğini analiz etmek için kendi çerezlerimizi ve üçüncü taraf çerezleri kullanıyoruz. Çerezler hakkında <a class="text-decoration-none" href="https://portnature.com.tr/kvkk">daha fazla</a>  bilgi edinin',
             'cookieConstentAccept' => 'Tüm Çerezleri Kabul Et',
+            'cookieConstentDeny' => 'Tüm Çerezleri Reddet',
             'cookieConstentManage' => 'Çerez Tercihlerini Yönet',
             'cookieHeader' => 'Çerez Tercihlerini Yönet',
             'info' => 'Çerezler hakkında daha fazla bilgi için ',
@@ -415,8 +419,8 @@
         <div class="cookieConstentActions">
             <button class="cookieConstentAccept cookieA cda">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
             <button class="cookieConstentManage" data-bs-toggle="modal"
-                data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
-
+            data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
+            <button class="cookieConsentDeny cookieA cda">{!! $translation[$lang]['cookieConstentDeny'] !!}</button>
         </div>
     </div>
 </div>
@@ -791,6 +795,7 @@
 
         .cookieConstentWrapper {
             display: flex;
+            flex-direction: column;
             width: 100%;
             max-width: 1536px;
             align-items: center;
@@ -827,7 +832,7 @@
             color: var(--Gray, #233038);
             text-align: center;
             white-space: nowrap;
-            font: 700 16px/20px Montserrat, sans-serif;
+            font: 700 20px/25px Montserrat, sans-serif;
         }
 
         @media (max-width: 991px) {
@@ -840,8 +845,8 @@
         .cookieConstentDesc {
             color: #233038;
             margin-top: 15px;
-            white-space: nowrap;
-            font: 500 12px/15px Montserrat, sans-serif;
+            white-space: wrap;
+            font: 500 17px/20px Montserrat, sans-serif;
         }
 
         @media (max-width: 991px) {
@@ -865,7 +870,7 @@
             }
         }
 
-        .cookieConstentAccept {
+        .cookieConstentAccept, .cookieConsentDeny {
             color: var(--neutral-white, #fff);
             text-align: center;
 
@@ -878,9 +883,11 @@
             font: 700 16px/20px Montserrat, sans-serif;
         }
 
+
         @media (max-width: 991px) {
-            .cookieConstentAccept {
+            .cookieConstentAccept, .cookieConsentDeny, .cookieConstentManage {
                 white-space: initial;
+                min-width: 200px!important;
             }
         }
 
@@ -901,7 +908,7 @@
         }
 
         .cookieConstentAccept,
-        cookieConstentManage {
+        .cookieConstentManage, .cookieConsentDeny {
             min-width: 300px;
         }
 
@@ -917,8 +924,9 @@
             }
 
             .cookieConstentAccept,
-            .cookieConstentManage {
-                width: 50%
+            .cookieConstentManage,
+            .cookieConsentDeny {
+                /* width: 50% */
             }
 
             .cookieConstentTitle,
@@ -1008,10 +1016,17 @@
             }
         }
 
+        @media (max-width: 768px) {
+                .cookieConstentActions {
+                    flex-direction: column-reverse;
+                }
+        }
+
         @media (max-width: 350px) {
 
             .cookieConstentAccept,
-            cookieConstentManage {
+            .cookieConstentManage,
+            .cookieConsentDeny {
                 min-width: auto !important;
             }
         }
