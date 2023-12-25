@@ -420,7 +420,7 @@
             <button class="cookieConstentAccept cookieA cda">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
             <button class="cookieConstentManage" data-bs-toggle="modal"
             data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
-            <button class="cookieConsentDeny cookieA cda">{!! $translation[$lang]['cookieConstentDeny'] !!}</button>
+            <button class="cookieConsentDeny cookieA caD">{!! $translation[$lang]['cookieConstentDeny'] !!}</button>
         </div>
     </div>
 </div>
