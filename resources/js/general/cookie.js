@@ -2,7 +2,32 @@ import Cookies from "js-cookie";
 import swiperHomeTop from "../../../public/assets/frontend/js/main";
 import { swiperAutoPlayStarter } from "./swiperActions";
 
+//   STATES START
 let activeCookieTab = 0;
+
+var gtmContainerId = "GTM-TZ53DS5";
+// var gaMeasurementId = "G-FH87DE17XF";
+var yandexMetricaId = 92210931;
+var facebookPixelId = "721299109355968";
+
+var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
+var BASE_COLOR = "#075695";
+var CONTAINER_ELEMENT = "iframe";
+
+var ourURl = "https://portnature.com.tr";
+
+var connexeaseUrl = "https://livechat.connexease.com/l/embed-js/livechat.js";
+var ourJsUrl = `${ourURl}/assets/frontend/libs/js/livechat.js`;
+var ourCssUrl = `${ourURl}/assets/frontend/css/chatbox.css`;
+var connexeaseJsUs = true;
+
+var isGtmActive = true;
+var isYandexMetricaActive = true;
+var isFacebookPixelActive = true;
+var isChatboxActive = true;
+var isSwiperActive = true;
+
+//   STATES END
 
 $(".cookieBtn").click(function () {
     $(".cookieBtn").removeClass("active");
@@ -11,12 +36,9 @@ $(".cookieBtn").click(function () {
     $(".cookieRightT").addClass("hide");
     $(".cookieRightT").eq(activeCookieTab).removeClass("hide");
 
-    var infoText = $("#infoText");
-    if ($(this).text().trim() === "Cookies" || "Cookie" || "Çerezler") {
-        infoText.show();
-    } else {
-        infoText.hide();
-    }
+    activeCookieTab !== 0
+        ? $(".cookieRightB").removeClass("hide")
+        : $(".cookieRightB").addClass("hide");
 });
 
 // Event handler for switch toggle
@@ -24,21 +46,82 @@ $(".cookieSwitch").change(function () {
     let switchLabel = $(this).closest(".switchContainer").find("label");
 
     if ($(this).is(":checked")) {
-        switchLabel.text("Active").removeClass("deactivated");
+        //    hide first label show second label on switchLabel
+        switchLabel.eq(0).removeClass("hide");
+        switchLabel.eq(1).addClass("hide");
     } else {
-        switchLabel.text("Disabled").addClass("deactivated");
+        //    hide second label show first label on switchLabel
+        switchLabel.eq(0).addClass("hide");
+        switchLabel.eq(1).removeClass("hide");
     }
 });
 
 var htmlElement = document.documentElement;
 // cookieDetailAccorHeader on click change next sibling height
 $(document).ready(function () {
+    var process = void 0;
+    var _typeofThat =
+        "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
+            ? function (o) {
+                  return typeof o;
+              }
+            : function (o) {
+                  return o &&
+                      "function" == typeof Symbol &&
+                      o.constructor === Symbol &&
+                      o !== Symbol.prototype
+                      ? "symbol"
+                      : typeof o;
+              };
+
+    function activateChatbox() {
+        function insertLivechatJS() {
+            var e = document.createElement("script");
+            e.type = "text/javascript";
+            e.async = true;
+            e.src =
+                (process && process.env && process.env.DOMAIN) || connexeaseJsUs
+                    ? ourJsUrl
+                    : connexeaseUrl;
+
+            // Use the 'onload' event to ensure the script is fully loaded before initialization
+            e.onload = function () {
+                initializeChatbox();
+            };
+
+            var t = document.createElement("link");
+            t.rel = "stylesheet";
+            t.href =
+                (process && process.env && process.env.DOMAIN) || ourCssUrl;
+
+            var n = document.getElementsByTagName("script")[0];
+            document.head.appendChild(t);
+            n.parentNode.insertBefore(e, n);
+        }
+
+        insertLivechatJS();
+    }
+
+    function initializeChatbox() {
+        if (typeof window.LiveChat === "object") {
+            window.LiveChat.boot({
+                uuid: APP_UUID,
+                baseColor: BASE_COLOR,
+                containerElement: CONTAINER_ELEMENT,
+            });
+        }
+    }
     // stop scrolling on html
     // document.body.style.overflow = "hidden";
     var defaultActiveTab = $(".cookieBtn.active").text().trim();
     if (defaultActiveTab === "Cookies" || "Cookie" || "Çerezler") {
         $("#infoText").show();
     }
+
+    $(".closeAllCookie").on("click", function () {
+        $(".cookieConstentContainer").hide();
+    });
+
     let isClientAcceptCookie = Cookies.get("CCP");
 
     let parseCCP = null;
@@ -48,19 +131,18 @@ $(document).ready(function () {
         parseCCP = JSON.parse(decodeCCP);
     }
 
+    let isClientAcceptPerformanceCookie =
+        parseCCP !== null ? parseCCP.performance : false;
+    let isClientAcceptFunctionalCookie =
+        parseCCP !== null ? parseCCP.functional : false;
+    let isClientAcceptTargetingCookie =
+        parseCCP !== null ? parseCCP.targeting : false;
 
-    let isClientAcceptPerformanceCookie = parseCCP !== null ? parseCCP.performance : false;
-    let isClientAcceptFunctionalCookie = parseCCP !== null ? parseCCP.functional : false;
-    let isClientAcceptTargetingCookie = parseCCP !== null ? parseCCP.targeting : false;
-
-
-
-    if (isClientAcceptCookie !== undefined && isClientAcceptCookie.length > 0) {
-        console.log("isClientAcceptCookie", isClientAcceptCookie);
-        htmlElement.style.overflow = "auto";
-    } else {
-        htmlElement.style.overflow = "hidden";
-    }
+    //   if (isClientAcceptCookie !== undefined && isClientAcceptCookie.length > 0) {
+    //     htmlElement.style.overflow = "auto";
+    //   } else {
+    //     htmlElement.style.overflow = "hidden";
+    //   }
     // cenk cookies
     function getDecodedCookieValues(cookieName) {
         let cookieValue = Cookies.get(cookieName);
@@ -78,17 +160,6 @@ $(document).ready(function () {
 
     // Use the function to get the cookie values
     let ccpValues = getDecodedCookieValues("CCP");
-
-
-    $(".cookieSwitch").each(function () {
-        let switchLabel = $(this).closest(".switchContainer").find("label");
-
-        if ($(this).is(":checked")) {
-            switchLabel.text("Active").removeClass("deactivated");
-        } else {
-            switchLabel.text("Disabled").addClass("deactivated");
-        }
-    });
 
     $(".cookieDetailAccorHeader").on("click", function () {
         $(this).children("svg").toggleClass("rotate180");
@@ -222,27 +293,27 @@ $(document).ready(function () {
         fbq("track", "PageView");
     }
 
-    var gtmContainerId = "GTM-TZ53DS5";
-    // var gaMeasurementId = "G-FH87DE17XF";
-    var yandexMetricaId = 92210931;
-    var facebookPixelId = "721299109355968";
-
-    var isGtmActive = true;
-    var isYandexMetricaActive = false;
-    var isFacebookPixelActive = false;
-
-    if (isClientAcceptPerformanceCookie == "true" || isClientAcceptPerformanceCookie == true) {
+    if (
+        isClientAcceptPerformanceCookie == "true" ||
+        isClientAcceptPerformanceCookie == true
+    ) {
         isYandexMetricaActive ? activateYandexMetrica(yandexMetricaId) : null;
     }
 
-    if (isClientAcceptFunctionalCookie == "true" || isClientAcceptFunctionalCookie == true) {
+    if (
+        isClientAcceptFunctionalCookie == "true" ||
+        isClientAcceptFunctionalCookie == true
+    ) {
         isGtmActive ? activateGTM(gtmContainerId) : null;
+        isChatboxActive ? activateChatbox() : null;
     }
 
-    if (isClientAcceptTargetingCookie == "true" || isClientAcceptTargetingCookie == true) {
+    if (
+        isClientAcceptTargetingCookie == "true" ||
+        isClientAcceptTargetingCookie == true
+    ) {
         isFacebookPixelActive ? activateFacebookPixel(facebookPixelId) : null;
     }
-
 
     let cookieValues = {};
 
@@ -252,9 +323,8 @@ $(document).ready(function () {
         let ccpValues = JSON.parse(ccpCookie);
     }
 
-
     $(".cookieA").on("click", function () {
-        htmlElement.style.overflow = "auto";
+        // htmlElement.style.overflow = "auto";
 
         $("#customizeCookie").modal("hide");
         $(".cookieConstentContainer").hide();
@@ -268,11 +338,11 @@ $(document).ready(function () {
         ccpValues = getDecodedCookieValues("CCP");
 
         // Use the updated ccpValues to control the overflow
-        if (ccpValues && ccpValues.cookieConsent === "true") {
-            htmlElement.style.overflow = "auto";
-        } else {
-            htmlElement.style.overflow = "auto";
-        }
+        // if (ccpValues && ccpValues.cookieConsent === "true") {
+        //   htmlElement.style.overflow = "auto";
+        // } else {
+        //   htmlElement.style.overflow = "auto";
+        // }
 
         let classList = this.classList;
         if (classList.contains("caD")) {
@@ -302,6 +372,8 @@ $(document).ready(function () {
         } else if (classList.contains("cda")) {
             // push  4 true values to cookieModalInputsArray
             cookieModalInputsArray = [true, true, true, true];
+        } else if (classList.contains("cookieConsentDeny")) {
+            cookieModalInputsArray = [true, false, false, false];
         }
 
         cookieModalInputsArray.forEach(function (item, index) {
@@ -312,11 +384,12 @@ $(document).ready(function () {
                     // if cookieModalInputsArray[1] is true that mean user accepted performance cookies
                     // performance cookies are google analytics and yandex metrica
                     if (item == true) {
-
-                        isYandexMetricaActive ? activateYandexMetrica(yandexMetricaId) : null;
-                        cookieValues.performance = true
+                        isYandexMetricaActive
+                            ? activateYandexMetrica(yandexMetricaId)
+                            : null;
+                        cookieValues.performance = true;
                     } else {
-                        cookieValues.performance = false
+                        cookieValues.performance = false;
                     }
 
                     break;
@@ -325,19 +398,22 @@ $(document).ready(function () {
                     // functional cookies are google tag manager
                     if (item == true) {
                         isGtmActive ? activateGTM(gtmContainerId) : null;
-                        cookieValues.functional = true
+                        isChatboxActive ? activateChatbox() : null;
+                        cookieValues.functional = true;
                     } else {
-                        cookieValues.functional = false
+                        cookieValues.functional = false;
                     }
                     break;
                 case 3:
                     // if cookieModalInputsArray[3] is true that mean user accepted targeting cookies
                     // targeting cookies are facebook pixel
                     if (item == true) {
-                        isFacebookPixelActive ? activateFacebookPixel(facebookPixelId) : null;
-                        cookieValues.targeting = true
+                        isFacebookPixelActive
+                            ? activateFacebookPixel(facebookPixelId)
+                            : null;
+                        cookieValues.targeting = true;
                     } else {
-                        cookieValues.targeting = false
+                        cookieValues.targeting = false;
                     }
 
                     break;
@@ -348,10 +424,10 @@ $(document).ready(function () {
             let cookieString = JSON.stringify(cookieValues);
             let base64CookieString = btoa(cookieString);
             Cookies.set("CCP", base64CookieString, { expires: 365 });
-
-
         });
 
-        swiperAutoPlayStarter(swiperHomeTop);
+        if (isSwiperActive) {
+            swiperAutoPlayStarter(swiperHomeTop);
+        }
     });
 });
