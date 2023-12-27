@@ -9,7 +9,7 @@ let defaultYoutubeUrl = "FiRIVHS5Nts";
 
 let defaultImgSize = "medium";
 let defaultImgAnchor = "https://portnature.com.tr";
-let deafultImgUrl = "http://portnature.dgtl.com/assets/gallery/blogs/";
+let deafultImgUrl = "http://portnature2.com.tr/assets/gallery/blogs/";
 
 const draggables = document.querySelectorAll(".selectableElement");
 const dropbox = document.querySelector(".dropbox");
