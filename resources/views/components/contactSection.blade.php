@@ -81,12 +81,12 @@
                         <img loading="lazy" src="{{ asset('assets/frontend/images/mailblue.svg') }}" alt="phone">
                         <a href="mailto:callcenter@portnature.com.tr">callcenter@portnature.com.tr</a>
                     </div>
-                    <div class="contactIcon">
+                    {{-- <div class="contactIcon">
                         <img loading="lazy" src="{{ asset('assets/frontend/images/whatsappblue.svg') }}" alt="phone">
                         <a class="fw-semibold "
                             href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data="
                             target="_blank">Whatsapp</a>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="contactImage">

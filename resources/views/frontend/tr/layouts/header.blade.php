@@ -95,11 +95,7 @@
                 </a>
             </div>
             <div class="menuRight">
-                <div class="whatsappLogo">
-                    <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank" target="_blank">
-                        <img class="headerSvg" src="{{ asset('assets/frontend/images/whatsappwhite.svg') }}" alt="whatsappLogo"/>
-                    </a>
-                </div>
+                @include('components.whatsapp.whatsappHeader')
                 <div class="mobilePhoneLogo">
                     <a href="tel:+902427310707">
                         <img class="headerSvg" src="{{ asset('assets/frontend/images/telephonewhite.svg') }}" alt="telIcon"/>
@@ -123,11 +119,7 @@
                     </a>
                 </div>
                 <div class="menuRight">
-                    <div class="whatsappLogo">
-                        <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank" target="_blank">
-                            <img class="headerSvg" src="{{ asset('assets/frontend/images/whatsappgray.svg') }}" alt="wpgray"/>
-                        </a>
-                    </div>
+                    @include('components.whatsapp.whatsappHeaderSide')
                     <div class="mobilePhoneLogo">
                         <a href="tel:+902427310707" target="_blank">
                             <img class="headerSvg" src="{{ asset('assets/frontend/images/phoneGray.svg') }}" alt="phonegray"/>
