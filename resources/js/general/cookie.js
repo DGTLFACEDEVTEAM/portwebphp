@@ -22,8 +22,8 @@ var ourCssUrl = `${ourURl}/assets/frontend/css/chatbox.css`;
 var connexeaseJsUs = true;
 
 var isGtmActive = true;
-var isYandexMetricaActive = true;
-var isFacebookPixelActive = true;
+var isYandexMetricaActive = false;
+var isFacebookPixelActive = false;
 var isChatboxActive = true;
 var isSwiperActive = true;
 
