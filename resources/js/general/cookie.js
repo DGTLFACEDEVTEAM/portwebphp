@@ -421,6 +421,7 @@ $(document).ready(function () {
                     break;
             }
 
+            console.log(cookieValues);
             let cookieString = JSON.stringify(cookieValues);
             let base64CookieString = btoa(cookieString);
             Cookies.set("CCP", base64CookieString, { expires: 365 });
