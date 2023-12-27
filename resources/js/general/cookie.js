@@ -198,7 +198,24 @@ $(document).ready(function () {
     });
 
     // Function to activate Google Tag Manager
-    function activateGTM(gtmContainerId) {
+    function activateGTM(gtmContainerId, cookieValues) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("consent", "default", {
+            ad_storage: cookieValues.targeting ? "granted" : "denied",
+            analytics_storage: cookieValues.performance ? "granted" : "denied",
+            personalization_storage: cookieValues.targeting
+                ? "granted"
+                : "denied",
+            functionality_storage: cookieValues.functional
+                ? "granted"
+                : "denied",
+            security_storage: cookieValues.functional ? "granted" : "denied",
+        });
+        gtag("set", "ads_data_redaction", true);
+
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -293,6 +310,11 @@ $(document).ready(function () {
         fbq("track", "PageView");
     }
 
+    // client already decided to cookie preferences so we can activate the scripts if they are active
+
+    if (parseCCP !== null)
+        isGtmActive ? activateGTM(gtmContainerId, parseCCP) : null;
+
     if (
         isClientAcceptPerformanceCookie == "true" ||
         isClientAcceptPerformanceCookie == true
@@ -304,7 +326,6 @@ $(document).ready(function () {
         isClientAcceptFunctionalCookie == "true" ||
         isClientAcceptFunctionalCookie == true
     ) {
-        isGtmActive ? activateGTM(gtmContainerId) : null;
         isChatboxActive ? activateChatbox() : null;
     }
 
@@ -383,6 +404,8 @@ $(document).ready(function () {
                 case 1:
                     // if cookieModalInputsArray[1] is true that mean user accepted performance cookies
                     // performance cookies are google analytics and yandex metrica
+
+                    // analytics cookies
                     if (item == true) {
                         isYandexMetricaActive
                             ? activateYandexMetrica(yandexMetricaId)
@@ -396,8 +419,9 @@ $(document).ready(function () {
                 case 2:
                     // if cookieModalInputsArray[2] is true that mean user accepted functional cookies
                     // functional cookies are google tag manager
+
+                    // preferences cookies
                     if (item == true) {
-                        isGtmActive ? activateGTM(gtmContainerId) : null;
                         isChatboxActive ? activateChatbox() : null;
                         cookieValues.functional = true;
                     } else {
@@ -407,6 +431,8 @@ $(document).ready(function () {
                 case 3:
                     // if cookieModalInputsArray[3] is true that mean user accepted targeting cookies
                     // targeting cookies are facebook pixel
+
+                    // marketing cookies
                     if (item == true) {
                         isFacebookPixelActive
                             ? activateFacebookPixel(facebookPixelId)
@@ -421,14 +447,34 @@ $(document).ready(function () {
                     break;
             }
 
-            console.log(cookieValues);
             let cookieString = JSON.stringify(cookieValues);
             let base64CookieString = btoa(cookieString);
             Cookies.set("CCP", base64CookieString, { expires: 365 });
         });
+        isGtmActive ? activateGTM(gtmContainerId, cookieValues) : null;
 
         if (isSwiperActive) {
             swiperAutoPlayStarter(swiperHomeTop);
         }
     });
 });
+
+// ad_storage                   targetting
+// whats ad_storage cookies are ?
+// ad_storage cookies are used to show ads to users
+
+// analytics_storage            performence
+// whats analytics_storage cookies are ?
+// analytics_storage cookies are used to track users on the website
+
+// personalization_storage      targetting
+// whats personalization_storage cookies are ?
+// personalization_storage cookies are used to show personalized content to users
+
+// functionality_storage        functionality
+// whats functionality_storage cookies are ?
+// functionality_storage cookies are used to remember user preferences
+
+// security_storage             functionality
+// whats security_storage cookies are ?
+// security_storage cookies are used to protect the website from attacks
