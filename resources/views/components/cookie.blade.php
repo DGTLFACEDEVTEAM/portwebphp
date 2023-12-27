@@ -506,8 +506,9 @@
         </div>
         <div class="cookieConstentActions">
             <button class="cookieConstentAccept cookieA cda">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
-            <button class="cookieConstentManage" data-bs-toggle="modal" data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
-            <button class="cookieConsentDeny cookieA cda">{!! $translation[$lang]['cookieConstentDeny'] !!}</button>
+            <button class="cookieConstentManage" data-bs-toggle="modal"
+                data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
+            <button class="cookieConsentDeny cookieA caD">{!! $translation[$lang]['cookieConstentDeny'] !!}</button>
         </div>
     </div>
 </div>
@@ -537,7 +538,7 @@
                             <div class="cookieRightT {{ $item['css'] }} {{ $key !== 0 ? 'hide' : '' }}">
                                 <div>
                                     <h2>{{ $item['title'] }}</h2>
-                                    <p>{!! $item['desc'] !!}</p>
+                                    <p>{{ $item['desc'] }}</p>
                                 </div>
                                 <a href=""></a>
 
