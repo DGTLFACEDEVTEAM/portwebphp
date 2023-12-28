@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [prod]
+    branches: [dev]
 
-name: 🚀 Prod deploy to portnature.com.tr
+name: 🚀 Prod deploy to dev port.dgtlface.com
 
 jobs:
   web-deploy:
@@ -24,10 +24,10 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          server: ${{ secrets.port_nature_server }}
-          username: ${{ secrets.port_nature_username }}
-          password: ${{ secrets.port_nature_password }}
-          server-dir: /
+          server: ${{ secrets.port_test_server }}
+          username: ${{ secrets.port_test_username }}
+          password: ${{ secrets.port_test_password }}
+          server-dir: /port.dgtlface.com/
           exclude: |
             **/database/**
             **/database
@@ -53,3 +53,5 @@ jobs:
             **/node_modules/**
             **/.git
             **/.git*/**
+            **/public/robost.txt
+            **/public/robost.txt**
