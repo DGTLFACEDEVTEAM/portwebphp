@@ -20,11 +20,7 @@
                         <a href="https://portnature.rezervasyonal.com/" target="_blank"
                             class="reverseButton">Reservation</a>
                         <a href="tel:+902427310707">+90 (242) 731 07 07</a>
-                        <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank">
-                            <img class="specialSvg lazyload" loading="lazy"
-                                src="{{ asset('assets/frontend/images/whatsappwhite.svg') }}" alt="whatsapp" />
-                            +90 (533) 414 19 23
-                        </a>
+                        @include('components.whatsapp.footerWhatsapp')
                     </div>
                 </div>
                 <div class="col-lg-8 footerCenter">
@@ -144,23 +140,22 @@
 {{-- Sticky Contact Button --}}
 
 <div class="floating-menu">
-    <input type="checkbox" href="#" class="floating-menu-open" name="floating-menu-open"
-        id="floating-menu-open" />
+    <a href="tel:+902427310707" class="floating-menu-open-button">
+        <img class="phone-volume" src="{{ asset('assets/frontend/images/phone-volume.svg') }}" alt="Phone">
+    </a>
+    {{-- <input type="checkbox" href="#" class="floating-menu-open" name="floating-menu-open" id="floating-menu-open"/>
     <label class="floating-menu-open-button" for="floating-menu-open">
-        <img class="phone-volume"src="{{ asset('assets/frontend/images/phone-volume.svg') }}" alt="phone-icon" />
-        <img class="close-mark"src="{{ asset('assets/frontend/images/close-icon.svg') }}" alt="Close Icon" />
+     <img class="phone-volume"src="{{ asset('assets/frontend/images/phone-volume.svg') }}" alt="phone-icon"/>
+      <img class="close-mark"src="{{ asset('assets/frontend/images/close-icon.svg') }}" alt="Close Icon"/>
     </label>
-    <a class="floating-menu-item" href="tel:+902427310707"> <img
-            class="phone-bubble"src="{{ asset('assets/frontend/images/phone-volume.svg') }}" alt="Whatsapp Icon" />
+    <a class="floating-menu-item" href="tel:+902427310707"> <img class="phone-bubble"src="{{ asset('assets/frontend/images/phone-volume.svg') }}" alt="Whatsapp Icon"/>
         <div class="floating-item-text">
             <div class="speech-bubble"> Telefon</div>
         </div>
     </a>
-    <a class="floating-menu-item " href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data="
-        target="_blank"> <img class="whatsapp-bubble"src="{{ asset('assets/frontend/images/whatsapp.svg') }}"
-            alt="Whatsapp Icon" />
+    <a class="floating-menu-item " href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank"> <img class="whatsapp-bubble"src="{{ asset('assets/frontend/images/whatsapp.svg') }}" alt="Whatsapp Icon"/>
         <div class="floating-item-text">
             <div class="speech-bubble"> Whatsapp</div>
         </div>
-    </a>
+    </a> --}}
 </div>

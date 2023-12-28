@@ -26,11 +26,11 @@ $translation = [
                     <p>info@portnature.com.tr</p>
   
     </a>
-      <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank" class="contacts-mobile-item">
+      {{-- <a href="https://api.whatsapp.com/send?phone=905334141923&text=&source=&data=" target="_blank" class="contacts-mobile-item">
                     <img src="{{ asset('assets/frontend/images/offers/whatsapp.svg') }}">
                     <p>Whatsapp</p>
   
-    </a>
+    </a> --}}
     <a href="tel:+902427310707" class="contacts-mobile-item">
                     <img src="{{ asset('assets/frontend/images/offers/phone.svg') }}">
                     <p>+90 (242) 731 07 07</p>

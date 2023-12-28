@@ -1,18 +1,58 @@
 @php
+
+    $websiteSpecialTranslations = [
+        'en' => [
+            'cookieConstentDesc' => 'We use cookies for the operation of our website, conducting analytical studies, and personalizing the site according to your preferences. For detailed information about cookies, you can access our Cookie Information Text, which we have prepared, and manage your cookie preferences through the approval tool below. <a class="text-decoration-none" href="' . route('data-policy') . '">Read more</a> about cookies',
+            'kvkkLink' => route('data-policy'),
+            'cookieClarificationText' =>
+                "6698 sayılı Kişisel Verilerin Korunması Kanunu'na (&ldquo;Kanun&rdquo;) g&ouml;re ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (&ldquo;Bundan sonra &lsquo;PORT NATURE&rsquo; olarak anılacaktır.&rdquo;) sizinle ilgili kişisel verileri işlemesi sebebiyle veri sorumlusu olarak tanımlanmaktadır. Kanunun &quot;Aydınlatma Y&uuml;k&uuml;ml&uuml;l&uuml;ğ&uuml;&quot; başlıklı 10'ncu maddesine g&ouml;re veri sorumluları, kişisel verilerini işledikleri ger&ccedil;ek kişileri bazı konularda bilgilendirmekle y&uuml;k&uuml;ml&uuml;d&uuml;r. İlgili Kişi: [https://portnature.com.tr/] alan adlı web sitemizi ziyaret ettiğiniz i&ccedil;in &ccedil;erezler ve farklı tanımlayıcılarla bazı kişisel verilerini işlediğimiz siz, Kanun tarafından ilgili kişi olarak tanımlanmaktasınız. Veri Sorumlusu: Sizinle ilgili kişisel veriler konusunda kişisel verilerin işleme ama&ccedil;larını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve y&ouml;netilmesinden sorumlu olan [PORT NATURE] veri sorumlusudur. &Ccedil;EREZLER HAKKINDA BİLGİLENDİRME; Bununla birlikte sitemizde &ccedil;erezler vasıtasıyla birtakım kişisel verilerinizi işliyoruz. &Ccedil;erezler (cookies), reklam kimlikleri ve web tanımlayıcıları gibi teknolojileri (bu teknolojilerin tamamı &ldquo;&Ccedil;erez&rdquo; olarak ifade edilecektir) ifade etmektedir. &Ccedil;erez (Cookie) Nedir? &Ccedil;erezler, ziyaret ettiğiniz internet siteleri tarafından tarayıcılar aracılığıyla bilgisayarınıza (ya da akıllı telefon veya tablet gibi diğer cihazlarınıza) kaydedilen ve genelde harf ve rakamlardan oluşan &ccedil;ok k&uuml;&ccedil;&uuml;k metin dosyalarıdır. &Ccedil;erezler kullanıcının ve cihazının tanınmasına, kullanıcının tercihleri ve ge&ccedil;miş işlemleriyle ilgili bazı bilgilerin depolanmasını sağlar. &Ccedil;erezler, ziyaret ettiğiniz web sitesini y&ouml;neten sunucular tarafından oluşturulurlar. B&ouml;ylelikle ziyaret&ccedil;i aynı siteyi ziyaret ettiğinde sunucu bunu anlayabilir. &Ccedil;erezler, web sitesi sahiplerine aynı ziyaret&ccedil;inin siteyi yeniden ziyaret ettiğini g&ouml;steren kimlik kartlarına benzetilebilir. &Ccedil;erezler konusunda daha detaylı bilgi i&ccedil;in https://www.aboutcookies.org/ ve https://www.allaboutcookies.org/ adreslerini ziyaret edebilirisiniz. &Ccedil;erezler Vasıtasıyla Kişisel Verilerin Elde Edilmesi Web sitemizi ilk ziyaret edişinizde size &ccedil;erez tercihlerinize ilişkin bir ekran sunulur. Bu ekranda kullanımına izin verdiğiniz &ccedil;erezler uyarınca ilgili &ccedil;erezler tarayıcınıza/cihazınıza depolanır. &Ccedil;erezlerin her biri genellikle aşağıdaki unsurları i&ccedil;erir: &bull; &Ccedil;erezin g&ouml;nderildiği sunucu, &bull; &Ccedil;erezin &ouml;nceden belirlenmiş olan kullanım &ouml;mr&uuml;, &bull; Genellikle rastgele oluşturulmuş benzersiz bir tanımlayıcı değer/numara (&ccedil;erezi g&ouml;nderen web sitesi sunucusu, sayfalar arasında gezindiğinizde sizi tanımak i&ccedil;in bu değeri kullanır). &Ccedil;erezler vasıtasıyla veriler tamamen otomatik y&ouml;ntemlerle toplanmaktadır. &Ccedil;erezler, sahipleri, kullanım &ouml;m&uuml;rleri ve kullanım ama&ccedil;ları bakımından sınıflandırılabilir: &bull; Sahibine g&ouml;re &ccedil;erezler, ziyaret ettiğiniz web sitesi tarafından cihazınıza yerleştirilen birinci taraf &ccedil;erezleri ve &uuml;&ccedil;&uuml;nc&uuml; taraflarca sunulan &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri kullanılmaktadır. Birinci &ccedil;erezleri, PORT NATURE tarafından sunulurken, &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri hizmet alınan veya iş ortağı olan farklı firmalarca sunulmaktadır. &bull; Kullanım &ouml;mr&uuml;ne g&ouml;re, oturum &ccedil;erezleri ve kalıcı &ccedil;erezler kullanılmaktadır. Oturum &ccedil;erezleri ziyaret&ccedil;inin web sitesini terk etmesiyle birlikte silinirken, kalıcı &ccedil;erezler &ouml;nceden belirlenen kullanım &ouml;m&uuml;rleri boyunca ziyaret&ccedil;ilerin cihazlarında saklanmakta ve bir sonraki ziyaretinde ziyaret&ccedil;iyi ve ziyaret&ccedil;inin tercihlerini hatırlamak amacıyla kullanılır. &bull; Kullanım ama&ccedil;larına g&ouml;re, sitede kesinlikle gerekli olan &ccedil;erezler, analitik &ccedil;erezler ve hedefleme/reklam &ccedil;erezleri kullanılmaktadır. &Ccedil;erezler Vasıtasıyla Toplanan Veriler, Kullanım Ama&ccedil;ları Ve Hukuki Sebepleri &Ccedil;erezler aracılığıyla, kullandığınız tarayıcı ve işletim sistemi, IP adresi, kullanıcı ID, ziyaretinizin tarihi ve saati, erişim durumu, web sitesindeki &ouml;zelliklerin kullanımı, girdiğiniz arama ifadeleri, web sitemizi ne sıklıkta ziyaret ettiğiniz, dil tercihleriniz, sayfalarda ger&ccedil;ekleştirdiğiniz işlemler dahil kullanıcı işlem kayıtlarına ilişkin veriler toplanmakta ve işlenmektedir. &Ccedil;erezler, web sitemizi ziyaretinizin ve buradaki deneyiminizin stabil bir şekilde ger&ccedil;ekleştirilmesinin ve bir sonraki kullanımınızda bilgilerinizin hatırlanmasının sağlanması, sitenin işleyişinin ve i&ccedil;eriğinin geliştirilmesi, site kullanımlarının istatistiksel olarak değerlendirilmesi, sitede yer alan i&ccedil;eriğin sizin ve cihazınız i&ccedil;in en etkili şekilde sunulması ile kullanıcılara tercih ve kullanım alışkanlıkları doğrultusunda &ouml;zelleştirilmiş hizmetler ve reklamlar sunulması ama&ccedil;larıyla kullanılmaktadır. &Ccedil;erezler kullanım ama&ccedil;ları ve fonksiyonlarına g&ouml;re &ccedil;eşitli kategorilere ayrılmaktadır. Aşağıda kategorilerine g&ouml;re web sitemizde kullanılan &ccedil;erezler ile ilgili &ccedil;erezleri sağlayanlar, &ccedil;erezler ile kişisel veri aktarılabilecek yabancı &uuml;lkeler ve her bir &ccedil;erez &ouml;zelinde kullanım ama&ccedil;larına ve hukuki sebeplerine yer verilmiştir: 1. Zorunlu &Ccedil;erezler Web sitesinin kullanımı ve işlerliği i&ccedil;in gerekli olan &ccedil;erezlerdir. Zorunlu &ccedil;erezler devre dışı bırakıldığı takdirde sitenin bir kısmına veya t&uuml;m&uuml;ne erişim m&uuml;mk&uuml;n olmayabilir. Zorunlu &ccedil;erezler vasıtasıyla işlenen kişisel veriler, &uuml;r&uuml;n ve hizmetlerin sunulabilmesi ve faaliyetlerin mevzuata uygun y&uuml;r&uuml;t&uuml;lmesi ama&ccedil;larıyla, KVKK Md.5/2e&rsquo;de &ouml;ng&ouml;r&uuml;len bir hakkın tesisi, kullanılması veya korunması i&ccedil;in veri işlemenin zorunlu olması sebebiyle işlenmektedir.",
+            'cookieClarificationDesc' => 'For further details on our cookie clarification text, please <a href="' . route('data-policy') . '">click here</a>.',
+        ],
+        'ru' => [
+            'cookieConstentDesc' => 'Мы используем файлы cookie для работы нашего веб-сайта, проведения аналитических исследований и персонализации сайта в соответствии с вашими предпочтениями. Для подробной информации о файлах cookie вы можете ознакомиться с нашим Текстом по информированию о файлах cookie, который мы подготовили, и управлять настройками файлов cookie с помощью инструмента одобрения ниже. <a class="text-decoration-none" href="' . route('ru-data-policy') . '">Подробнее</a> о cookie',
+            'kvkkLink' => route('ru-data-policy'),
+            'cookieClarificationText' =>
+                "6698 sayılı Kişisel Verilerin Korunması Kanunu'na (&ldquo;Kanun&rdquo;) g&ouml;re ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (&ldquo;Bundan sonra &lsquo;PORT NATURE&rsquo; olarak anılacaktır.&rdquo;) sizinle ilgili kişisel verileri işlemesi sebebiyle veri sorumlusu olarak tanımlanmaktadır. Kanunun &quot;Aydınlatma Y&uuml;k&uuml;ml&uuml;l&uuml;ğ&uuml;&quot; başlıklı 10'ncu maddesine g&ouml;re veri sorumluları, kişisel verilerini işledikleri ger&ccedil;ek kişileri bazı konularda bilgilendirmekle y&uuml;k&uuml;ml&uuml;d&uuml;r. İlgili Kişi: [https://portnature.com.tr/] alan adlı web sitemizi ziyaret ettiğiniz i&ccedil;in &ccedil;erezler ve farklı tanımlayıcılarla bazı kişisel verilerini işlediğimiz siz, Kanun tarafından ilgili kişi olarak tanımlanmaktasınız. Veri Sorumlusu: Sizinle ilgili kişisel veriler konusunda kişisel verilerin işleme ama&ccedil;larını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve y&ouml;netilmesinden sorumlu olan [PORT NATURE] veri sorumlusudur. &Ccedil;EREZLER HAKKINDA BİLGİLENDİRME; Bununla birlikte sitemizde &ccedil;erezler vasıtasıyla birtakım kişisel verilerinizi işliyoruz. &Ccedil;erezler (cookies), reklam kimlikleri ve web tanımlayıcıları gibi teknolojileri (bu teknolojilerin tamamı &ldquo;&Ccedil;erez&rdquo; olarak ifade edilecektir) ifade etmektedir. &Ccedil;erez (Cookie) Nedir? &Ccedil;erezler, ziyaret ettiğiniz internet siteleri tarafından tarayıcılar aracılığıyla bilgisayarınıza (ya da akıllı telefon veya tablet gibi diğer cihazlarınıza) kaydedilen ve genelde harf ve rakamlardan oluşan &ccedil;ok k&uuml;&ccedil;&uuml;k metin dosyalarıdır. &Ccedil;erezler kullanıcının ve cihazının tanınmasına, kullanıcının tercihleri ve ge&ccedil;miş işlemleriyle ilgili bazı bilgilerin depolanmasını sağlar. &Ccedil;erezler, ziyaret ettiğiniz web sitesini y&ouml;neten sunucular tarafından oluşturulurlar. B&ouml;ylelikle ziyaret&ccedil;i aynı siteyi ziyaret ettiğinde sunucu bunu anlayabilir. &Ccedil;erezler, web sitesi sahiplerine aynı ziyaret&ccedil;inin siteyi yeniden ziyaret ettiğini g&ouml;steren kimlik kartlarına benzetilebilir. &Ccedil;erezler konusunda daha detaylı bilgi i&ccedil;in https://www.aboutcookies.org/ ve https://www.allaboutcookies.org/ adreslerini ziyaret edebilirisiniz. &Ccedil;erezler Vasıtasıyla Kişisel Verilerin Elde Edilmesi Web sitemizi ilk ziyaret edişinizde size &ccedil;erez tercihlerinize ilişkin bir ekran sunulur. Bu ekranda kullanımına izin verdiğiniz &ccedil;erezler uyarınca ilgili &ccedil;erezler tarayıcınıza/cihazınıza depolanır. &Ccedil;erezlerin her biri genellikle aşağıdaki unsurları i&ccedil;erir: &bull; &Ccedil;erezin g&ouml;nderildiği sunucu, &bull; &Ccedil;erezin &ouml;nceden belirlenmiş olan kullanım &ouml;mr&uuml;, &bull; Genellikle rastgele oluşturulmuş benzersiz bir tanımlayıcı değer/numara (&ccedil;erezi g&ouml;nderen web sitesi sunucusu, sayfalar arasında gezindiğinizde sizi tanımak i&ccedil;in bu değeri kullanır). &Ccedil;erezler vasıtasıyla veriler tamamen otomatik y&ouml;ntemlerle toplanmaktadır. &Ccedil;erezler, sahipleri, kullanım &ouml;m&uuml;rleri ve kullanım ama&ccedil;ları bakımından sınıflandırılabilir: &bull; Sahibine g&ouml;re &ccedil;erezler, ziyaret ettiğiniz web sitesi tarafından cihazınıza yerleştirilen birinci taraf &ccedil;erezleri ve &uuml;&ccedil;&uuml;nc&uuml; taraflarca sunulan &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri kullanılmaktadır. Birinci &ccedil;erezleri, PORT NATURE tarafından sunulurken, &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri hizmet alınan veya iş ortağı olan farklı firmalarca sunulmaktadır. &bull; Kullanım &ouml;mr&uuml;ne g&ouml;re, oturum &ccedil;erezleri ve kalıcı &ccedil;erezler kullanılmaktadır. Oturum &ccedil;erezleri ziyaret&ccedil;inin web sitesini terk etmesiyle birlikte silinirken, kalıcı &ccedil;erezler &ouml;nceden belirlenen kullanım &ouml;m&uuml;rleri boyunca ziyaret&ccedil;ilerin cihazlarında saklanmakta ve bir sonraki ziyaretinde ziyaret&ccedil;iyi ve ziyaret&ccedil;inin tercihlerini hatırlamak amacıyla kullanılır. &bull; Kullanım ama&ccedil;larına g&ouml;re, sitede kesinlikle gerekli olan &ccedil;erezler, analitik &ccedil;erezler ve hedefleme/reklam &ccedil;erezleri kullanılmaktadır. &Ccedil;erezler Vasıtasıyla Toplanan Veriler, Kullanım Ama&ccedil;ları Ve Hukuki Sebepleri &Ccedil;erezler aracılığıyla, kullandığınız tarayıcı ve işletim sistemi, IP adresi, kullanıcı ID, ziyaretinizin tarihi ve saati, erişim durumu, web sitesindeki &ouml;zelliklerin kullanımı, girdiğiniz arama ifadeleri, web sitemizi ne sıklıkta ziyaret ettiğiniz, dil tercihleriniz, sayfalarda ger&ccedil;ekleştirdiğiniz işlemler dahil kullanıcı işlem kayıtlarına ilişkin veriler toplanmakta ve işlenmektedir. &Ccedil;erezler, web sitemizi ziyaretinizin ve buradaki deneyiminizin stabil bir şekilde ger&ccedil;ekleştirilmesinin ve bir sonraki kullanımınızda bilgilerinizin hatırlanmasının sağlanması, sitenin işleyişinin ve i&ccedil;eriğinin geliştirilmesi, site kullanımlarının istatistiksel olarak değerlendirilmesi, sitede yer alan i&ccedil;eriğin sizin ve cihazınız i&ccedil;in en etkili şekilde sunulması ile kullanıcılara tercih ve kullanım alışkanlıkları doğrultusunda &ouml;zelleştirilmiş hizmetler ve reklamlar sunulması ama&ccedil;larıyla kullanılmaktadır. &Ccedil;erezler kullanım ama&ccedil;ları ve fonksiyonlarına g&ouml;re &ccedil;eşitli kategorilere ayrılmaktadır. Aşağıda kategorilerine g&ouml;re web sitemizde kullanılan &ccedil;erezler ile ilgili &ccedil;erezleri sağlayanlar, &ccedil;erezler ile kişisel veri aktarılabilecek yabancı &uuml;lkeler ve her bir &ccedil;erez &ouml;zelinde kullanım ama&ccedil;larına ve hukuki sebeplerine yer verilmiştir: 1. Zorunlu &Ccedil;erezler Web sitesinin kullanımı ve işlerliği i&ccedil;in gerekli olan &ccedil;erezlerdir. Zorunlu &ccedil;erezler devre dışı bırakıldığı takdirde sitenin bir kısmına veya t&uuml;m&uuml;ne erişim m&uuml;mk&uuml;n olmayabilir. Zorunlu &ccedil;erezler vasıtasıyla işlenen kişisel veriler, &uuml;r&uuml;n ve hizmetlerin sunulabilmesi ve faaliyetlerin mevzuata uygun y&uuml;r&uuml;t&uuml;lmesi ama&ccedil;larıyla, KVKK Md.5/2e&rsquo;de &ouml;ng&ouml;r&uuml;len bir hakkın tesisi, kullanılması veya korunması i&ccedil;in veri işlemenin zorunlu olması sebebiyle işlenmektedir.",
+            'cookieClarificationDesc' => 'Для получения дополнительной информации о тексте разъяснения по файлам cookie, пожалуйста, <a href="' . route('ru-data-policy') . '">кликните здесь</a>.',
+        ],
+        'de' => [
+            'cookieConstentDesc' => 'Wir verwenden Cookies für den Betrieb unserer Website, zur Durchführung analytischer Studien und zur Anpassung der Website gemäß Ihren Präferenzen. Für ausführliche Informationen zu Cookies können Sie unseren von uns erstellten Cookie-Informations-Text aufrufen und Ihre Cookie-Einstellungen über das unten stehende Zustimmungstool verwalten. <a class="text-decoration-none" href="' . route('de-data-policy') . '">Mehr über</a> Cookies erfahren',
+            'kvkkLink' => route('de-data-policy'),
+            'cookieClarificationText' =>
+                "6698 sayılı Kişisel Verilerin Korunması Kanunu'na (&ldquo;Kanun&rdquo;) g&ouml;re ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (&ldquo;Bundan sonra &lsquo;PORT NATURE&rsquo; olarak anılacaktır.&rdquo;) sizinle ilgili kişisel verileri işlemesi sebebiyle veri sorumlusu olarak tanımlanmaktadır. Kanunun &quot;Aydınlatma Y&uuml;k&uuml;ml&uuml;l&uuml;ğ&uuml;&quot; başlıklı 10'ncu maddesine g&ouml;re veri sorumluları, kişisel verilerini işledikleri ger&ccedil;ek kişileri bazı konularda bilgilendirmekle y&uuml;k&uuml;ml&uuml;d&uuml;r. İlgili Kişi: [https://portnature.com.tr/] alan adlı web sitemizi ziyaret ettiğiniz i&ccedil;in &ccedil;erezler ve farklı tanımlayıcılarla bazı kişisel verilerini işlediğimiz siz, Kanun tarafından ilgili kişi olarak tanımlanmaktasınız. Veri Sorumlusu: Sizinle ilgili kişisel veriler konusunda kişisel verilerin işleme ama&ccedil;larını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve y&ouml;netilmesinden sorumlu olan [PORT NATURE] veri sorumlusudur. &Ccedil;EREZLER HAKKINDA BİLGİLENDİRME; Bununla birlikte sitemizde &ccedil;erezler vasıtasıyla birtakım kişisel verilerinizi işliyoruz. &Ccedil;erezler (cookies), reklam kimlikleri ve web tanımlayıcıları gibi teknolojileri (bu teknolojilerin tamamı &ldquo;&Ccedil;erez&rdquo; olarak ifade edilecektir) ifade etmektedir. &Ccedil;erez (Cookie) Nedir? &Ccedil;erezler, ziyaret ettiğiniz internet siteleri tarafından tarayıcılar aracılığıyla bilgisayarınıza (ya da akıllı telefon veya tablet gibi diğer cihazlarınıza) kaydedilen ve genelde harf ve rakamlardan oluşan &ccedil;ok k&uuml;&ccedil;&uuml;k metin dosyalarıdır. &Ccedil;erezler kullanıcının ve cihazının tanınmasına, kullanıcının tercihleri ve ge&ccedil;miş işlemleriyle ilgili bazı bilgilerin depolanmasını sağlar. &Ccedil;erezler, ziyaret ettiğiniz web sitesini y&ouml;neten sunucular tarafından oluşturulurlar. B&ouml;ylelikle ziyaret&ccedil;i aynı siteyi ziyaret ettiğinde sunucu bunu anlayabilir. &Ccedil;erezler, web sitesi sahiplerine aynı ziyaret&ccedil;inin siteyi yeniden ziyaret ettiğini g&ouml;steren kimlik kartlarına benzetilebilir. &Ccedil;erezler konusunda daha detaylı bilgi i&ccedil;in https://www.aboutcookies.org/ ve https://www.allaboutcookies.org/ adreslerini ziyaret edebilirisiniz. &Ccedil;erezler Vasıtasıyla Kişisel Verilerin Elde Edilmesi Web sitemizi ilk ziyaret edişinizde size &ccedil;erez tercihlerinize ilişkin bir ekran sunulur. Bu ekranda kullanımına izin verdiğiniz &ccedil;erezler uyarınca ilgili &ccedil;erezler tarayıcınıza/cihazınıza depolanır. &Ccedil;erezlerin her biri genellikle aşağıdaki unsurları i&ccedil;erir: &bull; &Ccedil;erezin g&ouml;nderildiği sunucu, &bull; &Ccedil;erezin &ouml;nceden belirlenmiş olan kullanım &ouml;mr&uuml;, &bull; Genellikle rastgele oluşturulmuş benzersiz bir tanımlayıcı değer/numara (&ccedil;erezi g&ouml;nderen web sitesi sunucusu, sayfalar arasında gezindiğinizde sizi tanımak i&ccedil;in bu değeri kullanır). &Ccedil;erezler vasıtasıyla veriler tamamen otomatik y&ouml;ntemlerle toplanmaktadır. &Ccedil;erezler, sahipleri, kullanım &ouml;m&uuml;rleri ve kullanım ama&ccedil;ları bakımından sınıflandırılabilir: &bull; Sahibine g&ouml;re &ccedil;erezler, ziyaret ettiğiniz web sitesi tarafından cihazınıza yerleştirilen birinci taraf &ccedil;erezleri ve &uuml;&ccedil;&uuml;nc&uuml; taraflarca sunulan &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri kullanılmaktadır. Birinci &ccedil;erezleri, PORT NATURE tarafından sunulurken, &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri hizmet alınan veya iş ortağı olan farklı firmalarca sunulmaktadır. &bull; Kullanım &ouml;mr&uuml;ne g&ouml;re, oturum &ccedil;erezleri ve kalıcı &ccedil;erezler kullanılmaktadır. Oturum &ccedil;erezleri ziyaret&ccedil;inin web sitesini terk etmesiyle birlikte silinirken, kalıcı &ccedil;erezler &ouml;nceden belirlenen kullanım &ouml;m&uuml;rleri boyunca ziyaret&ccedil;ilerin cihazlarında saklanmakta ve bir sonraki ziyaretinde ziyaret&ccedil;iyi ve ziyaret&ccedil;inin tercihlerini hatırlamak amacıyla kullanılır. &bull; Kullanım ama&ccedil;larına g&ouml;re, sitede kesinlikle gerekli olan &ccedil;erezler, analitik &ccedil;erezler ve hedefleme/reklam &ccedil;erezleri kullanılmaktadır. &Ccedil;erezler Vasıtasıyla Toplanan Veriler, Kullanım Ama&ccedil;ları Ve Hukuki Sebepleri &Ccedil;erezler aracılığıyla, kullandığınız tarayıcı ve işletim sistemi, IP adresi, kullanıcı ID, ziyaretinizin tarihi ve saati, erişim durumu, web sitesindeki &ouml;zelliklerin kullanımı, girdiğiniz arama ifadeleri, web sitemizi ne sıklıkta ziyaret ettiğiniz, dil tercihleriniz, sayfalarda ger&ccedil;ekleştirdiğiniz işlemler dahil kullanıcı işlem kayıtlarına ilişkin veriler toplanmakta ve işlenmektedir. &Ccedil;erezler, web sitemizi ziyaretinizin ve buradaki deneyiminizin stabil bir şekilde ger&ccedil;ekleştirilmesinin ve bir sonraki kullanımınızda bilgilerinizin hatırlanmasının sağlanması, sitenin işleyişinin ve i&ccedil;eriğinin geliştirilmesi, site kullanımlarının istatistiksel olarak değerlendirilmesi, sitede yer alan i&ccedil;eriğin sizin ve cihazınız i&ccedil;in en etkili şekilde sunulması ile kullanıcılara tercih ve kullanım alışkanlıkları doğrultusunda &ouml;zelleştirilmiş hizmetler ve reklamlar sunulması ama&ccedil;larıyla kullanılmaktadır. &Ccedil;erezler kullanım ama&ccedil;ları ve fonksiyonlarına g&ouml;re &ccedil;eşitli kategorilere ayrılmaktadır. Aşağıda kategorilerine g&ouml;re web sitemizde kullanılan &ccedil;erezler ile ilgili &ccedil;erezleri sağlayanlar, &ccedil;erezler ile kişisel veri aktarılabilecek yabancı &uuml;lkeler ve her bir &ccedil;erez &ouml;zelinde kullanım ama&ccedil;larına ve hukuki sebeplerine yer verilmiştir: 1. Zorunlu &Ccedil;erezler Web sitesinin kullanımı ve işlerliği i&ccedil;in gerekli olan &ccedil;erezlerdir. Zorunlu &ccedil;erezler devre dışı bırakıldığı takdirde sitenin bir kısmına veya t&uuml;m&uuml;ne erişim m&uuml;mk&uuml;n olmayabilir. Zorunlu &ccedil;erezler vasıtasıyla işlenen kişisel veriler, &uuml;r&uuml;n ve hizmetlerin sunulabilmesi ve faaliyetlerin mevzuata uygun y&uuml;r&uuml;t&uuml;lmesi ama&ccedil;larıyla, KVKK Md.5/2e&rsquo;de &ouml;ng&ouml;r&uuml;len bir hakkın tesisi, kullanılması veya korunması i&ccedil;in veri işlemenin zorunlu olması sebebiyle işlenmektedir.",
+            'cookieClarificationDesc' => 'Für weitere Informationen zum Klärungstext über Cookies, <a href="' . route('de-data-policy') . '">bitte hier klicken</a>.',
+        ],
+        'tr' => [
+            'cookieConstentDesc' => 'İnternet sitemizin çalışması, analitik çalışmaların yürütülmesi ve tercihleriniz doğrultusunda sitenin kişiselleştirilmesi için çerezler kullanmaktayız. Çerezler hakkında detaylı bilgiye; hazırladığımız Çerez Aydınlatma Metnini inceleyerek erişebilir, çerez tercihlerinizi aşağıdaki onay aracı vasıtasıyla yönetebilirsiniz. Çerezler hakkında <a class="text-decoration-none" href="' . route('tr-data-policy') . '">daha fazla</a> bilgi edinin',
+            'kvkkLink' => route('tr-data-policy'),
+            'cookieClarificationText' =>
+                "6698 sayılı Kişisel Verilerin Korunması Kanunu'na (&ldquo;Kanun&rdquo;) g&ouml;re ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (&ldquo;Bundan sonra &lsquo;PORT NATURE&rsquo; olarak anılacaktır.&rdquo;) sizinle ilgili kişisel verileri işlemesi sebebiyle veri sorumlusu olarak tanımlanmaktadır. Kanunun &quot;Aydınlatma Y&uuml;k&uuml;ml&uuml;l&uuml;ğ&uuml;&quot; başlıklı 10'ncu maddesine g&ouml;re veri sorumluları, kişisel verilerini işledikleri ger&ccedil;ek kişileri bazı konularda bilgilendirmekle y&uuml;k&uuml;ml&uuml;d&uuml;r. İlgili Kişi: [https://portnature.com.tr/] alan adlı web sitemizi ziyaret ettiğiniz i&ccedil;in &ccedil;erezler ve farklı tanımlayıcılarla bazı kişisel verilerini işlediğimiz siz, Kanun tarafından ilgili kişi olarak tanımlanmaktasınız. Veri Sorumlusu: Sizinle ilgili kişisel veriler konusunda kişisel verilerin işleme ama&ccedil;larını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve y&ouml;netilmesinden sorumlu olan [PORT NATURE] veri sorumlusudur. &Ccedil;EREZLER HAKKINDA BİLGİLENDİRME; Bununla birlikte sitemizde &ccedil;erezler vasıtasıyla birtakım kişisel verilerinizi işliyoruz. &Ccedil;erezler (cookies), reklam kimlikleri ve web tanımlayıcıları gibi teknolojileri (bu teknolojilerin tamamı &ldquo;&Ccedil;erez&rdquo; olarak ifade edilecektir) ifade etmektedir. &Ccedil;erez (Cookie) Nedir? &Ccedil;erezler, ziyaret ettiğiniz internet siteleri tarafından tarayıcılar aracılığıyla bilgisayarınıza (ya da akıllı telefon veya tablet gibi diğer cihazlarınıza) kaydedilen ve genelde harf ve rakamlardan oluşan &ccedil;ok k&uuml;&ccedil;&uuml;k metin dosyalarıdır. &Ccedil;erezler kullanıcının ve cihazının tanınmasına, kullanıcının tercihleri ve ge&ccedil;miş işlemleriyle ilgili bazı bilgilerin depolanmasını sağlar. &Ccedil;erezler, ziyaret ettiğiniz web sitesini y&ouml;neten sunucular tarafından oluşturulurlar. B&ouml;ylelikle ziyaret&ccedil;i aynı siteyi ziyaret ettiğinde sunucu bunu anlayabilir. &Ccedil;erezler, web sitesi sahiplerine aynı ziyaret&ccedil;inin siteyi yeniden ziyaret ettiğini g&ouml;steren kimlik kartlarına benzetilebilir. &Ccedil;erezler konusunda daha detaylı bilgi i&ccedil;in https://www.aboutcookies.org/ ve https://www.allaboutcookies.org/ adreslerini ziyaret edebilirisiniz. &Ccedil;erezler Vasıtasıyla Kişisel Verilerin Elde Edilmesi Web sitemizi ilk ziyaret edişinizde size &ccedil;erez tercihlerinize ilişkin bir ekran sunulur. Bu ekranda kullanımına izin verdiğiniz &ccedil;erezler uyarınca ilgili &ccedil;erezler tarayıcınıza/cihazınıza depolanır. &Ccedil;erezlerin her biri genellikle aşağıdaki unsurları i&ccedil;erir: &bull; &Ccedil;erezin g&ouml;nderildiği sunucu, &bull; &Ccedil;erezin &ouml;nceden belirlenmiş olan kullanım &ouml;mr&uuml;, &bull; Genellikle rastgele oluşturulmuş benzersiz bir tanımlayıcı değer/numara (&ccedil;erezi g&ouml;nderen web sitesi sunucusu, sayfalar arasında gezindiğinizde sizi tanımak i&ccedil;in bu değeri kullanır). &Ccedil;erezler vasıtasıyla veriler tamamen otomatik y&ouml;ntemlerle toplanmaktadır. &Ccedil;erezler, sahipleri, kullanım &ouml;m&uuml;rleri ve kullanım ama&ccedil;ları bakımından sınıflandırılabilir: &bull; Sahibine g&ouml;re &ccedil;erezler, ziyaret ettiğiniz web sitesi tarafından cihazınıza yerleştirilen birinci taraf &ccedil;erezleri ve &uuml;&ccedil;&uuml;nc&uuml; taraflarca sunulan &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri kullanılmaktadır. Birinci &ccedil;erezleri, PORT NATURE tarafından sunulurken, &uuml;&ccedil;&uuml;nc&uuml; taraf &ccedil;erezleri hizmet alınan veya iş ortağı olan farklı firmalarca sunulmaktadır. &bull; Kullanım &ouml;mr&uuml;ne g&ouml;re, oturum &ccedil;erezleri ve kalıcı &ccedil;erezler kullanılmaktadır. Oturum &ccedil;erezleri ziyaret&ccedil;inin web sitesini terk etmesiyle birlikte silinirken, kalıcı &ccedil;erezler &ouml;nceden belirlenen kullanım &ouml;m&uuml;rleri boyunca ziyaret&ccedil;ilerin cihazlarında saklanmakta ve bir sonraki ziyaretinde ziyaret&ccedil;iyi ve ziyaret&ccedil;inin tercihlerini hatırlamak amacıyla kullanılır. &bull; Kullanım ama&ccedil;larına g&ouml;re, sitede kesinlikle gerekli olan &ccedil;erezler, analitik &ccedil;erezler ve hedefleme/reklam &ccedil;erezleri kullanılmaktadır. &Ccedil;erezler Vasıtasıyla Toplanan Veriler, Kullanım Ama&ccedil;ları Ve Hukuki Sebepleri &Ccedil;erezler aracılığıyla, kullandığınız tarayıcı ve işletim sistemi, IP adresi, kullanıcı ID, ziyaretinizin tarihi ve saati, erişim durumu, web sitesindeki &ouml;zelliklerin kullanımı, girdiğiniz arama ifadeleri, web sitemizi ne sıklıkta ziyaret ettiğiniz, dil tercihleriniz, sayfalarda ger&ccedil;ekleştirdiğiniz işlemler dahil kullanıcı işlem kayıtlarına ilişkin veriler toplanmakta ve işlenmektedir. &Ccedil;erezler, web sitemizi ziyaretinizin ve buradaki deneyiminizin stabil bir şekilde ger&ccedil;ekleştirilmesinin ve bir sonraki kullanımınızda bilgilerinizin hatırlanmasının sağlanması, sitenin işleyişinin ve i&ccedil;eriğinin geliştirilmesi, site kullanımlarının istatistiksel olarak değerlendirilmesi, sitede yer alan i&ccedil;eriğin sizin ve cihazınız i&ccedil;in en etkili şekilde sunulması ile kullanıcılara tercih ve kullanım alışkanlıkları doğrultusunda &ouml;zelleştirilmiş hizmetler ve reklamlar sunulması ama&ccedil;larıyla kullanılmaktadır. &Ccedil;erezler kullanım ama&ccedil;ları ve fonksiyonlarına g&ouml;re &ccedil;eşitli kategorilere ayrılmaktadır. Aşağıda kategorilerine g&ouml;re web sitemizde kullanılan &ccedil;erezler ile ilgili &ccedil;erezleri sağlayanlar, &ccedil;erezler ile kişisel veri aktarılabilecek yabancı &uuml;lkeler ve her bir &ccedil;erez &ouml;zelinde kullanım ama&ccedil;larına ve hukuki sebeplerine yer verilmiştir: 1. Zorunlu &Ccedil;erezler Web sitesinin kullanımı ve işlerliği i&ccedil;in gerekli olan &ccedil;erezlerdir. Zorunlu &ccedil;erezler devre dışı bırakıldığı takdirde sitenin bir kısmına veya t&uuml;m&uuml;ne erişim m&uuml;mk&uuml;n olmayabilir. Zorunlu &ccedil;erezler vasıtasıyla işlenen kişisel veriler, &uuml;r&uuml;n ve hizmetlerin sunulabilmesi ve faaliyetlerin mevzuata uygun y&uuml;r&uuml;t&uuml;lmesi ama&ccedil;larıyla, KVKK Md.5/2e&rsquo;de &ouml;ng&ouml;r&uuml;len bir hakkın tesisi, kullanılması veya korunması i&ccedil;in veri işlemenin zorunlu olması sebebiyle işlenmektedir.",
+            'cookieClarificationDesc' => 'Çerez açıklama metni hakkında daha fazla bilgi için <a href="' . route('tr-data-policy') . '">lütfen buraya tıklayın</a>.',
+        ],
+    ];
+
     $translation = [
         'en' => [
             'cookieConstentTitle' => 'We use Cookies',
-            'cookieConstentDesc' => ' We use our own and third-party cookies to personalize content and to
-                analyze web traffic. Read more about cookies',
+            'cookieConstentDesc' => $websiteSpecialTranslations['en']['cookieConstentDesc'],
             'cookieConstentAccept' => 'Accept All Cookies',
+            'cookieConstentDeny' => 'Deny All Cookies',
             'cookieConstentManage' => 'Manage Cookie Preferences',
             'cookieHeader' => 'Manage Cookie Preferences',
             'info' => 'To learn more about cookies ',
-             'link' => 'https://portnature.com.tr/kvkk',
-             'linktext' => 'click here',
+            'link' => $websiteSpecialTranslations['en']['kvkkLink'],
+            'linktext' => 'click here',
+            'switchTextActive' => 'Active',
+            'switchTextDisable' => 'Disable',
             'cookieDesktop' => [
-                'cookieBtn' => ['Cookies', 'Strictly Necessary', 'Performance', 'Functional', 'Targeting'],
+                'cookieBtn' => ['Cookie Clarification Text', 'Cookies', 'Strictly Necessary', 'Performance', 'Functional', 'Targeting'],
                 'cookieRightT' => [
+                    [
+                        'title' => 'Cookie Clarification Text',
+                        'desc' => $websiteSpecialTranslations['en']['cookieClarificationText'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'What are cookies?',
                         'desc' => 'Cookies are small text files placed on your device by websites you visit. They are used to remember your preferences, such as login information, and to track website performance. This ensures a more personalized and efficient online experience.',
@@ -46,17 +86,19 @@
                 ],
                 'cookieRightB' => [
                     [
-                        'btnText' => 'Confirm My Choices',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Accept All Cookies',
+                        'btnText' => 'Save Settings',
                         'btnCss' => 'ccaa',
                     ],
                 ],
             ],
             'cookieMobile' => [
                 'cookieAccs' => [
+                    [
+                        'title' => 'Cookie Clarification Text',
+                        'desc' => $websiteSpecialTranslations['en']['cookieClarificationDesc'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'Cookie Settings',
                         'desc' => 'Cookies are small text files placed on your device by websites you visit. They are used to remember your preferences, such as login information, and to track website performance. This ensures a more personalized and efficient online experience.',
@@ -91,10 +133,6 @@
                 'cookieActionBtns' => [
                     [
                         'btnText' => 'Confirm My Choices',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Accept All Cookies',
                         'btnCss' => 'ccaa',
                     ],
                 ],
@@ -102,16 +140,25 @@
         ],
         'ru' => [
             'cookieConstentTitle' => 'Мы используем cookie',
-            'cookieConstentDesc' => 'Мы используем собственные и сторонние cookie для персонализации содержания и анализа веб-трафика. Подробнее о cookie',
+            'cookieConstentDesc' => $websiteSpecialTranslations['ru']['cookieConstentDesc'],
             'cookieConstentAccept' => 'Принять все cookie',
+            'cookieConstentDeny' => 'Отклонить все cookie',
             'cookieConstentManage' => 'Управление настройками cookie',
             'cookieHeader' => 'Управление настройками cookie',
             'info' => 'Чтобы узнать больше о cookie ',
-            'link' => 'https://portnature.com.tr/kvkk',
+            'link' => $websiteSpecialTranslations['ru']['kvkkLink'],
             'linktext' => 'нажмите здесь',
+            'switchTextActive' => 'Активный',
+            'switchTextDisable' => 'Отключить',
             'cookieDesktop' => [
-                'cookieBtn' => ['Cookie', 'Строго необходимые', 'Аналитические', 'Функциональные', 'Целевые'],
+                'cookieBtn' => ['Информация о куки', 'Cookie', 'Строго необходимые', 'Аналитические', 'Функциональные', 'Целевые'],
                 'cookieRightT' => [
+                    [
+                        'title' => 'Текст разъяснения по поводу файлов cookie',
+                        'desc' => $websiteSpecialTranslations['ru']['cookieClarificationText'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'Что такое cookie?',
                         'desc' => 'Cookie - это небольшие текстовые файлы, которые размещаются на вашем устройстве, после посещения веб-сайтов. Они используются для запоминания ваших предпочтений, таких как информация для входа, и отслеживания производительности сайта. Это обеспечивает более персонализированный и эффективный онлайн-опыт.',
@@ -146,17 +193,19 @@
                 ],
                 'cookieRightB' => [
                     [
-                        'btnText' => 'Подтверждаю',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Принять все cookie',
+                        'btnText' => 'Сохранить настройки',
                         'btnCss' => 'ccaa',
                     ],
                 ],
             ],
             'cookieMobile' => [
                 'cookieAccs' => [
+                    [
+                        'title' => 'Информация о куки',
+                        'desc' => $websiteSpecialTranslations['ru']['cookieClarificationDesc'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'Настройки cookie',
                         'desc' => 'Cookie - это небольшие текстовые файлы, которые размещаются на вашем устройстве, после посещения веб-сайтов. Они используются для запоминания ваших предпочтений, таких как информация для входа, и отслеживания производительности сайта. Это обеспечивает более персонализированный и эффективный онлайн-опыт.',
@@ -190,11 +239,7 @@
                 ],
                 'cookieActionBtns' => [
                     [
-                        'btnText' => 'Подтверждаю',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Принять все cookie',
+                        'btnText' => 'Сохранить настройки',
                         'btnCss' => 'ccaa',
                     ],
                 ],
@@ -202,16 +247,25 @@
         ],
         'de' => [
             'cookieConstentTitle' => 'Wir verwenden Cookies',
-            'cookieConstentDesc' => 'Wir verwenden eigene Cookies und Cookies von Drittanbietern, um Inhalte zu personalisieren und den Webverkehr zu analysieren. Mehr über Cookies erfahren',
+            'cookieConstentDesc' => $websiteSpecialTranslations['de']['cookieConstentDesc'],
             'cookieConstentAccept' => 'Alle Cookies akzeptieren',
+            'cookieConstentDeny' => 'Alle Cookies ablehnen',
             'cookieConstentManage' => 'Cookie-Einstellungen verwalten',
             'cookieHeader' => 'Cookie-Einstellungen verwalten',
             'info' => 'Um mehr über Cookies zu erfahren ',
-                        'link' => 'https://portnature.com.tr/kvkk', 
-                        'linktext' => 'klicken Sie hier',
+            'link' => $websiteSpecialTranslations['de']['kvkkLink'],
+            'linktext' => 'klicken Sie hier',
+            'switchTextActive' => 'Aktiv',
+            'switchTextDisable' => 'Deaktivieren',
             'cookieDesktop' => [
-                'cookieBtn' => ['Cookies', 'Unbedingt erforderlich', 'Leistung', 'Funktional', 'Zielgerichtet'],
+                'cookieBtn' => ['Klärungstext zu Cookies', 'Cookies', 'Unbedingt erforderlich', 'Leistung', 'Funktional', 'Zielgerichtet'],
                 'cookieRightT' => [
+                    [
+                        'title' => 'Klärungstext zu Cookies',
+                        'desc' => $websiteSpecialTranslations['de']['cookieClarificationText'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'Cookie-Einstellungen',
                         'desc' => 'Wenn Sie unsere Website besuchen, können Informationen in Ihrem Browser gespeichert oder abgerufen werden, meist in Form von Cookies. Diese Informationen können sich auf Sie, Ihre Präferenzen oder Ihr Gerät beziehen und werden meist genutzt, um die Website so zu gestalten, wie Sie es erwarten. Die Informationen identifizieren Sie normalerweise nicht direkt, können Ihnen jedoch eine personalisiertere Web-Erfahrung bieten. Da wir Ihr Recht auf Privatsphäre respektieren, können Sie sich entscheiden, bestimmte Cookie-Typen nicht zuzulassen. Klicken Sie auf die verschiedenen Kategorienüberschriften, um mehr zu erfahren und Ihre Einstellungen zu verwalten. Bitte beachten Sie, dass das Blockieren einiger Arten von Cookies Ihre Erfahrung auf der Website und die von uns angebotenen Dienste beeinträchtigen kann.',
@@ -246,17 +300,19 @@
                 ],
                 'cookieRightB' => [
                     [
-                        'btnText' => 'Meine Auswahl bestätigen',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Alle Cookies akzeptieren',
+                        'btnText' => 'Einstellungen speichern',
                         'btnCss' => 'ccaa',
                     ],
                 ],
             ],
             'cookieMobile' => [
                 'cookieAccs' => [
+                    [
+                        'title' => 'Klärungstext zu Cookies',
+                        'desc' => $websiteSpecialTranslations['de']['cookieClarificationDesc'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'Cookie-Einstellungen',
                         'desc' => 'Wenn Sie eine unserer Webseiten besuchen, kann es sein, dass Informationen in Ihrem Browser gespeichert oder abgerufen werden, meist in Form von Cookies. Diese Informationen können sich auf Sie, Ihre Präferenzen oder Ihr Gerät beziehen und werden hauptsächlich verwendet, um die Seite so funktionieren zu lassen, wie Sie es erwarten. Die Informationen identifizieren Sie normalerweise nicht direkt, können Ihnen aber ein personalisierteres Web-Erlebnis bieten. Da wir Ihr Recht auf Privatsphäre respektieren, können Sie sich entscheiden, bestimmte Arten von Cookies nicht zuzulassen. Klicken Sie auf die verschiedenen Kategorieüberschriften, um mehr zu erfahren und Ihre Einstellungen zu verwalten. Bitte beachten Sie, dass das Blockieren einiger Arten von Cookies Ihre Erfahrung auf der Website und die von uns angebotenen Dienste beeinträchtigen kann.',
@@ -290,11 +346,7 @@
                 ],
                 'cookieActionBtns' => [
                     [
-                        'btnText' => 'Meine Auswahl bestätigen',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Alle Cookies akzeptieren',
+                        'btnText' => 'Einstellungen speichern',
                         'btnCss' => 'ccaa',
                     ],
                 ],
@@ -302,16 +354,25 @@
         ],
         'tr' => [
             'cookieConstentTitle' => 'Çerez Kullanıyoruz',
-            'cookieConstentDesc' => 'İçeriği kişiselleştirmek ve web trafiğini analiz etmek için kendi çerezlerimizi ve üçüncü taraf çerezleri kullanıyoruz. Çerezler hakkında daha fazla bilgi edinin',
+            'cookieConstentDesc' => $websiteSpecialTranslations['tr']['cookieConstentDesc'],
             'cookieConstentAccept' => 'Tüm Çerezleri Kabul Et',
+            'cookieConstentDeny' => 'Tüm Çerezleri Reddet',
             'cookieConstentManage' => 'Çerez Tercihlerini Yönet',
             'cookieHeader' => 'Çerez Tercihlerini Yönet',
             'info' => 'Çerezler hakkında daha fazla bilgi için ',
-                        'link' => 'https://portnature.com.tr/kvkk',
-                        'linktext' => 'buraya Tıklayın.',
+            'link' => $websiteSpecialTranslations['tr']['kvkkLink'],
+            'linktext' => 'buraya Tıklayın.',
+            'switchTextActive' => 'Aktif',
+            'switchTextDisable' => 'Pasif',
             'cookieDesktop' => [
-                'cookieBtn' => ['Çerezler', 'Zorunlu Çerezler', 'Performans', 'İşlevsel', 'Hedefleme'],
+                'cookieBtn' => ['Çerez Aydınlatma Metni', 'Çerezler', 'Zorunlu Çerezler', 'Performans', 'İşlevsel', 'Hedefleme'],
                 'cookieRightT' => [
+                    [
+                        'title' => 'Çerez Aydınlatma Metni',
+                        'desc' => $websiteSpecialTranslations['tr']['cookieClarificationText'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'Çerez Ayarları',
                         'desc' => 'Web sitemizi ziyaret ettiğinizde, çoğunlukla çerezler şeklinde tarayıcınızda bilgi depolanabilir veya alınabilir. Bu bilgiler sizin, tercihleriniz veya cihazınız hakkında olabilir ve genellikle siteyi beklediğiniz gibi çalıştırmak için kullanılır. Bilgiler genellikle sizi doğrudan tanımlamaz, ancak size daha kişiselleştirilmiş bir web deneyimi sunabilir. Gizlilik hakkınıza saygı duyduğumuz için, bazı çerez türlerini kabul etmemeyi tercih edebilirsiniz. Tercihlerinizi yönetmek ve daha fazla bilgi edinmek için farklı kategori başlıklarına tıklayın. Lütfen unutmayın, bazı çerez türlerini engellemek sitenin ve sunabileceğimiz hizmetlerin deneyiminizi etkileyebilir.',
@@ -347,16 +408,18 @@
                 'cookieRightB' => [
                     [
                         'btnText' => 'Seçimlerimi Onayla',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Tüm Çerezleri Kabul Et',
                         'btnCss' => 'ccaa',
                     ],
                 ],
             ],
             'cookieMobile' => [
                 'cookieAccs' => [
+                    [
+                        'title' => 'Çerez Aydınlatma Metni',
+                        'desc' => $websiteSpecialTranslations['tr']['cookieClarificationDesc'],
+                        'switch' => 'None',
+                        'css' => 'mcP',
+                    ],
                     [
                         'title' => 'Çerez Ayarları',
                         'desc' => 'Web sitelerimizden herhangi birini ziyaret ettiğinizde, tarayıcınızda genellikle çerezler şeklinde bilgiler depolanabilir veya alınabilir. Bu bilgiler sizin, tercihleriniz veya cihazınız hakkında olabilir ve genellikle siteyi beklediğiniz gibi çalıştırmak için kullanılır. Bu bilgiler genellikle sizi doğrudan tanımlamaz, ancak size daha kişiselleştirilmiş bir web deneyimi sunabilir. Gizlilik hakkınıza saygı gösterdiğimiz için, bazı çerez türlerine izin vermemeyi seçebilirsiniz. Tercihlerinizi yönetmek ve daha fazla bilgi edinmek için farklı kategori başlıklarına tıklayın. Lütfen unutmayın, bazı çerez türlerini engellemek, sitenin ve sunabileceğimiz hizmetlerin deneyiminizi etkileyebilir.',
@@ -390,11 +453,7 @@
                 ],
                 'cookieActionBtns' => [
                     [
-                        'btnText' => 'Seçimlerimi Onayla',
-                        'btnCss' => 'ccam',
-                    ],
-                    [
-                        'btnText' => 'Tüm Çerezleri Kabul Et',
+                        'btnText' => 'Ayarları Kaydet',
                         'btnCss' => 'ccaa',
                     ],
                 ],
@@ -406,6 +465,7 @@
 
 <div class="cookieConstentContainer">
     <div class="cookieConstentWrapper">
+        <div class="closeAllCookie "><button type="button" class="btn-close me-2"></button></div>
         <div class="cookieConstentInformation">
             <div class="cookieConstentTitle">{!! $translation[$lang]['cookieConstentTitle'] !!}</div>
             <div class="cookieConstentDesc">
@@ -416,51 +476,61 @@
             <button class="cookieConstentAccept cookieA cda">{!! $translation[$lang]['cookieConstentAccept'] !!}</button>
             <button class="cookieConstentManage" data-bs-toggle="modal"
                 data-bs-target="#customizeCookie">{!! $translation[$lang]['cookieConstentManage'] !!}</button>
-
+            <button class="cookieConsentDeny cookieA caD">{!! $translation[$lang]['cookieConstentDeny'] !!}</button>
         </div>
     </div>
 </div>
-<div class="cookieBackdrop"></div>
+{{-- <div class="cookieBackdrop"></div> --}}
 <div class="modal fade" id="customizeCookie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="customizeCookie" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg modalCookieInner">
+    <div class="modal-dialog modal-dialog-centered modal-lg  modalCookieInner">
         <div class="modal-content cookieModal">
 
             <div class="modal-body">
                 <div class="cookieHeader">
                     <h5 class="modal-title w-100 text-center" id="exampleModalLabel">{!! $translation[$lang]['cookieHeader'] !!}</h5>
-                    <button type="button" class="btn-close me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close me-2 closeCookieModal" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class=cookieBodyDesktop>
                     <div class="cookieLeft">
+
                         @foreach ($translation[$lang]['cookieDesktop']['cookieBtn'] as $key => $item)
-                            <button type="button"
-                                class="cookieBtn {{ $key == 0 ? 'active' : '' }}">{{ $item }}
+                            <button type="button" class="cookieBtn {{ $key == 0 ? 'active' : '' }}">{{ $item }}
                             </button>
                         @endforeach
                     </div>
                     <div class="cookieRight">
+
                         @foreach ($translation[$lang]['cookieDesktop']['cookieRightT'] as $key => $item)
-                            <div class="cookieRightT {{ $item['css'] }}  {{ $key !== 0 ? 'hide' : '' }}">
+                            <div class="cookieRightT {{ $item['css'] }} {{ $key !== 0 ? 'hide' : '' }}">
                                 <div>
                                     <h2>{{ $item['title'] }}</h2>
-                                    <p>{{ $item['desc'] }}</p>
+                                    <p>{!! $item['desc'] !!}</p>
                                 </div>
                                 <a href=""></a>
-                                <div>
-                                    <p id="infoText" style="display: none; font-weight:700;">{!! $translation[$lang]['info'] !!} <a href="{!! $translation[$lang]['link'] !!}">{!! $translation[$lang]['linktext'] !!}</a></p>
-                                </div>
+
+                                @if ($key == 1)
+                                    <p class="infoText  fw-semibold">
+                                        {!! $translation[$lang]['info'] !!}
+                                        <a href="{!! $translation[$lang]['link'] !!}">{!! $translation[$lang]['linktext'] !!}</a>
+                                    </p>
+                                @endif
+
                                 @if ($item['switch'] !== 'None')
                                     <div class="form-check form-switch switchContainer disabledC">
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
+                                        <label class="form-check-label {{ $key !== 2 ? 'hide' : '' }}"
+                                            for="flexSwitchCheckChecked">{!! $translation[$lang]['switchTextActive'] !!}</label>
+                                        <label class="form-check-label  {{ $key !== 2 ? '' : 'hide' }}"
+                                            for="flexSwitchCheckChecked">{!! $translation[$lang]['switchTextDisable'] !!}</label>
                                         <input class="form-check-input cookieSwitch" role="switch" type="checkbox"
-                                            id="flexSwitchCheckChecked" checked
+                                            id="flexSwitchCheckChecked" {{ $key !== 2 ? '' : 'checked' }}
                                             {{ $item['switch'] == 'Disable' ? 'disabled' : '' }}>
                                     </div>
                                 @endif
                             </div>
                         @endforeach
-                        <div class="cookieRightB">
+                        <div class="cookieRightB hide">
                             {{-- loop $translation[lang] cookieDesktop .cookieRightB --}}
                             @foreach ($translation[$lang]['cookieDesktop']['cookieRightB'] as $key => $item)
                                 <button type="button"
@@ -484,13 +554,17 @@
                                 </div>
                                 <div class="cookieDetail cdhidden">
                                     <p>
-                                        {{ $item['desc'] }}
+                                        {!! $item['desc'] !!}
                                     </p>
                                     @if ($item['switch'] !== 'None')
                                         <div class="form-check form-switch switchContainer disabledC">
-                                            <label class="form-check-label" for="flexSwitchCheckChecked">Active</label>
+                                            <label class="form-check-label {{ $key !== 2 ? 'hide' : '' }}"
+                                                for="flexSwitchCheckChecked">{!! $translation[$lang]['switchTextActive'] !!}</label>
+                                            <label class="form-check-label  {{ $key !== 2 ? '' : 'hide' }}"
+                                                for="flexSwitchCheckChecked">{!! $translation[$lang]['switchTextDisable'] !!}</label>
+                                            {{-- <label class="form-check-label" for="flexSwitchCheckChecked">Active</label> --}}
                                             <input class="form-check-input cookieSwitch" role="switch" type="checkbox"
-                                                id="flexSwitchCheckChecked" checked
+                                                id="flexSwitchCheckChecked" {{ $key == 2 ? 'checked' : '' }}
                                                 {{ $item['switch'] == 'Disable' ? 'disabled' : '' }}>
                                         </div>
                                     @endif
@@ -515,6 +589,12 @@
     </div>
     {{-- ri-arrow-down-circle-fill --}}
     <style>
+        .closeAllCookie {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
         .cookieDetail {
             overflow: hidden;
             transition: all .3s ease-out;
@@ -559,12 +639,13 @@
 
         .privacy-title {
             color: var(--Gray, #233038);
-            text-align: center;
+            /* text-align: center; */
             text-transform: uppercase;
             font-weight: bold;
             font-size: 16px;
             line-height: 20px;
             font-family: Montserrat, sans-serif;
+            cursor: pointer;
         }
 
         .privacy-image {
@@ -617,13 +698,20 @@
             display: flex;
             flex-direction: column;
             flex: 1;
+
         }
 
-        .ccam {
-            border-radius: 8px;
-            background: #00E49C;
-            color: #fff;
+        .mcP {
+            overflow-y: scroll;
+            max-height: 400px;
+            margin-bottom: 20px;
         }
+
+        /* hide scroll bar on mcp */
+
+
+
+
 
         .ccaa {
             border-radius: 8px;
@@ -645,6 +733,7 @@
             flex-direction: column;
             justify-content: space-between;
             padding-bottom: 15px;
+
         }
 
         .cookieRightT h2 {
@@ -785,12 +874,14 @@
             align-items: center;
             position: fixed;
             bottom: 0;
-            z-index: 999;
+            z-index: 1010;
             width: 100%;
+            border-top: 1px solid #2525;
         }
 
         .cookieConstentWrapper {
             display: flex;
+            flex-direction: column;
             width: 100%;
             max-width: 1536px;
             align-items: center;
@@ -827,7 +918,7 @@
             color: var(--Gray, #233038);
             text-align: center;
             white-space: nowrap;
-            font: 700 16px/20px Montserrat, sans-serif;
+            font: 700 20px/25px Montserrat, sans-serif;
         }
 
         @media (max-width: 991px) {
@@ -840,8 +931,8 @@
         .cookieConstentDesc {
             color: #233038;
             margin-top: 15px;
-            white-space: nowrap;
-            font: 500 12px/15px Montserrat, sans-serif;
+            white-space: wrap;
+            font: 500 17px/20px Montserrat, sans-serif;
         }
 
         @media (max-width: 991px) {
@@ -865,22 +956,28 @@
             }
         }
 
-        .cookieConstentAccept {
-            color: var(--neutral-white, #fff);
+        .cookieConstentAccept,
+        .cookieConsentDeny {
+
             text-align: center;
 
             white-space: nowrap;
             border-radius: 8px;
-            background-color: #233038;
+
             flex-grow: 1;
             align-items: center;
             padding: 22px 20px;
             font: 700 16px/20px Montserrat, sans-serif;
         }
 
+
         @media (max-width: 991px) {
-            .cookieConstentAccept {
+
+            .cookieConstentAccept,
+            .cookieConsentDeny,
+            .cookieConstentManage {
                 white-space: initial;
+                min-width: 200px !important;
             }
         }
 
@@ -901,7 +998,8 @@
         }
 
         .cookieConstentAccept,
-        cookieConstentManage {
+        .cookieConstentManage,
+        .cookieConsentDeny {
             min-width: 300px;
         }
 
@@ -917,8 +1015,9 @@
             }
 
             .cookieConstentAccept,
-            .cookieConstentManage {
-                width: 50%
+            .cookieConstentManage,
+            .cookieConsentDeny {
+                /* width: 50% */
             }
 
             .cookieConstentTitle,
@@ -1008,13 +1107,23 @@
             }
         }
 
+        @media (max-width: 768px) {
+            .cookieConstentActions {
+                flex-direction: column-reverse;
+            }
+        }
+
         @media (max-width: 350px) {
 
             .cookieConstentAccept,
-            cookieConstentManage {
+            .cookieConstentManage,
+            .cookieConsentDeny {
                 min-width: auto !important;
             }
         }
     </style>
 
 </div>
+
+
+{{-- href="{{ route('ru-main-homepage') }}" --}}

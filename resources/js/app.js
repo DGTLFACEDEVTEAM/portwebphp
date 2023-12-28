@@ -18,7 +18,7 @@ if ($("#contactForm2").length) {
         });
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener(`DOMContentLoaded`, (event) => {
     // check if chatbox is enabled
 
     //    wait 2 secons to load
@@ -64,52 +64,52 @@ window.addEventListener("DOMContentLoaded", (event) => {
     //         };
     // })();
 
-    (function () {
-        var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
-        var BASE_COLOR = "#075695";
-        var CONTAINER_ELEMENT = "iframe";
+    // (function () {
+    //     var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
+    //     var BASE_COLOR = "#075695";
+    //     var CONTAINER_ELEMENT = "iframe";
 
-        var process = void 0;
-        var _typeofThat =
-            "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
-                ? function (o) {
-                      return typeof o;
-                  }
-                : function (o) {
-                      return o &&
-                          "function" == typeof Symbol &&
-                          o.constructor === Symbol &&
-                          o !== Symbol.prototype
-                          ? "symbol"
-                          : typeof o;
-                  };
+    //     var process = void 0;
+    //     var _typeofThat =
+    //         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
+    //             ? function (o) {
+    //                   return typeof o;
+    //               }
+    //             : function (o) {
+    //                   return o &&
+    //                       "function" == typeof Symbol &&
+    //                       o.constructor === Symbol &&
+    //                       o !== Symbol.prototype
+    //                       ? "symbol"
+    //                       : typeof o;
+    //               };
 
-        function insertLivechatJS() {
-            var e = document.createElement("script");
-            (e.type = "text/javascript"),
-                (e.async = "true"),
-                (e.src = "/assets/frontend/libs/js/livechat.js");
-            var t = document.createElement("link");
-            (t.rel = "stylesheet"),
-                (t.href =
-                    ((process && process.env && process.env.DOMAIN) ||
-                        "https://portnature.com.tr") +
-                    "/assets/frontend/css/chatbox.css");
-            var n = document.getElementsByTagName("script")[0];
-            document.head.appendChild(t), n.parentNode.insertBefore(e, n);
-        }
-        window.attachEvent
-            ? window.attachEvent("onload", insertLivechatJS)
-            : window.addEventListener("load", insertLivechatJS, !1),
-            (window.initLivechat = function () {
-                "object" === _typeofThat(window.LiveChat) &&
-                    window.LiveChat.boot({
-                        uuid: APP_UUID,
-                        baseColor: BASE_COLOR,
-                        containerElement: CONTAINER_ELEMENT,
-                    });
-            });
-    })();
+    //     function insertLivechatJS() {
+    //         var e = document.createElement("script");
+    //         (e.type = "text/javascript"),
+    //             (e.async = "true"),
+    //             (e.src = "/assets/frontend/libs/js/livechat.js");
+    //         var t = document.createElement("link");
+    //         (t.rel = "stylesheet"),
+    //             (t.href =
+    //                 ((process && process.env && process.env.DOMAIN) ||
+    //                     "https://portnature.com.tr") +
+    //                 "/assets/frontend/css/chatbox.css");
+    //         var n = document.getElementsByTagName("script")[0];
+    //         document.head.appendChild(t), n.parentNode.insertBefore(e, n);
+    //     }
+    //     window.attachEvent
+    //         ? window.attachEvent("onload", insertLivechatJS)
+    //         : window.addEventListener("load", insertLivechatJS, !1),
+    //         (window.initLivechat = function () {
+    //             "object" === _typeofThat(window.LiveChat) &&
+    //                 window.LiveChat.boot({
+    //                     uuid: APP_UUID,
+    //                     baseColor: BASE_COLOR,
+    //                     containerElement: CONTAINER_ELEMENT,
+    //                 });
+    //         });
+    // })();
 });
 
 if (typeof pageHasContactForm !== "undefined" && pageHasContactForm) {

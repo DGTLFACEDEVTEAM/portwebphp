@@ -46,20 +46,24 @@
         @vite(['resources/css/blogdetail.css'])
     @endif
 
-
-
     @yield('css-imports')
 
-
-
-
     @php
-        $isClientAcceptCookie = isset($_COOKIE['cookieConsent']) ? $_COOKIE['cookieConsent'] : 'false';
-        $isClientAcceptPerformanceCookie = isset($_COOKIE['port_c_p']) ? $_COOKIE['port_c_p'] : 'false';
-        $isClientAcceptFunctionalCookie = isset($_COOKIE['port_c_f']) ? $_COOKIE['port_c_f'] : 'false';
-        $isClientAcceptTargetingCookie = isset($_COOKIE['port_c_t']) ? $_COOKIE['port_c_t'] : 'false';
+        $isClientAcceptCookie = isset($_COOKIE['CCP']) ? $_COOKIE['CCP'] : 'false';
+
+        if ($isClientAcceptCookie != 'false') {
+            $decodedCookieString = base64_decode($isClientAcceptCookie);
+            $cookieValues = json_decode($decodedCookieString, true);
+        }
+
+        $isClientAcceptPerformanceCookie = isset($cookieValues['performance']) ? $cookieValues['performance'] : 'false';
+        $isClientAcceptFunctionalCookie = isset($cookieValues['functional']) ? $cookieValues['functional'] : 'false';
+        $isClientAcceptTargetingCookie = isset($cookieValues['targeting']) ? $cookieValues['targeting'] : 'false';
+
     @endphp
 </head>
+
+
 
 <body>
     @if ($isClientAcceptPerformanceCookie == 'true')
@@ -95,8 +99,7 @@
     @yield('javascript-imports')
 
 
-    @if ($isClientAcceptCookie == 'true')
-    @else
+    @if ($isClientAcceptCookie == 'false')
         @include('components.cookie', ['lang' => $lang])
     @endif
 

@@ -2,7 +2,32 @@ import Cookies from "js-cookie";
 import swiperHomeTop from "../../../public/assets/frontend/js/main";
 import { swiperAutoPlayStarter } from "./swiperActions";
 
+//   STATES START
 let activeCookieTab = 0;
+
+var gtmContainerId = "GTM-TZ53DS5";
+// var gaMeasurementId = "G-FH87DE17XF";
+var yandexMetricaId = 92210931;
+var facebookPixelId = "721299109355968";
+
+var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
+var BASE_COLOR = "#075695";
+var CONTAINER_ELEMENT = "iframe";
+
+var ourURl = "https://portnature.com.tr";
+
+var connexeaseUrl = "https://livechat.connexease.com/l/embed-js/livechat.js";
+var ourJsUrl = `${ourURl}/assets/frontend/libs/js/livechat.js`;
+var ourCssUrl = `${ourURl}/assets/frontend/css/chatbox.css`;
+var connexeaseJsUs = true;
+
+var isGtmActive = true;
+var isYandexMetricaActive = false;
+var isFacebookPixelActive = false;
+var isChatboxActive = true;
+var isSwiperActive = true;
+
+//   STATES END
 
 $(".cookieBtn").click(function () {
     $(".cookieBtn").removeClass("active");
@@ -11,58 +36,137 @@ $(".cookieBtn").click(function () {
     $(".cookieRightT").addClass("hide");
     $(".cookieRightT").eq(activeCookieTab).removeClass("hide");
 
-
-    var infoText = $("#infoText");
-    if ($(this).text().trim() === "Cookies" || 'Cookie' || 'Çerezler') {
-        infoText.show();
-    } else {
-        infoText.hide();
-    }
+    activeCookieTab !== 0
+        ? $(".cookieRightB").removeClass("hide")
+        : $(".cookieRightB").addClass("hide");
 });
 
 // Event handler for switch toggle
-$('.cookieSwitch').change(function() {
-    let switchLabel = $(this).closest('.switchContainer').find('label');
-    
-    if ($(this).is(':checked')) {
-        switchLabel.text('Active').removeClass('deactivated');
+$(".cookieSwitch").change(function () {
+    let switchLabel = $(this).closest(".switchContainer").find("label");
+
+    if ($(this).is(":checked")) {
+        //    hide first label show second label on switchLabel
+        switchLabel.eq(0).removeClass("hide");
+        switchLabel.eq(1).addClass("hide");
     } else {
-        switchLabel.text('Disabled').addClass('deactivated');
+        //    hide second label show first label on switchLabel
+        switchLabel.eq(0).addClass("hide");
+        switchLabel.eq(1).removeClass("hide");
     }
 });
-
 
 var htmlElement = document.documentElement;
 // cookieDetailAccorHeader on click change next sibling height
 $(document).ready(function () {
+    var process = void 0;
+    var _typeofThat =
+        "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
+            ? function (o) {
+                  return typeof o;
+              }
+            : function (o) {
+                  return o &&
+                      "function" == typeof Symbol &&
+                      o.constructor === Symbol &&
+                      o !== Symbol.prototype
+                      ? "symbol"
+                      : typeof o;
+              };
+
+    function activateChatbox() {
+        function insertLivechatJS() {
+            var e = document.createElement("script");
+            e.type = "text/javascript";
+            e.async = true;
+            e.src =
+                (process && process.env && process.env.DOMAIN) || connexeaseJsUs
+                    ? ourJsUrl
+                    : connexeaseUrl;
+
+            // Use the 'onload' event to ensure the script is fully loaded before initialization
+            e.onload = function () {
+                initializeChatbox();
+            };
+
+            var t = document.createElement("link");
+            t.rel = "stylesheet";
+            t.href =
+                (process && process.env && process.env.DOMAIN) || ourCssUrl;
+
+            var n = document.getElementsByTagName("script")[0];
+            document.head.appendChild(t);
+            n.parentNode.insertBefore(e, n);
+        }
+
+        insertLivechatJS();
+    }
+
+    function initializeChatbox() {
+        if (typeof window.LiveChat === "object") {
+            window.LiveChat.boot({
+                uuid: APP_UUID,
+                baseColor: BASE_COLOR,
+                containerElement: CONTAINER_ELEMENT,
+            });
+        }
+    }
     // stop scrolling on html
     // document.body.style.overflow = "hidden";
     var defaultActiveTab = $(".cookieBtn.active").text().trim();
-    if (defaultActiveTab === "Cookies" || 'Cookie' || 'Çerezler') {
+    if (defaultActiveTab === "Cookies" || "Cookie" || "Çerezler") {
         $("#infoText").show();
     }
-    let isClientAcceptCookie = Cookies.get("cookieConsent");
-    let isClientAcceptPerformanceCookie = Cookies.get("port_c_p");
-    let isClientAcceptFunctionalCookie = Cookies.get("port_c_f");
-    let isClientAcceptTargetingCookie = Cookies.get("port_c_t");
 
+    $(".closeAllCookie").on("click", function () {
+        $(".cookieConstentContainer").hide();
+    });
 
+    let isClientAcceptCookie = Cookies.get("CCP");
 
-    if (isClientAcceptCookie == "true") {
-        htmlElement.style.overflow = "auto";
-    } else {
-        htmlElement.style.overflow = "hidden";
+    let parseCCP = null;
+
+    if (isClientAcceptCookie !== undefined) {
+        let decodeCCP = atob(isClientAcceptCookie);
+        parseCCP = JSON.parse(decodeCCP);
     }
 
-    $('.cookieSwitch').each(function() {
-        let switchLabel = $(this).closest('.switchContainer').find('label');
-        
-        if ($(this).is(':checked')) {
-            switchLabel.text('Active').removeClass('deactivated');
-        } else {
-            switchLabel.text('Disabled').addClass('deactivated');
+    let isClientAcceptPerformanceCookie = false,
+        isClientAcceptFunctionalCookie = false,
+        isClientAcceptTargetingCookie = false;
+
+    if (parseCCP !== null) {
+        isClientAcceptPerformanceCookie = parseCCP.performance;
+        isClientAcceptFunctionalCookie = parseCCP.functional;
+        isClientAcceptTargetingCookie = parseCCP.targeting;
+    }
+
+    //   if all cookie are rejected
+    let isAllCookieRejected = true;
+    if (
+        parseCCP !== null &&
+        (isClientAcceptPerformanceCookie ||
+            isClientAcceptFunctionalCookie ||
+            isClientAcceptTargetingCookie)
+    ) {
+        isAllCookieRejected = false;
+    }
+
+    function getDecodedCookieValues(cookieName) {
+        let cookieValue = Cookies.get(cookieName);
+        if (cookieValue) {
+            // Decode from base64 and parse the JSON
+            try {
+                let decodedValue = atob(cookieValue);
+                return JSON.parse(decodedValue);
+            } catch (e) {
+                console.error("Error decoding and parsing cookie value", e);
+            }
         }
-    });
+        return null;
+    }
+
+    //   let ccpValues = getDecodedCookieValues("CCP");
 
     $(".cookieDetailAccorHeader").on("click", function () {
         $(this).children("svg").toggleClass("rotate180");
@@ -101,7 +205,25 @@ $(document).ready(function () {
     });
 
     // Function to activate Google Tag Manager
-    function activateGTM(gtmContainerId) {
+    function activateGTM(gtmContainerId, cookieValues) {
+        console.log("gtm active");
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("consent", "default", {
+            ad_storage: cookieValues.targeting ? "granted" : "denied",
+            analytics_storage: cookieValues.performance ? "granted" : "denied",
+            personalization_storage: cookieValues.targeting
+                ? "granted"
+                : "denied",
+            functionality_storage: cookieValues.functional
+                ? "granted"
+                : "denied",
+            security_storage: cookieValues.functional ? "granted" : "denied",
+        });
+        gtag("set", "ads_data_redaction", true);
+
         (function (w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -196,26 +318,42 @@ $(document).ready(function () {
         fbq("track", "PageView");
     }
 
-    var gtmContainerId = "GTM-TZ53DS5";
-    var gaMeasurementId = "G-FH87DE17XF";
-    var yandexMetricaId = 92210931;
-    var facebookPixelId = "721299109355968";
+    // client already decided to cookie preferences so we can activate the scripts if they are active
 
-    if (isClientAcceptPerformanceCookie == "true") {
-        activateGA4(gaMeasurementId);
-        activateYandexMetrica(yandexMetricaId);
+    if (parseCCP !== null && !isAllCookieRejected)
+        isGtmActive ? activateGTM(gtmContainerId, parseCCP) : null;
+
+    if (
+        isClientAcceptPerformanceCookie == "true" ||
+        isClientAcceptPerformanceCookie == true
+    ) {
+        isYandexMetricaActive ? activateYandexMetrica(yandexMetricaId) : null;
     }
 
-    if (isClientAcceptFunctionalCookie == "true") {
-        activateGTM(gtmContainerId);
+    if (
+        isClientAcceptFunctionalCookie == "true" ||
+        isClientAcceptFunctionalCookie == true
+    ) {
+        isChatboxActive ? activateChatbox() : null;
     }
 
-    if (isClientAcceptTargetingCookie == "true") {
-        activateFacebookPixel(facebookPixelId);
+    if (
+        isClientAcceptTargetingCookie == "true" ||
+        isClientAcceptTargetingCookie == true
+    ) {
+        isFacebookPixelActive ? activateFacebookPixel(facebookPixelId) : null;
     }
+
+    let cookieValues = {};
+
+    // Example of retrieving and parsing the cookie
+    //   let ccpCookie = Cookies.get("ccp");
+    //   if (ccpCookie) {
+    //     let ccpValues = JSON.parse(ccpCookie);
+    //   }
 
     $(".cookieA").on("click", function () {
-        htmlElement.style.overflow = "auto";
+        // htmlElement.style.overflow = "auto";
 
         $("#customizeCookie").modal("hide");
         $(".cookieConstentContainer").hide();
@@ -225,7 +363,8 @@ $(document).ready(function () {
         let cookieModal = $(".cookieModal");
         let cookieModalInputsArray = [];
 
-        Cookies.set("cookieConsent", "true", { expires: 365 });
+        //Cookies.set("cookieConsent", "true", { expires: 365 });
+        // ccpValues = getDecodedCookieValues("CCP");
 
         let classList = this.classList;
         if (classList.contains("caD")) {
@@ -255,7 +394,11 @@ $(document).ready(function () {
         } else if (classList.contains("cda")) {
             // push  4 true values to cookieModalInputsArray
             cookieModalInputsArray = [true, true, true, true];
+        } else if (classList.contains("cookieConsentDeny")) {
+            cookieModalInputsArray = [true, false, false, false];
         }
+
+        let isThereAnyActiveCookie = false;
 
         cookieModalInputsArray.forEach(function (item, index) {
             switch (index) {
@@ -263,54 +406,83 @@ $(document).ready(function () {
                     break;
                 case 1:
                     // if cookieModalInputsArray[1] is true that mean user accepted performance cookies
-                    // performence cookies are google analytics and yandex metrica
+                    // performance cookies are google analytics and yandex metrica
+
+                    // analytics cookies
                     if (item == true) {
-                        activateGA4(gaMeasurementId);
-                        activateYandexMetrica(yandexMetricaId);
-                        Cookies.set("port_c_p", "true", {
-                            expires: 365,
-                        });
+                        isThereAnyActiveCookie = true;
+                        isYandexMetricaActive
+                            ? activateYandexMetrica(yandexMetricaId)
+                            : null;
+                        cookieValues.performance = true;
                     } else {
-                        Cookies.set("port_c_p", "false", {
-                            expires: 365,
-                        });
+                        cookieValues.performance = false;
                     }
 
                     break;
                 case 2:
                     // if cookieModalInputsArray[2] is true that mean user accepted functional cookies
                     // functional cookies are google tag manager
+
+                    // preferences cookies
                     if (item == true) {
-                        activateGTM(gtmContainerId);
-                        Cookies.set("port_c_f", "true", {
-                            expires: 365,
-                        });
+                        isThereAnyActiveCookie = true;
+                        isChatboxActive ? activateChatbox() : null;
+                        cookieValues.functional = true;
                     } else {
-                        Cookies.set("port_c_f", "false", {
-                            expires: 365,
-                        });
+                        cookieValues.functional = false;
                     }
                     break;
                 case 3:
                     // if cookieModalInputsArray[3] is true that mean user accepted targeting cookies
                     // targeting cookies are facebook pixel
+
+                    // marketing cookies
                     if (item == true) {
-                        activateFacebookPixel(facebookPixelId);
-                        Cookies.set("port_c_t", "true", {
-                            expires: 365,
-                        });
+                        isThereAnyActiveCookie = true;
+                        isFacebookPixelActive
+                            ? activateFacebookPixel(facebookPixelId)
+                            : null;
+                        cookieValues.targeting = true;
                     } else {
-                        Cookies.set("port_c_t", "false", {
-                            expires: 365,
-                        });
+                        cookieValues.targeting = false;
                     }
 
                     break;
                 default:
                     break;
             }
-        });
 
-        swiperAutoPlayStarter(swiperHomeTop);
+            let cookieString = JSON.stringify(cookieValues);
+            let base64CookieString = btoa(cookieString);
+            Cookies.set("CCP", base64CookieString, { expires: 365 });
+        });
+        isGtmActive && isThereAnyActiveCookie
+            ? activateGTM(gtmContainerId, cookieValues)
+            : null;
+
+        if (isSwiperActive) {
+            swiperAutoPlayStarter(swiperHomeTop);
+        }
     });
 });
+
+// ad_storage                   targetting
+// whats ad_storage cookies are ?
+// ad_storage cookies are used to show ads to users
+
+// analytics_storage            performence
+// whats analytics_storage cookies are ?
+// analytics_storage cookies are used to track users on the website
+
+// personalization_storage      targetting
+// whats personalization_storage cookies are ?
+// personalization_storage cookies are used to show personalized content to users
+
+// functionality_storage        functionality
+// whats functionality_storage cookies are ?
+// functionality_storage cookies are used to remember user preferences
+
+// security_storage             functionality
+// whats security_storage cookies are ?
+// security_storage cookies are used to protect the website from attacks
