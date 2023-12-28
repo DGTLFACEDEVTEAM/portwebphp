@@ -131,19 +131,27 @@ $(document).ready(function () {
         parseCCP = JSON.parse(decodeCCP);
     }
 
-    let isClientAcceptPerformanceCookie =
-        parseCCP !== null ? parseCCP.performance : false;
-    let isClientAcceptFunctionalCookie =
-        parseCCP !== null ? parseCCP.functional : false;
-    let isClientAcceptTargetingCookie =
-        parseCCP !== null ? parseCCP.targeting : false;
+    let isClientAcceptPerformanceCookie = false,
+        isClientAcceptFunctionalCookie = false,
+        isClientAcceptTargetingCookie = false;
 
-    //   if (isClientAcceptCookie !== undefined && isClientAcceptCookie.length > 0) {
-    //     htmlElement.style.overflow = "auto";
-    //   } else {
-    //     htmlElement.style.overflow = "hidden";
-    //   }
-    // cenk cookies
+    if (parseCCP !== null) {
+        isClientAcceptPerformanceCookie = parseCCP.performance;
+        isClientAcceptFunctionalCookie = parseCCP.functional;
+        isClientAcceptTargetingCookie = parseCCP.targeting;
+    }
+
+    //   if all cookie are rejected
+    let isAllCookieRejected = true;
+    if (
+        parseCCP !== null &&
+        (isClientAcceptPerformanceCookie ||
+            isClientAcceptFunctionalCookie ||
+            isClientAcceptTargetingCookie)
+    ) {
+        isAllCookieRejected = false;
+    }
+
     function getDecodedCookieValues(cookieName) {
         let cookieValue = Cookies.get(cookieName);
         if (cookieValue) {
@@ -158,8 +166,7 @@ $(document).ready(function () {
         return null;
     }
 
-    // Use the function to get the cookie values
-    let ccpValues = getDecodedCookieValues("CCP");
+    //   let ccpValues = getDecodedCookieValues("CCP");
 
     $(".cookieDetailAccorHeader").on("click", function () {
         $(this).children("svg").toggleClass("rotate180");
@@ -199,6 +206,7 @@ $(document).ready(function () {
 
     // Function to activate Google Tag Manager
     function activateGTM(gtmContainerId, cookieValues) {
+        console.log("gtm active");
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
@@ -312,7 +320,7 @@ $(document).ready(function () {
 
     // client already decided to cookie preferences so we can activate the scripts if they are active
 
-    if (parseCCP !== null)
+    if (parseCCP !== null && !isAllCookieRejected)
         isGtmActive ? activateGTM(gtmContainerId, parseCCP) : null;
 
     if (
@@ -339,10 +347,10 @@ $(document).ready(function () {
     let cookieValues = {};
 
     // Example of retrieving and parsing the cookie
-    let ccpCookie = Cookies.get("ccp");
-    if (ccpCookie) {
-        let ccpValues = JSON.parse(ccpCookie);
-    }
+    //   let ccpCookie = Cookies.get("ccp");
+    //   if (ccpCookie) {
+    //     let ccpValues = JSON.parse(ccpCookie);
+    //   }
 
     $(".cookieA").on("click", function () {
         // htmlElement.style.overflow = "auto";
@@ -356,14 +364,7 @@ $(document).ready(function () {
         let cookieModalInputsArray = [];
 
         //Cookies.set("cookieConsent", "true", { expires: 365 });
-        ccpValues = getDecodedCookieValues("CCP");
-
-        // Use the updated ccpValues to control the overflow
-        // if (ccpValues && ccpValues.cookieConsent === "true") {
-        //   htmlElement.style.overflow = "auto";
-        // } else {
-        //   htmlElement.style.overflow = "auto";
-        // }
+        // ccpValues = getDecodedCookieValues("CCP");
 
         let classList = this.classList;
         if (classList.contains("caD")) {
@@ -397,6 +398,8 @@ $(document).ready(function () {
             cookieModalInputsArray = [true, false, false, false];
         }
 
+        let isThereAnyActiveCookie = false;
+
         cookieModalInputsArray.forEach(function (item, index) {
             switch (index) {
                 case 0:
@@ -407,6 +410,7 @@ $(document).ready(function () {
 
                     // analytics cookies
                     if (item == true) {
+                        isThereAnyActiveCookie = true;
                         isYandexMetricaActive
                             ? activateYandexMetrica(yandexMetricaId)
                             : null;
@@ -422,6 +426,7 @@ $(document).ready(function () {
 
                     // preferences cookies
                     if (item == true) {
+                        isThereAnyActiveCookie = true;
                         isChatboxActive ? activateChatbox() : null;
                         cookieValues.functional = true;
                     } else {
@@ -434,6 +439,7 @@ $(document).ready(function () {
 
                     // marketing cookies
                     if (item == true) {
+                        isThereAnyActiveCookie = true;
                         isFacebookPixelActive
                             ? activateFacebookPixel(facebookPixelId)
                             : null;
@@ -451,7 +457,9 @@ $(document).ready(function () {
             let base64CookieString = btoa(cookieString);
             Cookies.set("CCP", base64CookieString, { expires: 365 });
         });
-        isGtmActive ? activateGTM(gtmContainerId, cookieValues) : null;
+        isGtmActive && isThereAnyActiveCookie
+            ? activateGTM(gtmContainerId, cookieValues)
+            : null;
 
         if (isSwiperActive) {
             swiperAutoPlayStarter(swiperHomeTop);
