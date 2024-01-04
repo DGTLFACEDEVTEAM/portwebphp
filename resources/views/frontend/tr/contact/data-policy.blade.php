@@ -631,7 +631,19 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                </tr>
+                                 <td>
+                                 <p>CCP</span></p>
+                                 </td>
+                                 <td colspan="2">
+                                 <p>1. Taraf portnature.com.tr , TR</span></p>
+                                 </td>
+                                 <td colspan="2">
+                                 <p><span>1 yıl</span></span></p>
+                                 </td>
+                                 <td>
+                                 <p><span>Kullanıcının çerez tercihlerini saklamak için kullanılan çerezdir.</span></span></p>
+                                 </td>
+                                 </tr>
                             </tbody>
                         </table>
 

@@ -10,9 +10,9 @@
             'terms' => 'Terms and Conditions',
             'modalTitle' => 'Terms & Conditions',
             'modalP' => 'Consent Text',
-            'modalText' => '6698 sayılı Kişisel Verilerin Korunması Kanunu\'na göre sizinle ilgili bazı kişisel verilerin, veri sorumlusu olan ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (‘PORT NATURE’ olarak anılacaktır.) tarafından işlenebilmesi için açık rızanız gerekmektedir.',
-            'modalText2' => 'Bu kapsamda İletişim faaliyetlerinin yürütülmesi ve sorunuzun bize iletilmesi amacıyla Kimlik (Ad, Soyad), İletişim (e-Mail), İşlem Güvenliği (İşlem Tarihi), Ziyaretçi İşlem (Mesaj Konusu), Hukuki İşlem (Saat, Tarih) kişisel verileriniz KVKK Md.5/1’de öngörülen açık rızanıza istinaden işlenecektir.',
-            'modalText3' => 'Yukarıda amaçları belirtilen kişisel verilerimin belirtilen amaçlar çerçevesinde işlenmesini kabul ve beyan ediyorum.',
+            'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
+            'modalText2' => '',
+            'modalText3' => '',
             'close' => 'Close',
         ],
         'ru' => [
@@ -25,9 +25,9 @@
             'terms' => 'Условия и положения',
             'modalTitle' => 'Условия и положения',
             'modalP' => 'Текст согласия',
-            'modalText' => '6698 sayılı Kişisel Verilerin Korunması Kanunu\'na göre sizinle ilgili bazı kişisel verilerin, veri sorumlusu olan ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (‘PORT NATURE’ olarak anılacaktır.) tarafından işlenebilmesi için açık rızanız gerekmektedir.',
-            'modalText2' => 'Bu kapsamda İletişim faaliyetlerinin yürütülmesi ve sorunuzun bize iletilmesi amacıyla Kimlik (Ad, Soyad), İletişim (e-Mail), İşlem Güvenliği (İşlem Tarihi), Ziyaretçi İşlem (Mesaj Konusu), Hukuki İşlem (Saat, Tarih) kişisel verileriniz KVKK Md.5/1’de öngörülen açık rızanıza istinaden işlenecektir.',
-            'modalText3' => 'Yukarıda amaçları belirtilen kişisel verilerimin belirtilen amaçlar çerçevesinde işlenmesini kabul ve beyan ediyorum.',
+            'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
+            'modalText2' => '',
+            'modalText3' => '',
             'close' => 'закрыть',
         ],
 
@@ -37,13 +37,13 @@
             'fillFields' => 'Lütfen tüm gerekli alanları doldurunuz.',
             'sendMsg' => 'Mesaj Gönder',
             'allQuestions' => 'Tüm sorularınız, fikirleriniz ve önerileriniz',
-            'accept' => 'Şartları kabul ediyorum',
-            'terms' => 'Şartlar ve Koşullar',
+            'accept' => 'Kişisel verilerimin işlenmesine',
+            'terms' => '"açık rıza metni" kapsamında onay veriyorum.',
             'modalTitle' => 'Şartlar & Koşullar',
             'modalP' => 'Açık Rıza Metni',
-            'modalText' => '6698 sayılı Kişisel Verilerin Korunması Kanunu\'na göre sizinle ilgili bazı kişisel verilerin, veri sorumlusu olan ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (‘PORT NATURE’ olarak anılacaktır.) tarafından işlenebilmesi için açık rızanız gerekmektedir.',
-            'modalText2' => 'Bu kapsamda İletişim faaliyetlerinin yürütülmesi ve sorunuzun bize iletilmesi amacıyla Kimlik (Ad, Soyad), İletişim (e-Mail), İşlem Güvenliği (İşlem Tarihi), Ziyaretçi İşlem (Mesaj Konusu), Hukuki İşlem (Saat, Tarih) kişisel verileriniz KVKK Md.5/1’de öngörülen açık rızanıza istinaden işlenecektir.',
-            'modalText3' => 'Yukarıda amaçları belirtilen kişisel verilerimin belirtilen amaçlar çerçevesinde işlenmesini kabul ve beyan ediyorum.',
+            'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
+            'modalText2' => '',
+            'modalText3' => '',
             'close' => 'Kapat',
         ],
         'de' => [
@@ -56,9 +56,9 @@
             'terms' => 'Geschäftsbedingungen',
             'modalTitle' => 'Geschäftsbedingungen',
             'modalP' => 'Einwilligungstext',
-            'modalText' => '6698 sayılı Kişisel Verilerin Korunması Kanunu\'na göre sizinle ilgili bazı kişisel verilerin, veri sorumlusu olan ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (‘PORT NATURE’ olarak anılacaktır.) tarafından işlenebilmesi için açık rızanız gerekmektedir.',
-            'modalText2' => 'Bu kapsamda İletişim faaliyetlerinin yürütülmesi ve sorunuzun bize iletilmesi amacıyla Kimlik (Ad, Soyad), İletişim (e-Mail), İşlem Güvenliği (İşlem Tarihi), Ziyaretçi İşlem (Mesaj Konusu), Hukuki İşlem (Saat, Tarih) kişisel verileriniz KVKK Md.5/1’de öngörülen açık rızanıza istinaden işlenecektir.',
-            'modalText3' => 'Yukarıda amaçları belirtilen kişisel verilerimin belirtilen amaçlar çerçevesinde işlenmesini kabul ve beyan ediyorum.',
+            'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
+            'modalText2' => '',
+            'modalText3' => '',
             'close' => 'schließen',
         ],
     ];
@@ -69,6 +69,7 @@
 <div class="homeContact blogContact">
     <div class="contact-wrapper">
         <div class="mobileContact">
+            
             <div class="contact-info">
                 <h2>{!! $translation[$lang]['h2'] !!}</h2>
                 <span>{!! $translation[$lang]['span'] !!}</span>

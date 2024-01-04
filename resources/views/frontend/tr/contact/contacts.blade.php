@@ -96,9 +96,9 @@
                                     <div class="form-group">
                                         <input type="checkbox" name="terms" class="form-check-input acceptTermsCheckbox"
                                             id="acceptTermsCheckbox" required>
-                                        <label class="form-check-label" for="acceptTermsCheckbox">I accept the
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Terms and
-                                                Conditions</a>
+                                        <label class="form-check-label" for="acceptTermsCheckbox">Kişisel verilerimin işlenmesine
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">"açık rıza metni"</a> kapsamında onay
+                                            veriyorum.
                                         </label>
                                         <div class="modal fade" id="exampleModal" tabindex="-1"
                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,28 +111,14 @@
                                                     </div>
                                                     <div class="modal-body d-flex flex-column justify-content-center text-center">
                                                         <p class="text-uppercase" style="font-weight: bold">Açık Rıza Metni</p>
-                                                        <p class="text-start"> 6698 sayılı Kişisel Verilerin Korunması Kanunu'na göre sizinle
-                                                            ilgili bazı kişisel verilerin, veri sorumlusu olan ARAS İNŞAAT
-                                                            TİCARET TURİZM ANONİM ŞİRKETİ (‘PORT NATURE’ olarak anılacaktır.)
-                                                            tarafından işlenebilmesi için açık rızanız gerekmektedir.
-                                                            <br>
-                                                            <br>
-                                                            Bu kapsamda İletişim faaliyetlerinin yürütülmesi ve sorunuzun bize
-                                                            iletilmesi amacıyla Kimlik (Ad, Soyad), İletişim (e-Mail), İşlem
-                                                            Güvenliği (İşlem Tarihi), Ziyaretçi İşlem (Mesaj Konusu), Hukuki
-                                                            İşlem (Saat, Tarih) kişisel verileriniz KVKK Md.5/1’de öngörülen
-                                                            açık rızanıza istinaden işlenecektir.
-                                                            <br>
-                                                            <br>
-                                                            Yukarıda amaçları belirtilen kişisel verilerimin belirtilen amaçlar
-                                                            çerçevesinde işlenmesini kabul ve beyan ediyorum.
+                                                        <p class="text-start"> İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz
                                                         </p>
         
         
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close</button>
+                                                            data-bs-dismiss="modal">Kapat</button>
                                                     </div>
                                                 </div>
                                             </div>

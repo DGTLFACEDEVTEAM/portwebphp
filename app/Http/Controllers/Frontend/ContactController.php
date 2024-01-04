@@ -47,4 +47,10 @@ class ContactController extends Controller
 
         return view('frontend.en.contact.registercard');
     }
+
+    public function contact_form_policy()
+    {
+
+        return view('frontend.en.contact.contact-form-policy');
+    }
 }
