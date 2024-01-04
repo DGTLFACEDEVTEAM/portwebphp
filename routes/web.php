@@ -85,7 +85,7 @@ Route::get('beach', [EntertainmentController::class, 'beach'])->name('en-beach')
 
 Route::get('contacts', [ContactController::class, 'index'])->name('contacts');
 Route::post('contacts', [ContactController::class, 'submit'])->name('contacts-submit');
-Route::get('data-policy', [ContactController::class, 'data_policy'])->name('data-policy');
+Route::get('cookie-policy', [ContactController::class, 'data_policy'])->name('data-policy');
 Route::get('registercard', [ContactController::class, 'register_card'])->name('en-register-card');
 
 Route::get('spa-center', [SpaController::class, 'index'])->name('spa');
@@ -148,7 +148,7 @@ Route::get('plyazh', [App\Http\Controllers\Frontend\Russian\EntertainmentControl
 
 Route::get('kontakti', [App\Http\Controllers\Frontend\Russian\ContactController::class, 'index'])->name('ru-contacts');
 Route::post('kontakti', [App\Http\Controllers\Frontend\Russian\ContactController::class, 'submit'])->name('ru-contacts-submit');
-Route::get('politika-dannih', [App\Http\Controllers\Frontend\Russian\ContactController::class, 'data_policy'])->name('ru-data-policy');
+Route::get('politika-cookie', [App\Http\Controllers\Frontend\Russian\ContactController::class, 'data_policy'])->name('ru-data-policy');
 
 Route::get('spa-centr', [App\Http\Controllers\Frontend\Russian\SpaController::class, 'index'])->name('ru-spa');
 Route::get('kritiy-basseyn', [App\Http\Controllers\Frontend\Russian\SpaController::class, 'indoor_pool'])->name('ru-indoor-pool');
@@ -220,7 +220,7 @@ Route::get('guvenlik-kamera-aydinlatma', [App\Http\Controllers\Frontend\Turkish\
 Route::get('calisan-sosyal-medya-aydinlatma', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'csma_policy'])->name('tr-csma-policy');
 
 Route::post('iletisim', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'submit'])->name('tr-contacts-submit');
-Route::get('kvkk', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'data_policy'])->name('tr-data-policy');
+Route::get('cerez-politikasi', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'data_policy'])->name('tr-data-policy');
 
 
 Route::get('spa-merkezi', [App\Http\Controllers\Frontend\Turkish\SpaController::class, 'index'])->name('tr-spa');
@@ -281,14 +281,17 @@ Route::get('strand', [App\Http\Controllers\Frontend\Deutsch\EntertainmentControl
 
 Route::get('kontakte', [App\Http\Controllers\Frontend\Deutsch\ContactController::class, 'index'])->name('de-contacts');
 Route::post('kontakte', [App\Http\Controllers\Frontend\Deutsch\ContactController::class, 'submit'])->name('de-contacts-submit');
-Route::get('datenschutzrichtlinien', [App\Http\Controllers\Frontend\Deutsch\ContactController::class, 'data_policy'])->name('de-data-policy');
+Route::get('policy-cookie', [App\Http\Controllers\Frontend\Deutsch\ContactController::class, 'data_policy'])->name('de-data-policy');
 
 Route::get('spa-zentrum', [App\Http\Controllers\Frontend\Deutsch\SpaController::class, 'index'])->name('de-spa');
 Route::get('innenpool', [App\Http\Controllers\Frontend\Deutsch\SpaController::class, 'indoor_pool'])->name('de-indoor-pool');
 
 Route::get('tagung-kongress', [App\Http\Controllers\Frontend\Deutsch\MeetingController::class, 'index'])->name('de-meeting-congress');
 
-
+Route::get('contact-policy', [ContactController::class, 'contact_form_policy'])->name('en-contact-form-policy');
+Route::get('policy-contact', [App\Http\Controllers\Frontend\Deutsch\ContactController::class, 'contact_form_policy'])->name('de-contact-form-policy');
+Route::get('politika-kontakt', [App\Http\Controllers\Frontend\Russian\ContactController::class, 'contact_form_policy'])->name('ru-contact-form-policy');
+Route::get('iletisim-politikasi', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'contact_form_policy'])->name('tr-contact-form-policy');
 
 # ====================================================== ADMIN ============================================================================
 
