@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
@@ -108,18 +109,18 @@ Route::get('nomer-standard-vid-na-more', [App\Http\Controllers\Frontend\Russian\
 Route::get('nomer-standart-s-bokovim-vidom', [App\Http\Controllers\Frontend\Russian\AccommodationController::class, 'sideview_rooms'])->name('ru-sideview-rooms');
 Route::get('nomer-standard-vid-na-okrestnosti', [App\Http\Controllers\Frontend\Russian\AccommodationController::class, 'landview_rooms'])->name('ru-landview-rooms');
 
-Route::get('detskiy-koncept',[App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'index'])->name('ru-kids-concepts');
-Route::get('akvapark',[App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'aquapark'])->name('ru-aquapark');
-Route::get('club-mini',[App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'mini_club'])->name('ru-mini-club');
+Route::get('detskiy-koncept', [App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'index'])->name('ru-kids-concepts');
+Route::get('akvapark', [App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'aquapark'])->name('ru-aquapark');
+Route::get('club-mini', [App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'mini_club'])->name('ru-mini-club');
 
-Route::get('alacarte-restoran-mini-club',[App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'mini_club_alacarte'])->name('ru-mini-club-alacarte');
+Route::get('alacarte-restoran-mini-club', [App\Http\Controllers\Frontend\Russian\KidsConceptController::class, 'mini_club_alacarte'])->name('ru-mini-club-alacarte');
 
-Route::get('specialniye-predlojeniya',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'index'])->name('ru-special-offers');
-Route::get('oteli-v-antalii',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'antalyaOffers'])->name('ru-antalya-hotels');
-Route::get('oteli-belek',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'belekOffers'])->name('ru-belek-hotels');
-Route::get('oteli-turcii',[App\Http\Controllers\Frontend\Russian\OfferController::class, 'turkeyOffers'])->name('ru-turkey-hotels');
+Route::get('specialniye-predlojeniya', [App\Http\Controllers\Frontend\Russian\OfferController::class, 'index'])->name('ru-special-offers');
+Route::get('oteli-v-antalii', [App\Http\Controllers\Frontend\Russian\OfferController::class, 'antalyaOffers'])->name('ru-antalya-hotels');
+Route::get('oteli-belek', [App\Http\Controllers\Frontend\Russian\OfferController::class, 'belekOffers'])->name('ru-belek-hotels');
+Route::get('oteli-turcii', [App\Http\Controllers\Frontend\Russian\OfferController::class, 'turkeyOffers'])->name('ru-turkey-hotels');
 
-Route::get('eda-napitki',[App\Http\Controllers\Frontend\Russian\FoodDrinkController::class, 'index'])->name('ru-food-drink');
+Route::get('eda-napitki', [App\Http\Controllers\Frontend\Russian\FoodDrinkController::class, 'index'])->name('ru-food-drink');
 Route::get('restorani-alacarte', [App\Http\Controllers\Frontend\Russian\FoodDrinkController::class, 'alacarte_restaurants'])->name('ru-alacarte-restaurants');
 Route::get('bari-kafe', [App\Http\Controllers\Frontend\Russian\FoodDrinkController::class, 'bar_cafe'])->name('ru-bar-cafe');
 Route::get('kafe-davidoff', [App\Http\Controllers\Frontend\Russian\FoodDrinkController::class, 'davidoff_cafe'])->name('ru-davidoff-cafe');
@@ -172,17 +173,17 @@ Route::get('standart-deniz-manzarali-oda', [App\Http\Controllers\Frontend\Turkis
 Route::get('standart-yandan-manzarali-oda', [App\Http\Controllers\Frontend\Turkish\AccommodationController::class, 'sideview_rooms'])->name('tr-sideview-rooms');
 Route::get('standart-kara-manzarali-oda', [App\Http\Controllers\Frontend\Turkish\AccommodationController::class, 'landview_rooms'])->name('tr-landview-rooms');
 
-Route::get('cocuk-konsepti',[App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'index'])->name('tr-kids-concepts');
-Route::get('su-parki',[App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'aquapark'])->name('tr-aquapark');
-Route::get('mini-klup',[App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'mini_club'])->name('tr-mini-club');
-Route::get('mini-club-alacarte-restoran',[App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'mini_club_alacarte'])->name('tr-mini-club-alacarte');
+Route::get('cocuk-konsepti', [App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'index'])->name('tr-kids-concepts');
+Route::get('su-parki', [App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'aquapark'])->name('tr-aquapark');
+Route::get('mini-klup', [App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'mini_club'])->name('tr-mini-club');
+Route::get('mini-club-alacarte-restoran', [App\Http\Controllers\Frontend\Turkish\KidsConceptController::class, 'mini_club_alacarte'])->name('tr-mini-club-alacarte');
 
-Route::get('ozel-teklifler',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'index'])->name('tr-special-offers');
-Route::get('antalya-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'antalyaOffers'])->name('tr-antalya-hotels');
-Route::get('belek-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'belekOffers'])->name('tr-belek-hotels');
-Route::get('turkiye-otelleri',[App\Http\Controllers\Frontend\Turkish\OfferController::class, 'turkeyOffers'])->name('tr-turkey-hotels');
+Route::get('ozel-teklifler', [App\Http\Controllers\Frontend\Turkish\OfferController::class, 'index'])->name('tr-special-offers');
+Route::get('antalya-otelleri', [App\Http\Controllers\Frontend\Turkish\OfferController::class, 'antalyaOffers'])->name('tr-antalya-hotels');
+Route::get('belek-otelleri', [App\Http\Controllers\Frontend\Turkish\OfferController::class, 'belekOffers'])->name('tr-belek-hotels');
+Route::get('turkiye-otelleri', [App\Http\Controllers\Frontend\Turkish\OfferController::class, 'turkeyOffers'])->name('tr-turkey-hotels');
 
-Route::get('yeme-icme',[App\Http\Controllers\Frontend\Turkish\FoodDrinkController::class, 'index'])->name('tr-food-drink');
+Route::get('yeme-icme', [App\Http\Controllers\Frontend\Turkish\FoodDrinkController::class, 'index'])->name('tr-food-drink');
 Route::get('alacarte-restoranlar', [App\Http\Controllers\Frontend\Turkish\FoodDrinkController::class, 'alacarte_restaurants'])->name('tr-alacarte-restaurants');
 Route::get('barlar-kafeler', [App\Http\Controllers\Frontend\Turkish\FoodDrinkController::class, 'bar_cafe'])->name('tr-bar-cafe');
 Route::get('davidoff-kafe', [App\Http\Controllers\Frontend\Turkish\FoodDrinkController::class, 'davidoff_cafe'])->name('tr-davidoff-cafe');
@@ -221,6 +222,7 @@ Route::get('calisan-sosyal-medya-aydinlatma', [App\Http\Controllers\Frontend\Tur
 Route::post('iletisim', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'submit'])->name('tr-contacts-submit');
 Route::get('kvkk', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'data_policy'])->name('tr-data-policy');
 
+
 Route::get('spa-merkezi', [App\Http\Controllers\Frontend\Turkish\SpaController::class, 'index'])->name('tr-spa');
 Route::get('kapali-havuz', [App\Http\Controllers\Frontend\Turkish\SpaController::class, 'indoor_pool'])->name('tr-indoor-pool');
 
@@ -242,17 +244,17 @@ Route::get('standard-meerblick-zimmer', [App\Http\Controllers\Frontend\Deutsch\A
 Route::get('standard-seitlichemblick-zimmer', [App\Http\Controllers\Frontend\Deutsch\AccommodationController::class, 'sideview_rooms'])->name('de-sideview-rooms');
 Route::get('standard-landblick-zimmer', [App\Http\Controllers\Frontend\Deutsch\AccommodationController::class, 'landview_rooms'])->name('de-landview-rooms');
 
-Route::get('kinderkonzept',[App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'index'])->name('de-kids-concepts');
-Route::get('aqua-park',[App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'aquapark'])->name('de-aquapark');
-Route::get('miniclub',[App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'mini_club'])->name('de-mini-club');
-Route::get('alacarte-restaurant-mini-club',[App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'mini_club_alacarte'])->name('de-mini-club-alacarte');
+Route::get('kinderkonzept', [App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'index'])->name('de-kids-concepts');
+Route::get('aqua-park', [App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'aquapark'])->name('de-aquapark');
+Route::get('miniclub', [App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'mini_club'])->name('de-mini-club');
+Route::get('alacarte-restaurant-mini-club', [App\Http\Controllers\Frontend\Deutsch\KidsConceptController::class, 'mini_club_alacarte'])->name('de-mini-club-alacarte');
 
-Route::get('angebote',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'index'])->name('de-special-offers');
-Route::get('antalya-hotel',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'antalyaOffers'])->name('de-antalya-hotels');
-Route::get('hotel-belek',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'belekOffers'])->name('de-belek-hotels');
-Route::get('hotel-turkei',[App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'turkeyOffers'])->name('de-turkey-hotels');
+Route::get('angebote', [App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'index'])->name('de-special-offers');
+Route::get('antalya-hotel', [App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'antalyaOffers'])->name('de-antalya-hotels');
+Route::get('hotel-belek', [App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'belekOffers'])->name('de-belek-hotels');
+Route::get('hotel-turkei', [App\Http\Controllers\Frontend\Deutsch\OfferController::class, 'turkeyOffers'])->name('de-turkey-hotels');
 
-Route::get('speisen-getranke',[App\Http\Controllers\Frontend\Deutsch\FoodDrinkController::class, 'index'])->name('de-food-drink');
+Route::get('speisen-getranke', [App\Http\Controllers\Frontend\Deutsch\FoodDrinkController::class, 'index'])->name('de-food-drink');
 Route::get('restaurants-alacarte', [App\Http\Controllers\Frontend\Deutsch\FoodDrinkController::class, 'alacarte_restaurants'])->name('de-alacarte-restaurants');
 Route::get('cafes-bars', [App\Http\Controllers\Frontend\Deutsch\FoodDrinkController::class, 'bar_cafe'])->name('de-bar-cafe');
 Route::get('kafedavidoff', [App\Http\Controllers\Frontend\Deutsch\FoodDrinkController::class, 'davidoff_cafe'])->name('de-davidoff-cafe');
@@ -324,7 +326,7 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     // Image Gallery
     Route::get('dropzone', [GalleryController::class, 'index']);
     Route::post('/dropzone-store', [GalleryController::class, 'dropzoneStore'])->name('dropzone.store');
-    Route::get('dropzone/fetch', [GalleryController::class, 'fetch'])->name('dropzone.fetch');    
+    Route::get('dropzone/fetch', [GalleryController::class, 'fetch'])->name('dropzone.fetch');
     Route::get('dropzone/delete', [GalleryController::class, 'delete'])->name('dropzone.delete');
     // OFFERS
     Route::get('offer-list', [App\Http\Controllers\Admin\OfferController::class, 'index']);
@@ -357,7 +359,6 @@ Route::prefix('blog-stranica')->group(function () {
 Route::get('blog-sayfasi', [TurkishBlogController::class, 'index'])->name('tr-blog');
 Route::prefix('blog-sayfasi')->group(function () {
     Route::get('{slug}', [TurkishBlogController::class, 'blogDetail'])->name('tr-blog-detail');
-    
 });
 
 // Deutsch blog routes
@@ -367,3 +368,20 @@ Route::prefix('blog-seite')->group(function () {
 });
 
 // Aydınlatma metinleri 
+
+Route::get('kvkk-sohbet-aydinlatma-metni', function () {
+    return view('frontend.common.chat-kvkk', ['lang' => 'tr']);
+})->name('tr-data-chat');
+
+Route::get('data-protection-policy-chat-disclosure-text', function () {
+    return view('frontend.common.chat-kvkk', ['lang' => 'en']);
+})->name('en-data-chat');
+
+
+Route::get('datenschutz-richtlinie-chat-aufklaerungstext', function () {
+    return view('frontend.common.chat-kvkk', ['lang' => 'de']);
+})->name('de-data-chat');
+
+Route::get('politika-zashity-dannyh-chat-tekst-razjasneniya', function () {
+    return view('frontend.common.chat-kvkk', ['lang' => 'ru']);
+})->name('ru-data-chat');
