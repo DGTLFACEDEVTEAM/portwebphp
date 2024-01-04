@@ -13,6 +13,12 @@ class ContactController extends Controller
 
         return view('frontend.ru.contact.contacts');
     }
+
+    public function contact_form_policy()
+    {
+
+        return view('frontend.ru.contact.contact-form-policy');
+    }
     public function data_policy() {
 
         return view('frontend.ru.contact.data-policy');

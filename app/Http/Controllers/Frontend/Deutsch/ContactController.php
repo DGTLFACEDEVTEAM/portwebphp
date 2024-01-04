@@ -37,4 +37,10 @@ class ContactController extends Controller
 
         return view('frontend.de.contact.data-policy');
     }
+
+    public function contact_form_policy()
+    {
+
+        return view('frontend.de.contact.contact-form-policy');
+    }
 }
