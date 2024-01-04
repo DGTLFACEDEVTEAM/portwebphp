@@ -10,6 +10,8 @@ var gtmContainerId = "GTM-TZ53DS5";
 var yandexMetricaId = 92210931;
 var facebookPixelId = "721299109355968";
 
+var htmlLang = document.documentElement.lang;
+
 var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
 var BASE_COLOR = "#075695";
 var CONTAINER_ELEMENT = "iframe";
@@ -26,6 +28,10 @@ var isYandexMetricaActive = false;
 var isFacebookPixelActive = false;
 var isChatboxActive = true;
 var isSwiperActive = true;
+
+// get lang of page from html lang attribute
+
+
 
 //   STATES END
 
@@ -206,7 +212,6 @@ $(document).ready(function () {
 
     // Function to activate Google Tag Manager
     function activateGTM(gtmContainerId, cookieValues) {
-        console.log("gtm active");
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
