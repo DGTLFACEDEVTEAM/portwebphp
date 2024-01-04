@@ -13,6 +13,25 @@ var facebookPixelId = "721299109355968";
 var htmlLang = document.documentElement.lang;
 
 var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
+
+switch (htmlLang) {
+    case "tr":
+        APP_UUID = "7f8aae35-342e-420d-852b-43e6ea931716";
+        break;
+    case "en":
+        APP_UUID = "bca56dd4-3cd7-48e5-b4e9-a649ecad430a";
+        break;
+    case "ru":
+        APP_UUID = "21cfe17c-ceb1-4989-9012-7d4558a356f1";
+        break;
+    case "de":
+        APP_UUID = "5d26a49b-1059-494d-bc92-6d40a300aef5";
+        break;
+    default:
+        APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
+        break;
+}
+// var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
 var BASE_COLOR = "#075695";
 var CONTAINER_ELEMENT = "iframe";
 
@@ -30,8 +49,6 @@ var isChatboxActive = true;
 var isSwiperActive = true;
 
 // get lang of page from html lang attribute
-
-
 
 //   STATES END
 
