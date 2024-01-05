@@ -144,104 +144,170 @@
                    </p>
                    <p>Web sitemizde kullanılan analitik çerezler, sağlayıcıları ve kullanım amaçları aşağıdaki
                        şekildedir:</span></p>
-                   <table style="border: 1px solid ; margin: 0px auto;">
-                       <thead>
-                           <tr>
-                               <td>
-                                   <p><strong>Cookie</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Tip</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Süre</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Açıklama</strong></p>
-                               </td>
-                           </tr>
-                       </thead>
-                       <tbody>
-                           <tr>
+                       <table >
+                        <tr>
+                            <th>Cookie</th>
+                            <th>Tip</th>
+                            <th>Süre</th>
+                            <th>Açıklama</th>
 
+                        </tr>
+                        <tr>
+                            <td>yuidss</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>12 Ay 4 Gün</td>
+                            <td>Davranışsal ve hedef odaklı reklamların ziyaretçilere gösterilmesi amacıyla kullanılan çerezlerdir.</td>
 
+                        </tr>
+                        <tr>
+                            <td>ymex</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>12 Ay 4 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir.</td>
 
+                        </tr>
+                        <tr>
+                            <td>yandexuid</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>12 Ay 4 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir.</td>
 
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>NID</span></p>
-                               </td>
-                               <td>
-                                   <table>
-                                       <tbody>
-                                           <tr>
-                                               <td rowspan="16">
-                                                   <p><span>3. Taraf Google, ABD</span></span></p>
-                                               </td>
-                                               <td>
-                                                   <p><span><span> </span></span></p>
-                                               </td>
+                        </tr>
+                        <tr>
+                            <td>i</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl 1 Ay</td>
+                            <td>İşlevsel ve Analitik Çerez. Yandex metrica'nın site kullanıcı sayısını belirlemek için kullandığı çerez</td>
 
-                                           </tr>
+                        </tr>
+                        <tr>
+                            <td>bh</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Birden fazla web sitesinde ziyaretçi davranışı hakkında bilgi toplar. Bu bilgiler, reklamın alaka düzeyini optimize etmek için web sitesinde kullanılır.</td>
 
+                        </tr>
+                        <tr>
+                            <td>_ym_visorc</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
 
-                                       </tbody>
-                                   </table>
+                        </tr>
+                        <tr>
+                            <td>_ym_uid</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
 
-                               </td>
-                               <td>
-                                   <p><span>7 Ay</span></span></p>
-                               </td>
-                               <td>
-                                   <p><span>Ziyaretçilerin tercihlerini saklar ve son aramalara ve etkileşimlere dayalı
-                                           olarak Google web sitelerindeki reklamları kişiselleştirir.</span></span>
-                                   </p>
+                        </tr>
+                        <tr>
+                            <td>_ym_isad</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
 
-                               </td>
-                           </tr>
-                           <tr>
+                        </tr>
+                        <tr>
+                            <td>_ym_d</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
 
+                        </tr>
+                        <tr>
+                            <td>_gid</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
 
+                        </tr>
+                        <tr>
+                            <td>_ga_6EYM72GR61</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl 1 Ay</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
 
+                        </tr>
+                        <tr>
+                            <td>_ga</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
 
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>1P_JAR</span></p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Google, ABD</span></p>
-                               </td>
-                               <td>
-                                   <p><span>1 Ay</span></span></p>
+                        </tr>
+                        <tr>
+                            <td>1P_JAR</td>
+                            <td>3. Taraf Google, gstatic, ABD</td>
+                            <td>24 Gün</td>
+                            <td>Google çerezi. Bu çerezler, web sitesi istatistiklerini toplamak ve dönüşüm oranlarını izlemek için kullanılır.</td>
 
-                               </td>
-                               <td>
-                                   <p>Google çerezi. Bu çerezler, web sitesi istatistiklerini toplamak ve dönüşüm
-                                       oranlarını izlemek için kullanılır.</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>sync_cookie_ok</span></p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Yandex, RU</span></p>
-                               </td>
-                               <td>
-                                   <p>1 Gün</span></p>
-
-                               </td>
-                               <td>
-                                   <p>Kullanıcı davranışlarını ölçmek ve takip etmek için kullanılan Yandex Metrica
-                                       çerezidir.</span></p>
-
-                               </td>
-                           </tr>
-                       </tbody>
-                   </table>
+                        </tr>
+                        <tr>
+                            <td>__Secure-3PSIDTS</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>__Secure-3PSIDCC</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>__Secure-3PSID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>__Secure-3PAPISID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>__Secure-1PSIDTS</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>__Secure-1PSIDCC</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>__Secure-1PSID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>__Secure-1PAPISID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+                            
+                        </tr>
+                    </table>
 
                    <p><strong>3. Pazarlama Çerezleri</strong></p>
                    <p>Kullanıcıların ilgi alanlarına göre reklam/kampanyaların sunulması ve pazarlama çalışmalarının
@@ -252,442 +318,7 @@
                        dışındaki çerez sağlayıcılarla paylaşılmaktadır.</span></p>
                    <p>Web sitemizde kullanılan pazarlama çerezleri, sağlayıcıları ve kullanım amaçları aşağıdaki
                        şekildedir:</span></p>
-                   <table style="border: 1px solid ; margin: 0px auto;">
-                       <thead>
-                           <tr>
-                               <td>
-                                   <p><strong>Cookie</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Tip</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Süre</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Açıklama</strong></p>
-                               </td>
-                           </tr>
-                       </thead>
-                       <tbody>
-                           <tr>
-                               <td>
-                                   <p><span>ymex</span></span></p>
 
-
-
-                               </td>
-                               <td>
-                                   <p>3. Taraf Yandex, RU</span></p>
-                               </td>
-                               <td>
-                                   <p>12 Ay 4 Gün</span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir.</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-
-                                   <p>bh</span></p>
-                               </td>
-                               <td>
-
-                                   <table>
-                                       <tbody>
-                                           <tr>
-                                               <td rowspan="2">
-                                                   <p><span>3. Taraf Yandex, RU</span></span></p>
-                                               </td>
-                                               <td colspan="2">
-
-                                               </td>
-                                           </tr>
-                                           <tr>
-
-                                               <td>
-                                                   <p><span><span> </span></span></p>
-                                               </td>
-                                           </tr>
-                                       </tbody>
-                                   </table>
-
-                               </td>
-                               <td>
-
-                                   <p><span>1 Yıl</span></span></p>
-                               </td>
-                               <td>
-
-                                   <p><span>Birden fazla web sitesinde ziyaretçi davranışı hakkında bilgi toplar. Bu
-                                           bilgiler, reklamın alaka düzeyini optimize etmek için web sitesinde
-                                           kullanılır.</span></span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-
-                                   <p>yandexuid</span></p>
-                               </td>
-                               <td>
-
-                                   <p>3. Taraf Yandex, RU</span></p>
-
-                               </td>
-                               <td>
-                                   <p><span><span> </span></span></p>
-                                   <p>12 Ay 4 Gün</span></p>
-
-                               </td>
-                               <td>
-
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir.</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>sync_cookie_csrf</span></p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Yandex, RU</span></p>
-                               </td>
-                               <td>
-                                   <p>1 Gün</span></p>
-
-                               </td>
-                               <td>
-                                   <p>Kullanıcı davranışlarını ölçmek ve takip etmek için kullanılan Yandex Metrica
-                                       çerezidir.</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>SAPISID</span></p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Google, ABD</span></p>
-
-
-                               </td>
-                               <td>
-                                   <p><span>1 Yıl 1 Ay</span></span></p>
-
-                               </td>
-                               <td>
-                                   <p>Google, YouTube tarafından barındırılan videolar için ziyaretçi bilgilerini
-                                       toplar.</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_gcl_au</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr, TR</span></p>
-                               </td>
-                               <td>
-                                   <p>4 Ay</span></p>
-                               </td>
-                               <td>
-                                   <p><span>Dönüşüm Bağlayıcı" işlevine yönelik birinci taraf çerezidir; reklam
-                                           tıklamalarındaki bilgileri alır ve bunu birinci taraf çerezinde saklar,
-                                           böylece dönüşümler açılış sayfası dışında
-                                           ilişkilendirilebilir.</span></span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>i</span></p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Yandex, RU</span></p>
-                               </td>
-                               <td>
-                                   <p><span>1 Yıl 1 Ay</span></span></p>
-
-                               </td>
-                               <td>
-                                   <p><span>Yandex metrica'nın site kullanıcı sayısını belirlemek için kullandığı
-                                           çerez</span></span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p><span><span>SIDCC</p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Google, gstatic, ABD</span></p>
-                               </td>
-                               <td>
-                                   <p><span>24 Gün</span></span></p>
-
-                               </td>
-                               <td>
-                                   <p>Google çerezi. Bu çerezler, web sitesi istatistiklerini toplamak ve dönüşüm
-                                       oranlarını izlemek için kullanılır.</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>SEARCH_SAMESITE</span></p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Google, ABD</span></p>
-
-
-                               </td>
-                               <td>
-                                   <p><span>6 Ay</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Tanımlama bilginizin birinci taraf bağlamıyla mı yoksa aynı site bağlamıyla mı
-                                       sınırlandırılacağını bildirmenize olanak tanır</span></p>
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_fbp</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr, TR</span></p>
-
-                               </td>
-                               <td>
-                                   <p><span>4 Ay</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_ga</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr, TR</span></p>
-
-
-                               </td>
-                               <td>
-                                   <p><span>1 Yıl</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_ga_6EYM72GR61</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr, TR</span></p>
-
-                               </td>
-                               <td>
-                                   <p><span>1 Yıl 1 Ay</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_gid</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr</span></p>
-                               </td>
-                               <td>
-                                   <p><span>1 Gün</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_ym_d</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr</span></p>
-
-                               </td>
-                               <td>
-                                   <p><span>1 Yıl</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_ym_isad</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr</span></p>
-
-                               </td>
-                               <td>
-                                   <p><span>1 Gün</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_ym_uid</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr</span></p>
-
-                               </td>
-                               <td>
-                                   <p><span>1 Yıl</span></span></p>
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>SIDCC</span></p>
-                               </td>
-                               <td>
-                                   <p>3. Taraf Google, ABD</span></p>
-
-
-                               </td>
-                               <td>
-                                   <p>1 Yıl</span></p>
-                               </td>
-                               <td>
-                                   <p>Güvenlik için kullanılan çerezler , kullanıcıların kimliğini doğrular,
-                                       dolandırıcılığı önler ve bir hizmetle etkileşime girerken kullanıcıları
-                                       korur</span></p>
-
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>Ymex</span></p>
-
-
-
-                               </td>
-                               <td>
-                                   <p>3. Taraf Yandex, RU</span></p>
-                               </td>
-                               <td>
-                                   <p>12 Ay 4 Gün</span></p>
-
-
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir.</span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-
-
-
-
-                           </tr>
-                           <tr>
-
-
-
-
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>_ym_visorc</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr</span></p>
-
-
-                               </td>
-                               <td>
-                                   <p><span>1 Yıl</span></span></p>
-
-                               </td>
-                               <td>
-                                   <p>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve
-                                       uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin:
-                                       Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz
-                                       içerisinde en çok kullanılan bölümlerin neler olduğu)</span></p>
-
-
-
-
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p><span><span><span>AEC</p>
-                               </td>
-                               <td>
-                                   <p> 3. Taraf: Google, ABD</span></p>
-                               </td>
-                               <td>
-                                   <p><span>5 Ay</span></span></p>
-
-                               </td>
-                               <td>
-                                   <p>Son aramalara ve etkileşimlere dayalı olarak web sitelerindeki Google
-                                       reklamlarını kişiselleştirir.</span></p>
-
-
-                               </td>
-                           </tr>
-                       </tbody>
-                   </table>
 
                    <p><strong>4. İşlevsel Çerezler</strong></p>
                    <p>İşlevsel çerezler, web sitesinin içeriğinin sosyal medya platformlarında paylaşılması, geri
@@ -702,76 +333,7 @@
                        istinaden işlenmekte yurt dışındaki çerez sağlayıcılarla paylaşılmaktadır.</span></p>
                    <p>Web sitemizde kullanılan işlevsel çerezler, sağlayıcıları ve kullanım amaçları aşağıdaki
                        şekildedir:</span></p>
-                   <table style="border: 1px solid ; margin: 0px auto;">
-                       <thead>
-                           <tr>
-                               <td>
-                                   <p><strong>Cookie</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Tip</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Süre</strong></p>
-                               </td>
-                               <td>
-                                   <p><strong>Açıklama</strong></p>
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>yabs-sid</span></p>
-                               </td>
-                               <td>
-                                   <table>
-                                       <tbody>
-                                           <tr>
-                                               <td>
-                                                   <p><span>3. Taraf Yandex, RU</span></span></p>
-                                               </td>
-                                               <td>
-                                                   <p></p>
-                                               </td>
 
-                                           </tr>
-                                       </tbody>
-                                   </table>
-
-                               </td>
-                               <td>
-
-                                   <p><span>Session</span></span></p>
-
-                               </td>
-                               <td>
-                                   <p>Web sitesinde kullanıcıyı tanımlamak için kullanılır.</span></p>
-                               </td>
-                           </tr>
-                           <tr>
-                               <td>
-                                   <p>portnature_session</span></p>
-                               </td>
-                               <td>
-                                   <p>1. Taraf portnature.com.tr, TR</span></p>
-                               </td>
-                               <td>
-                                   <p><span>Session</span></span></p>
-
-                               </td>
-                               <td>
-                                   <p><span>Siteler arası istek sahteciliği saldırılarına karşı koruma sağlamak için
-                                           kullanılır.</span></span></p>
-
-                               </td>
-                           </tr>
-                           <tr>
-
-
-
-
-                           </tr>
-                       </thead>
-                   </table>
 
                    <p>Sitemizi ziyaretinizle birlikte birtakım kişisel verileriniz çerezler dışında başka
                        tanımlayıcılar aracılığıyla da işlenmektedir. Aşağıda sitemizde gezinme sürecinde işlenen
