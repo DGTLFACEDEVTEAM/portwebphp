@@ -162,7 +162,10 @@
 
                                 </label>
                                 <div class="terms2 d-none">
-                                    {!! $translation[$lang]['terms2'] !!}
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#newTermModal"
+                                        style="color: #212429!important" class="text-decoration-none">
+                                        {!! $translation[$lang]['terms2'] !!}
+                                    </a>
                                 </div>
                                 <div class="modal fade" id="termModal" tabindex="-1" aria-labelledby="termModal"
                                     aria-hidden="true">
@@ -288,7 +291,6 @@
         })
 
         if (!alreadyinitmodal) {
-            console.log(`sada`);
             let firstnewTermModal = document.querySelector('.newTermModal');
 
             var newTermModalxxx = new bootstrap.Modal(
