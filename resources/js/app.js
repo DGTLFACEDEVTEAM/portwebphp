@@ -20,14 +20,11 @@ if ($("#contactForm2").length) {
 
 window.addEventListener(`DOMContentLoaded`, (event) => {
     // check if chatbox is enabled
-
     //    wait 2 secons to load
-
     // (function() {
     //     var APP_UUID = '6f018acb-a187-48be-a07e-a301d318af36';
     //     var BASE_COLOR = '#075695';
     //     var CONTAINER_ELEMENT = 'iframe';
-
     //     var process = void 0;
     //     var _typeofThat = "function" == typeof Symbol && "symbol" == typeof Symbol
     //         .iterator ? function(
@@ -39,7 +36,6 @@ window.addEventListener(`DOMContentLoaded`, (event) => {
     //                 .prototype ?
     //                 "symbol" : typeof o
     //         };
-
     //     function insertLivechatJS() {
     //         var e = document.createElement("script");
     //         e.type = "text/javascript", e.async = "true", e.src = (process && process.env &&
@@ -63,12 +59,10 @@ window.addEventListener(`DOMContentLoaded`, (event) => {
     //             })
     //         };
     // })();
-
     // (function () {
     //     var APP_UUID = "6f018acb-a187-48be-a07e-a301d318af36";
     //     var BASE_COLOR = "#075695";
     //     var CONTAINER_ELEMENT = "iframe";
-
     //     var process = void 0;
     //     var _typeofThat =
     //         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
@@ -83,7 +77,6 @@ window.addEventListener(`DOMContentLoaded`, (event) => {
     //                       ? "symbol"
     //                       : typeof o;
     //               };
-
     //     function insertLivechatJS() {
     //         var e = document.createElement("script");
     //         (e.type = "text/javascript"),
@@ -116,6 +109,7 @@ if (typeof pageHasContactForm !== "undefined" && pageHasContactForm) {
     let acceptTermsCheckbox = document.querySelectorAll(".acceptTermsCheckbox");
     let contactForms = document.querySelectorAll('form[name="contactForm"]');
 
+    var terms2 = document.querySelectorAll(".terms2");
     acceptTermsCheckbox.forEach(function (item) {
         // remove event listener if already added
         item.removeEventListener("change", function () {});
@@ -125,12 +119,39 @@ if (typeof pageHasContactForm !== "undefined" && pageHasContactForm) {
                 this.closest("form").querySelector(
                     'input[type="submit"]'
                 ).disabled = false;
+
+                // show all terms2
+                terms2.forEach(function (item) {
+                    item.classList.remove("d-none");
+                });
             } else {
                 // find the submit button on same form and disable it
                 this.closest("form").querySelector(
                     'input[type="submit"]'
                 ).disabled = true;
+
+                // hide all terms2
+                terms2.forEach(function (item) {
+                    item.classList.add("d-none");
+                });
             }
+        });
+    });
+
+    console.log(newTermModalxxx);
+
+    // console.log(bootsrapModal);
+
+    terms2.forEach(function (item) {
+        // remove event listener if already added
+        item.removeEventListener("click", function () {});
+        item.addEventListener("click", function () {
+            // newTermModal is 2 html elements collnection array show the first one
+            console.log(newTermModal[0]);
+            let firstofnewTermModal = newTermModal[0];
+            console.log(firstofnewTermModal);
+            firstofnewTermModal.classList.add("show");
+            firstofnewTermModal.style.display = "block";
         });
     });
 

@@ -8,6 +8,7 @@
             'allQuestions' => 'All your questions, opinions, suggestions',
             'accept' => 'I accept the',
             'terms' => 'Terms and Conditions',
+            'terms2' => '',
             'modalTitle' => 'Terms & Conditions',
             'modalP' => 'Consent Text',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -23,6 +24,7 @@
             'allQuestions' => 'Все ваши вопросы, отзывы, предложения',
             'accept' => 'Я принимаю',
             'terms' => 'Условия и положения',
+            'terms2' => '',
             'modalTitle' => 'Условия и положения',
             'modalP' => 'Текст согласия',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -39,6 +41,7 @@
             'allQuestions' => 'Tüm sorularınız, fikirleriniz ve önerileriniz',
             'accept' => 'Kişisel verilerimin işlenmesine',
             'terms' => '"açık rıza metni" kapsamında onay veriyorum.',
+            'terms2' => 'Kişisel verileriniz PORT NATURE tarafından iletişim faaliyetlerinin yürütülmesi amacıyla işlenecektir. Kişisel verilerinizin işlenmesi ile ilgili ayrıntılı bilgiye <a href="/iletisim-politikasi">Aydınlatma Metninden</a>  erişebilirsiniz.',
             'modalTitle' => 'Şartlar & Koşullar',
             'modalP' => 'Açık Rıza Metni',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -54,6 +57,7 @@
             'allQuestions' => 'Alle Ihre Fragen, Meinungen, Vorschläge',
             'accept' => 'Ich akzeptiere die',
             'terms' => 'Geschäftsbedingungen',
+            'terms2' => '',
             'modalTitle' => 'Geschäftsbedingungen',
             'modalP' => 'Einwilligungstext',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -69,7 +73,7 @@
 <div class="homeContact blogContact">
     <div class="contact-wrapper">
         <div class="mobileContact">
-            
+
             <div class="contact-info">
                 <h2>{!! $translation[$lang]['h2'] !!}</h2>
                 <span>{!! $translation[$lang]['span'] !!}</span>
@@ -149,13 +153,17 @@
                             <div class="form-group">
 
                                 <label class="form-check-label user-select-none cursor-pointer">
-                                    <input type="checkbox" name="terms" class="form-check-input acceptTermsCheckbox"
-                                        required>
+                                    <input type="checkbox" id="acceptTermsCheckbox" name="terms"
+                                        class="form-check-input acceptTermsCheckbox" required>
                                     {!! $translation[$lang]['accept'] !!}
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#termModal"
-                                        style="color: #212429!important">{!! $translation[$lang]['terms'] !!}</a>
+                                        style="color: #212429!important">{!! $translation[$lang]['terms'] !!}</a> <br> <br>
+
 
                                 </label>
+                                <div class="terms2 d-none">
+                                    {!! $translation[$lang]['terms2'] !!}
+                                </div>
                                 <div class="modal fade" id="termModal" tabindex="-1" aria-labelledby="termModal"
                                     aria-hidden="true">
                                     <div class="modal-dialog vh-100 d-flex align-items-center justify-content-center">
@@ -187,6 +195,27 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="modal fade newTermModal" id="newTermModal" tabindex="-1"
+                                    aria-labelledby="newTermModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog vh-100 d-flex align-items-center justify-content-center">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <p class="modal-title fs-5">Aydinlatma Metni</p>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    data-bs-target="#newTermModal" aria-label="Close"></button>
+                                            </div>
+                                            <div
+                                                class="modal-body d-flex flex-column justify-content-center text-center">
+
+                                                <p>Aydinlatma content</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Kapat</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 @error('message')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -213,4 +242,72 @@
     if (typeof pageHasContactForm === 'undefined') {
         var pageHasContactForm = true;
     }
+</script>
+
+
+<script>
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     var checkbox = document.getElementById('acceptTermsCheckbox');
+    //     var terms2 = document.getElementById('terms2');
+    //     var newTermModal = new bootstrap.Modal(document.getElementById('newTermModal'));
+
+    //     terms2.style.display = 'none';
+
+    //     checkbox.addEventListener('change', function() {
+    //         if (this.checked) {
+    //             // Show terms2
+    //             terms2.style.display = 'block';
+    //         } else {
+    //             // Hide terms2
+    //             terms2.style.display = 'none';
+    //         }
+    //     });
+
+    //     terms2.addEventListener('click', function() {
+    //         // event.stopPropagation();
+    //         newTermModal.show();
+    //     });
+    // });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let alreadyinitmodal = false;
+        // get first el match with .newTermModal
+        let newTermModal = document.querySelectorAll('.newTermModal');
+        // add seen atr to modal 
+        newTermModal.forEach(function(item) {
+            // if there is not data-find attr add
+            if (!item.hasAttribute('data-find')) {
+                item.setAttribute('data-find', 'true');
+                // add event listener to modal
+
+            } else {
+                alreadyinitmodal = true;
+            }
+        })
+
+        if (!alreadyinitmodal) {
+            console.log(`sada`);
+            let firstnewTermModal = document.querySelector('.newTermModal');
+
+            var newTermModalxxx = new bootstrap.Modal(
+                firstnewTermModal
+            );
+
+
+        }
+
+
+    })
+    // var newTermModalEl = document.getElementById('newTermModal');
+
+    // newTermModalEl.addEventListener(
+    //     'hidden.bs.modal',
+    //     function() {
+    //         var backdrops = document.getElementsByClassName('modal-backdrop');
+    //         if (backdrops.length > 0) {
+    //             document.body.removeChild(backdrops[0]);
+    //         }
+    //     });
 </script>
