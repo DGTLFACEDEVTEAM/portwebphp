@@ -138,23 +138,6 @@ if (typeof pageHasContactForm !== "undefined" && pageHasContactForm) {
         });
     });
 
-    console.log(newTermModalxxx);
-
-    // console.log(bootsrapModal);
-
-    terms2.forEach(function (item) {
-        // remove event listener if already added
-        item.removeEventListener("click", function () {});
-        item.addEventListener("click", function () {
-            // newTermModal is 2 html elements collnection array show the first one
-            console.log(newTermModal[0]);
-            let firstofnewTermModal = newTermModal[0];
-            console.log(firstofnewTermModal);
-            firstofnewTermModal.classList.add("show");
-            firstofnewTermModal.style.display = "block";
-        });
-    });
-
     contactForms.forEach(function (item) {
         // remove event listener if already added
         item.removeEventListener("submit", function () {});
