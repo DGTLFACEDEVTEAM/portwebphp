@@ -41,7 +41,7 @@
             'allQuestions' => 'Tüm sorularınız, fikirleriniz ve önerileriniz',
             'accept' => 'Kişisel verilerimin işlenmesine',
             'terms' => '"açık rıza metni" kapsamında onay veriyorum.',
-            'terms2' => 'Kişisel verileriniz PORT NATURE tarafından iletişim faaliyetlerinin yürütülmesi amacıyla işlenecektir. Kişisel verilerinizin işlenmesi ile ilgili ayrıntılı bilgiye <a href="/iletisim-politikasi">Aydınlatma Metninden</a>  erişebilirsiniz.',
+            'terms2' => 'Kişisel verileriniz PORT NATURE tarafından iletişim faaliyetlerinin yürütülmesi amacıyla işlenecektir. Kişisel verilerinizin işlenmesi ile ilgili ayrıntılı bilgiye <strong style="text-decoration: underline">Aydınlatma Metninden</strong>  erişebilirsiniz.',
             'modalTitle' => 'Şartlar & Koşullar',
             'modalP' => 'Açık Rıza Metni',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -96,7 +96,6 @@
             </div>
             <div class="contactImage">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/blog/callcenter.webp') }}" alt="contactImg" />
-
             </div>
             <div class="contact-form-wrapper">
                 <div class="contact-wrap">
