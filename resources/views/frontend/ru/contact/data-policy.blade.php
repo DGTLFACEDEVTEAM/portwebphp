@@ -28,8 +28,8 @@
                 <div class="kvkk-subtitle text-center">Web Sitesi Ziyaretçileri/ Çerez Aydınlatma Metni, Veri Sorumlusu:
                     Aras İnşaat Ticaret Turizm A.Ş</div>
                 <div class="kvkk-content py-4">
- 
- 
+
+
                     <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'na (“Kanun”) göre </span></span><strong>ARAS
                             İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ</span></strong> <span><span>(“Bundan sonra
                                 ‘</span></span><strong>PORT NATURE</span></strong><strong><span><span>’</strong> olarak
@@ -106,34 +106,34 @@
                         korunması için veri işlemenin zorunlu olması sebebiyle işlenmektedir.</span></p>
                     <p>Web sitemizde kullanılan zorunlu çerezler, sağlayıcıları ve kullanım amaçları aşağıdaki
                         şekildedir:</span></p>
-                        <table >
-                         <tr>
-                             <th>Cookie</th>
-                             <th>Tip</th>
-                             <th>Süre</th>
-                             <th>Açıklama</th>
-                         </tr>
-                         <tr>
-                             <td>portnature_session</td>
-                             <td>Birinci Taraf portnature.com.tr TR</td>
-                             <td>Session</td>
-                             <td>Site tarafından otomatik oluşturulan güvenlik odaklı bir çerezdir.</td>
-                         </tr>
-                         <tr>
-                             <td>XSRF-TOKEN</td>
-                             <td>Birinci Taraf portnature.com.tr, TR</td>
-                             <td>Session</td>
-                             <td>Siteler arası istek sahteciliği (CSRF) saldırılarına karşı koruma sağlamak için
-                                 kullanılır.</td>
-                         </tr>
-                         <tr>
-                             <td>CCP</td>
-                             <td>Birinci Taraf portnature.com.tr, TR</td>
-                             <td>1 YIL</td>
-                             <td>Kullanıcının çerez tercihlerini kaydetmek için kullanılır</td>
-                         </tr>
-                     </table>
- 
+                    <table>
+                        <tr style="border: 1px solid black;">
+                            <th>Cookie</th>
+                            <th>Taraf Bilgisi</th>
+                            <th>Süre</th>
+                            <th>Açıklama</th>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>portnature_session</td>
+                            <td>Birinci Taraf portnature.com.tr TR</td>
+                            <td>Session</td>
+                            <td>Site tarafından otomatik oluşturulan güvenlik odaklı bir çerezdir.</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>XSRF-TOKEN</td>
+                            <td>Birinci Taraf portnature.com.tr, TR</td>
+                            <td>Session</td>
+                            <td>Siteler arası istek sahteciliği (CSRF) saldırılarına karşı koruma sağlamak için
+                                kullanılır.</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>CCP</td>
+                            <td>Birinci Taraf portnature.com.tr, TR</td>
+                            <td>1 YIL</td>
+                            <td>Kullanıcının çerez tercihlerini kaydetmek için kullanılır</td>
+                        </tr>
+                    </table>
+
                     <p><strong>2. Analitik Çerezler</strong></p>
                     <p>Analitik çerezler kullanıcıların web sitesini nasıl kullandıkları hakkında bilgi toplar. Bu tür
                         çerezler kullanıcı deneyimlerini iyileştirmek/geliştirmek amacıyla kullanılan çerezlerdir. Bu
@@ -145,171 +145,275 @@
                     </p>
                     <p>Web sitemizde kullanılan analitik çerezler, sağlayıcıları ve kullanım amaçları aşağıdaki
                         şekildedir:</span></p>
-                        <table >
-                         <tr>
-                             <th>Cookie</th>
-                             <th>Tip</th>
-                             <th>Süre</th>
-                             <th>Açıklama</th>
- 
-                         </tr>
-                         <tr>
-                             <td>yuidss</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>12 Ay 4 Gün</td>
-                             <td>Davranışsal ve hedef odaklı reklamların ziyaretçilere gösterilmesi amacıyla kullanılan çerezlerdir.</td>
- 
-                         </tr>
-                         <tr>
-                             <td>ymex</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>12 Ay 4 Gün</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir.</td>
- 
-                         </tr>
-                         <tr>
-                             <td>yandexuid</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>12 Ay 4 Gün</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir.</td>
- 
-                         </tr>
-                         <tr>
-                             <td>i</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>1 Yıl 1 Ay</td>
-                             <td>İşlevsel ve Analitik Çerez. Yandex metrica'nın site kullanıcı sayısını belirlemek için kullandığı çerez</td>
- 
-                         </tr>
-                         <tr>
-                             <td>bh</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>1 Yıl</td>
-                             <td>Birden fazla web sitesinde ziyaretçi davranışı hakkında bilgi toplar. Bu bilgiler, reklamın alaka düzeyini optimize etmek için web sitesinde kullanılır.</td>
- 
-                         </tr>
-                         <tr>
-                             <td>_ym_visorc</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>1 Yıl</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
- 
-                         </tr>
-                         <tr>
-                             <td>_ym_uid</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>1 Yıl</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
- 
-                         </tr>
-                         <tr>
-                             <td>_ym_isad</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>1 Gün</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
- 
-                         </tr>
-                         <tr>
-                             <td>_ym_d</td>
-                             <td>3. Taraf Yandex, RU</td>
-                             <td>1 Yıl</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
- 
-                         </tr>
-                         <tr>
-                             <td>_gid</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Gün</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
- 
-                         </tr>
-                         <tr>
-                             <td>_ga_6EYM72GR61</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl 1 Ay</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
- 
-                         </tr>
-                         <tr>
-                             <td>_ga</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan bölümlerin neler olduğu)</td>
- 
-                         </tr>
-                         <tr>
-                             <td>1P_JAR</td>
-                             <td>3. Taraf Google, gstatic, ABD</td>
-                             <td>24 Gün</td>
-                             <td>Google çerezi. Bu çerezler, web sitesi istatistiklerini toplamak ve dönüşüm oranlarını izlemek için kullanılır.</td>
- 
-                         </tr>
-                         <tr>
-                             <td>__Secure-3PSIDTS</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                         <tr>
-                             <td>__Secure-3PSIDCC</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                         <tr>
-                             <td>__Secure-3PSID</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                         <tr>
-                             <td>__Secure-3PAPISID</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                         <tr>
-                             <td>__Secure-1PSIDTS</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                         <tr>
-                             <td>__Secure-1PSIDCC</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                         <tr>
-                             <td>__Secure-1PSID</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                         <tr>
-                             <td>__Secure-1PAPISID</td>
-                             <td>3. Taraf Google, ABD</td>
-                             <td>1 Yıl</td>
-                             <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
-                                 ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
-                             
-                         </tr>
-                     </table>
- 
+                    <table>
+                        <tr style="border: 1px solid black;">
+                            <th>Cookie</th>
+                            <th>Taraf Bilgisi</th>
+                            <th>Süre</th>
+                            <th>Açıklama</th>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>yuidss</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>12 Ay 4 Gün</td>
+                            <td>Davranışsal ve hedef odaklı reklamların ziyaretçilere gösterilmesi amacıyla kullanılan
+                                çerezlerdir.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>ymex</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>12 Ay 4 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>yandexuid</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>12 Ay 4 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>i</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl 1 Ay</td>
+                            <td>İşlevsel ve Analitik Çerez. Yandex metrica'nın site kullanıcı sayısını belirlemek için
+                                kullandığı çerez</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>bh</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Birden fazla web sitesinde ziyaretçi davranışı hakkında bilgi toplar. Bu bilgiler,
+                                reklamın alaka düzeyini optimize etmek için web sitesinde kullanılır.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_ym_visorc</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_ym_uid</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_ym_isad</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_ym_d</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_gid</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Gün</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_ga_6EYM72GR61</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl 1 Ay</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_ga</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>1P_JAR</td>
+                            <td>3. Taraf Google, gstatic, ABD</td>
+                            <td>24 Gün</td>
+                            <td>Google çerezi. Bu çerezler, web sitesi istatistiklerini toplamak ve dönüşüm oranlarını
+                                izlemek için kullanılır.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-3PSIDTS</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-3PSIDCC</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-3PSID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-3PAPISID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-1PSIDTS</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-1PSIDCC</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-1PSID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>__Secure-1PAPISID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Ziyaretçinin gerçekliğini doğrulamak, oturum açma verilerinin hileli kullanımını önlemek
+                                ve ziyaretçi verilerini yetkisiz erişime karşı korumak için güvenlik çerezi.</td>
+
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>yabs-sid</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>Session</td>
+                            <td>Web sitesinde kullanıcıyı tanımlamak için kullanılır.</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>sync_cookie_ok</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Gün</td>
+                            <td>Kullanıcı davranışlarını ölçmek ve takip etmek için kullanılan Yandex Metrica çerezidir.
+                            </td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>sync_cookie_csrf</td>
+                            <td>3. Taraf Yandex, RU</td>
+                            <td>1 Gün</td>
+                            <td>Kullanıcı davranışlarını ölçmek ve takip etmek için kullanılan Yandex Metrica çerezidir.
+                            </td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_gcl_au</td>
+                            <td>1. Taraf portnature.com.tr, TR</td>
+                            <td>4 Ay</td>
+                            <td>Dönüşüm Bağlayıcı" işlevine yönelik birinci taraf çerezidir; reklam tıklamalarındaki
+                                bilgileri alır ve bunu birinci taraf çerezinde saklar, böylece dönüşümler açılış sayfası
+                                dışında ilişkilendirilebilir.</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>_fbp</td>
+                            <td>1. Taraf portnature.com.tr, TR</td>
+                            <td>4 Ay</td>
+                            <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                bölümlerin neler olduğu)</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>SIDCC</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Güvenlik için kullanılan çerezler , kullanıcıların kimliğini doğrular, dolandırıcılığı
+                                önler ve bir hizmetle etkileşime girerken kullanıcıları korur</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>SID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Güvenlik için kullanılan çerezler , kullanıcıların kimliğini doğrular, dolandırıcılığı
+                                önler ve bir hizmetle etkileşime girerken kullanıcıları korur</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>SEARCH_SAMESITE</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>6 Ay</td>
+                            <td>Tanımlama bilginizin birinci taraf bağlamıyla mı yoksa aynı site bağlamıyla mı
+                                sınırlandırılacağını bildirmenize olanak tanır</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>SAPISID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Google, YouTube tarafından barındırılan videolar için ziyaretçi bilgilerini toplar.</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>S</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>Session</td>
+                            <td>Siteler arası istek sahteciliği saldırılarına karşı koruma sağlamak için kullanılır.
+                            </td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td>HSID</td>
+                            <td>3. Taraf Google, ABD</td>
+                            <td>1 Yıl</td>
+                            <td>Güvenlik amaçlı kullanılır. Re-captcha fonksiyonunun işleyişini sağlar.</td>
+                        </tr>
+                    </table>
+
                     <p><strong>3. Pazarlama Çerezleri</strong></p>
                     <p>Kullanıcıların ilgi alanlarına göre reklam/kampanyaların sunulması ve pazarlama çalışmalarının
                         etkinliğini ölçmek amacıyla kullanılan çerezlerdir. Pazarlama çerezleri vasıtasıyla işlenen
@@ -319,23 +423,66 @@
                         dışındaki çerez sağlayıcılarla paylaşılmaktadır.</span></p>
                     <p>Web sitemizde kullanılan pazarlama çerezleri, sağlayıcıları ve kullanım amaçları aşağıdaki
                         şekildedir:</span></p>
- 
- 
-                    <p><strong>4. İşlevsel Çerezler</strong></p>
-                    <p>İşlevsel çerezler, web sitesinin içeriğinin sosyal medya platformlarında paylaşılması, geri
-                        bildirimlerin toplanması ve diğer üçüncü taraf özellikleri gibi belirli işlevlerin yerine
-                        getirilmesine yardımcı olur. İşlevsel çerezler kullanıcıların web sitesindeki tercihlerini
-                        hatırlamak amacıyla da kullanılır. Örneğin dil, para birimi tercihi, kullanıcı girişi sırasında
-                        aynı tarayıcıdan giriş yapıldığında tekrar giriş bilgilerinin sorulmaması amacıyla kullanılan
-                        “beni hatırla” tercihi gibi kullanım tercihlerini kaydedip sonraki ziyaretlerde hatırlanmasını
-                        sağlar. İşlevsel çerezler vasıtasıyla işlenen kişisel veriler, tercihlerin hatırlanması ve
-                        müşteri deneyiminin iyileştirilmesi amaçlarıyla, KVKK Md.5/1’de öngörülen açık rızanıza
-                        istinaden işlenmektedir. Yurt dışı kaynaklı çerezler ise KVKK Md9/1’de öngörülen açık rızanıza
-                        istinaden işlenmekte yurt dışındaki çerez sağlayıcılarla paylaşılmaktadır.</span></p>
-                    <p>Web sitemizde kullanılan işlevsel çerezler, sağlayıcıları ve kullanım amaçları aşağıdaki
-                        şekildedir:</span></p>
- 
- 
+                        <table>
+                            <tr style="border: 1px solid black;">
+                                <th>Cookie</th>
+                                <th>Taraf Bilgisi</th>
+                                <th>Süre</th>
+                                <th>Açıklama</th>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <td>SSID</td>
+                                <td>3. Taraf Google, ABD</td>
+                                <td>1 Yıl</td>
+                                <td>Google, Google Haritalar ile entegre haritalarda YouTube tarafından barındırılan
+                                    videolar için ziyaretçi bilgilerini toplar.</td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <td>NID</td>
+                                <td>3. Taraf Google, ABD</td>
+                                <td>5 Ay</td>
+                                <td>Ziyaretçilerin tercihlerini saklar ve son aramalara ve etkileşimlere dayalı olarak
+                                    Google web sitelerindeki reklamları kişiselleştirir.</td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <td>APISID</td>
+                                <td>3. Taraf Google, ABD</td>
+                                <td>1 Yıl</td>
+                                <td>Son aramalara ve etkileşimlere dayalı olarak web sitelerindeki Google reklamlarını
+                                    kişiselleştirir.</td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <td>AEC</td>
+                                <td>3. Taraf Google, ABD</td>
+                                <td>5 Ay</td>
+                                <td>Son aramalara ve etkileşimlere dayalı olarak web sitelerindeki Google reklamlarını
+                                    kişiselleştirir.</td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <td>TOKEN</td>
+                                <td>3. Taraf connexease.com , TR</td>
+                                <td>Session</td>
+                                <td>Siteler arası istek sahteciliği saldırılarına karşı koruma sağlamak için kullanılır.
+                                </td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <td>_fbp</td>
+                                <td>3. Taraf Facebook, ABD</td>
+                                <td>4 Ay</td>
+                                <td>Üyelerimizin/ziyaretçilerimizin kullanım alışkanlıklarını analiz etmek ve uygulama
+                                    istatistiklerini belirlemek için kullanılan çerezlerdir. (Örneğin: Sitemizin kaç kere
+                                    açıldığı, sitemizin hangi saatlerde kullanıldığı, sitemiz içerisinde en çok kullanılan
+                                    bölümlerin neler olduğu)</td>
+                            </tr>
+                            <tr style="border: 1px solid black;">
+                                <td>DATR</td>
+                                <td>3. Taraf Facebook, ABD</td>
+                                <td>1 Yıl</td>
+                                <td>Facebook tarafından güvenlik ve site bütünlüğü, özellikle kötüye kullanım önleme ve
+                                    hesap güvenliğini sağlama amacıyla kullanılır.</td>
+                            </tr>
+                        </table>
+
                     <p>Sitemizi ziyaretinizle birlikte birtakım kişisel verileriniz çerezler dışında başka
                         tanımlayıcılar aracılığıyla da işlenmektedir. Aşağıda sitemizde gezinme sürecinde işlenen
                         kişisel verileriniz, verilerin işleme amaçları ve kanuni gerekçeleri hakkında detaylı
@@ -346,96 +493,8 @@
                     </p>
                     <p><span><span><em><span><span>Web sitesi ziyaretinde birtakım logların alınması
                                             sürecinde;</span></span></em></span></span></p>
-                    <table style="border: 1px solid ; margin: 0px auto;">
-                        <tbody>
-                            <tr>
-                                <td style="border: 1px solid ;">
-                                    <p><span><span><span>İşlenen Kişisel Verileriniz</p>
-                                </td>
-                                <td style="border: 1px solid ;">
-                                    <p><span><span><span>İşlenme Amaçları</p>
-                                </td>
-                                <td style="border: 1px solid ;">
-                                    <p><span><span><span>Hukuki Sebepleri</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
- 
- 
-                                    <ul>
-                                        <li>İşlem Güvenliği (IP numarası ve IP Protokolü, URL, Ne Kadar Süre ile sayfada
-                                            Kalındığı, MAC Adresi, Bağlantı başlangıç ve bitiş zamanı)
-                                            verileriniz</span></li>
-                                    </ul>
- 
-                                </td>
-                                <td>
- 
- 
- 
- 
-                                    <p>Bilgi Güvenliği Süreçlerinin Yürütülmesi (<em>5651 Sayılı Kanun’da öngörülen log
-                                            kayıtları için anılan bilgilerinizin elde edilmesi</em>) amacıyla</span></p>
- 
- 
-                                </td>
-                                <td>
-                                    <p>KVKK Md.5/2(a): Kanunlarda açıkça öngörülme bendine istinaden</span></p>
- 
- 
- 
-                                    <p><span><span><em><span><span>(5651 Sayılı</span></span></em>
-                                                <em><span><span>İnternet Ortamında Yapılan Yayınların Düzenlenmesi
-                                                            Ve</span></span></em></span></span></p>
-                                    <p><span><span><em><span><span>Bu Yayınlar Yoluyla İşlenen
-                                                            Suçlarla</span></span></em></span></span></p>
-                                    <p><span><span><em><span><span>Mücadele Edilmesi Hakkında Kanun m.5’te anılan yer
-                                                            sağlayıcının sorumluluğu başlığı altında anılan veri işleme
-                                                            faaliyetini gerçekleştirmemiz açıkça
-                                                            öngörülmektedir.)</span></span></em></span></span></p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
- 
- 
-                                    <ul>
-                                        <li>İşlem Güvenliği (IP numarası ve IP Protokolü, URL, Ne Kadar Süre ile sayfada
-                                            Kalındığı, MAC Adresi, Bağlantı başlangıç ve bitiş zamanı)
-                                            verileriniz</span></li>
-                                    </ul>
- 
-                                </td>
-                                <td>
- 
- 
- 
- 
-                                    <p>Saklama Ve Arşiv Faaliyetlerinin Yürütülmesi (<em>5651 Sayılı Kanunda öngörülen
-                                            log kayıtları için anılan bilgilerinizin saklanması</em>) amacıyla</span>
-                                    </p>
- 
- 
-                                </td>
-                                <td>
-                                    <p>KVKK Md.5/2(a): Kanunlarda açıkça öngörülme bendine istinaden</span></p>
- 
- 
- 
-                                    <p><span><span><em><span><span>(5651 Sayılı İnternet Ortamında Yapılan Yayınların
-                                                            Düzenlenmesi Ve</span></span></em></span></span></p>
-                                    <p><span><span><em><span><span>Bu Yayınlar Yoluyla İşlenen
-                                                            Suçlarla</span></span></em></span></span></p>
-                                    <p><span><span><em><span><span>Mücadele Edilmesi Hakkında Kanun m.5’te anılan yer
-                                                            sağlayıcının sorumluluğu başlığı altında anılan verileri
-                                                            saklamamız kanunda açıkça
-                                                            öngörülmektedir.)</span></span></em></span></span></p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
- 
+
+
                     <p>Tarafımızca çerezlere ek olarak işlenmektedir.</span></p>
                     <p><strong>Anılan Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</strong></p>
                     <p>Kişisel verileriniz KVKK Md.28/1 çerçevesinde talep edilmesi halinde aydınlatma yükümlülüğü
@@ -453,7 +512,7 @@
                     </p>
                     <table style="border: 1px solid ; margin: 0px auto;">
                         <tbody>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><strong>İşlenen Kişisel Verileriniz</strong></p>
                                 </td>
@@ -464,37 +523,37 @@
                                     <p><strong>Hukuki Sebepleri</strong></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
- 
- 
- 
+
+
+
                                     <ul>
                                         <li>Kimlik <em>(Ad, Soyad),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>Ziyaretçi İşlem <em>(Mesaj İçeriği),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İşlem Güvenliği <em>(İşlem Tarihi),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İletişim <em>(E-posta)</em> verileriniz.</span></li>
                                     </ul>
                                 </td>
                                 <td>
- 
- 
- 
- 
+
+
+
+
                                     <p>İletişim Faaliyetlerinin Yürütülmesi ve Saklama ve Arşiv Faaliyetlerinin
                                         Yürütülmesi <em>(İlettiğiniz mesajların alınması) </em>Amaçlarıyla</span></p>
                                 </td>
                                 <td>
- 
+
                                     <p>KVKK Md. 5/1:Açık rıza bendine istinaden</span></p>
                                     <p><br />
                                         <br />
@@ -502,34 +561,34 @@
                                     <p><span><span><em><span><span>(Bilgilendirmeye dayalı ve özgür iradenizle vermiş
                                                             olduğunuz açık rızaya binaen kişisel verilerinizi elde
                                                             ediyor ve saklıyoruz.)</span></span></em></span></span></p>
- 
+
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
- 
- 
+
+
                                     <ul>
                                         <li>Kimlik <em>(Ad, Soyad),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>Ziyaretçi İşlem <em>(Mesaj İçeriği),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İşlem Güvenliği <em>(İşlem Tarihi),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İletişim <em>(E-posta)</em> verileriniz.</span></li>
                                     </ul>
                                 </td>
                                 <td>
- 
- 
- 
- 
+
+
+
+
                                     <p>Saklama ve Arşiv Faaliyetlerinin Yürütülmesi <em>(İlettiğiniz mesajların
                                             saklanması) </em>Amaçlarıyla</span></p>
                                 </td>
@@ -547,12 +606,12 @@
                                     <p><span><span><em><span><span>(İletişim bilgilerinizi makul sürelerle saklamada
                                                             veri sorumlusu olarak meşru menfaatimiz
                                                             bulunmaktadır.)</span></span></em></span></span></p>
- 
+
                                 </td>
                             </tr>
                         </tbody>
                     </table>
- 
+
                     <p>Tarafımızca işlenmektedir.</span></p>
                     <p><strong>Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</strong></p>
                     <p>Kişisel verileriniz KVKK Md.28/1 çerçevesinde talep edilmesi halinde aydınlatma yükümlülüğü
@@ -569,7 +628,7 @@
                                                 Arıyorsanız<u>;</u></span></span></em></strong></span></span></p>
                     <table style="border: 1px solid ; margin: 0px auto;">
                         <tbody>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><strong>İşlenen Kişisel Verileriniz</strong></p>
                                 </td>
@@ -580,18 +639,18 @@
                                     <p><strong>Hukuki Sebepleri</strong></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
- 
- 
- 
- 
+
+
+
+
                                     <ul>
                                         <li>Müşteri İşlem <em>(Giriş Çıkış Tarihi, Konaklanacak Gece Sayı, Yetişkin
                                                 /Çocuk Sayısı) </em>verileriniz.</span></li>
                                     </ul>
- 
- 
+
+
                                 </td>
                                 <td>
                                     <p><br />
@@ -611,14 +670,14 @@
                                         istinaden</span></p>
                                     <p><br />
                                     </p>
- 
+
                                     <p><span><span><em><span><span>(Otelimize rezervasyon alabilmemiz ve siz değerli
                                                             potansiyel misafir adayımızla hizmet sözleşmesi kurabilmemiz
                                                             için anılan kişisel verilerinizi elde
                                                             etmekteyiz.)</span></span></em></span></span></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><br />
                                         <br />
@@ -647,7 +706,7 @@
                                     <p><br />
                                         <br />
                                     </p>
- 
+
                                     <p><span><span><em><span><span>(Oda arama kayıtlarını makul sürelerle saklamada veri
                                                             sorumlusu olarak meşru menfaatimiz
                                                             bulunmaktadır.)</span></span></em></span></span></p>
@@ -655,7 +714,7 @@
                             </tr>
                         </tbody>
                     </table>
- 
+
                     <p>Tarafımızca ek olarak işlenmektedir.</span></p>
                     <p><strong>Anılan Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</strong></p>
                     <p>Kişisel verileriniz KVKK Md.28/1 çerçevesinde talep edilmesi halinde aydınlatma yükümlülüğü
@@ -671,7 +730,7 @@
                                                 iseniz;</span></span></em></strong></span></span></p>
                     <table style="border: 1px solid ; margin: 0px auto;">
                         <tbody>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><strong>İşlenen Kişisel Verileriniz</strong></p>
                                 </td>
@@ -682,15 +741,15 @@
                                     <p><strong>Hukuki Sebepleri</strong></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
- 
- 
+
+
                                     <ul>
                                         <li>Kimlik <em>(Ad, Soyad, Cinsiyet, Uyruk, Doğum Tarihi, Kart Sahibi
                                                 Adı/Soyadı),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İletişim<em> (Telefon, E-Posta),</em></span></li>
                                         <li>Finans <em>(Kart Numarası,</em></span><em><span> Kart Son Kullanma Tarihi,
@@ -725,7 +784,7 @@
                                                             gereklidir.)</span></span></em></span></span></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><br />
                                     </p>
@@ -733,7 +792,7 @@
                                         <li>Kimlik <em>(Ad, Soyad, Cinsiyet, Uyruk, Doğum Tarihi, Kart Sahibi
                                                 Adı/Soyadı),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İletişim<em> (Telefon, E-Posta),</em></span></li>
                                         <li>Finans <em>(Kart Numarası,</em></span><em><span> Kart Son Kullanma Tarihi,
@@ -765,7 +824,7 @@
                                                             saklamaktayız.)</span></span></em></span></span></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><br />
                                         <br />
@@ -799,7 +858,7 @@
                             </tr>
                         </tbody>
                     </table>
- 
+
                     <p>Tarafımızca ek olarak işlenmektedir.</span></p>
                     <p><strong>Anılan Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</strong></p>
                     <p>Kişisel verileriniz KVKK Md.28/1 çerçevesinde talep edilmesi halinde aydınlatma yükümlülüğü
@@ -815,7 +874,7 @@
                                                 Yapıyorsanız;</span></span></em></strong></span></span></p>
                     <table style="border: 1px solid ; margin: 0px auto;">
                         <tbody>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><strong>İşlenen Kişisel Verileriniz</strong></p>
                                 </td>
@@ -826,14 +885,14 @@
                                     <p><strong>Hukuki Sebepleri</strong></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
- 
- 
+
+
                                     <ul>
                                         <li>Kimlik <em>(Ad, Soyad, Cinsiyet, Uyruk, Doğum Tarihi),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İletişim<em> (Telefon, E-Posta),</em></span></li>
                                     </ul>
@@ -867,7 +926,7 @@
                                                             gereklidir.)</span></span></em></span></span></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><br />
                                         <br />
@@ -875,7 +934,7 @@
                                     <ul>
                                         <li>Kimlik <em>(Ad, Soyad, Cinsiyet, Uyruk, Doğum Tarihi),</em></span></li>
                                     </ul>
- 
+
                                     <ul>
                                         <li>İletişim<em> (Telefon, E-Posta),</em></span></li>
                                     </ul>
@@ -906,7 +965,7 @@
                                                             saklamaktayız.)</span></span></em></span></span></p>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr style="border: 1px solid black;">
                                 <td>
                                     <p><br />
                                         <br />
@@ -940,7 +999,7 @@
                             </tr>
                         </tbody>
                     </table>
- 
+
                     <p>Tarafımızca ek olarak işlenmektedir.</span></p>
                     <p><strong>Anılan Kişisel Verilerin Kimlere ve Hangi Amaçla Aktarılabileceği</strong></p>
                     <p>Kişisel verileriniz KVKK Md.28/1 çerçevesinde talep edilmesi halinde aydınlatma yükümlülüğü
@@ -955,75 +1014,75 @@
                     <p><strong>Kişisel Verilerinizle İlgili Haklarınız</strong></p>
                     <p>İlgili kişiler, kişisel verilerine ilişkin haklarını öncelikle veri sorumlusuna iletmek
                         zorundadırlar. </span></p>
- 
+
                     <p><strong>Kişisel Verilerinizle İlgili Haklarınız</strong></p>
                     <p>İlgili kişiler, kişisel verilerine ilişkin haklarını öncelikle veri sorumlusuna iletmek
                         zorundadırlar. </span></p>
                     <table style="border: 1px solid ; margin: 0px auto;">
                         <tbody>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>Kanun uyarınca kişisel verilerinizle ilgili olarak:</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>a) Kişisel veri işlenip işlenmediğini öğrenme,</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>b) Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme,</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>c) Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp
                                         kullanılmadığını öğrenme,</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>ç) Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü
                                         kişileri bilme,</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>d) Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların
                                         düzeltilmesini isteme,</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>e) İşlenmesini gerektiren sebeplerin ortadan kalkması hâlinde kişisel
                                         verilerinizin silinmesini veya yok edilmesini isteme,</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>f) (d) ve (e) bentleri uyarınca yapılan işlemlerin, kişisel verilerinizin
                                         aktarıldığı üçüncü kişilere bildirilmesini isteme,</span></p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>g) İşlenen verilerinizin münhasıran otomatik sistemler vasıtasıyla analiz
                                         edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,</span>
                                     </p>
                                 </td>
                             </tr>
-                            <tr>
- 
+                            <tr style="border: 1px solid black;">
+
                                 <td>
                                     <p>ğ) Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız
                                         hâlinde zararın giderilmesini talep etme haklarını kullanabilirsiniz.</span></p>
@@ -1031,7 +1090,7 @@
                             </tr>
                         </tbody>
                     </table>
- 
+
                     <p>Başvurunuzu: </span></p>
                     <ul>
                         <li>Fener Mah. 1962.Sk. Aras Sitesi C Blok 2CB Muratpaşa/ ANTALYA adresine yazılı olarak;</span>
@@ -1046,8 +1105,8 @@
                                 href="mailto:kvkk@portnature.com.tr"><span>kvkk@portnature.com.tr</span></a><span><span>
                                     adresimize e-posta göndererek yapabilirsiniz.</span></li>
                     </ul>
- 
- 
+
+
                     <p>Başvurunuzda;</span></p>
                     <ul>
                         <li>Adınızın, soyadınızın ve başvuru yazılı ise imzanızın,</span></li>
@@ -1065,7 +1124,7 @@
                             href="http://www.resmigazete.gov.tr/eskiler/2018/03/20180310-6.htm"><span>Veri Sorumlusuna
                                 Başvuru Usul ve Esasları Hakkında Tebliğ</span></a><span><span>" inden
                                 ulaşabilirsiniz.</span></p>
- 
+
                     <div class="text-center">
                         <a target="_blank" href="{{ asset('/uploads/data_policy/portnature-kvkk.pdf') }}"
                             class="btn btn-download">Download</a>
@@ -1074,7 +1133,20 @@
             </div>
         </div>
     </div>
- </div>
+</div>
+
+<style>
+
+    table {
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        table {
+            font-size: 10px;
+        }
+    }
+</style>
 
 @endsection
 
