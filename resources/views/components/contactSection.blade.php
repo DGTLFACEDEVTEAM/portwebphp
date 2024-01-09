@@ -174,7 +174,7 @@
                                         {!! $translation[$lang]['accept2'] !!}
                                          <br> <br>
                                 </label>
-                                <div class="terms2 d-none">
+                                <div class="">
                                     {!! $translation[$lang]['terms2'] !!}
                                     {{-- <a href="#" data-bs-toggle="modal" data-bs-target="#newTermModal"
                                         style="color: #212429!important" class="text-decoration-none">
