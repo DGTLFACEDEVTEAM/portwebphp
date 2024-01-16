@@ -456,7 +456,7 @@
             </div>
             <div class="swiper-slide rooms-swiper-slide">
                 <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/king.webp') }}" />
-                <a href="{{ route('kingsuit-rooms') }}" class="room-swiper-button"><span>King Suite</span>
+                <a href="{{ route('king-suite-rooms') }}" class="room-swiper-button"><span>King Suite</span>
                     <img class="btn-chevron"
                         src="{{ asset('assets/frontend/images/offers/svg/button-chevron.svg') }}" />
                 </a>
@@ -1289,7 +1289,7 @@
                     Antalya all inclusive deals are best options for kids, and those looking for the best luxury resort. 
                     Antalya is the best all inclusive resort with great holiday deals for your 5 star hotels and family holiday.
                      You can call us or check online for booking hotel Antalya all inclusive. Call now for the best <a href="https://portnature.com.tr/family-room">family rooms</a>, 
-                     <a href="https://portnature.com.tr/kingsuit-room">King suite</a> and <a href="https://portnature.com.tr/standard-rooms">standart rooms</a>. Antalya is the best holiday place for all inclusive resorts.
+                     <a href="https://portnature.com.tr/king-suite-room">King suite</a> and <a href="https://portnature.com.tr/standard-rooms">standart rooms</a>. Antalya is the best holiday place for all inclusive resorts.
                 </p>
 
             </div>
