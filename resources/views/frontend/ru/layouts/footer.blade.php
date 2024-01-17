@@ -120,7 +120,7 @@
             </span>
         </div>
         <div class="col-12 col-md-6 text-end">
-            <a href="http://dgtlface.com" target="_blank" rel="noopener noreferrer" class="footerCompany mobileCompany">
+            <a href="https://dgtlface.com" target="_blank" rel="noopener noreferrer" class="footerCompany mobileCompany">
                 Powered by © <span >DGTLFACE</span>
             </a>
         </div>
