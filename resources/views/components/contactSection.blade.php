@@ -9,6 +9,7 @@
             'accept' => 'I accept the',
             'terms' => 'Terms and Conditions',
             'terms2' => '',
+            'accept2' => '',
             'modalTitle' => 'Terms & Conditions',
             'modalP' => 'Consent Text',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -25,6 +26,7 @@
             'accept' => 'Я принимаю',
             'terms' => 'Условия и положения',
             'terms2' => '',
+            'accept2' => '',
             'modalTitle' => 'Условия и положения',
             'modalP' => 'Текст согласия',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -40,11 +42,22 @@
             'sendMsg' => 'Mesaj Gönder',
             'allQuestions' => 'Tüm sorularınız, fikirleriniz ve önerileriniz',
             'accept' => 'Kişisel verilerimin işlenmesine',
-            'terms' => '"açık rıza metni" kapsamında onay veriyorum.',
-            'terms2' => 'Kişisel verileriniz PORT NATURE tarafından iletişim faaliyetlerinin yürütülmesi amacıyla işlenecektir. Kişisel verilerinizin işlenmesi ile ilgili ayrıntılı bilgiye <a href="/iletisim-politikasi">Aydınlatma Metninden</a>  erişebilirsiniz.',
+            'terms' => '"açık rıza metni"',
+            'accept2' => ' kapsamında onay veriyorum',
+            'terms2' => 'Kişisel verileriniz PORT NATURE tarafından iletişim faaliyetlerinin yürütülmesi amacıyla işlenecektir. Kişisel verilerinizin işlenmesi ile ilgili ayrıntılı bilgiye <a href="/iletisim-politikasi">Aydınlatma Metninden</a> erişebilirsiniz.',
             'modalTitle' => 'Şartlar & Koşullar',
             'modalP' => 'Açık Rıza Metni',
-            'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
+            'modalText' => '<p><strong></strong></p>
+
+                            <p>6698 sayılı Kişisel Verilerin Korunması Kanunu&#39;na g&ouml;re sizinle ilgili bazı kişisel verilerin, veri sorumlusu olan <strong>ARAS İNŞAAT TİCARET TURİZM ANONİM ŞİRKETİ (&lsquo;PORT NATURE&rsquo; olarak anılacaktır.) </strong>tarafından işlenebilmesi i&ccedil;in a&ccedil;ık rızanız gerekmektedir.</p>
+
+                            <p>&nbsp;</p>
+
+                            <p>Bu kapsamda İletişim faaliyetlerinin y&uuml;r&uuml;t&uuml;lmesi ve sorunuzun bize iletilmesi amacıyla <strong>Kimlik</strong> <em>(Ad, Soyad),</em> <strong>İletişim </strong><em>(e-Mail),</em><strong> İşlem G&uuml;venliği </strong><em>(İşlem Tarihi), </em><strong><em>Ziyaret&ccedil;i</em> İşlem<em> </em></strong><em>(Mesaj Konusu), </em><strong>Hukuki İşlem</strong><em> (Saat, Tarih) </em>kişisel verileriniz KVKK Md.5/1&rsquo;de &ouml;ng&ouml;r&uuml;len a&ccedil;ık rızanıza istinaden işlenecektir.</p>
+
+                            <p>&nbsp;</p>
+
+                            <p><strong>Yukarıda ama&ccedil;ları belirtilen kişisel verilerimin belirtilen ama&ccedil;lar &ccedil;er&ccedil;evesinde işlenmesini kabul ve beyan ediyorum.</strong></p>',
             'modalText2' => '',
             'modalText3' => '',
             'close' => 'Kapat',
@@ -58,6 +71,7 @@
             'accept' => 'Ich akzeptiere die',
             'terms' => 'Geschäftsbedingungen',
             'terms2' => '',
+            'accept2' => '',
             'modalTitle' => 'Geschäftsbedingungen',
             'modalP' => 'Einwilligungstext',
             'modalText' => 'İletişim formu aracılığıyla işlenen kişisel verileriniz ile ilgili 6698 Sayılı Kişisel Verilerin Korunması m.10 gereği Aydınlatma Yükümlülüğünü yerine getirmek ve şeffaf olabilmek amacıyla hazırladığımız aydınlatma metnine <a href="/iletisim-politikasi">"buradan"</a> ulaşabilirsiniz',
@@ -96,7 +110,6 @@
             </div>
             <div class="contactImage">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/blog/callcenter.webp') }}" alt="contactImg" />
-
             </div>
             <div class="contact-form-wrapper">
                 <div class="contact-wrap">
@@ -157,15 +170,18 @@
                                         class="form-check-input acceptTermsCheckbox" required>
                                     {!! $translation[$lang]['accept'] !!}
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#termModal"
-                                        style="color: #212429!important">{!! $translation[$lang]['terms'] !!}</a> <br> <br>
-
-
+                                        style="color: #212429!important">{!! $translation[$lang]['terms'] !!}</a>
+                                        {!! $translation[$lang]['accept2'] !!}
+                                         <br> <br>
                                 </label>
-                                <div class="terms2 d-none">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#newTermModal"
+                                <div class="">
+                                    {!! $translation[$lang]['terms2'] !!}
+                                    {{-- <a href="#" data-bs-toggle="modal" data-bs-target="#newTermModal"
                                         style="color: #212429!important" class="text-decoration-none">
                                         {!! $translation[$lang]['terms2'] !!}
-                                    </a>
+                                    </a> --}}
+
+                                    {{-- COMMENT HERE --}}
                                 </div>
                                 <div class="modal fade" id="termModal" tabindex="-1" aria-labelledby="termModal"
                                     aria-hidden="true">
@@ -203,14 +219,13 @@
                                     <div class="modal-dialog vh-100 d-flex align-items-center justify-content-center">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <p class="modal-title fs-5">Aydinlatma Metni</p>
+                                                <p class="modal-title fs-5">İletişim Formu&nbsp;</p>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     data-bs-target="#newTermModal" aria-label="Close"></button>
                                             </div>
                                             <div
                                                 class="modal-body d-flex flex-column justify-content-center text-center">
 
-                                                <p>Aydinlatma content</p>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary"

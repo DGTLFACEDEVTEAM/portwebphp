@@ -473,18 +473,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide rooms-swiper-slide">
-                    <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/king.webp') }}" />
-                    <a href="{{ route('kingsuit-rooms') }}" class="room-swiper-button"><span>King Suite</span>
-                        <img class="btn-chevron"
-                            src="{{ asset('assets/frontend/images/offers/svg/button-chevron.svg') }}" />
-                    </a>
-                    <div class="room-swiper-details">
-                        <div class="room-detail-item">
-                            <img class="room-svg-swiper"
-                                src="{{ asset('assets/frontend/images/offers/svg/icon-1.svg') }}" />
-                            <p class="room-detail-text">5 adults + 1</p>
 
+            </div>
+            <div class="swiper-slide rooms-swiper-slide">
+                <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/king.webp') }}" />
+                <a href="{{ route('king-suite-rooms') }}" class="room-swiper-button"><span>King Suite</span>
+                    <img class="btn-chevron"
+                        src="{{ asset('assets/frontend/images/offers/svg/button-chevron.svg') }}" />
+                </a>
+                <div class="room-swiper-details">
+                    <div class="room-detail-item">
+                        <img class="room-svg-swiper"
+                            src="{{ asset('assets/frontend/images/offers/svg/icon-1.svg') }}" />
+                        <p class="room-detail-text">5 adults + 1</p>
                         </div>
                         <div class="room-detail-item">
                             <img class="room-svg-swiper"
@@ -1402,11 +1403,14 @@
         </div>
         <div class="split-wrapper sixth-split split-with-picture">
             <div class="split-1">
-                <a href="https://www.portnature.com.tr/king-suite-room">
-                    <img class="offers-split-photo"
-                        src="{{ asset('assets/frontend/images/offers/seo/en/antalya/all-inclusive-5-star-antalya-hotel-rates-king-suite-room.webp') }}">
-                    <img class="split-svg-mobile"
-                        src="{{ asset('assets/frontend/images/offers/svg/mobile/line.svg') }}">
+                <h3 class="split-text-5">Best All Inclusive Resorts Antalya</h3>
+                <p>
+                    Antalya hotels all inclusive resort advantages include a Belek holiday this summer. 
+                    Antalya all inclusive deals are best options for kids, and those looking for the best luxury resort. 
+                    Antalya is the best all inclusive resort with great holiday deals for your 5 star hotels and family holiday.
+                     You can call us or check online for booking hotel Antalya all inclusive. Call now for the best <a href="https://portnature.com.tr/family-room">family rooms</a>, 
+                     <a href="https://portnature.com.tr/king-suite-room">King suite</a> and <a href="https://portnature.com.tr/standard-rooms">standart rooms</a>. Antalya is the best holiday place for all inclusive resorts.
+                </p>
 
 
                 </a>
