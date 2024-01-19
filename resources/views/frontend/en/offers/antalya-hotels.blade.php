@@ -456,7 +456,7 @@
             </div>
             <div class="swiper-slide rooms-swiper-slide">
                 <img class="room-image-swiper" src="{{ asset('assets/frontend/images/offers/king.webp') }}" />
-                <a href="{{ route('king-suite-rooms') }}" class="room-swiper-button"><span>King Suite</span>
+                <a href="{{ route('kingsuit-rooms') }}" class="room-swiper-button"><span>King Suite</span>
                     <img class="btn-chevron"
                         src="{{ asset('assets/frontend/images/offers/svg/button-chevron.svg') }}" />
                 </a>
