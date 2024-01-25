@@ -69,6 +69,10 @@ class ContactController extends Controller
 
         return view('frontend.tr.contact.tr-csma-policy');
     }
+    public function msma_policy() {
+
+        return view('frontend.tr.contact.tr-msma-policy');
+    }
 
     public function contact_form_policy()
     {
