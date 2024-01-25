@@ -25,10 +25,10 @@
        <div class="row">
            <div class="col-12">
            <p style="text-align:justify">&nbsp;</p>
+           <div class="kvkk-title ">Kişisel Verilerin Korunması</div>
 
-<p style="text-align:justify"><span style="font-size:28pt"><span style=" Light&quot;,sans-serif"><strong><span style="font-size:18.0pt"><span style="color:#002060">Kişisel Verilerin Korunması</span></span></strong></span></span></p>
 
-<p style="text-align:justify"><span style="font-size:28pt"><span style=" Light&quot;,sans-serif"><span style="font-size:24.0pt"><span style="color:#002060">Sosyal Medya Platformlarında Verilerinin Paylaşılmasına Onay Veren Misafirler için <strong>Aydınlatma Metni</strong></span></span></span></span></p>
+<p style="text-align:center"><span style="font-size:28pt"><span style=" Light&quot;,sans-serif"><span style="font-size:24.0pt"><span style="color:#002060">Sosyal Medya Platformlarında Verilerinin Paylaşılmasına Onay Veren Misafirler için <strong>Aydınlatma Metni</strong></span></span></span></span></p>
 
 <p style="text-align:justify">&nbsp;</p>
 
@@ -63,12 +63,12 @@
 				<li><span style="font-size:11pt"><span style=""><span style="font-family:&quot;Times&quot;,serif"><span style="color:#002060">Görsel İşitsel Kayıtlar (Fotoğraf, Görüntü Kaydı) verileriniz</span></span></span></span></li>
 			</ul>
 			</td>
-			<td style="background-color:#deeaf6;  solid #9cc2e5; ; width:271px">
+			<td>
 
 
 			<p><span style="font-size:11pt"><span style=""><span style="font-family:&quot;Times&quot;,serif"><span style="color:#002060">Reklam / Kampanya / Promosyon Süreçlerinin Yürütülmesi<em> (Anılan kişisel verilerinizin elde edilmesi, sosyal medya platformlarında paylaşılması ve saklanması yoluyla kliniğimiz tanıtım süreçlerinin yürütülmesi) </em>Amacıyla</span></span></span></span></p>
 			</td>
-			<td style="background-color:#deeaf6;  solid #9cc2e5; ; width:161px">
+			<td>
 			
 
 			<p><span style="font-size:11pt"><span style=""><span style="font-family:&quot;Times&quot;,serif"><span style="color:#002060">KVKK Md. 5/1: Açık rızanıza </span></span><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="color:#1f3864">istinaden</span></span></span></span></p>
