@@ -218,6 +218,7 @@ Route::get('mutfak-ziyaretci-aydinlatma', [App\Http\Controllers\Frontend\Turkish
 Route::get('urun-hizmet-aydinlatma', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'uha_policy'])->name('tr-uha-policy');
 Route::get('guvenlik-kamera-aydinlatma', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'gka_policy'])->name('tr-gka-policy');
 Route::get('calisan-sosyal-medya-aydinlatma', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'csma_policy'])->name('tr-csma-policy');
+Route::get('misafir-sosyal-medya-aydinlatma', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'msma_policy'])->name('tr-msma-policy');
 
 Route::post('iletisim', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'submit'])->name('tr-contacts-submit');
 Route::get('cerez-politikasi', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'data_policy'])->name('tr-data-policy');
