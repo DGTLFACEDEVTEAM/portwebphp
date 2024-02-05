@@ -46,8 +46,8 @@ body, html {
     height: 100%;
 }
 .concert-calendar-img {
-    width: 51.458vw;
-    height: 29.167vw;
+    width: 61.458vw;
+    height: 35.167vw;
 
 }
 
@@ -269,7 +269,7 @@ body, html {
 
     .concert-calendar-img {
         min-height: 450px;
-        object-fit: cover;
+        
         left: 10%;
 
     }
@@ -280,7 +280,7 @@ body, html {
         min-height: 0px;
         width: 80vw;
         height: auto;
-        object-fit: cover;
+        
 
     }
     .calendar-img-desktop,.calendar-img-mobile{
