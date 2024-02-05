@@ -147,6 +147,44 @@ $(document).ready(function () {
 
     let isClientAcceptCookie = Cookies.get("CCP");
 
+    // get all cookies
+    var getCookies = function () {
+        var pairs = document.cookie.split(";");
+        var cookies = {};
+        for (var i = 0; i < pairs.length; i++) {
+            var pair = pairs[i].split("=");
+            cookies[(pair[0] + "").trim()] = unescape(pair.slice(1).join("="));
+        }
+        return cookies;
+    };
+    var myCookies = getCookies();
+
+    if (!myCookies.CCP) {
+        // delete all the cookies except miramare_session, CCP , XSRF-TOKEN
+        var cookies = document.cookie.split(";");
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = cookies[i];
+            var eqPos = cookie.indexOf("=");
+            var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+
+            if (
+                name !== "miramare_session" &&
+                name !== "CCP" &&
+                name !== " XSRF-TOKEN" &&
+                name !== "XSRF-TOKEN"
+            ) {
+                document.cookie =
+                    name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+
+                document.cookie =
+                    name +
+                    "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;domain=" +
+                    `.${document.domain}` +
+                    ";path=/";
+            }
+        }
+    }
+
     let parseCCP = null;
 
     if (isClientAcceptCookie !== undefined) {
