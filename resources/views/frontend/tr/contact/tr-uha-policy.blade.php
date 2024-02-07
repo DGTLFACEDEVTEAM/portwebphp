@@ -33,7 +33,7 @@
 <p><span><span><strong><span><span>İlgili Kişi: </span></span></strong><span><span>Sözleşme süreçlerinde birtakım kişisel verilerini işlediğimiz siz, kanun tarafından ilgili kişi olarak tanımlanmaktasınız.</span></span></span></span></p>
 <p><span><span><strong><span><span>Veri Sorumlusu:</span></span></strong><span><span> Sizinle ilgili kişisel veriler konusunda kişisel verilerin işleme amaçlarını ve vasıtalarını belirleyen, veri kayıt sisteminin kurulmasından ve yönetilmesinden sorumlu olan <strong>[</strong></span></span><strong><span><span><span><span>PORT NATURE</span></span></span></span></strong><strong><span><span>] </span></span></strong><span><span>veri sorumlusudur.</span></span></span></span></p>
 <p><span><span><strong><span><span>Süreçlere Göre İşlenen Kişisel Verileriniz, İşlenme Amaçları ve Hukuki Sebepleri</span></span></strong></span></span></p>
-<table cellspacing="0" class="Table border border-white">
+<table cellspacing="0" class="table table-bordered">
 <tbody>
 <tr>
 <td>
@@ -201,7 +201,7 @@
 <p><span><span><strong><span><span>Kişisel Verilerin Elde Edilme Yöntemleri</span></span></strong></span></span></p>
 <p><span><span><span><span>Kişisel verileriniz sözleşmeyi imzalamanız yoluyla otomatik olmayan yöntemlerle elde edilmektedir.</span></span></span></span></p>
 <p> </p>
-<table cellspacing="0" class="Table border border-white">
+<table cellspacing="0" class="table table-bordered">
 <tbody>
 <tr>
 <td>
