@@ -14,7 +14,7 @@
     {{-- Fonts --}}
     {{-- Bootstrap Css --}}
     <link href="{{ asset('assets/admin/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
-    {{-- App Css--}}
+    {{-- App Css --}}
     <link href="{{ asset('assets/admin/css/app.min.css') }}" rel="stylesheet" type="text/css" />
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
@@ -94,7 +94,7 @@
     <script src="//cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
     {{-- App js --}}
     <script src="{{ asset('assets/admin/js/app.js') }}"></script>
-    {{--tinymce js--}}
+    {{-- tinymce js --}}
     <script src="{{ asset('assets/admin/libs/tinymce/tinymce.min.js') }}"></script>
     {{-- Summernote js --}}
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
@@ -105,7 +105,11 @@
 
     <script>
         $(document).ready(function() {
-            $('#selection-datatable').DataTable();
+            $('#selection-datatable').DataTable({
+                "order": [
+                    [0, "desc"]
+                ]
+            });
             $('.table-responsive').removeClass('d-none');
             $('.datatableLoader').addClass('d-none');
         });
