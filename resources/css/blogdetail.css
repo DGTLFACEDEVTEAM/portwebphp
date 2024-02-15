@@ -130,21 +130,21 @@
     width: 100%;
 }
 
-.section2wrapper a img.blogImagesmall {
+#dgtlNewBlogSystem a img.blogImagesmall {
     object-fit: cover;
     width: 31vw;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.section2wrapper a img.blogImagemedium {
+#dgtlNewBlogSystem a img.blogImagemedium {
     width: 44vw;
     object-fit: cover;
     margin-top: 80px;
     margin-bottom: 80px;
 }
 
-.section2wrapper a img.blogImagebig {
+#dgtlNewBlogSystem a img.blogImagebig {
     width: 60vw;
     object-fit: cover;
     margin-top: 80px;
@@ -183,21 +183,21 @@
         width: 100%;
     }
 
-    .section2wrapper a img.blogImagesmall {
+    #dgtlNewBlogSystem a img.blogImagesmall {
         width: 60vw;
         object-fit: cover;
         margin-top: 80px;
         margin-bottom: 80px;
     }
 
-    .section2wrapper a img.blogImagemedium {
+    #dgtlNewBlogSystem a img.blogImagemedium {
         width: 60vw;
         object-fit: cover;
         margin-top: 80px;
         margin-bottom: 80px;
     }
 
-    .section2wrapper a img.blogImagebig {
+    #dgtlNewBlogSystem a img.blogImagebig {
         width: 60vw;
         object-fit: cover;
         margin-top: 80px;
@@ -326,7 +326,7 @@
         width: 100%;
     }
 
-    .section2wrapper a img.blogImagesmall {
+    #dgtlNewBlogSystem a img.blogImagesmall {
         width: 90vw;
         object-fit: cover;
         margin-top: 80px;
@@ -334,14 +334,14 @@
         object-fit: cover;
     }
 
-    .section2wrapper a img.blogImagemedium {
+    #dgtlNewBlogSystem a img.blogImagemedium {
         width: 90vw;
         object-fit: cover;
         margin-top: 80px;
         margin-bottom: 80px;
     }
 
-    .section2wrapper a img.blogImagebig {
+    #dgtlNewBlogSystem a img.blogImagebig {
         width: 90vw;
         object-fit: cover;
         margin-top: 80px;
