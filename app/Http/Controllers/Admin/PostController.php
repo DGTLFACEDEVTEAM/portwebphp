@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\Admin;
 
+
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
+// use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
@@ -20,6 +22,8 @@ class PostController extends Controller
 
     public function create()
     {
+
+
         $categories = Category::all();
         return view('admin.post.create', compact('categories'));
     }
@@ -45,6 +49,14 @@ class PostController extends Controller
             $request->title_image->move(public_path('uploads/blogs/'), $imageName);
         }
 
+        $isAdmin = Auth::user()->role_as == '1' ? '1' : '0';
+
+        if ($isAdmin == '1') {
+            $status = $request->status == true ? '1' : '0';
+        } else {
+            $status = '0';
+        }
+
         // Post modelini oluştururken $imageName değerini kullanıyoruz.
         Post::create([
             'category_id' => $request->category_id,
@@ -56,7 +68,7 @@ class PostController extends Controller
             'meta_title' => $request->meta_title,
             'meta_description' => $request->meta_description,
             'created_by' => Auth::user()->name,
-            'status' => $request->status == true ? '1' : '0'
+            'status' => $status
         ]);
 
         return redirect('admin/post-list')->with('message', 'Blog başarıyla eklendi.');
@@ -66,8 +78,9 @@ class PostController extends Controller
     public function createNew()
     {
         $categories = Category::all();
+
         $defaultPostData = array('');
-        return view('admin.post.post_create_new', compact('defaultPostData', 'categories'));
+        return view('admin.post.post_create_new', compact('defaultPostData', 'categories ',));
     }
 
     public function edit($post_id)
