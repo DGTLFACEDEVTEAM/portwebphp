@@ -80,7 +80,7 @@ class PostController extends Controller
         $categories = Category::all();
 
         $defaultPostData = array('');
-        return view('admin.post.post_create_new', compact('defaultPostData', 'categories ',));
+        return view('admin.post.post_create_new', compact('defaultPostData', 'categories '));
     }
 
     public function edit($post_id)
