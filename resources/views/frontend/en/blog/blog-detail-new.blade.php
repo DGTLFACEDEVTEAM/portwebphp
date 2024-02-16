@@ -30,6 +30,21 @@
                     $replacementContact = view('frontend.en.layouts.contact')->render();
                     $contactElement = "<div class='contactElement'><span class=\"contactSpan\" >CONTACT SECTION</span></div>";
                     $description = str_replace($contactElement, $replacementContact, $description);
+                    // if there is a tag that is not portnature.com.tr , than thats external link and we need to add target blank and nofollow
+                    $pattern = '/<a\s+(?:[^>]*?\s+)?href="([^"]*)"(?:\s+[^>]*)?>/i';
+
+                    // Replace anchor tags
+                    $description = preg_replace_callback($pattern, function($matches) {
+                        $href = $matches[1];
+                        // Check if the link is external
+                        if (strpos($href, 'portnature.com.tr') === false) {
+                            // Modify anchor tag with target="_blank" and rel="nofollow" attributes
+                            return str_replace('<a ', '<a target="_blank" rel="nofollow noopener noreferrer" ', $matches[0]);
+                        } else {
+                            return $matches[0];
+                        }
+                    }, $description);
+
                     return $description;
                 }
             @endphp

@@ -33,10 +33,12 @@ function addDefaultTemps() {
         let insideArray = Array.from(div.children);
         // insideArray has all the parent elements of templates so we can loop and find out wich template is
         dropbox.innerHTML = "";
+
         insideArray.forEach((element) => {
             // get class name of element
             // classname are determinate which template added
             let className = element.className;
+
             switch (className) {
                 case "section1wrapper":
                     // section1wrapper is for 1 heading and 1 paragraph template
@@ -151,6 +153,7 @@ function addDefaultTemps() {
                     let firstHeadingDoubleRight = "";
 
                     let headingTypeLeft = "";
+                    let headingTypeRight = "";
 
                     if (headingsDoubleLeft.length > 0) {
                         firstHeadingDoubleLeft = headingsDoubleLeft[0];
@@ -166,6 +169,8 @@ function addDefaultTemps() {
 
                     if (headingsDoubleRight.length > 0) {
                         firstHeadingDoubleRight = headingsDoubleRight[0];
+                        headingTypeRight =
+                            firstHeadingDoubleRight.tagName.toLowerCase();
                     } else {
                         console.log(
                             "No heading found inside the target element"
@@ -221,6 +226,8 @@ function addDefaultTemps() {
                     pR = pR.innerHTML.trim();
                     // pR = `<p>${pR}</p>`;
 
+
+
                     // creating object for this template that filled with values we get from html
                     // purpose of this object is you can edit this template that already added
                     let hpx2Obj = {
@@ -230,9 +237,10 @@ function addDefaultTemps() {
                             class: "",
                             headings: [h1L, h1R],
                             paragraphs: [pL, pR],
-                            type: [headingTypeLeft, "p"],
+                            type: [headingTypeLeft, "p", headingTypeRight, "p"],
                         },
                     };
+
                     // calling function to add this template to html
                     addNewTemplateToHtml("hpx2", hpx2Obj);
                     break;
@@ -272,6 +280,168 @@ function addDefaultTemps() {
                     // contactElement is for placing contact widget inside blog
                     addNewTemplateToHtml("contact");
                     break;
+                case 'section6wrapper':
+                    // section6wrapper is for img and heading and paragraph template
+
+                    let hpImgContainer = element.children[0];
+                    let leftSideHpImg = hpImgContainer.children[0];
+                    let rightSideHpImg = hpImgContainer.children[1];
+
+                    // for left site heading
+
+                    const headingsHpImg = leftSideHpImg.querySelectorAll(
+                        "h1, h2, h3, h4, h5, h6"
+                    );
+
+                    let firstHeadingHpImg = "";
+
+                    let headingTypeHpImg = "";
+
+                    if (headingsHpImg.length > 0) {
+                        firstHeadingHpImg = headingsHpImg[0];
+                        headingTypeHpImg =
+                            firstHeadingHpImg.tagName.toLowerCase();
+                    } else {
+                        console.log(
+                            "No heading found inside the target element"
+                        );
+                        // is there is no heading just return, this template is not valid
+                        break;
+                    }
+
+                    let h1HpImg = firstHeadingHpImg.innerHTML.trim();
+
+                    let pHpImg = null;
+                    let imgHpImg = null;
+
+                    if (!leftSideHpImg.querySelector(".tempPContainer")) {
+                        // get all p tags inside hpContainer
+                        pHpImg = leftSideHpImg.querySelectorAll("p");
+                        if (pHpImg.length !== 0) {
+                            // put every p tag inside tempPContainer
+                            let tempCo = document.createElement("div");
+                            tempCo.className = "tempPContainer";
+                            pHpImg.forEach((p) => {
+                                tempCo.appendChild(p);
+                            });
+                            leftSideHpImg.appendChild(tempCo);
+                        } else {
+                            break;
+                        }
+                    }
+
+                    if (!rightSideHpImg.querySelector("img")) {
+                        break;
+                    }
+
+                    imgHpImg = rightSideHpImg.querySelector("img");
+                    let imgSrcHpImg = imgHpImg.getAttribute("src");
+                    let imgAltHpImg = imgHpImg.getAttribute("alt");
+                    let imgAnchorHpImg = imgHpImg.parentElement.getAttribute("href");
+                    let imgSizeHpImg = imgHpImg.className;
+                    imgSizeHpImg = imgSizeHpImg.split("blogImage")[1];
+
+                    pHpImg = leftSideHpImg.querySelector(".tempPContainer");
+                    pHpImg = pHpImg.innerHTML.trim();
+
+                    // creating object for this template that filled with values we get from html
+                    // purpose of this object
+                    let hpImgObj = {
+                        tempType: "hpimg",
+                        tempElement: {
+                            id: "",
+                            class: "",
+                            heading: h1HpImg,
+                            alt: imgAltHpImg,
+                            url: imgSrcHpImg,
+                            anchor: imgAnchorHpImg,
+                            paragraph: pHpImg,
+                            type: ["h1", "p", "img"],
+                            size: imgSizeHpImg,
+                        },
+                    };
+
+                    // calling function to add this template to html
+                    addNewTemplateToHtml("hpimg", hpImgObj);
+                    break;
+
+                case 'section7wrapper':
+
+
+                    let hpYoutubeContainer = element.children[0];
+                    let leftSideHpYoutube = hpYoutubeContainer.children[0];
+                    let rightSideHpYoutube = hpYoutubeContainer.children[1];
+
+                    // for left site heading
+
+                    const headingsHpYoutube = leftSideHpYoutube.querySelectorAll(
+                        "h1, h2, h3, h4, h5, h6"
+                    );
+
+                    let firstHeadingHpYoutube = "";
+
+                    let headingTypeHpYoutube = "";
+
+                    if (headingsHpYoutube.length > 0) {
+                        firstHeadingHpYoutube = headingsHpYoutube[0];
+                        headingTypeHpYoutube =
+                            firstHeadingHpYoutube.tagName.toLowerCase();
+                    }
+
+                    let h1HpYoutube = firstHeadingHpYoutube.innerHTML.trim();
+
+                    let pHpYoutube = null;
+
+                    if (!leftSideHpYoutube.querySelector(".tempPContainer")) {
+                        // get all p tags inside hpContainer
+                        pHpYoutube = leftSideHpYoutube.querySelectorAll("p");
+                        if (pHpYoutube.length !== 0) {
+                            // put every p tag inside tempPContainer
+                            let tempCo = document.createElement("div");
+                            tempCo.className = "tempPContainer";
+                            pHpYoutube.forEach((p) => {
+                                tempCo.appendChild(p);
+                            });
+                            leftSideHpYoutube.appendChild(tempCo);
+                        } else {
+                            break;
+                        }
+                    }
+
+                    if (!rightSideHpYoutube.querySelector("iframe")) {
+                        break;
+                    }
+
+                    let iframeHpYoutube = rightSideHpYoutube.querySelector("iframe");
+                    let srcHpYoutube = iframeHpYoutube.getAttribute("src");
+                    if (srcHpYoutube.includes("youtube")) {
+                        srcHpYoutube = srcHpYoutube.split("https://www.youtube.com/embed/")[1];
+                    } else {
+                        // console.log("custom");
+                    }
+
+                    pHpYoutube = leftSideHpYoutube.querySelector(".tempPContainer");
+                    pHpYoutube = pHpYoutube.innerHTML.trim();
+
+                    // creating object for this template that filled with values we get from html
+
+                    let hpYoutubeObj = {
+                        tempType: "hpyoutube",
+                        tempElement: {
+                            id: "",
+                            class: "",
+                            heading: h1HpYoutube,
+                            paragraph: pHpYoutube,
+                            value: srcHpYoutube,
+                            videoType: "youtube",
+                            type: ["h1", "p", "iframe"],
+                        },
+                    };
+
+                    // calling function to add this template to html
+                    addNewTemplateToHtml("hpyoutube", hpYoutubeObj);
+                    break;
+
             }
         });
 
@@ -454,12 +624,16 @@ function addEventListernerToTempYoutubeInputs() {
             });
         }
 
+        // console.log("youtubeSelected", youtubeSelected);
+
         // get closest .draggableItem's index attr
         let closestIndex = $(this).closest(".draggableItem").attr("index");
         // this inputs is url of  video get after www. and befero .com
         let url = e.target.value;
+
         // if its custom url we are just taking websites name to display
         let afterWWW = url.split("www.")[1];
+
         if (afterWWW !== undefined) {
             let beforeCom = afterWWW.split(".")[0];
             $(this)
@@ -467,6 +641,8 @@ function addEventListernerToTempYoutubeInputs() {
                 .find(".showYoutubeAlt")
                 .html(`(${beforeCom})`);
         }
+
+
         addedTemplates[closestIndex].tempElement.value = $(this).val();
 
         createFullDivForPostReq();
@@ -584,7 +760,15 @@ function addEventListenerToTempHpInputs() {
             .find(".showHType1")
             .html($(this).val());
         let closestIndex = $(this).closest(".draggableItem").attr("index");
-        addedTemplates[closestIndex].tempElement.type[0] = $(this).val();
+        // if element has hdouble attribute == "true "
+        // that mean this is hpx2 template
+        if ($(this).attr("hDouble") == "true") {
+            addedTemplates[closestIndex].tempElement.type[2] = $(this).val();
+            console.log("type", addedTemplates[closestIndex].tempElement.type);
+            console.log("val", $(this).val());
+        } else {
+            addedTemplates[closestIndex].tempElement.type[0] = $(this).val();
+        }
         createFullDivForPostReq();
     });
 
@@ -621,13 +805,13 @@ function addEventListenerToAddedTemplatesDrag() {
 
     draggableTemplates.forEach((draggableItem) => {
         // remove all event listeners
-        draggableItem.removeEventListener("dragstart", () => {});
+        draggableItem.removeEventListener("dragstart", () => { });
         draggableItem.addEventListener("dragstart", () => {
             // adding dragging class to element to show user that element is dragging
             draggableItem.classList.add("dragging");
         });
 
-        draggableItem.removeEventListener("dragend", () => {});
+        draggableItem.removeEventListener("dragend", () => { });
         draggableItem.addEventListener("dragend", () => {
             // removing dragging class when drag end
             draggableItem.classList.remove("dragging");
@@ -642,6 +826,8 @@ draggables.forEach((draggable) => {
 
     draggable.addEventListener("dragend", () => {
         draggable.classList.remove("dragging");
+
+        console.log("typeOfDraggedElement" + typeOfDraggedElement);
         addNewTemplateToHtml(typeOfDraggedElement);
         isOverDropbox = false;
         typeOfDraggedElement = "";
@@ -713,23 +899,25 @@ function addNewTemplateToHtml(type, obj) {
     // and creating object for this template that filled with values we get from html
     let addedTemplatesLength = addedTemplates.length;
 
+
     // for edit page we need to get obj that filled with values we get from html
     // if obj is undefined that mean this is creating page so we create default empty object for every template
 
     switch (type) {
+
         case "youtube":
             let defaultEmptyYoutubeObj = obj
                 ? obj
                 : {
-                      tempType: "youtube",
-                      tempElement: {
-                          id: "",
-                          class: "",
-                          value: "",
-                          videoType: "youtube",
-                          type: "iframe",
-                      },
-                  };
+                    tempType: "youtube",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        value: "",
+                        videoType: "youtube",
+                        type: "iframe",
+                    },
+                };
             addedTemplates.push(defaultEmptyYoutubeObj);
             addYoutubeTemplate(addedTemplatesLength, obj);
             break;
@@ -737,17 +925,17 @@ function addNewTemplateToHtml(type, obj) {
             let defaultEmptyImgObj = obj
                 ? obj
                 : {
-                      tempType: "img",
-                      tempElement: {
-                          id: "",
-                          class: "",
-                          url: "",
-                          alt: "",
-                          anchor: defaultImgAnchor,
-                          type: "img",
-                          size: defaultImgSize,
-                      },
-                  };
+                    tempType: "img",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        url: "",
+                        alt: "",
+                        anchor: defaultImgAnchor,
+                        type: "img",
+                        size: defaultImgSize,
+                    },
+                };
             addedTemplates.push(defaultEmptyImgObj);
             addImgTemplate(addedTemplatesLength, obj);
             break;
@@ -755,15 +943,15 @@ function addNewTemplateToHtml(type, obj) {
             let defaultEmptyHpObj = obj
                 ? obj
                 : {
-                      tempType: "hp",
-                      tempElement: {
-                          id: "",
-                          class: "",
-                          heading: "",
-                          paragraph: "",
-                          type: ["h1", "p"],
-                      },
-                  };
+                    tempType: "hp",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        heading: "",
+                        paragraph: "",
+                        type: ["h1", "p"],
+                    },
+                };
             addedTemplates.push(defaultEmptyHpObj);
             addHpTemplate(addedTemplatesLength, obj);
             break;
@@ -771,15 +959,15 @@ function addNewTemplateToHtml(type, obj) {
             let defaultEmptyHpx2Obj = obj
                 ? obj
                 : {
-                      tempType: "hpx2",
-                      tempElement: {
-                          id: "",
-                          class: "",
-                          headings: ["", ""],
-                          paragraphs: [],
-                          type: ["h1", "p"],
-                      },
-                  };
+                    tempType: "hpx2",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        headings: ["", ""],
+                        paragraphs: [],
+                        type: ["h1", "p", "h1", "p"],
+                    },
+                };
             addedTemplates.push(defaultEmptyHpx2Obj);
             addHpx2Template(addedTemplatesLength, obj);
             break;
@@ -787,14 +975,14 @@ function addNewTemplateToHtml(type, obj) {
             let defaultEmptyBookingObj = obj
                 ? obj
                 : {
-                      tempType: "booking",
-                      tempElement: {
-                          id: "",
-                          class: "",
-                          value: "",
-                          type: "div",
-                      },
-                  };
+                    tempType: "booking",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        value: "",
+                        type: "div",
+                    },
+                };
             addedTemplates.push(defaultEmptyBookingObj);
             addBookingTemplate(addedTemplatesLength);
             break;
@@ -802,17 +990,60 @@ function addNewTemplateToHtml(type, obj) {
             let defaultEmptyContactObj = obj
                 ? obj
                 : {
-                      tempType: "contact",
-                      tempElement: {
-                          id: "",
-                          class: "",
-                          value: "",
-                          type: "div",
-                      },
-                  };
+                    tempType: "contact",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        value: "",
+                        type: "div",
+                    },
+                };
             addedTemplates.push(defaultEmptyContactObj);
             addContactTemplate(addedTemplatesLength);
             break;
+        case "hpimg":
+
+
+            let defaultEmptyHpImgObj = obj
+                ? obj
+                : {
+                    tempType: "hpimg",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        heading: "",
+                        alt: "",
+                        url: "",
+                        anchor: defaultImgAnchor,
+                        paragraph: "",
+                        type: ["h1", "p", "img"],
+                        size: defaultImgSize,
+                    },
+                };
+            addedTemplates.push(defaultEmptyHpImgObj);
+            addHpImgTemplate(addedTemplatesLength, obj);
+            break;
+        case "hpyoutube":
+            console.log("hpyoutube 1");
+            let defaultEmptyHpYoutubeObj = obj
+                ? obj
+                : {
+                    tempType: "hpyoutube",
+                    tempElement: {
+                        id: "",
+                        class: "",
+                        heading: "",
+                        paragraph: "",
+                        value: "",
+                        videoType: "youtube",
+                        type: ["h1", "p", "iframe"],
+                    },
+                };
+            addedTemplates.push(defaultEmptyHpYoutubeObj);
+            addHpYoutubeTemplate(addedTemplatesLength, obj);
+
+
+
     }
     updateAllEventListerners();
     createFullDivForPostReq();
@@ -909,21 +1140,19 @@ function addYoutubeTemplate(index, obj) {
     // Create a new div element
     var newDiv = document.createElement("div");
     newDiv.draggable = true;
-    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${
-        obj !== undefined && obj.tempElement.value.length !== 0
-            ? "border-success"
-            : "border-danger"
-    } border-2 rounded-2`;
+    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${obj !== undefined && obj.tempElement.value.length !== 0
+        ? "border-success"
+        : "border-danger"
+        } border-2 rounded-2`;
     newDiv.setAttribute("index", index);
 
     // Set the inner HTML of the new div element
     newDiv.innerHTML = `
       <div class="w-100 d-flex align-items-center justify-content-between position-relative">
         <i class="ri-drag-move-2-fill selectedTempIcon"></i>
-        <span>Video&nbsp;<span class="showYoutubeAlt">(${
-            obj !== undefined && obj.tempElement.value
-                ? obj.tempElement.value
-                : ""
+        <span>Video&nbsp;<span class="showYoutubeAlt">(${obj !== undefined && obj.tempElement.value
+            ? obj.tempElement.value
+            : ""
         })</span></span>
         <div class="align-items-center jutify-content-center errorPlaceholder">
         <i class="ri-chat-delete-line"></i>
@@ -946,11 +1175,10 @@ function addYoutubeTemplate(index, obj) {
                   <option selected value="youtube">Youtube</option>
                   <option value="custom">Custom Link</option>
                 </select>
-                <input id="text-container" value="${
-                    obj !== undefined && obj.tempElement.value
-                        ? obj.tempElement.value
-                        : ""
-                }" type="text" class="form-control headingtest position-relative w-100" name="tempYoutube" id="img" placeholder="${defaultYoutubeUrl}">
+                <input id="text-container" value="${obj !== undefined && obj.tempElement.value
+            ? obj.tempElement.value
+            : ""
+        }" type="text" class="form-control headingtest position-relative w-100" name="tempYoutube" id="img" placeholder="${defaultYoutubeUrl}">
             </div>
           </div>
         </div>
@@ -967,13 +1195,12 @@ function addImgTemplate(index, obj) {
     // Create a new div element
     var newDiv = document.createElement("div");
     newDiv.draggable = true;
-    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${
-        obj !== undefined &&
+    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${obj !== undefined &&
         obj.tempElement.url.length !== 0 &&
         obj.tempElement.alt.length !== 0
-            ? "border-success"
-            : "border-danger"
-    }
+        ? "border-success"
+        : "border-danger"
+        }
         border-2 rounded-2`;
     newDiv.setAttribute("index", index);
 
@@ -981,8 +1208,7 @@ function addImgTemplate(index, obj) {
     newDiv.innerHTML = `
       <div class="w-100 d-flex align-items-center justify-content-between position-relative">
         <i class="ri-drag-move-2-fill selectedTempIcon"></i>
-        <span>img&nbsp;<span class="showImgAlt">(${
-            obj !== undefined && obj.tempElement.alt ? obj.tempElement.alt : ""
+        <span>img&nbsp;<span class="showImgAlt">(${obj !== undefined && obj.tempElement.alt ? obj.tempElement.alt : ""
         })</span></span>
         <div class="align-items-center jutify-content-center errorPlaceholder">
         <i class="ri-chat-delete-line"></i>
@@ -999,54 +1225,45 @@ function addImgTemplate(index, obj) {
           <div class="d-flex flex-column align-items-center justify-content-center w-100 mb-3">
             <div class="form-group w-100 mb-3 d-flex">
                 <select class="form-select w-100 max-width-130px" name="tempImgSize" aria-label="Default select example">
-                    <option ${
-                        obj !== undefined &&
-                        obj.tempElement.size &&
-                        obj.tempElement.size == "small"
-                            ? "selected"
-                            : ""
-                    } ${
-        obj == undefined && defaultImgSize == "small" ? "selected" : ""
-    }  value="small">Küçük</option>
-                    <option ${
-                        obj !== undefined &&
-                        obj.tempElement.size &&
-                        obj.tempElement.size == "medium"
-                            ? "selected"
-                            : ""
-                    } ${
-        obj == undefined && defaultImgSize == "medium" ? "selected" : ""
-    }  value="medium">Orta</option>
-                    <option ${
-                        obj !== undefined &&
-                        obj.tempElement.size &&
-                        obj.tempElement.size == "big"
-                            ? "selected"
-                            : ""
-                    } ${
-        obj == undefined && defaultImgSize == "big" ? "selected" : ""
-    }  value="big">Büyük</option>
+                    <option ${obj !== undefined &&
+            obj.tempElement.size &&
+            obj.tempElement.size == "small"
+            ? "selected"
+            : ""
+        } ${obj == undefined && defaultImgSize == "small" ? "selected" : ""
+        }  value="small">Küçük</option>
+                    <option ${obj !== undefined &&
+            obj.tempElement.size &&
+            obj.tempElement.size == "medium"
+            ? "selected"
+            : ""
+        } ${obj == undefined && defaultImgSize == "medium" ? "selected" : ""
+        }  value="medium">Orta</option>
+                    <option ${obj !== undefined &&
+            obj.tempElement.size &&
+            obj.tempElement.size == "big"
+            ? "selected"
+            : ""
+        } ${obj == undefined && defaultImgSize == "big" ? "selected" : ""
+        }  value="big">Büyük</option>
                 </select>
                
-                <input value="${
-                    obj !== undefined && obj.tempElement.anchor
-                        ? obj.tempElement.anchor
-                        : defaultImgAnchor
-                }" id="text-container" type="text" class="form-control headingtest position-relative w-100" name="tempImgAnchor"  placeholder="Fotoğraf link">
+                <input value="${obj !== undefined && obj.tempElement.anchor
+            ? obj.tempElement.anchor
+            : defaultImgAnchor
+        }" id="text-container" type="text" class="form-control headingtest position-relative w-100" name="tempImgAnchor"  placeholder="Fotoğraf link">
             </div>
             <div class="form-group w-100 mb-3">
-              <input value="${
-                  obj !== undefined && obj.tempElement.url
-                      ? obj.tempElement.url
-                      : deafultImgUrl
-              }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempImg" id="img" placeholder="Fotoğraf url">
+              <input value="${obj !== undefined && obj.tempElement.url
+            ? obj.tempElement.url
+            : deafultImgUrl
+        }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempImg" id="img" placeholder="Fotoğraf url">
             </div>
             <div class="form-group w-100">
-              <input value="${
-                  obj !== undefined && obj.tempElement.alt
-                      ? obj.tempElement.alt
-                      : ""
-              }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempImgAlt" id="alt" placeholder="Fotoğraf açıklaması">
+              <input value="${obj !== undefined && obj.tempElement.alt
+            ? obj.tempElement.alt
+            : ""
+        }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempImgAlt" id="alt" placeholder="Fotoğraf açıklaması">
             </div>
           </div>
         </div>
@@ -1060,13 +1277,12 @@ function addHpTemplate(index, obj) {
     // Create a new div element
     var newDiv = document.createElement("div");
     newDiv.draggable = true;
-    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${
-        obj !== undefined &&
+    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${obj !== undefined &&
         obj.tempElement.heading.length > 0 &&
         obj.tempElement.paragraph.length > 0
-            ? "border-success"
-            : "border-danger"
-    }  border-2 rounded-2`;
+        ? "border-success"
+        : "border-danger"
+        }  border-2 rounded-2`;
 
     newDiv.setAttribute("index", index);
     newDiv.setAttribute("pType", "single");
@@ -1075,10 +1291,9 @@ function addHpTemplate(index, obj) {
       <div class="w-100 d-flex align-items-center justify-content-between position-relative">
         <i class="ri-drag-move-2-fill selectedTempIcon"></i>
         <div class="d-flex align-items-center justify-content-center">
-        <span class="showHType1">${
-            obj !== undefined && obj.tempElement.type[0]
-                ? obj.tempElement.type[0]
-                : "h1"
+        <span class="showHType1">${obj !== undefined && obj.tempElement.type[0]
+            ? obj.tempElement.type[0]
+            : "h1"
         }</span>&nbsp;& p 
         <i class="ri-file-list-2-line ms-2"></i>
         </div>
@@ -1096,54 +1311,46 @@ function addHpTemplate(index, obj) {
           <label>Heading</label>
           <div class="d-flex align-items-center justify-content-center w-100">
             <select class="form-select w-100 max-width-75px" name="tempHType" aria-label="Default select example">
-              <option ${
-                  obj !== undefined && obj.tempElement.type[0] == "h1"
-                      ? "selected"
-                      : ""
-              } ${obj == undefined ? "selected" : ""} value="h1">h1</option>
-              <option ${
-                  obj !== undefined && obj.tempElement.type[0] == "h2"
-                      ? "selected"
-                      : ""
-              } value="h2">h2</option>
-              <option ${
-                  obj !== undefined && obj.tempElement.type[0] == "h3"
-                      ? "selected"
-                      : ""
-              } value="h3">h3</option>
-              <option ${
-                  obj !== undefined && obj.tempElement.type[0] == "h4"
-                      ? "selected"
-                      : ""
-              } value="h4">h4</option>
-              <option ${
-                  obj !== undefined && obj.tempElement.type[0] == "h5"
-                      ? "selected"
-                      : ""
-              } value="h5">h5</option>
-              <option ${
-                  obj !== undefined && obj.tempElement.type[0] == "h6"
-                      ? "selected"
-                      : ""
-              } value="h6">h6</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h1"
+            ? "selected"
+            : ""
+        } ${obj == undefined ? "selected" : ""} value="h1">h1</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h2"
+            ? "selected"
+            : ""
+        } value="h2">h2</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h3"
+            ? "selected"
+            : ""
+        } value="h3">h3</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h4"
+            ? "selected"
+            : ""
+        } value="h4">h4</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h5"
+            ? "selected"
+            : ""
+        } value="h5">h5</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h6"
+            ? "selected"
+            : ""
+        } value="h6">h6</option>
             </select>
             <div class="form-group w-100">
-              <input value="${
-                  obj !== undefined && obj.tempElement.heading
-                      ? obj.tempElement.heading
-                      : ""
-              }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempText" hCount="single" id="title" placeholder="Başlığı yazınız">
+              <input value="${obj !== undefined && obj.tempElement.heading
+            ? obj.tempElement.heading
+            : ""
+        }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempText" hCount="single" id="title" placeholder="Başlığı yazınız">
             </div>
           </div>
         </div>
         <div class="d-flex my-3 flex-column align-items-center justify-content-center">
           <label>Paragraph</label>
           <div class="w-100 qeditor">
-            ${
-                obj !== undefined && obj.tempElement.paragraph
-                    ? obj.tempElement.paragraph
-                    : ""
-            }
+            ${obj !== undefined && obj.tempElement.paragraph
+            ? obj.tempElement.paragraph
+            : ""
+        }
           </div>
         </div>
       </div>
@@ -1155,13 +1362,12 @@ function addHpx2Template(index, obj) {
     // Create a new div element
     var newDiv = document.createElement("div");
     newDiv.draggable = true;
-    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${
-        obj !== undefined &&
+    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${obj !== undefined &&
         obj.tempElement.headings.length !== 0 &&
         obj.tempElement.paragraphs.length !== 0
-            ? "border-success"
-            : "border-danger"
-    } border-2 rounded-2`;
+        ? "border-success"
+        : "border-danger"
+        } border-2 rounded-2`;
     newDiv.setAttribute("index", index);
     newDiv.setAttribute("pType", "double");
 
@@ -1170,10 +1376,9 @@ function addHpx2Template(index, obj) {
       <div class="w-100 d-flex align-items-center justify-content-between position-relative">
         <i class="ri-drag-move-2-fill selectedTempIcon"></i>
         <div class="d-flex align-items-center justift-content-center">
-        <span class="showHType1">${
-            obj !== undefined && obj.tempElement.type[0]
-                ? obj.tempElement.type[0]
-                : "h1"
+        <span class="showHType1">${obj !== undefined && obj.tempElement.type[0]
+            ? obj.tempElement.type[0]
+            : "h1"
         }</span>&nbsp;& p (x2) 
         <i class="ri-file-copy-2-line ms-2"></i>
         </div>
@@ -1192,40 +1397,46 @@ function addHpx2Template(index, obj) {
           <div class="w-100 d-flex flex-column align-items-center justify-content-center">
             <div class="d-flex align-items-center justify-content-center w-100 mb-2">
               <select class="form-select w-100 max-width-75px" name="tempHType" index="${index}" aria-label="Default select example">
-                <option ${
-                    obj && obj.tempElement.type[0] == "h1" ? "selected" : ""
-                } ${obj == undefined ? "selected" : ""} value="h1">h1</option>
-                <option ${
-                    obj && obj.tempElement.type[0] == "h2" ? "selected" : ""
-                } value="h2">h2</option>
-                <option ${
-                    obj && obj.tempElement.type[0] == "h3" ? "selected" : ""
-                } value="h3">h3</option>
-                <option ${
-                    obj && obj.tempElement.type[0] == "h4" ? "selected" : ""
-                } value="h4">h4</option>
-                <option ${
-                    obj && obj.tempElement.type[0] == "h5" ? "selected" : ""
-                } value="h5">h5</option>
-                <option ${
-                    obj && obj.tempElement.type[0] == "h6" ? "selected" : ""
-                } value="h6">h6</option>
+                <option ${obj && obj.tempElement.type[0] == "h1" ? "selected" : ""
+        } ${obj == undefined ? "selected" : ""} value="h1">h1</option>
+                <option ${obj && obj.tempElement.type[0] == "h2" ? "selected" : ""
+        } value="h2">h2</option>
+                <option ${obj && obj.tempElement.type[0] == "h3" ? "selected" : ""
+        } value="h3">h3</option>
+                <option ${obj && obj.tempElement.type[0] == "h4" ? "selected" : ""
+        } value="h4">h4</option>
+                <option ${obj && obj.tempElement.type[0] == "h5" ? "selected" : ""
+        } value="h5">h5</option>
+                <option ${obj && obj.tempElement.type[0] == "h6" ? "selected" : ""
+        } value="h6">h6</option>
               </select>
               <div class="form-group w-100">
-                <input value="${
-                    obj !== undefined && obj.tempElement.headings[0]
-                        ? obj.tempElement.headings[0]
-                        : ""
-                }" id="text-container" type="text" class="form-control headingtest position-relative" hCount="double" headingIndex="0" name="tempText" id="title" placeholder="Sol Başlığı yazınız">
+                <input value="${obj !== undefined && obj.tempElement.headings[0]
+            ? obj.tempElement.headings[0]
+            : ""
+        }" id="text-container" type="text" class="form-control headingtest position-relative" hCount="double" headingIndex="0" name="tempText" id="title" placeholder="Sol Başlığı yazınız">
               </div>
             </div>
             <div class="d-flex align-items-center justify-content-center w-100 ">
+            <select class="form-select w-100 max-width-75px" name="tempHType" hDouble="true" index="${index}" aria-label="Default select example">
+            <option ${obj && obj.tempElement.type[2] == "h1" ? "selected" : ""
+        } ${obj == undefined ? "selected" : ""} value="h1">h1</option>
+            <option ${obj && obj.tempElement.type[2] == "h2" ? "selected" : ""
+        } value="h2">h2</option>
+            <option ${obj && obj.tempElement.type[2] == "h3" ? "selected" : ""
+        } value="h3">h3</option>
+            <option ${obj && obj.tempElement.type[2] == "h4" ? "selected" : ""
+        } value="h4">h4</option>
+            <option ${obj && obj.tempElement.type[2] == "h5" ? "selected" : ""
+        } value="h5">h5</option>
+            <option ${obj && obj.tempElement.type[2] == "h6" ? "selected" : ""
+        } value="h6">h6</option>
+          </select>
               <div class="form-group w-100">
-                <input value="${
-                    obj !== undefined && obj.tempElement.headings[1]
-                        ? obj.tempElement.headings[1]
-                        : ""
-                }" id="text-container" type="text" class="form-control headingtest position-relative" hCount="double" headingIndex="1" name="tempText" id="title" placeholder="Sağ Başlığı yazınız">
+                <input value="${obj !== undefined && obj.tempElement.headings[1]
+            ? obj.tempElement.headings[1]
+            : ""
+        }" id="text-container" type="text" class="form-control headingtest position-relative" hCount="double" headingIndex="1" name="tempText" id="title" placeholder="Sağ Başlığı yazınız">
               </div>
             </div>
           </div>
@@ -1233,18 +1444,16 @@ function addHpx2Template(index, obj) {
         <div class="d-flex my-3 flex-column align-items-center justify-content-center">
           <label>Paragraph</label>
           <div id="editor3" editorIndex="0" class="w-100 qeditor mb-3">
-            ${
-                obj !== undefined && obj.tempElement.paragraphs[0]
-                    ? obj.tempElement.paragraphs[0]
-                    : ""
-            }
+            ${obj !== undefined && obj.tempElement.paragraphs[0]
+            ? obj.tempElement.paragraphs[0]
+            : ""
+        }
           </div>
           <div id="editor4" editorIndex="1" class="w-100 qeditor">
-            ${
-                obj !== undefined && obj.tempElement.paragraphs[1]
-                    ? obj.tempElement.paragraphs[1]
-                    : ""
-            }
+            ${obj !== undefined && obj.tempElement.paragraphs[1]
+            ? obj.tempElement.paragraphs[1]
+            : ""
+        }
           </div>
         </div>
       </div>
@@ -1252,6 +1461,257 @@ function addHpx2Template(index, obj) {
 
     dropbox.appendChild(newDiv);
 }
+
+function addHpImgTemplate(index, obj) {
+
+
+    // Create a new div element
+    var newDiv = document.createElement("div");
+    newDiv.draggable = true;
+    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${obj !== undefined &&
+        obj.tempElement.heading.length > 0 &&
+        obj.tempElement.paragraph.length > 0
+        ? "border-success"
+        : "border-danger"
+        }  border-2 rounded-2`;
+
+    newDiv.setAttribute("index", index);
+    newDiv.setAttribute("pType", "single");
+    // Set the inner HTML of the new div element
+    newDiv.innerHTML = `
+      <div class="w-100 d-flex align-items-center justify-content-between position-relative">
+        <i class="ri-drag-move-2-fill selectedTempIcon"></i>
+        <div class="d-flex align-items-center justify-content-center">
+        <span class="showHType1">${obj !== undefined && obj.tempElement.type[0]
+            ? obj.tempElement.type[0]
+            : "h1"
+        }</span>&nbsp;& p 
+        <i class="ri-file-list-2-line ms-2"></i>
+        <span>img&nbsp;<span class="showImgAlt">(${obj !== undefined && obj.tempElement.alt ? obj.tempElement.alt : ""
+        })</span>
+        </div>
+        <div class="align-items-center jutify-content-center errorPlaceholder">
+        <i class="ri-chat-delete-line"></i>
+        <span>Doldurulmadı!</span>   
+    </div>
+        <div class="d-flex align-items-center jutify-content-center">
+            <i class="ri-delete-bin-5-line tempDelete me-2"></i>
+            <i class="ri-arrow-drop-down-line ms-2 expendIcon selectedTempIcon"></i>
+        </div>
+      </div>
+      <div class="w-100 d-flex flex-column th">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <label>Heading</label>
+          <div class="d-flex align-items-center justify-content-center w-100">
+            <select class="form-select w-100 max-width-75px" name="tempHType" aria-label="Default select example">
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h1"
+            ? "selected"
+            : ""
+        } ${obj == undefined ? "selected" : ""} value="h1">h1</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h2"
+            ? "selected"
+            : ""
+        } value="h2">h2</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h3"
+            ? "selected"
+            : ""
+        } value="h3">h3</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h4"
+            ? "selected"
+            : ""
+        } value="h4">h4</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h5"
+            ? "selected"
+            : ""
+        } value="h5">h5</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h6"
+            ? "selected"
+            : ""
+        } value="h6">h6</option>
+            </select>
+            <div class="form-group w-100">
+              <input value="${obj !== undefined && obj.tempElement.heading
+            ? obj.tempElement.heading
+            : ""
+        }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempText" hCount="single" id="title" placeholder="Başlığı yazınız">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex my-3 flex-column align-items-center justify-content-center">
+          <label>Paragraph</label>
+          <div class="w-100 qeditor">
+            ${obj !== undefined && obj.tempElement.paragraph
+            ? obj.tempElement.paragraph
+            : ""
+        }
+          </div>
+        </div>
+        <label class="w-100">Img</label>
+        <div class="d-flex flex-column align-items-center justify-content-center w-100 mb-3">
+          <div class="form-group w-100 mb-3 d-flex">
+              <select class="form-select w-100 max-width-130px" name="tempImgSize" aria-label="Default select example">
+                  <option ${obj !== undefined &&
+            obj.tempElement.size &&
+            obj.tempElement.size == "small"
+            ? "selected"
+            : ""
+        } ${obj == undefined && defaultImgSize == "small" ? "selected" : ""
+        }  value="small">Küçük</option>
+                  <option ${obj !== undefined &&
+            obj.tempElement.size &&
+            obj.tempElement.size == "medium"
+            ? "selected"
+            : ""
+        } ${obj == undefined && defaultImgSize == "medium" ? "selected" : ""
+        }  value="medium">Orta</option>
+                  <option ${obj !== undefined &&
+            obj.tempElement.size &&
+            obj.tempElement.size == "big"
+            ? "selected"
+            : ""
+        } ${obj == undefined && defaultImgSize == "big" ? "selected" : ""
+        }  value="big">Büyük</option>
+              </select>
+             
+              <input value="${obj !== undefined && obj.tempElement.anchor
+            ? obj.tempElement.anchor
+            : defaultImgAnchor
+        }" id="text-container" type="text" class="form-control headingtest position-relative w-100" name="tempImgAnchor"  placeholder="Fotoğraf link">
+          </div>
+          <div class="form-group w-100 mb-3">
+            <input value="${obj !== undefined && obj.tempElement.url
+            ? obj.tempElement.url
+            : deafultImgUrl
+        }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempImg" id="img" placeholder="Fotoğraf url">
+          </div>
+          <div class="form-group w-100">
+            <input value="${obj !== undefined && obj.tempElement.alt
+            ? obj.tempElement.alt
+            : ""
+        }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempImgAlt" id="alt" placeholder="Fotoğraf açıklaması">
+          </div>
+        </div>
+      </div>
+    `;
+    dropbox.appendChild(newDiv);
+}
+
+function addHpYoutubeTemplate(index, obj) {
+
+
+    // Create a new div element
+    var newDiv = document.createElement("div");
+    newDiv.draggable = true;
+    newDiv.className = `w-100 draggableItem px-3 py-2 my-2 border ${obj !== undefined &&
+        obj.tempElement.heading.length > 0 &&
+        obj.tempElement.paragraph.length > 0
+        ? "border-success"
+        : "border-danger"
+        }  border-2 rounded-2`;
+
+    newDiv.setAttribute("index", index);
+    newDiv.setAttribute("pType", "single");
+    // Set the inner HTML of the new div element
+    newDiv.innerHTML = `
+      <div class="w-100 d-flex align-items-center justify-content-between position-relative">
+        <i class="ri-drag-move-2-fill selectedTempIcon"></i>
+        <div class="d-flex align-items-center justify-content-center">
+        <span class="showHType1">${obj !== undefined && obj.tempElement.type[0]
+            ? obj.tempElement.type[0]
+            : "h1"
+        }</span>&nbsp;& p 
+        <i class="ri-file-list-2-line ms-2"></i>
+        <span>Video&nbsp;<span class="showYoutubeAlt">(${obj !== undefined && obj.tempElement.value
+            ? obj.tempElement.value
+            : ""
+        })</span>
+        </div>
+        <div class="align-items-center jutify-content-center errorPlaceholder">
+        <i class="ri-chat-delete-line"></i>
+        <span>Doldurulmadı!</span>   
+    </div>
+        <div class="d-flex align-items-center jutify-content-center">
+            <i class="ri-delete-bin-5-line tempDelete me-2"></i>
+            <i class="ri-arrow-drop-down-line ms-2 expendIcon selectedTempIcon"></i>
+        </div>
+      </div>
+      <div class="w-100 d-flex flex-column th">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <label>Heading</label>
+          <div class="d-flex align-items-center justify-content-center w-100">
+            <select class="form-select w-100 max-width-75px" name="tempHType" aria-label="Default select example">
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h1"
+            ? "selected"
+            : ""
+        } ${obj == undefined ? "selected" : ""} value="h1">h1</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h2"
+            ? "selected"
+            : ""
+        } value="h2">h2</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h3"
+            ? "selected"
+            : ""
+        } value="h3">h3</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h4"
+            ? "selected"
+            : ""
+        } value="h4">h4</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h5"
+            ? "selected"
+            : ""
+        } value="h5">h5</option>
+              <option ${obj !== undefined && obj.tempElement.type[0] == "h6"
+            ? "selected"
+            : ""
+        } value="h6">h6</option>
+            </select>
+            <div class="form-group w-100">
+              <input value="${obj !== undefined && obj.tempElement.heading
+            ? obj.tempElement.heading
+            : ""
+        }" id="text-container" type="text" class="form-control headingtest position-relative" name="tempText" hCount="single" id="title" placeholder="Başlığı yazınız">
+            </div>
+          </div>
+        </div>
+        <div class="d-flex my-3 flex-column align-items-center justify-content-center">
+          <label>Paragraph</label>
+          <div class="w-100 qeditor">
+            ${obj !== undefined && obj.tempElement.paragraph
+            ? obj.tempElement.paragraph
+            : ""
+        }
+          </div>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+        <div class="w-100 d-flex justify-content-between align-item-center ">
+              <label class="max-width-130px w-100">Url</label>
+              <span class="w-100 tempVideoDesc">https://www.youtube.com/watch?v=<span class="fw-bolder text-decoration-underline">${defaultYoutubeUrl}</span></span>
+        </div>
+        <div class="d-flex flex-column align-items-center justify-content-center w-100 mb-3">
+          <div class="form-group w-100 mb-3 d-flex align-items-center justify-content-center">
+              <select class="form-select w-100 max-width-130px" name="tempVType" aria-label="Default select example">
+                <option selected value="youtube">Youtube</option>
+                <option value="custom">Custom Link</option>
+              </select>
+              <input id="text-container" value="${obj !== undefined && obj.tempElement.value
+            ? obj.tempElement.value
+            : ""
+        }" type="text" class="form-control headingtest position-relative w-100" name="tempYoutube" id="img" placeholder="${defaultYoutubeUrl}">
+          </div>
+        </div>
+      </div>
+       
+         
+      </div>
+    `;
+    dropbox.appendChild(newDiv);
+}
+
+// write a function that creates a template for hpx and content this time we will get 1 heading 1 paragraph , and 1 content content can be image or youtube video, we must select it from a select
+// we will create a template for hpx2 and content
+
+
+
 
 function getDragAfterElement(container, y) {
     const draggableElements = [
@@ -1286,9 +1746,8 @@ function createFullDivForPostReq() {
                 fullDiv += `
                 <div class="section1wrapper">
                     <div class="section1">
-                        <${template.tempElement.type[0]} class="h">${
-                    template.tempElement.heading
-                }</${template.tempElement.type[0]}>
+                        <${template.tempElement.type[0]} class="h">${template.tempElement.heading
+                    }</${template.tempElement.type[0]}>
                         ${paragraph.length > 0 ? paragraph : ""}
                     </div>
                 </div>
@@ -1324,7 +1783,7 @@ function createFullDivForPostReq() {
 
                             </div>
                             <div class="sideItem">
-                                <${template.tempElement.type[0]} class="h">${template.tempElement.headings[1]}</${template.tempElement.type[0]}>
+                                <${template.tempElement.type[2]} class="h">${template.tempElement.headings[1]}</${template.tempElement.type[0]}>
                                 ${paragraph2}
                             </div>
                         </div>
@@ -1367,6 +1826,67 @@ function createFullDivForPostReq() {
             case "contact":
                 fullDiv += `<div class='contactElement'><span class="contactSpan" >CONTACT SECTION</span></div>`;
                 break;
+            case "hpimg":
+                let paragraph2 = template.tempElement.paragraph;
+                if (paragraph2 && paragraph2.length > 0) {
+                    paragraph2 = paragraph2.replaceAll("<p>", "<p class='p'>");
+                }
+                fullDiv += `
+               <div class="section6wrapper">
+               <div class=" d-flex align-items-center " style="overflow:hidden;">
+               <div class="section1" style="width:50%">
+                   <${template.tempElement.type[0]} class="h">${template.tempElement.heading
+                    }</${template.tempElement.type[0]}>
+                   ${paragraph2.length > 0 ? paragraph2 : ""}
+               </div>
+               <div class="section7wrapper" style="width:50%" >
+               <a href="${template.tempElement.anchor}" target="_blank"> <img loading="lazy" class="blogImage${template.tempElement.size}" src="${template.tempElement.url}" alt="${template.tempElement.alt}" class="sectionimg" style="object-fit:cover"></a>
+               </div>
+                </div>
+                </div>
+                `;
+                break;
+            case "hpyoutube":
+
+                let paragraph3 = template.tempElement.paragraph;
+                if (paragraph3 && paragraph3.length > 0) {
+                    paragraph3 = paragraph3.replaceAll("<p>", "<p class='p'>");
+                }
+                if (
+                    template.tempElement.videoType == "youtube" &&
+                    template.tempElement.value !== ""
+                ) {
+                    fullDiv += `
+                        <div class="section7wrapper">
+                            <div class=" w-100 d-flex align-items-center ">
+                            <div class="w-50">
+                                <${template.tempElement.type[0]} class="h">${template.tempElement.heading
+                        }</${template.tempElement.type[0]}>
+                                ${paragraph3.length > 0 ? paragraph3 : ""}
+                            </div>
+                            <div class="iframeContainer w-50 flex align-items-center">
+                            <iframe class="iframeBlog" style="aspect-ratio:16/9" width="100%"  src="https://www.youtube.com/embed/${template.tempElement.value}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            </div>
+                        </div>
+                        </div>
+                        `;
+                } else if (
+                    template.tempElement.videoType == "custom" &&
+                    template.tempElement.value !== ""
+                ) {
+                    fullDiv += `
+                    <div>
+                        <div class="section1">
+                            <${template.tempElement.type[0]} class="h">${template.tempElement.heading
+                        }</${template.tempElement.type[0]}>
+                            ${paragraph2.length > 0 ? paragraph2 : ""}
+                        </div>
+                        <iframe class:"iframeBlog" width="80%" height="600px" src="${template.tempElement.value}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    
+                    </div>`;
+                }
+                break;
+
         }
     });
 
@@ -1462,6 +1982,61 @@ function validate() {
                 break;
             case "youtube":
                 if (template.tempElement.value !== "") {
+                    // find draggableItem with index
+                    let draggableItem =
+                        document.querySelectorAll(".draggableItem")[index];
+                    draggableItem.classList.remove("border-danger");
+                    draggableItem.classList.add("border-success");
+                    // access first child olf draggableItem's find errorPlaceholder class child
+                    let errorPlaceholder =
+                        draggableItem.querySelector(".errorPlaceholder");
+                    errorPlaceholder.classList.add("d-none");
+                } else {
+                    // find draggableItem with index
+                    let draggableItem =
+                        document.querySelectorAll(".draggableItem")[index];
+                    draggableItem.classList.remove("border-success");
+                    draggableItem.classList.add("border-danger");
+                    // access first child olf draggableItem's find errorPlaceholder class child
+                    let errorPlaceholder =
+                        draggableItem.querySelector(".errorPlaceholder");
+                    errorPlaceholder.classList.remove("d-none");
+                }
+                break;
+            case "hpimg":
+                if (
+                    template.tempElement.heading.length > 0 &&
+                    template.tempElement.paragraph.length > 0 &&
+                    template.tempElement.url !== "" &&
+                    template.tempElement.alt !== ""
+                ) {
+                    // find draggableItem with index
+                    let draggableItem =
+                        document.querySelectorAll(".draggableItem")[index];
+                    draggableItem.classList.remove("border-danger");
+                    draggableItem.classList.add("border-success");
+                    // access first child olf draggableItem's find errorPlaceholder class child
+                    let errorPlaceholder =
+                        draggableItem.querySelector(".errorPlaceholder");
+                    errorPlaceholder.classList.add("d-none");
+                } else {
+                    // find draggableItem with index
+                    let draggableItem =
+                        document.querySelectorAll(".draggableItem")[index];
+                    draggableItem.classList.remove("border-success");
+                    draggableItem.classList.add("border-danger");
+                    // access first child olf draggableItem's find errorPlaceholder class child
+                    let errorPlaceholder =
+                        draggableItem.querySelector(".errorPlaceholder");
+                    errorPlaceholder.classList.remove("d-none");
+                }
+                break;
+            case "hpyoutube":
+                if (
+                    template.tempElement.heading.length > 0 &&
+                    template.tempElement.paragraph.length > 0 &&
+                    template.tempElement.value !== ""
+                ) {
                     // find draggableItem with index
                     let draggableItem =
                         document.querySelectorAll(".draggableItem")[index];

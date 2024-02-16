@@ -14,7 +14,7 @@ class PostController extends Controller
 
     public function index()
     {
-        $posts = Post::orderBy('id', 'ASC')->get();
+        $posts = Post::orderBy('id', 'DESC')->get();
         return view('admin.post.index', compact('posts'));
     }
 
@@ -24,7 +24,7 @@ class PostController extends Controller
         return view('admin.post.create', compact('categories'));
     }
 
-        public function store(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
             'category_id' => 'required|integer',
@@ -62,12 +62,12 @@ class PostController extends Controller
         return redirect('admin/post-list')->with('message', 'Blog başarıyla eklendi.');
     }
 
-   
+
     public function createNew()
     {
         $categories = Category::all();
-        $defaultPostData = array('hp', 'img', 'booking' , 'hp' , 'hpx2', 'hp' , 'hpx2' , 'youtube' , 'contact');
-        return view('admin.post.post_create_new', compact('defaultPostData','categories'));
+        $defaultPostData = array('');
+        return view('admin.post.post_create_new', compact('defaultPostData', 'categories'));
     }
 
     public function edit($post_id)
@@ -87,7 +87,7 @@ class PostController extends Controller
     public function update(Request $request, $post_id)
     {
         $post = Post::find($post_id);
-    
+
         $request->validate([
             'name' => 'required|string|max:200',
             'slug' => 'required|string|max:200',
@@ -97,10 +97,10 @@ class PostController extends Controller
             'meta_title' => 'required|string',
             'meta_description' => 'required|string',
             'status' => 'nullable'
-        ]);   
-    
+        ]);
+
         if ($request->hasFile('title_image')) {
-            $old_image_path = public_path('uploads/blogs/'.$post->title_image);
+            $old_image_path = public_path('uploads/blogs/' . $post->title_image);
             $title_image = $request->file('title_image');
             $new_image = $title_image->getClientOriginalName(); // Orijinal dosya adını alır
             $title_image->move(public_path('uploads/blogs/'), $new_image);
@@ -109,7 +109,7 @@ class PostController extends Controller
                 unlink($old_image_path);
             }
         }
-    
+
         $post->category_id = $request->category_id;
         $post->name = $request->name;
         $post->slug = Str::slug($request->slug);
@@ -120,28 +120,25 @@ class PostController extends Controller
         $post->created_by = Auth::user()->name;
         $post->status = $request->status == true ? '1' : '0';
         $post->update();
-    
+
         return redirect('admin/post-list')->with('message', 'Değişiklikler başarıyla kaydedildi.');
     }
-    
+
 
     public function destroy($post_id)
     {
         $post = Post::find($post_id);
-        if($post) {
+        if ($post) {
 
-            $destination = public_path('uploads/blogs/'.$post->title_image);
+            $destination = public_path('uploads/blogs/' . $post->title_image);
             if (file_exists($destination)) {
                 unlink($destination);
-            }       
+            }
             $post->delete();
-    
+
             return redirect('admin/post-list')->with('message', 'Post başarıyla silinmiştir.');
-        }
-        else {
+        } else {
             return redirect('admin/post-list')->with('message', 'Post silme işlemi başarısız oldu. Yeniden deneyin!');
         }
-
-
     }
 }
