@@ -15,6 +15,7 @@ $translation = [
         'banner-3' => 'banners-en/banner-3-en.webp',
         'banner-4' => 'banners-en/banner-4-en.webp',
         'banner-5' => 'banners-en/banner-5-en.webp',
+        'banner-6' => 'banners-en/banner-5-en.webp',
     ],
     'de' => [
         'hero-mobile-subtitle' => 'Premium A la Carte All Inclusive',
@@ -31,6 +32,7 @@ $translation = [
         'banner-3' => 'banners-de/banner-3-de.webp',
         'banner-4' => 'banners-de/banner-4-de.webp',
         'banner-5' => 'banners-de/banner-5-de.webp',
+        'banner-6' => 'banners-de/banner-5-de.webp',
     ],
     'ru' => [
         'hero-mobile-subtitle' => 'Premium A la Carte All Inclusive',
@@ -47,6 +49,7 @@ $translation = [
         'banner-3' => 'banners-ru/banner-3-ru.webp',
         'banner-4' => 'banners-ru/banner-4-ru.webp',
         'banner-5' => 'banners-ru/banner-5-ru.webp',
+        'banner-6' => 'banners-ru/banner-5-ru.webp',
     ],
     'tr' => [
         'hero-mobile-subtitle' => 'Premium A la Carte All Inclusive',
@@ -63,6 +66,7 @@ $translation = [
         'banner-3' => 'banners-tr/banner-3-tr.webp',
         'banner-4' => 'banners-tr/banner-4-tr.webp',
         'banner-5' => 'banners-tr/banner-5-tr.webp',
+        'banner-6' => 'banners-tr/banner-6-tr.webp',
     ],
     ];
 @endphp
@@ -174,6 +178,9 @@ $translation = [
             </div> --}}
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-5']) }}">
+            </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-6']) }}">
             </div>
         </div>
     </div>
