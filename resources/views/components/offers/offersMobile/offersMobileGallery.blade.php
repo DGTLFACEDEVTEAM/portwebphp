@@ -177,11 +177,12 @@ $translation = [
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-4']) }}">
             </div> --}}
             <div class="swiper-slide">
-                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-5']) }}">
-            </div>
-            <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-6']) }}">
             </div>
+            <div class="swiper-slide">
+                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-5']) }}">
+            </div>
+
         </div>
     </div>
 </div>
