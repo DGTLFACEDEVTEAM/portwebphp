@@ -71,6 +71,15 @@ $translation = [
     <div class="swiper offers-hero-swiper">
         <div class="swiper-wrapper">
 
+            @if($lang === 'tr')
+            <div class="swiper-slide">
+                <div class="offers-slide-inner">
+                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/' . $translation[$lang]['main']['img']) }}" />
+                    <img class="offers-banner-mobile" src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
+                </div>
+            </div>
+        @endif
+
             <div class="swiper-slide">
                 <div class="offers-slide-inner offers-4">
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-transfer.webp') }}" />
@@ -100,6 +109,8 @@ $translation = [
                 </div>
             </div>
 
+
+
             <div class="swiper-slide">
                 <div class="offers-slide-inner">
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/' . $translation[$lang]['kids']['img']) }}" />
@@ -113,13 +124,15 @@ $translation = [
                 </div>
             </div>
 
-            <div class="swiper-slide">
-                <div class="offers-slide-inner">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/' . $translation[$lang]['main']['img']) }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
-                </div>
-            </div>
+                    
+                        @if($lang !== 'tr')
+                        <div class="swiper-slide">
+                            <div class="offers-slide-inner">
+                                <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/' . $translation[$lang]['main']['img']) }}" />
+                                <img class="offers-banner-mobile" src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
+                            </div>
+                        </div>
+                    @endif
 
             <div class="swiper-slide">
                 <div class="offers-slide-inner">
