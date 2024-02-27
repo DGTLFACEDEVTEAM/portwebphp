@@ -957,16 +957,27 @@ var  generalSwiper = new Swiper('.general-swiper', {
   });
 
 
-var  mobileBannerSwiper = new Swiper('.mobile-banner-swiper', {
+  var mobileBannerSwiper = new Swiper('.mobile-banner-swiper', {
     slidesPerView: 1,
     centeredSlides: true,
-    loop:true,
-    autoplay:{
-        delay:3000
+    loop: true,
+    autoplay: {
+        delay: 3000
     }
+});
 
-  });
+function adjustAutoplayDelay(newDelay) {
+   
+    mobileBannerSwiper.autoplay.stop();
+  
 
+    mobileBannerSwiper.params.autoplay.delay = newDelay;
+  
+
+    mobileBannerSwiper.autoplay.start();
+}
+
+adjustAutoplayDelay(5000); 
 
 
 
