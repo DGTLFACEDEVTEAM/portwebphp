@@ -11,6 +11,9 @@ $translation = [
         'kids' => [
             'img' => 'banner-web-kids-en.webp',
             ],
+            'main' => [
+                'img' => 'turkish-offer-1.webp',
+                ],
 ],
 
         'de' => [
@@ -22,6 +25,9 @@ $translation = [
                 ],
             'kids' => [
                 'img' => 'banner-web-kids-de.webp',
+                ],
+                'main' => [
+                'img' => 'turkish-offer-1.webp',
                 ],
 ],
 
@@ -36,6 +42,9 @@ $translation = [
             'kids' => [
                 'img' => 'banner-web-kids-ru.webp',
                 ],
+            'main' => [
+                'img' => 'turkish-offer-1.webp',
+                ],
 ],
 
         'tr' => [
@@ -47,6 +56,9 @@ $translation = [
                 ],
             'kids' => [
                 'img' => 'banner-web-kids.webp',
+                ],
+                'main' => [
+                'img' => 'turkish-offer-1-new.webp',
                 ],
 ]
 
@@ -103,11 +115,12 @@ $translation = [
 
             <div class="swiper-slide">
                 <div class="offers-slide-inner">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/turkish-offer-1.webp') }}" />
+                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/' . $translation[$lang]['main']['img']) }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
                 </div>
             </div>
+
             <div class="swiper-slide">
                 <div class="offers-slide-inner">
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
