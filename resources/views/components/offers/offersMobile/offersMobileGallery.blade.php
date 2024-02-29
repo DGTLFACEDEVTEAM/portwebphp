@@ -14,8 +14,9 @@ $translation = [
         'banner-2' => 'banners-en/banner-2-en.webp',
         'banner-3' => 'banners-en/banner-3-en.webp',
         'banner-4' => 'banners-en/banner-4-en.webp',
-        'banner-5' => 'banners-en/banner-5-en.webp',
-        'banner-6' => 'banners-en/banner-5-en.webp',
+        'banner-5' => 'banners-en/en-transfer.webp',
+        'banner-6' => 'banners-en/en-prepayment.webp',
+        'banner-7' => 'banners-en/en-transfer.webp',
     ],
     'de' => [
         'hero-mobile-subtitle' => 'Premium A la Carte All Inclusive',
@@ -31,8 +32,10 @@ $translation = [
         'banner-2' => 'banners-de/banner-2-de.webp',
         'banner-3' => 'banners-de/banner-3-de.webp',
         'banner-4' => 'banners-de/banner-4-de.webp',
-        'banner-5' => 'banners-de/banner-5-de.webp',
-        'banner-6' => 'banners-de/banner-5-de.webp',
+        'banner-5' => 'banners-de/de-transfer.webp',
+        'banner-6' => 'banners-de/de-prepayment.webp',
+        'banner-7' => 'banners-de/de-transfer.webp',
+
     ],
     'ru' => [
         'hero-mobile-subtitle' => 'Premium A la Carte All Inclusive',
@@ -48,8 +51,9 @@ $translation = [
         'banner-2' => 'banners-ru/banner-2-ru.webp',
         'banner-3' => 'banners-ru/banner-3-ru.webp',
         'banner-4' => 'banners-ru/banner-4-ru.webp',
-        'banner-5' => 'banners-ru/banner-5-ru.webp',
-        'banner-6' => 'banners-ru/banner-5-ru.webp',
+        'banner-5' => 'banners-ru/ru-transfer.webp',
+        'banner-6' => 'banners-ru/ru-prepayment.webp',
+        'banner-7' => 'banners-ru/ru-transfer.webp',
     ],
     'tr' => [
         'hero-mobile-subtitle' => 'Premium A la Carte All Inclusive',
@@ -67,6 +71,7 @@ $translation = [
         'banner-4' => 'banners-tr/banner-4-tr.webp',
         'banner-5' => 'banners-tr/banner-5-tr.webp',
         'banner-6' => 'banners-tr/banner-6-tr.webp',
+        'banner-7' => 'banners-tr/banner-6-tr.webp',
     ],
     ];
 @endphp
