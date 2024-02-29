@@ -14,6 +14,9 @@ $translation = [
             'main' => [
                 'img' => 'turkish-offer-1.webp',
                 ],
+                'transfernew' => [
+                    'img' => 'en-transfer-29feb.webp',
+                    ],
 ],
 
         'de' => [
@@ -29,6 +32,9 @@ $translation = [
                 'main' => [
                 'img' => 'turkish-offer-1.webp',
                 ],
+                'transfernew' => [
+                    'img' => 'de-transfer-29feb.webp',
+                    ],
 ],
 
 
@@ -45,6 +51,9 @@ $translation = [
             'main' => [
                 'img' => 'turkish-offer-1.webp',
                 ],
+                'transfernew' => [
+                    'img' => 'ru-transfer-29feb.webp',
+                    ],
 ],
 
         'tr' => [
@@ -60,6 +69,9 @@ $translation = [
                 'main' => [
                 'img' => 'turkish-offer-1-new.webp',
                 ],
+                'transfernew' => [
+                    'img' => 'en-transfer-29feb.webp',
+                    ],
 ]
 
 ];
@@ -80,39 +92,62 @@ $translation = [
             </div>
         @endif
 
-            <div class="swiper-slide">
-                <div class="offers-slide-inner offers-4">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-transfer.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-4.webp') }}" />
-                    <div class="offers-hero-text offers-hero-4">
-                        <p class="offers-4-small">
-                            {!! $translation[$lang]['transfer']['text1'] !!}
-                        </p>
-                        <p class="offers-4-big">
-                            {!! $translation[$lang]['transfer']['text2'] !!}
-                        </p>
-                        <div class="offers-4-medium">
-                            <img class="offers-text-wrap-1"
-                                src="{{ asset('assets/frontend/images/offers/svg/line.svg') }}" />
+        @if($lang === 'tr')
+        <div class="swiper-slide">
+            <div class="offers-slide-inner">
+                <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2-puan.webp') }}" />
+                <img class="offers-banner-mobile"
+                    src="{{ asset('assets/frontend/images/offers/banner-2-puan.webp') }}" />
+            </div>
+        </div>
 
-                                {!! $translation[$lang]['transfer']['text3'] !!}
-                            <img class="offers-text-wrap-2"
-                                src="{{ asset('assets/frontend/images/offers/svg/line-two-01.svg') }}" />
+    @endif
 
-                        </div>
+        @if($lang === 'tr')
+        <div class="swiper-slide">
+            <div class="offers-slide-inner offers-4">
+                <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-transfer.webp') }}" />
+                <img class="offers-banner-mobile"
+                    src="{{ asset('assets/frontend/images/offers/mobile-4.webp') }}" />
+                <div class="offers-hero-text offers-hero-4">
+                    <p class="offers-4-small">
+                        {!! $translation[$lang]['transfer']['text1'] !!}
+                    </p>
+                    <p class="offers-4-big">
+                        {!! $translation[$lang]['transfer']['text2'] !!}
+                    </p>
+                    <div class="offers-4-medium">
+                        <img class="offers-text-wrap-1"
+                            src="{{ asset('assets/frontend/images/offers/svg/line.svg') }}" />
+
+                            {!! $translation[$lang]['transfer']['text3'] !!}
+                        <img class="offers-text-wrap-2"
+                            src="{{ asset('assets/frontend/images/offers/svg/line-two-01.svg') }}" />
 
                     </div>
-                    <div class="transfer-addendum-wrapper"><p class="offers-4-addendum"></p>
-                        <p class="offers-addendum-left">{!! $translation[$lang]['transfer']['addendum'] !!}</p></div>
 
                 </div>
+                <div class="transfer-addendum-wrapper"><p class="offers-4-addendum"></p>
+                    <p class="offers-addendum-left">{!! $translation[$lang]['transfer']['addendum'] !!}</p></div>
+
             </div>
+        </div>
+    @endif
+
+            @if($lang !== 'tr')
+            <div class="swiper-slide">
+                <div class="offers-slide-inner">
+                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/' . $translation[$lang]['transfernew']['img']) }}" />
+                    <img class="offers-banner-mobile" src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
+                </div>
+            </div>
+        @endif
+
 
 
 
             <div class="swiper-slide">
-                <div class="offers-slide-inner">
+                <div class="offers-slide-inner"> 
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/' . $translation[$lang]['kids']['img']) }}" />
                     <img class="offers-banner-mobile"
                         src="{{ asset('assets/frontend/images/offers/mobile-1.webp') }}" />
@@ -134,13 +169,17 @@ $translation = [
                         </div>
                     @endif
 
-            <div class="swiper-slide">
-                <div class="offers-slide-inner">
-                    <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
-                    <img class="offers-banner-mobile"
-                        src="{{ asset('assets/frontend/images/offers/mobile-2.webp') }}" />
+
+
+                @if($lang !== 'tr')
+                <div class="swiper-slide">
+                    <div class="offers-slide-inner">
+                        <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
+                        <img class="offers-banner-mobile"
+                            src="{{ asset('assets/frontend/images/offers/mobile-2.webp') }}" />
+                    </div>
                 </div>
-            </div>
+            @endif
             <div class="swiper-slide">
                 <div class="offers-slide-inner">
                     <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-3.webp') }}" />
