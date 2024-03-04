@@ -36,6 +36,10 @@ class BlogController extends Controller
         })
         ->where('status', '1')->get();
 
+        if (!$post_content) {
+            return abort(404);
+        }
+
         return view('frontend.ru.blog.blog-detail-new', compact('post_content', 'otherPosts'));
 
     }
