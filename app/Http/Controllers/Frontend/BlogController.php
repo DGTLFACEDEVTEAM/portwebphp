@@ -35,6 +35,10 @@ class BlogController extends Controller
             $query->where('lang', $categoryLang);
         })
         ->where('status', '1')->get();
+
+        if (!$post_content) {
+            return abort(404);
+        }
     
         return view('frontend.en.blog.blog-detail-new', compact('post_content', 'otherPosts'));
     }
