@@ -86,16 +86,16 @@ $(document).ready(function () {
     var _typeofThat =
         "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
             ? function (o) {
-                  return typeof o;
-              }
+                return typeof o;
+            }
             : function (o) {
-                  return o &&
-                      "function" == typeof Symbol &&
-                      o.constructor === Symbol &&
-                      o !== Symbol.prototype
-                      ? "symbol"
-                      : typeof o;
-              };
+                return o &&
+                    "function" == typeof Symbol &&
+                    o.constructor === Symbol &&
+                    o !== Symbol.prototype
+                    ? "symbol"
+                    : typeof o;
+            };
 
     function activateChatbox() {
         function insertLivechatJS() {
@@ -281,6 +281,9 @@ $(document).ready(function () {
                 ? "granted"
                 : "denied",
             security_storage: cookieValues.functional ? "granted" : "denied",
+            ad_user_data: cookieValues.targeting ? "granted" : "denied",
+            ad_personalization: cookieValues.targeting ? "granted" : "denied",
+
         });
         gtag("set", "ads_data_redaction", true);
 
