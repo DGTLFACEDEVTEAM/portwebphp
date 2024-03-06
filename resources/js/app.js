@@ -10,6 +10,7 @@ if ($("#contactForm2").length) {
             var name = document.forms["contactForm"]["name"].value;
             var email = document.forms["contactForm"]["email"].value;
             var message = document.forms["contactForm"]["message"].value;
+            console.log(name, email, message);
             if (name == "" || email == "" || message == "") {
                 // Display alert message if any required fields are empty
                 event.preventDefault(); // Prevent form from submitting
@@ -112,7 +113,7 @@ if (typeof pageHasContactForm !== "undefined" && pageHasContactForm) {
     var terms2 = document.querySelectorAll(".terms2");
     acceptTermsCheckbox.forEach(function (item) {
         // remove event listener if already added
-        item.removeEventListener("change", function () {});
+        item.removeEventListener("change", function () { });
         item.addEventListener("change", function () {
             if (this.checked) {
                 // find the submit button on same form and enable it
@@ -138,21 +139,24 @@ if (typeof pageHasContactForm !== "undefined" && pageHasContactForm) {
         });
     });
 
-    contactForms.forEach(function (item) {
-        // remove event listener if already added
-        item.removeEventListener("submit", function () {});
-        item.addEventListener("submit", function (e) {
-            e.preventDefault();
-            let name = document.getElementById("name");
-            let email = document.getElementById("email");
-            let message = document.getElementById("message");
-            let alert = document.getElementById("alert");
 
-            if (name.value == "" || email.value == "" || message.value == "") {
-                alert.classList.remove("d-none");
-            } else {
-                this.submit();
-            }
-        });
-    });
+
+    // contactForms.forEach(function (item) {
+    //     // remove event listener if already added
+    //     item.removeEventListener("submit", function () {});
+    //     item.addEventListener("submit", function (e) {
+    //         e.preventDefault();
+    //         let name = item.getElementById("name");
+    //         let email = item.getElementById("email");
+    //         let message = item.getElementById("message");
+    //         let alert = item.getElementById("alert");
+    //         console.log(name , email , message);
+
+    //         if (name.value == "" || email.value == "" || message.value == "") {
+    //             alert.classList.remove("d-none");
+    //         } else {
+    //             this.submit();
+    //         }
+    //     });
+    // });
 }
