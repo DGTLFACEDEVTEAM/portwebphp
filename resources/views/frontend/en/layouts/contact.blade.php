@@ -3,7 +3,7 @@
     <div class="contact-wrapper">
         <div class="mobileContact">
             <div class="contact-info">
-                <h2>Free contact call center</h2>
+                <h6>Free contact call center</h6>
                 <span>Or online booking</span>
                 <div>
                     <div class="contactIcon">
@@ -31,7 +31,7 @@
                     <div id="alert" class="alert alert-danger d-none" role="alert">
                         Please fill out all required fields.
                     </div>
-                    <h2>Send Message</h2>
+                    <h6>Send Message</h6>
                     <span>All your questions, opinions, suggestions</span>
                     <form method="POST" action="{{ route('contacts-submit') }}" id="contactForm2" name="contactForm"
                         class="contactForm" novalidate="novalidate">
