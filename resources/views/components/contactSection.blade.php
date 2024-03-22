@@ -89,7 +89,7 @@
         <div class="mobileContact">
 
             <div class="contact-info">
-                <h2>{!! $translation[$lang]['h2'] !!}</h2>
+                <span style="font-size: 20px">{!! $translation[$lang]['h2'] !!}</span>
                 <span>{!! $translation[$lang]['span'] !!}</span>
                 <div>
                     <div class="contactIcon">
@@ -121,7 +121,7 @@
                     <div id="alert" class="alert alert-danger d-none" role="alert">
                         {!! $translation[$lang]['fillFields'] !!}
                     </div>
-                    <h2>{!! $translation[$lang]['sendMsg'] !!}</h2>
+                    <span style="font-size: 20px">{!! $translation[$lang]['sendMsg'] !!}</span>
                     <span>{!! $translation[$lang]['allQuestions'] !!}</span>
                     <form method="POST" action="{{ route('contacts-submit') }}" id="contactForm2" name="contactForm"
                         class="contactForm" novalidate="novalidate">
