@@ -66,12 +66,12 @@
                 </figure>
                 <h5>Сауна</h5>
             </div>
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
                 <figure>
                     <img src="{{ asset('assets/frontend/images/spa/Saltroom.webp') }}" alt="SaltRoom"/>
                 </figure>
                 <h5>Соляная комната</h5>
-            </div>
+            </div> --}}
             <div class="swiper-slide">
                 <figure>
                     <img src="{{ asset('assets/frontend/images/spa/Aromatherapy.webp') }}" alt="Aromatherapy"/>
