@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [dev]
+    branches: [devte]
 
 name: 🚀 Prod deploy to dev port.dgtlface.com
 
