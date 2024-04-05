@@ -33,13 +33,26 @@
             <a href="https://www.facebook.com/portnature" target="_blank">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/facebookwhite.svg') }}" alt="facebook" />
             </a>
-            <a href="https://www.facebook.com/portnature" target="_blank">
+            <a href="https://www.instagram.com/portnatureluxury/" target="_blank" class="insta">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/instagramwhite.svg') }}" alt="instagram" />
             </a>
-            <a href="https://vk.com/publicportnature" target="_blank">
+            <a href="https://vk.com/publicportnature" class="vk" target="_blank">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/vkwhite.svg') }}" alt="vk" />
             </a>
-            <a href="https://www.tripadvisor.com/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html" target="_blank">
+            <a class="trip" href="https://www.tripadvisor.com/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html"
+                target="_blank">
+                <img loading="lazy" src="{{ asset('assets/frontend/images/tripadvisorwhite.svg') }}" alt="tripadvisor" />
+            </a>
+
+        </div>
+
+        <div class="heroSocialMediaIconRight" style="">
+
+            <a href="https://www.instagram.com/portnatureluxury/" target="_blank" class="insta">
+                <img loading="lazy" src="{{ asset('assets/frontend/images/instagramwhite.svg') }}" alt="instagram" />
+            </a>
+            <a class="trip" href="https://www.tripadvisor.com/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html"
+                target="_blank">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/tripadvisorwhite.svg') }}" alt="tripadvisor" />
             </a>
 
@@ -97,7 +110,8 @@
             <div class="swiper-slide">
                 <picture>
                     <source media="(max-width: 420px)" sizes="(max-width: 420px) 100vw" srcset="{{ asset('assets/frontend/images/home/banner/carousel-3-414.webp') }}" />
-                    <source media="(min-width: 421px) and (max-width: 1024px)" sizes="(min-width: 421px) 50vw, 100vw" srcset="{{ asset('assets/frontend/images/home/banner/carousel-3-820.webp') }}" />
+                    <source media="(min-width: 421px) and (max-width: 1024px)" sizes="(min-width: 421px) 50vw, 100vw"
+                        srcset="{{ asset('assets/frontend/images/home/banner/carousel-3-820.webp') }}" />
                     <source media="(min-width: 1025px) and (max-width: 1920px)" sizes="(min-width: 1025px) 33.3vw, 50vw, 100vw"
                         srcset="{{ asset('assets/frontend/images/home/banner/carousel-3-1920.webp') }}" />
                     <source media="(min-width: 1921px)" sizes="33.3vw, 50vw, 100vw" srcset="{{ asset('assets/frontend/images/home/banner/carousel-3-2560.webp') }}" />
@@ -124,11 +138,44 @@
 
 </div>
 <style>
+    .heroSocialMediaIconRight {
+        display: none;
+    }
+
+    .tempheaderBg {
+        display: none;
+    }
+
+    .heroSocialMediaIcon a {
+        display: flex
+    }
+
     @media (max-width: 1024px) {
         .heroSocialMediaIcon {
             flex-direction: column;
             left: 20px;
-            justify-content: center
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .heroSocialMediaIconRight {
+            bottom: 40px;
+            right: 20px;
+            z-index: 6;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .heroSocialMediaIcon .trip,
+        .heroSocialMediaIcon .insta {
+            display: none;
+        }
+
+        .heroSocialMediaIcon .vk {
+            display: none;
         }
 
         .heroSocialMediaIcon a {
@@ -140,12 +187,14 @@
         .heroSwiperWrapper {
             margin-top: 89px !important;
         }
+
         .tempheaderBg {
             height: 89px;
             background: #000;
             position: absolute;
             width: 100vw;
             z-index: 1;
+            display: block;
         }
     }
 </style>
