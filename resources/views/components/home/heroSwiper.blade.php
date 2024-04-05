@@ -16,13 +16,17 @@
 
 @endphp
 
-<div id="heroSwiperWrapper">
+<div class="tempheaderBg">
+    &nbsp;
+</div>
+
+<div class="heroSwiperWrapper" id="heroSwiperWrapper ">
     <div class="swiper-container heroTopSwiper">
-        <div class="heroText">
+        {{-- <div class="heroText">
             <h1>{!! $translation[$lang]['h1'] !!}</h1>
             <img loading="lazy" class="heroLogo" src="{{ asset('assets/frontend/images/home/heroLogoBig.webp') }}" alt="logo" />
-        </div>
-        <div class="heroSocialMediaIcon">
+        </div> --}}
+        <div class="heroSocialMediaIcon" style="">
             <a href="https://www.youtube.com/user/portnaturehotel" target="_blank">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/youtubewhite.svg') }}" alt="portnatureyoutube" />
             </a>
@@ -38,30 +42,35 @@
             <a href="https://www.tripadvisor.com/Hotel_Review-g4833191-d6427728-Reviews-Port_Nature_Luxury_Resort_Hotel_Spa-Bogazkent_Serik_District_Turkish_Mediterranean_Co.html" target="_blank">
                 <img loading="lazy" src="{{ asset('assets/frontend/images/tripadvisorwhite.svg') }}" alt="tripadvisor" />
             </a>
+
         </div>
+
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                {{-- if lang ru --}}
+
                 @if ($lang == 'ru')
                     <picture class="w-100 ">
-                        <source media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" />
+                        <source media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU-MOBILE.png') }}" />
                         <source media="(min-width: 420px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" />
                         <source media="(min-width: 1024px) and (max-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" />
                         <source media="(min-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" />
-                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" class="d-block homeHeroSwiperImg " fetchpriority="high" alt="Hotel image during the day" />
+                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" class="d-block homeHeroSwiperImg object-fit-contain" fetchpriority="high"
+                            alt="Hotel image during the day" />
 
                     </picture>
                 @else
                     <picture class="w-100 ">
-                        <source media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
-                        <source media="(min-width: 420px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
+                        <source media="(max-width: 640px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING-MOBILE.png') }}" />
+                        <source media="(min-width: 640px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
                         <source media="(min-width: 1024px) and (max-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
                         <source media="(min-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
-                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" class="d-block homeHeroSwiperImg object-fit-cover" fetchpriority="high"
+                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" class="d-block homeHeroSwiperImg object-fit-contain" fetchpriority="high"
                             alt="Hotel image during the day" />
 
                     </picture>
                 @endif
+                <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-BG.png') }}" class="d-block homeHeroSwiperImg object-fit-cover position-absolute" fetchpriority="high"
+                    alt="Hotel image during the day" style="z-index: -1;top:0" />
 
             </div>
             <div class="swiper-slide">
@@ -114,3 +123,29 @@
     </div>
 
 </div>
+<style>
+    @media (max-width: 1024px) {
+        .heroSocialMediaIcon {
+            flex-direction: column;
+            left: 20px;
+            justify-content: center
+        }
+
+        .heroSocialMediaIcon a {
+            width: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .heroSwiperWrapper {
+            margin-top: 89px !important;
+        }
+        .tempheaderBg {
+            height: 89px;
+            background: #000;
+            position: absolute;
+            width: 100vw;
+            z-index: 1;
+        }
+    }
+</style>
