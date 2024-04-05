@@ -109,12 +109,12 @@
 
 <div class="homeAccommdation">
     <div class="homeAccommodationWrapper">
-        <article>
+        <div class="d-flex flex-column">
             <h2> {!! $translation[$lang]['h2'] !!}</h2>
             <h3>
                 {!! $translation[$lang]['h6'] !!}
             </h3>
-        </article>
+        </div>
         <div class="swiper Roomswiper" role="region" aria-label="Accommodation Options">
             <div class="swiper-wrapper" style="padding-bottom: 200px">
                 <div class="swiper-slide">
