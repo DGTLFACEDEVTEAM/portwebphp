@@ -96,7 +96,7 @@
 
                 </picture>
             </div>
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
                 <picture>
                     <source media="(max-width: 420px)" sizes="(max-width: 420px) 100vw" srcset="{{ asset('assets/frontend/images/home/banner/carousel-2-414.webp') }}" />
                     <source media="(min-width: 421px) and (max-width: 1024px)" sizes="(min-width: 421px) 50vw, 100vw" srcset="{{ asset('assets/frontend/images/home/banner/carousel-2-820.webp') }}" />
@@ -105,7 +105,7 @@
                     <source media="(min-width: 1921px)" sizes="33.3vw, 50vw, 100vw" srcset="{{ asset('assets/frontend/images/home/banner/carousel-2-2560.webp') }}" />
                     <img loading="lazy" src="{{ asset('assets/frontend/images/home/banner/carousel-2-2560.webp') }}" class="d-block homeHeroSwiperImg" alt="Pool Image" />
                 </picture>
-            </div>
+            </div> --}}
 
             <div class="swiper-slide">
                 <picture>
@@ -154,6 +154,7 @@
         .heroSocialMediaIcon {
             flex-direction: column;
             left: 20px;
+            right: 20px;
             justify-content: center;
             gap: 20px;
         }
