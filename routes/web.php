@@ -389,3 +389,7 @@ Route::get('datenschutz-richtlinie-chat-aufklaerungstext', function () {
 Route::get('politika-zashity-dannyh-chat-tekst-razjasneniya', function () {
     return view('frontend.common.chat-kvkk', ['lang' => 'ru']);
 })->name('ru-data-chat');
+
+Route::get('isten-ayrilan-calisan-aydinlatma-metni', function () {
+    return view('frontend.common.isten-ayrilma', ['lang' => 'tr']);
+})->name('tr-isten-ayrilma');
