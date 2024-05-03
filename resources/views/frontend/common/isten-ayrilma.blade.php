@@ -44,7 +44,7 @@
 
 @section('content')
 
-    <div class="d-flex  justify-content-center align-items-start" style="margin-top:100px;min-height: calc(100vh - 515px);">
+    <div class="d-flex overflow-scroll justify-content-center align-items-start" style="margin-top:100px;min-height: calc(100vh - 515px);">
 
         <div class="container mt-5 px-5">
             <!-- Nav tabs -->
