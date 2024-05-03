@@ -393,3 +393,8 @@ Route::get('politika-zashity-dannyh-chat-tekst-razjasneniya', function () {
 Route::get('isten-ayrilan-calisan-aydinlatma-metni', function () {
     return view('frontend.common.isten-ayrilma', ['lang' => 'tr']);
 })->name('tr-isten-ayrilma');
+
+// guvelik-kamera-aydinlatma
+Route::get('guvenlik-kamera-aydinlatma', function () {
+    return view('frontend.common.guvenlik-kamera', ['lang' => 'tr']);
+})->name('tr-guvenlik-kamera');
