@@ -29,9 +29,9 @@
     </figure>
     <article>
         <h1>Aquapark</h1>
-        <span>18 Wasserrutschen werden Sie glücklich machen und Ihre Begeisterung in die Höhe schießen lassen. Die Kinder können es kaum erwarten, das Ganze zu wiederholen.</span>
+        {{-- <span>18 Wasserrutschen werden Sie glücklich machen und Ihre Begeisterung in die Höhe schießen lassen. Die Kinder können es kaum erwarten, das Ganze zu wiederholen.</span>
         <p>Der Aquapark von Port Nature bietet nur Spaß.
-            Es gibt Wassersport, eine riesige Wasserrutsche, die 4 Pools für alle und Spaß pur.</p>
+            Es gibt Wassersport, eine riesige Wasserrutsche, die 4 Pools für alle und Spaß pur.</p> --}}
     </article>
 </div>
 {{-- Aquapark Hero End --}}
@@ -40,10 +40,24 @@
     <h2>Galerie</h2>
     <div class="swiper aquaparkSlider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
                 <figure>
                     <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-1.webp') }}">
                         <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-1.webp') }}" alt="aquapark"/>
+                    </a>
+                </figure>
+            </div> --}}
+            <div class="swiper-slide">
+                <figure>
+                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-2.webp') }}">
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-2.webp') }}" alt="aquapark"/>
+                    </a>
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-3.webp') }}">
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-3.webp') }}" alt="aquapark"/>
                     </a>
                 </figure>
             </div>
@@ -61,13 +75,13 @@
                     </a>
                 </figure>
             </div>
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
                 <figure>
                     <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-4.webp') }}">
                         <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-4.webp') }}" alt="aquapark"/>
                     </a>
                 </figure>
-            </div>
+            </div> --}}
         </div>
 
         <div class="swiper-pagination"></div>
@@ -77,22 +91,22 @@
     </div>
 </div>
 
-<div class="container">
+{{-- <div class="container">
     <div class="aquaIcon">
         <img style="height: unset;width: unset" src="{{ asset('assets/frontend/images/kidsConcept/opaquapark.svg') }}"/>
         <p>Tauchen Sie ein in ein Wasserabenteuer mit 18 aufregenden Rutschen und 4 einladenden Pools.</p>
     </div>
-</div>
+</div> --}}
 {{-- Gallery End --}}
 {{-- Video Start --}}
-<div class="container">
+{{-- <div class="container">
     <div class="aquaparkVideo">
-        {{-- Button trigger modal --}}
+      
         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <img style="height: 65px;width: 65px" src="{{ asset('assets/frontend/images/playButton.svg') }}" alt="playButton"/>
         </a>
         <img src="{{ asset('assets/frontend/images/aquapark/aquaparkVideo.png') }}" alt="youtubeVideo"/>
-        {{-- Modal --}}
+     
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="display: flex;justify-content: center;align-items: center">
@@ -102,7 +116,7 @@
         </div>
         <span>Weil Sie es verdienen.</span>
     </div>
-</div>
+</div> --}}
 {{-- Video End --}}
 {{-- Contact --}}
 @include('frontend.de.layouts.contact')
