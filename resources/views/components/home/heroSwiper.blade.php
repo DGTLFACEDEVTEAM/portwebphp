@@ -59,7 +59,7 @@
         </div>
 
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
 
                 @if ($lang == 'ru')
                     <picture class="w-100 ">
@@ -85,7 +85,7 @@
                 <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-BG.png') }}" class="d-block homeHeroSwiperImg object-fit-cover position-absolute" fetchpriority="high"
                     alt="Hotel image during the day" style="z-index: -1;top:0" />
 
-            </div>
+            </div> --}}
             <div class="swiper-slide">
                 <picture>
                     <source media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/carousel-1-414.webp') }}" />
