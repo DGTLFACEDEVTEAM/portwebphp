@@ -48,19 +48,19 @@
 {{-- Concert Calendar Part Start --}}
 
 <div class="concert-calendar">
-    <div class="concert-calendar-img-wrapper">
+    {{-- <div class="concert-calendar-img-wrapper">
         <img class="concert-calendar-img calendar-img-desktop" src="{{ asset('assets/frontend/images/concerts/ru-2024-concerts-general.png') }}">
         <img class="concert-calendar-img calendar-img-tablet" src="{{ asset('assets/frontend/images/concerts/ru-2024-concerts-mobile.png') }}">
         <img class="concert-calendar-img calendar-img-mobile" src="{{ asset('assets/frontend/images/concerts/ru-2024-concerts-mobile.png') }}">
-    </div>
+    </div> --}}
     <div class="concert-calendar-right">
         <p class="concert-calendar-heading">Концерты</p>
         <div class="concerts-hr"></div>
 
-        <p class="concert-calendar-text">Предстоящие концерты в отеле</p>
-        <div class="calendar-flatpickr" id="calendarDatePicker"></div>
+        {{-- <p class="concert-calendar-text">Предстоящие концерты в отеле</p> --}}
+        {{-- <div class="calendar-flatpickr" id="calendarDatePicker"></div>
         <input id="concertsDate" data-defaultdate="today" value="Concert Date" type="text"
-               class="flatpickr-input active" readonly="readonly">
+               class="flatpickr-input active" readonly="readonly"> --}}
     </div>
 </div>
 {{-- Concert Calendar Part End --}}
