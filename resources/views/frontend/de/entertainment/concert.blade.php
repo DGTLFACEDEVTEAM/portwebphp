@@ -56,11 +56,11 @@
 {{-- Concert Calendar Part Start --}}
 
 <div class="concert-calendar">
-    {{-- <div class="concert-calendar-img-wrapper">
-        <img class="concert-calendar-img calendar-img-desktop" src="{{ asset('assets/frontend/images/concerts/en-2024-concerts-general.png') }}">
-        <img class="concert-calendar-img calendar-img-tablet" src="{{ asset('assets/frontend/images/concerts/en-2024-concerts-mobile.png') }}">
-        <img class="concert-calendar-img calendar-img-mobile" src="{{ asset('assets/frontend/images/concerts/en-2024-concerts-mobile.png') }}">
-    </div> --}}
+    <div class="concert-calendar-img-wrapper">
+        <img class="concert-calendar-img calendar-img-desktop" src="{{ asset('assets/frontend/images/concerts/2024-KONSERLER-1920x1080-EN.webp') }}">
+        <img class="concert-calendar-img calendar-img-tablet" src="{{ asset('assets/frontend/images/concerts/2024-KONSERLER-1080x1920-EN.webp') }}">
+        <img class="concert-calendar-img calendar-img-mobile" src="{{ asset('assets/frontend/images/concerts/2024-KONSERLER-1080x1920-EN.webp') }}">
+    </div>
     <div class="concert-calendar-right">
         <p class="concert-calendar-heading">Konzerte</p>
         <div class="concerts-hr"></div>
