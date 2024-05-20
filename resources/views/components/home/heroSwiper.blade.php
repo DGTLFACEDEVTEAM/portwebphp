@@ -59,25 +59,25 @@
         </div>
 
         <div class="swiper-wrapper">
-            {{-- <div class="swiper-slide">
+            <div class="swiper-slide">
 
                 @if ($lang == 'ru')
                     <picture class="w-100 ">
                         <source media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU-MOBILE.png') }}" />
-                        <source media="(min-width: 420px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" />
-                        <source media="(min-width: 1024px) and (max-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" />
-                        <source media="(min-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" />
-                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.webp') }}" class="d-block homeHeroSwiperImg object-fit-contain" fetchpriority="high"
+                        <source media="(min-width: 420px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.png') }}" />
+                        <source media="(min-width: 1024px) and (max-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.png') }}" />
+                        <source media="(min-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.png') }}" />
+                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU.png') }}" class="d-block homeHeroSwiperImg object-fit-contain" fetchpriority="high"
                             alt="Hotel image during the day" />
 
                     </picture>
                 @else
                     <picture class="w-100 ">
                         <source media="(max-width: 640px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING-MOBILE.png') }}" />
-                        <source media="(min-width: 640px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
-                        <source media="(min-width: 1024px) and (max-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
-                        <source media="(min-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" />
-                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.webp') }}" class="d-block homeHeroSwiperImg object-fit-contain" fetchpriority="high"
+                        <source media="(min-width: 640px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.png') }}" />
+                        <source media="(min-width: 1024px) and (max-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.png') }}" />
+                        <source media="(min-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.png') }}" />
+                        <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-ING.png') }}" class="d-block homeHeroSwiperImg object-fit-contain" fetchpriority="high"
                             alt="Hotel image during the day" />
 
                     </picture>
@@ -85,7 +85,7 @@
                 <img src="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-BG.png') }}" class="d-block homeHeroSwiperImg object-fit-cover position-absolute" fetchpriority="high"
                     alt="Hotel image during the day" style="z-index: -1;top:0" />
 
-            </div> --}}
+            </div> 
             <div class="swiper-slide">
                 <picture>
                     <source media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/carousel-1-414.webp') }}" />
