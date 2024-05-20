@@ -27,12 +27,12 @@ body, html {
 }
 .concert-calendar {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 5.885vw;
     margin: 5.208vw 0px;
     width: 100vw;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
 }
 .calendar-img-tablet,.calendar-img-mobile{
