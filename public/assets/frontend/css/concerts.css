@@ -27,7 +27,7 @@ body, html {
 }
 .concert-calendar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 5.885vw;
     margin: 5.208vw 0px;
     width: 100vw;
