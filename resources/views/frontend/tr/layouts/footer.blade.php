@@ -99,7 +99,7 @@
                         <a href="{{ route('tr-blog') }}" class="footerSub">Blog</a>
                         <a href="{{ route('tr-data-policy') }}" class="footerSub">KVKK</a>
                         <a href="{{ route('tr-contacts') }}" class="footerSub">İletişim</a>
-                        <a href="#" class="footerSub">Bilgi Formu</a>
+                        <a href="{{ route('tr-politikalarimiz') }}" class="footerSub">Politikalarimiz</a>
                     </article>
                 </div>
                 <div class="col-6 col-lg-3 col-md-3">

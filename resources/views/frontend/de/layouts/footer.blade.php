@@ -101,7 +101,7 @@
                         <a href="{{ route('de-blog') }}" class="footerSub">Blog</a>
                         <a href="{{ route('de-data-policy') }}" class="footerSub">Datenschutzrichtlinien</a>
                         <a href="{{ route('de-contacts') }}" class="footerSub">Kontakte</a>
-                        <a href="#" class="footerSub">Datenblätter</a>
+                        <a href="{{ route('tr-politikalarimiz') }}" class="footerSub">Unsere Politiken</a>
                     </article>
                 </div>
                 <div class="col-6 col-lg-3 col-md-3">
