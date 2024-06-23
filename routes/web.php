@@ -398,3 +398,7 @@ Route::get('isten-ayrilan-calisan-aydinlatma-metni', function () {
 Route::get('guvenlik-kamera-aydinlatma', function () {
     return view('frontend.common.guvenlik-kamera', ['lang' => 'tr']);
 })->name('tr-guvenlik-kamera');
+
+Route::get('politikalarimiz', function () {
+    return view('frontend.common.politikalarimiz', ['lang' => 'tr']);
+})->name('tr-politikalarimiz');
