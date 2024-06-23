@@ -100,7 +100,7 @@
                         <a href="{{ route('ru-blog') }}" class="footerSub">Блог</a>
                         <a href="{{ route('ru-data-policy') }}" class="footerSub">Политика данных</a>
                         <a href="{{ route('ru-contacts') }}" class="footerSub">Контакты</a>
-                        <a href="#" class="footerSub">Factsheets</a>
+                        <a href="{{ route('tr-politikalarimiz') }}" class="footerSub">Наша Политика</a>
                     </article>
                 </div>
                 <div class="col-6 col-lg-3 col-md-3">

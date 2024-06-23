@@ -108,7 +108,7 @@
                         <a href="{{ route('en-blog') }}" class="footerSub">Blog</a>
                         <a href="{{ route('data-policy') }}" class="footerSub">KVKK</a>
                         <a href="{{ route('contacts') }}" class="footerSub">Contacts</a>
-                        <a href="#" class="footerSub">Fact Sheets</a>
+                        <a href="{{ route('tr-politikalarimiz') }}" class="footerSub">Our Policies</a>
                     </article>
                 </div>
                 <div class="col-6 col-lg-3 col-md-3 p-0">
