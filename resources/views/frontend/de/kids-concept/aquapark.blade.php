@@ -40,24 +40,17 @@
     <h2>Galerie</h2>
     <div class="swiper aquaparkSlider">
         <div class="swiper-wrapper">
-            {{-- <div class="swiper-slide">
-                <figure>
-                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-1.webp') }}">
-                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-1.webp') }}" alt="aquapark"/>
-                    </a>
-                </figure>
-            </div> --}}
             <div class="swiper-slide">
                 <figure>
-                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-2.webp') }}">
-                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-2.webp') }}" alt="aquapark"/>
+                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-new1.webp') }}">
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new1') }}" alt="aquapark"/>
                     </a>
                 </figure>
             </div>
             <div class="swiper-slide">
                 <figure>
-                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-3.webp') }}">
-                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-3.webp') }}" alt="aquapark"/>
+                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-new2.webp') }}">
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new2') }}" alt="aquapark"/>
                     </a>
                 </figure>
             </div>
@@ -72,6 +65,20 @@
                 <figure>
                     <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-3.webp') }}">
                         <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-3.webp') }}" alt="aquapark"/>
+                    </a>
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-new3.webp') }}">
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new3.webp') }}" alt="aquapark"/>
+                    </a>
+                </figure>
+            </div>
+            <div class="swiper-slide">
+                <figure>
+                    <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-new4.webp') }}">
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new4.webp') }}" alt="aquapark"/>
                     </a>
                 </figure>
             </div>
