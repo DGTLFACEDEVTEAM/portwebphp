@@ -41,14 +41,14 @@
             <div class="swiper-slide">
                 <figure>
                     <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-new1.webp') }}">
-                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new1') }}" alt="aquapark"/>
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new1.webp') }}" alt="aquapark"/>
                     </a>
                 </figure>
             </div>
             <div class="swiper-slide">
                 <figure>
                     <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-new2.webp') }}">
-                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new2') }}" alt="aquapark"/>
+                        <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-new2.webp') }}" alt="aquapark"/>
                     </a>
                 </figure>
             </div>
