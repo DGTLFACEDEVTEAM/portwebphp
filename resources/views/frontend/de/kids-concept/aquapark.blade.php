@@ -54,13 +54,13 @@
                     </a>
                 </figure>
             </div>
-            <div class="swiper-slide">
+            {{-- <div class="swiper-slide">
                 <figure>
                     <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-2.webp') }}">
                         <img src="{{ asset('assets/frontend/images/aquapark/aquaSlider-2.webp') }}" alt="aquapark"/>
                     </a>
                 </figure>
-            </div>
+            </div> --}}
             <div class="swiper-slide">
                 <figure>
                     <a class="lightbox-aquapark" href="{{ asset('assets/frontend/images/aquapark/aquaSlider-3.webp') }}">
