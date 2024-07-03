@@ -951,7 +951,7 @@ Premium A'la Carte All Inclusive                     </p>
         <div class="swiper flight-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="https://www.flypgs.com/ru" target="_blank"><img class="pegasus-logo"
+                    <a href="https://www.flypgs.com/" target="_blank"><img class="pegasus-logo"
                             src="{{ asset('assets/frontend/images/offers/logo-1.webp') }}" /></a>
                 </div>
                 <div class="swiper-slide">
