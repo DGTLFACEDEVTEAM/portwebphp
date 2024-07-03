@@ -683,7 +683,7 @@ Premium A'la Carte Her Şey Dahil                        </p>
         <div class="swiper flight-swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <a href="https://www.flypgs.com/sehirler/antalya-ucak-bileti" target="_blank"><img class="pegasus-logo"
+                    <a href="https://www.flypgs.com/" target="_blank"><img class="pegasus-logo"
                             src="{{ asset('assets/frontend/images/offers/logo-1.webp') }}" /></a>
                 </div>
                 <div class="swiper-slide">
@@ -733,7 +733,7 @@ Premium A'la Carte Her Şey Dahil                        </p>
     <div class='flight-mobile-w-addendum collapse' id="flightCollapse">
     <div class="flight-items-wrapper">
       <div class="flight-item-wrapper">
-         <a href="https://www.flypgs.com/sehirler/antalya-ucak-bileti" target="_blank">
+         <a href="https://www.flypgs.com/" target="_blank">
             <img class="pegasus-logo" src="{{ asset('assets/frontend/images/offers/logo-1.webp') }}" />
           </a>
       </div>
