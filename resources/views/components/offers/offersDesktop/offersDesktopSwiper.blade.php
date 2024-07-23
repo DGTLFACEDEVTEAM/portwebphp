@@ -163,7 +163,7 @@ $translation = [
                     @if($lang === 'tr')
                     <div class="swiper-slide">
                         <div class="offers-slide-inner">
-                            <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2-puan.webp') }}" />
+                            <img class="offers-banner" src="{{ asset('assets/frontend/images/offers/banner-2.webp') }}" />
                             <img class="offers-banner-mobile"
                                 src="{{ asset('assets/frontend/images/offers/mobile-2.webp') }}" />
                         </div>
