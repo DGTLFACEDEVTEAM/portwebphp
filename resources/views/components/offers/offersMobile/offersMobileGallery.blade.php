@@ -181,11 +181,11 @@ $translation = [
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-4']) }}">
             </div> --}}
-            {{-- @if($lang === 'tr')
+            @if($lang === 'tr')
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-7']) }}">
             </div>
-        @endif --}}
+        @endif
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-6']) }}">
             </div>
@@ -194,23 +194,16 @@ $translation = [
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-5']) }}">
             </div>
-            {{-- @if($lang === 'tr')
+            @if($lang === 'tr')
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-7']) }}">
             </div>
-        @endif --}}
+        @endif
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-6']) }}">
             </div>
 
 
-            <div class="swiper-slide">
-                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-5']) }}">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-6']) }}">
-            </div>
             <div class="swiper-slide">
                 <img src="{{ asset('assets/frontend/images/offers/mobile/hero/' . $translation[$lang]['banner-5']) }}">
             </div>
