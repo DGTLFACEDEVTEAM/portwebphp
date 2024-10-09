@@ -59,8 +59,17 @@
         </div>
 
         <div class="swiper-wrapper">
-           <div class="swiper-slide">
+            <div class="swiper-slide">
+                <picture style="">
+                    <source style="object-fit: fill" media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/mobile-haluk.png') }}" />
+                    <source style="object-fit: fill" media="(min-width: 420px) and (max-width: 1024px)" srcset="{{ asset('assets/frontend/images/home/banner/mobile-haluk.png') }}" />
+                    <source style="object-fit: fill" media="(min-width: 1024px) and (max-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/desktop-haluk.png') }}" />
+                    <source style="object-fit: fill" media="(min-width: 1920px)" srcset="{{ asset('assets/frontend/images/home/banner/desktop-haluk.png') }}" />
+                    <img style="object-fit: fill" src="{{ asset('assets/frontend/images/home/banner/desktop-haluk.png') }}" class="d-block homeHeroSwiperImg " fetchpriority="high" alt="Hotel image during the day" />
 
+                </picture>
+            </div>
+           <div class="swiper-slide">
                 @if ($lang == 'ru')
                     <picture class="w-100 ">
                         <source media="(max-width: 420px)" srcset="{{ asset('assets/frontend/images/home/banner/2024-KONSERLER-RU-MOBILE.png') }}" />
