@@ -27,7 +27,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="{{ route('tr-special-offers') }}" aria-expanded="false">2024 Fırsatları</a>
+                        <a class="nav-link" href="{{ route('tr-special-offers') }}" aria-expanded="false">2025 Fırsatları</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="{{ route('tr-food-drink') }}"
@@ -162,7 +162,7 @@
                     </div>
                     <div class="mobileDrop ">
                         <a class="mainLink " href="{{ route('tr-special-offers') }}">
-                            2024 Fırsatları
+                            2025 Fırsatları
                         </a>
                     </div>
                     <div class="mobileDrop accordion-item">

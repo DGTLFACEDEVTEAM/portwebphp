@@ -78,7 +78,7 @@
                 </div>
                 <div class="col-6 col-lg-3 col-md-3 p-0">
                     <article class="footerText">
-                        <a href="{{ route('special-offers') }}" class="footerHeader">Offers 2024</a>
+                        <a href="{{ route('special-offers') }}" class="footerHeader">Offers 2025</a>
                         <a href="{{ route('special-offers') }}" class="footerSub">Special Offers</a>
                     </article>
                 </div>

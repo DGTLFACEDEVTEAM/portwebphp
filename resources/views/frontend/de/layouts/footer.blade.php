@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-6 col-lg-3 col-md-3">
                     <article class="footerText">
-                        <a href="{{ route('de-special-offers') }}" class="footerHeader">ANGEBOTE 2024</a>
+                        <a href="{{ route('de-special-offers') }}" class="footerHeader">ANGEBOTE 2025</a>
                         <a href="{{ route('de-special-offers') }}" class="footerSub">Sonderangebote</a>
                     </article>
                 </div>

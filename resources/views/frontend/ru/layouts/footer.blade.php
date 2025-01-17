@@ -70,7 +70,7 @@
                 </div>
                 <div class="col-6 col-lg-3 col-md-3">
                     <article class="footerText">
-                        <a href="{{ route('ru-special-offers') }}" class="footerHeader">2024 Акции</a>
+                        <a href="{{ route('ru-special-offers') }}" class="footerHeader">2025 Акции</a>
                         <a href="{{ route('ru-special-offers') }}" class="footerSub">Спец. Предложения</a>
                     </article>
                 </div>

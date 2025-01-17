@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-6 col-lg-3 col-md-3">
                     <article class="footerText">
-                        <a href="{{ route('tr-special-offers') }}" class="footerHeader">2024 Fırsatlar</a>
+                        <a href="{{ route('tr-special-offers') }}" class="footerHeader">2025 Fırsatlar</a>
                         <a href="{{ route('tr-special-offers') }}" class="footerSub">Özel Teklifler</a>
                     </article>
                 </div>
