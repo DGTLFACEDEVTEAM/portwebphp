@@ -88,6 +88,13 @@
                         <p>Yönetim Kurulu Başkanı olarak ben çevresel duyarlılığı sağlamak adına Port Nature Luxury Resort Hotel & Spa’nın Turizm sektöründe lider konuma gelebilmesi için bu
                             sürdürülebilirlik politikasını desteklerken çalışanlarımızı politikamızı anlamaya anlatmaya ve uygulamaya davet ediyorum.</p>
                         <p>Yönetim Kurulu Başkanı</p>
+                        <p></p>
+                        <p style="font-weight: bold; padding-top: 50px;">
+                            2024 Yılına ait Sürdürülebilirlik raporuna aşağıdaki linkten ulaşabilirsiniz:
+                        </p>
+                        <a href="{{ asset('/2024-surdurulebilirlik-raporu.pdf') }}" target="_blank" rel="noopener noreferrer">
+                            2024 Sürdürülebilirlik Raporu (PDF)
+                        </a>
                     </div>
 
                 </div>
