@@ -294,6 +294,11 @@ Route::get('policy-contact', [App\Http\Controllers\Frontend\Deutsch\ContactContr
 Route::get('politika-kontakt', [App\Http\Controllers\Frontend\Russian\ContactController::class, 'contact_form_policy'])->name('ru-contact-form-policy');
 Route::get('iletisim-politikasi', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'contact_form_policy'])->name('tr-contact-form-policy');
 
+Route::get('clarification', [ContactController::class, 'clarification'])->name('en-clarification');
+Route::get('klarung', [App\Http\Controllers\Frontend\Deutsch\ContactController::class, 'clarification'])->name('de-clarification');
+Route::get('osvetlenie', [App\Http\Controllers\Frontend\Russian\ContactController::class, 'clarification'])->name('ru-clarification');
+Route::get('aydinlatma', [App\Http\Controllers\Frontend\Turkish\ContactController::class, 'clarification'])->name('tr-clarification');
+
 # ====================================================== ADMIN ============================================================================
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');

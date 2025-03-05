@@ -98,6 +98,7 @@
                         <a href="#" class="footerHeader">KURUMSAL</a>
                         <a href="{{ route('tr-blog') }}" class="footerSub">Blog</a>
                         <a href="{{ route('tr-data-policy') }}" class="footerSub">KVKK</a>
+                        <a href="{{ route('tr-clarification') }}" class="footerSub">Aydınlatma Metinleri</a>
                         <a href="{{ route('tr-contacts') }}" class="footerSub">İletişim</a>
                         <a href="{{ route('tr-politikalarimiz') }}" class="footerSub">Politikalarimiz</a>
                     </article>

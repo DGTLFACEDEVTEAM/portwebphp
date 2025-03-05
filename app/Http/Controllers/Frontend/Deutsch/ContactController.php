@@ -43,4 +43,9 @@ class ContactController extends Controller
 
         return view('frontend.de.contact.contact-form-policy');
     }
+    public function clarification()
+    {
+
+        return view('frontend.de.contact.clarification');
+    }
 }

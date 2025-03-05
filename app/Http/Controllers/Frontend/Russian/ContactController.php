@@ -24,6 +24,12 @@ class ContactController extends Controller
         return view('frontend.ru.contact.data-policy');
     }
 
+    public function clarification()
+    {
+
+        return view('frontend.ru.contact.clarification');
+    }
+
     public function submit(Request $request) {
 
         $request->validate([

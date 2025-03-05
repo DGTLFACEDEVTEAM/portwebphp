@@ -80,4 +80,10 @@ class ContactController extends Controller
         return view('frontend.tr.contact.contact-form-policy');
     }
 
+    public function clarification()
+    {
+
+        return view('frontend.tr.contact.clarification');
+    }
+
 }
