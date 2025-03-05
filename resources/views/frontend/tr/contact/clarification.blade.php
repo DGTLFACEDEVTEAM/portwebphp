@@ -13275,7 +13275,7 @@
     <p style="margin-top:0pt; margin-bottom:8pt; text-align:justify;"><span style="font-family:'Times New Roman'; color:#002060;">Başvuru sırasında uyulması gereken usul kuralları ve daha detaylı bilgiye Kişisel Verileri Koruma Kurumu&apos;nun &quot;</span><a href="http://www.resmigazete.gov.tr/eskiler/2018/03/20180310-6.htm" style="text-decoration:none;"><u><span style="font-family:'Times New Roman'; color:#002060;">Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ</span></u></a><span style="font-family:'Times New Roman'; color:#002060;">&quot;inden ulaşabilirsiniz</span><span style="font-family:'Liberation Serif'; color:#002060;">.</span></p>
     <p style="margin-top:0pt; margin-bottom:8pt; text-align:justify;"><span style="font-family:'Times New Roman'; color:#002060;">&nbsp;</span></p>
     <p style="margin-top:0pt; margin-bottom:8pt; text-align:justify;">&nbsp;</p>
-    <p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Converted to HTML with WordToHTML.net</a> <span style="font-size:11px; color: #d0d0d0;">|</span> <a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Email Signature Generator</a></p>
+   
 </div>
 <div id="tab-8" class="tab-content">
     <div class="WordSection1">
@@ -13538,7 +13538,7 @@
         <p class="MsoNormal" align="center" style="margin-top:0in;margin-right:0in; margin-bottom:7.9pt;margin-left:44.1pt;text-align:center;">&nbsp;</p>
         <p class="MsoNormal" align="right" style="margin-top:0in;margin-right:40.2pt; margin-bottom:7.9pt;margin-left:.5pt;text-align:right;text-indent:-.5pt;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ad-Soyad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tarih:&nbsp;&nbsp;&nbsp; /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     </div>
-    <p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Converted to HTML with WordToHTML.net</a> <span style="font-size:11px; color: #d0d0d0;">|</span> <a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Email Signature Generator</a></p>
+   
 </div>
 </div>
 
