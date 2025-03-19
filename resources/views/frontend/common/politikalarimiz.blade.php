@@ -27,6 +27,9 @@
                     <button class="nav-link" id="langde-tab" data-bs-toggle="tab" data-bs-target="#langde" type="button" role="tab" aria-controls="langde" aria-selected="false">Sürdürülebilir Turizm
                         Politikası</button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="langde-tabi" data-bs-toggle="tab" data-bs-target="#langden" type="button" role="tab" aria-controls="langden" aria-selected="false">Logo Tescil</button>
+                </li>
 
             </ul>
 
@@ -95,6 +98,16 @@
                         <a href="{{ asset('/2024-surdurulebilirlik-raporu.pdf') }}" target="_blank" rel="noopener noreferrer">
                             2024 Sürdürülebilirlik Raporu (PDF)
                         </a>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="langden" role="tabpanel" aria-labelledby="langde-tabi">
+                    <div>
+                        <h1>PORT NATURE LUXURY RESORT HOTEL TESCİLLENMİŞ LOGOLAR</h1>
+                        <br>
+                        <br>
+                        <p>PORT NATURE LUXURY RESORT HOTEL & SPA olarak; tescillenmiş logolarımızı <a href="{{ asset('/Logo-Tescil.pdf') }}" target="_blank" rel="noopener noreferrer">buradan</a><p>inceleyebilirsiniz.</p> </p>
+
                     </div>
 
                 </div>
