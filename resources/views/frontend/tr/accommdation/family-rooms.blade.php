@@ -21,7 +21,7 @@
 
 <div class="roomDetail">
     <div class="familyRoomDetailHero roomDetailHero">
-<img class="room-hero-image" src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-slider.webp') }}" alt="Family room hero image"/>
+<img class="room-hero-image" src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-slider.jpg') }}" alt="Family room hero image"/>
         <h1>AİLE ODASI</h1>
     </div>
 
@@ -38,7 +38,7 @@
             </div>
             <div class="roomSpecsInfo">
                 <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/familyroom/opsinglebed.svg') }}" alt="singlebed"/>
-                <p>2 TEKLİ YATAK</p>
+                <p>1 TEKLİ YATAK + RANZA</p>
             </div>
             <div class="roomSpecsInfo">
                 <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/familyroom/opdoublebed.svg') }}" alt="doublebed"/>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="roomSpecsInfo">
                     <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/familyroom/opsinglebed.svg') }}" alt="singlebed"/>
-                    <p>2 TEKLİ yatak</p>
+                    <p>1 TEKLİ YATAK + RANZA</p>
                 </div>
                 <div class="roomSpecsInfo">
                     <img class="accommdationSvg lazyload" data-src="{{ asset('assets/frontend/images/familyroom/opdoublebed.svg') }}" alt="doublebed"/>
@@ -86,32 +86,32 @@
         <div class="roomPhotos" id="lcl_elems_wrapper" title="Family Rooms">
             <div class="row">
                 <div class="col-12 col-md-6 p-4">
-                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-1.webp') }}">
-                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-1.webp') }}" alt="familyroom1"/>
+                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-1.jpg') }}">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-1.jpg') }}" alt="familyroom1"/>
                     </a>
                 </div>
                 <div class="col-12 col-md-6 p-4">
-                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-2.webp') }}">
-                        <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-2.webp') }}" alt="familyroom2"/>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 p-4">
-                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-3.webp') }}">
-                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-3.webp') }}" alt="familyroom3"/>
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 p-4">
-                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-4.webp') }}">
-                        <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-4.webp') }}" alt="familyroom4"/>
+                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-2.jpg') }}">
+                        <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-2.jpg') }}" alt="familyroom2"/>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 p-4">
-                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-5.webp') }}">
-                        <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-5.webp') }}" alt="familyroom5"/>
+                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-3.jpg') }}">
+                    <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-3.jpg') }}" alt="familyroom3"/>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 p-4">
+                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-4.jpg') }}">
+                        <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-4.jpg') }}" alt="familyroom4"/>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 p-4">
+                    <a href="{{ asset('assets/frontend/images/familyroom/rooms-family-room-5.jpg') }}">
+                        <img class="lazyload" data-src="{{ asset('assets/frontend/images/familyroom/rooms-family-room-5.jpg') }}" alt="familyroom5"/>
                     </a>
                 </div>
                 <div class="col-12 col-md-6 p-3">
@@ -126,7 +126,7 @@
     </div>
    
 </div>
- <div class="room-features-left" data-bs-toggle="modal" data-bs-target="#detailsImgModal">
+ {{-- <div class="room-features-left" data-bs-toggle="modal" data-bs-target="#detailsImgModal">
          <div class="features-see-more " data-bs-toggle="modal" data-bs-target="#detailsImgModal">
                        <img class="zoom-svg" src="{{ asset('assets/frontend/images/familyroom/plus.svg') }}">
 
@@ -146,7 +146,7 @@
            </div>
          </div>
          <img class="room-img" src="{{ asset('assets/frontend/images/familyroom/family-room-main3d.webp') }}">
-       </div>
+       </div> --}}
 {{-- Features --}}
 <div class="roomFeatures">
     <div class="roomFeaturesWrapper">
@@ -257,10 +257,10 @@
 </div>
 {{-- Features End --}}
 {{-- 360 View --}}
-<div class="room360">
+{{-- <div class="room360">
     <p>360° Tur</p>
     <iframe width="100%" height="500" frameborder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowfullscreen scrolling="no" src="https://kuula.co/share/collection/7JkrL?logo=-1&info=0&fs=1&vr=0&zoom=1&sd=1&thumbs=3"></iframe>
-</div>
+</div> --}}
 {{-- 360 View End --}}
 {{-- Contact --}}
 @include('frontend.tr.layouts.contact')
