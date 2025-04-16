@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-    {{-- <div class="item eighteen">
+    <div class="item eighteen">
         <div class="bars">
             <a class="roomlink" href="{{ route('hennessy-lounge') }}">
                 <img class="barCafeImg"  src="{{ asset('assets/frontend/images/barCafes/Born9.webp') }}" alt="hennesy"/>
@@ -89,7 +89,7 @@
                 </article>
             </a>
         </div>
-    </div> --}}
+    </div>
     <div class="item eighteen">
         <div class="bars">
             <a class="roomlink" href="{{ route('irish-pub') }}">
